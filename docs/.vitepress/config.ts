@@ -8,7 +8,9 @@ import { groupIconMdPlugin, groupIconVitePlugin,  } from 'vitepress-plugin-group
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/zxy-ui/',
+  // GitHub Pages 部署在子路径 /zxy-ui/ 下；Cloudflare Pages 从根路径提供服务。
+  // Cloudflare 构建时会注入 CF_PAGES=1，据此自动切换，无需手改。
+  base: process.env.CF_PAGES ? '/' : '/zxy-ui/',
   title: 'ZxyUI',
   description: 'ZxyUI is a UI component library for Vue 3',
   ignoreDeadLinks: true,

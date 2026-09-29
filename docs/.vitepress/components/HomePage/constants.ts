@@ -30,41 +30,41 @@ export const featuredComponents: ComponentItem[] = [
   {
     name: 'Button',
     description: '按钮组件',
-    path: '/zxy-ui/components/button/',
+    path: '/components/button/',
   },
   {
     name: 'Input',
     description: '输入框组件',
-    path: '/zxy-ui/components/input/',
+    path: '/components/input/',
   },
   {
     name: 'Card',
     description: '卡片组件',
-    path: '/zxy-ui/components/card/',
+    path: '/components/card/',
   },
   {
     name: 'Modal',
     description: '模态框组件',
-    path: '/zxy-ui/components/modal/',
+    path: '/components/modal/',
   },
   {
     name: 'Dropdown',
     description: '下拉菜单组件',
-    path: '/zxy-ui/components/dropdown/',
+    path: '/components/dropdown/',
   },
   {
     name: 'Tabs',
     description: '标签页组件',
-    path: '/zxy-ui/components/tabs/',
+    path: '/components/tabs/',
   },
   {
     name: 'Progress',
     description: '进度条组件',
-    path: '/zxy-ui/components/progress/',
+    path: '/components/progress/',
   },
   {
     name: 'Alert',
     description: '警告提示组件',
-    path: '/zxy-ui/components/alert/',
+    path: '/components/alert/',
   },
 ]

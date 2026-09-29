@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { withBase } from 'vitepress'
 import { featuredComponents } from '../constants'
 </script>
 
@@ -12,7 +13,7 @@ import { featuredComponents } from '../constants'
         <a
           v-for="component in featuredComponents"
           :key="component.name"
-          :href="component.path"
+          :href="withBase(component.path)"
           class="component-card"
         >
           <div class="component-header">

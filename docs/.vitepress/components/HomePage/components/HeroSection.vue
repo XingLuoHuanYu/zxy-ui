@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { withBase } from 'vitepress'
 // @ts-ignore - Vue component with script setup
 import Threads from '../../Threads.vue'
 
@@ -82,7 +83,7 @@ onUnmounted(() => {
 
       <div class="hero-actions">
         <a
-          href="/zxy-ui/guide/getting-started/quickstart"
+          :href="withBase('/guide/getting-started/quickstart')"
           class="btn-primary"
         >
           开始使用
@@ -99,7 +100,7 @@ onUnmounted(() => {
           </svg>
         </a>
         <a
-          href="/zxy-ui/guide/getting-started/introduction"
+          :href="withBase('/guide/getting-started/introduction')"
           class="btn-secondary"
         >
           查看文档
