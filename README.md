@@ -105,6 +105,12 @@ pnpm test
 
 ZxyUI is licensed under the [MIT License](./LICENSE).
 
+## 🙏 Acknowledgements
+
+ZxyUI is built upon [Versakit](https://github.com/Versakit/Versakit-Vue) (MIT License).
+
+We sincerely thank the Versakit team and all of its contributors for their excellent work. ZxyUI would not exist without their foundation. The original copyright notice is preserved in the [LICENSE](./LICENSE) file, in accordance with the MIT License.
+
 ## 🔗 Related Links
 
 - [GitHub Repository](https://github.com/XingLuoHuanYu/zxy-ui)
