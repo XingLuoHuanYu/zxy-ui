@@ -24,6 +24,8 @@ storybook-static
 .vscode/*
 !.vscode/extensions.json
 docs/.vitepress/dist
+docs/.vitepress/.temp
+docs/.vitepress/cache
 .idea
 *.suo
 *.ntvs*
