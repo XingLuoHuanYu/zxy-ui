@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest'
-import { createApp } from 'vue'
+import { createApp, h } from 'vue'
+import { createSSRApp } from 'vue'
+import { renderToString } from '@vue/server-renderer'
 import { ZxyUI } from '../index'
 
 /**
@@ -44,5 +46,27 @@ describe('ZxyUI 全局注册', () => {
     const app = createTestApp()
     const registered = ['ZButton', 'ZInput', 'ZSelect', 'ZTable', 'ZModal']
     registered.forEach((n) => expect(app.component(n)).toBeTruthy())
+  })
+
+  it('应能真实渲染出 <z-button> 标签的 HTML', async () => {
+    const app = createSSRApp({
+      template: '<z-button>我是全局按钮</z-button>',
+    })
+    app.use(ZxyUI)
+    const html = await renderToString(app)
+    expect(html).toContain('我是全局按钮')
+    expect(html).toContain('<button')
+    // 不应残留未解析的自定义标签
+    expect(html).not.toContain('<z-button')
+  })
+
+  it('应能真实渲染出带 props 的 <z-button variant="success">', async () => {
+    const app = createSSRApp({
+      template: '<z-button variant="success">成功</z-button>',
+    })
+    app.use(ZxyUI)
+    const html = await renderToString(app)
+    expect(html).toContain('成功')
+    expect(html).toContain('<button')
   })
 })

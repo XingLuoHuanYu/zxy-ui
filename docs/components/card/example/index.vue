@@ -8,6 +8,26 @@
       </Card>
     </section>
 
+    <!-- 全局注册用法（ZxyUI 前缀） -->
+    <section>
+      <h3 class="text-lg font-medium mb-4">
+        全局注册用法 <span class="text-sm text-gray-500">（z- 前缀）</span>
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <z-card variant="bordered">
+          <p class="font-medium">z-card 全局组件</p>
+          <p class="text-gray-600">
+            执行 <code>app.use(ZxyUI)</code> 后，无需 import 即可使用
+            <code>&lt;z-card&gt;</code>
+          </p>
+        </z-card>
+        <z-card variant="elevated" hover>
+          <p class="font-medium">带阴影的 z-card</p>
+          <p class="text-gray-600">同样支持 variant / hover 等全部属性</p>
+        </z-card>
+      </div>
+    </section>
+
     <!-- 变体样式 -->
     <section>
       <h3 class="text-lg font-medium mb-4">变体样式</h3>
