@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Rate } from '@zxy-ui/vue'
+import { ZRate } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import RateDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Rate> = {
+const meta: Meta<typeof ZRate> = {
   title: '组件/Rate 评分',
-  component: Rate,
+  component: ZRate,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -110,7 +110,7 @@ const meta: Meta<typeof Rate> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Rate>
+type Story = StoryObj<typeof ZRate>
 
 // 基础示例
 export const Basic: Story = {
@@ -218,7 +218,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { RateDemo },
+    components: {RateDemo},
     template: '<RateDemo />',
   }),
 }

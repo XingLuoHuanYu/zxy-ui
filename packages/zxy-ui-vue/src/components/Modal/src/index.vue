@@ -1,20 +1,12 @@
 <script setup lang="ts">
 import { useModal } from './composables/useModal'
 import type { ModalProps } from './type'
-import {
-  modalOverlay,
-  modalContent,
-  modalHeader,
-  modalTitle,
-  modalBody,
-  modalFooter,
-  modalCloseButton,
-} from './index.variants'
+import { modalOverlay, modalContent, modalHeader, modalTitle, modalBody, modalFooter, modalCloseButton } from './index.variants'
 import { watch, onMounted, nextTick, computed, useSlots } from 'vue'
 import type { Slots } from 'vue'
 
 defineOptions({
-  name: 'Modal',
+  name: 'ZModal',
 })
 
 const props = withDefaults(defineProps<ModalProps>(), {

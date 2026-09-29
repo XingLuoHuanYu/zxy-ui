@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Timeline, TimelineItem } from '@zxy-ui/vue'
+import { ZTimeline, ZTimelineItem } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import { ref } from 'vue'
 
@@ -28,23 +28,23 @@ if (typeof window !== 'undefined') {
     <section class="example-section">
       <h2 class="example-title">基础用法</h2>
       <div class="example-container">
-        <Timeline>
-          <TimelineItem :position="0" :isLast="false">
+        <ZTimeline>
+          <ZTimelineItem :position="0" :isLast="false">
             <div class="timeline-title">创建项目</div>
             <div class="timeline-date">2023-01-01</div>
             <div class="timeline-content">项目初始化完成</div>
-          </TimelineItem>
-          <TimelineItem :position="1" :isLast="false">
+          </ZTimelineItem>
+          <ZTimelineItem :position="1" :isLast="false">
             <div class="timeline-title">开发阶段</div>
             <div class="timeline-date">2023-02-15</div>
             <div class="timeline-content">完成核心功能开发</div>
-          </TimelineItem>
-          <TimelineItem :position="2" :isLast="true">
+          </ZTimelineItem>
+          <ZTimelineItem :position="2" :isLast="true">
             <div class="timeline-title">测试阶段</div>
             <div class="timeline-date">2023-03-20</div>
             <div class="timeline-content">完成所有测试用例</div>
-          </TimelineItem>
-        </Timeline>
+          </ZTimelineItem>
+        </ZTimeline>
       </div>
     </section>
 
@@ -54,60 +54,60 @@ if (typeof window !== 'undefined') {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="example-card">
           <h3 class="example-subtitle">左侧对齐</h3>
-          <Timeline align="left">
-            <TimelineItem :position="0" :isLast="false">
+          <ZTimeline align="left">
+            <ZTimelineItem :position="0" :isLast="false">
               <div class="timeline-title">创建项目</div>
               <div class="timeline-date">2023-01-01</div>
-            </TimelineItem>
-            <TimelineItem :position="1" :isLast="false">
+            </ZTimelineItem>
+            <ZTimelineItem :position="1" :isLast="false">
               <div class="timeline-title">开发阶段</div>
               <div class="timeline-date">2023-02-15</div>
-            </TimelineItem>
-            <TimelineItem :position="2" :isLast="true">
+            </ZTimelineItem>
+            <ZTimelineItem :position="2" :isLast="true">
               <div class="timeline-title">测试阶段</div>
               <div class="timeline-date">2023-03-20</div>
-            </TimelineItem>
-          </Timeline>
+            </ZTimelineItem>
+          </ZTimeline>
         </div>
 
         <div class="example-card">
           <h3 class="example-subtitle">右侧对齐</h3>
-          <Timeline align="right">
-            <TimelineItem :position="0" :isLast="false">
+          <ZTimeline align="right">
+            <ZTimelineItem :position="0" :isLast="false">
               <div class="timeline-title">创建项目</div>
               <div class="timeline-date">2023-01-01</div>
-            </TimelineItem>
-            <TimelineItem :position="1" :isLast="false">
+            </ZTimelineItem>
+            <ZTimelineItem :position="1" :isLast="false">
               <div class="timeline-title">开发阶段</div>
               <div class="timeline-date">2023-02-15</div>
-            </TimelineItem>
-            <TimelineItem :position="2" :isLast="true">
+            </ZTimelineItem>
+            <ZTimelineItem :position="2" :isLast="true">
               <div class="timeline-title">测试阶段</div>
               <div class="timeline-date">2023-03-20</div>
-            </TimelineItem>
-          </Timeline>
+            </ZTimelineItem>
+          </ZTimeline>
         </div>
 
         <div class="example-card">
           <h3 class="example-subtitle">交替对齐</h3>
-          <Timeline align="alternate">
-            <TimelineItem :position="0" :isLast="false">
+          <ZTimeline align="alternate">
+            <ZTimelineItem :position="0" :isLast="false">
               <div class="timeline-title">创建项目</div>
               <div class="timeline-date">2023-01-01</div>
-            </TimelineItem>
-            <TimelineItem :position="1" :isLast="false">
+            </ZTimelineItem>
+            <ZTimelineItem :position="1" :isLast="false">
               <div class="timeline-title">开发阶段</div>
               <div class="timeline-date">2023-02-15</div>
-            </TimelineItem>
-            <TimelineItem :position="2" :isLast="false">
+            </ZTimelineItem>
+            <ZTimelineItem :position="2" :isLast="false">
               <div class="timeline-title">测试阶段</div>
               <div class="timeline-date">2023-03-20</div>
-            </TimelineItem>
-            <TimelineItem :position="3" :isLast="true">
+            </ZTimelineItem>
+            <ZTimelineItem :position="3" :isLast="true">
               <div class="timeline-title">发布阶段</div>
               <div class="timeline-date">2023-04-10</div>
-            </TimelineItem>
-          </Timeline>
+            </ZTimelineItem>
+          </ZTimeline>
         </div>
       </div>
     </section>
@@ -116,8 +116,8 @@ if (typeof window !== 'undefined') {
     <section class="example-section">
       <h2 class="example-title">自定义点和线</h2>
       <div class="example-container">
-        <Timeline>
-          <TimelineItem
+        <ZTimeline>
+          <ZTimelineItem
             :position="0"
             :isLast="false"
             dot-color="var(--example-success)"
@@ -141,8 +141,8 @@ if (typeof window !== 'undefined') {
             </template>
             <div class="timeline-title">任务完成</div>
             <div class="timeline-date">2023-01-01</div>
-          </TimelineItem>
-          <TimelineItem
+          </ZTimelineItem>
+          <ZTimelineItem
             :position="1"
             :isLast="false"
             dot-color="var(--example-warning)"
@@ -168,8 +168,8 @@ if (typeof window !== 'undefined') {
             </template>
             <div class="timeline-title">进行中</div>
             <div class="timeline-date">2023-02-15</div>
-          </TimelineItem>
-          <TimelineItem
+          </ZTimelineItem>
+          <ZTimelineItem
             :position="2"
             :isLast="true"
             dot-color="var(--example-danger)"
@@ -195,8 +195,8 @@ if (typeof window !== 'undefined') {
             </template>
             <div class="timeline-title">已取消</div>
             <div class="timeline-date">2023-03-20</div>
-          </TimelineItem>
-        </Timeline>
+          </ZTimelineItem>
+        </ZTimeline>
       </div>
     </section>
 
@@ -204,29 +204,29 @@ if (typeof window !== 'undefined') {
     <section class="example-section">
       <h2 class="example-title">反向内容</h2>
       <div class="example-container">
-        <Timeline align="alternate">
-          <TimelineItem :position="0" :isLast="false">
+        <ZTimeline align="alternate">
+          <ZTimelineItem :position="0" :isLast="false">
             <template #opposite>
               <div class="timeline-tag timeline-tag-blue">阶段 1</div>
             </template>
             <div class="timeline-title">创建项目</div>
             <div class="timeline-date">2023-01-01</div>
-          </TimelineItem>
-          <TimelineItem :position="1" :isLast="false">
+          </ZTimelineItem>
+          <ZTimelineItem :position="1" :isLast="false">
             <template #opposite>
               <div class="timeline-tag timeline-tag-green">阶段 2</div>
             </template>
             <div class="timeline-title">开发阶段</div>
             <div class="timeline-date">2023-02-15</div>
-          </TimelineItem>
-          <TimelineItem :position="2" :isLast="true">
+          </ZTimelineItem>
+          <ZTimelineItem :position="2" :isLast="true">
             <template #opposite>
               <div class="timeline-tag timeline-tag-amber">阶段 3</div>
             </template>
             <div class="timeline-title">测试阶段</div>
             <div class="timeline-date">2023-03-20</div>
-          </TimelineItem>
-        </Timeline>
+          </ZTimelineItem>
+        </ZTimeline>
       </div>
     </section>
 
@@ -234,14 +234,14 @@ if (typeof window !== 'undefined') {
     <section class="example-section">
       <h2 class="example-title">自定义样式</h2>
       <div class="example-container custom-timeline">
-        <Timeline
+        <ZTimeline
           :pt="{
             root: isDarkMode
               ? 'border-l-2 border-blue-400 pl-6 ml-6'
               : 'border-l-2 border-blue-500 pl-6 ml-6',
           }"
         >
-          <TimelineItem
+          <ZTimelineItem
             :position="0"
             :isLast="false"
             :pt="{
@@ -253,8 +253,8 @@ if (typeof window !== 'undefined') {
           >
             <div class="timeline-title">创建项目</div>
             <div class="timeline-date">2023-01-01</div>
-          </TimelineItem>
-          <TimelineItem
+          </ZTimelineItem>
+          <ZTimelineItem
             :position="1"
             :isLast="false"
             :pt="{
@@ -266,8 +266,8 @@ if (typeof window !== 'undefined') {
           >
             <div class="timeline-title">开发阶段</div>
             <div class="timeline-date">2023-02-15</div>
-          </TimelineItem>
-          <TimelineItem
+          </ZTimelineItem>
+          <ZTimelineItem
             :position="2"
             :isLast="true"
             :pt="{
@@ -279,8 +279,8 @@ if (typeof window !== 'undefined') {
           >
             <div class="timeline-title">测试阶段</div>
             <div class="timeline-date">2023-03-20</div>
-          </TimelineItem>
-        </Timeline>
+          </ZTimelineItem>
+        </ZTimeline>
       </div>
     </section>
 
@@ -288,7 +288,7 @@ if (typeof window !== 'undefined') {
     <section class="example-section">
       <h2 class="example-title">无样式模式</h2>
       <div class="example-container">
-        <Timeline
+        <ZTimeline
           unstyled
           :pt="{
             root: isDarkMode
@@ -296,7 +296,7 @@ if (typeof window !== 'undefined') {
               : 'relative border-l-2 border-gray-300 ml-4 pl-8',
           }"
         >
-          <TimelineItem
+          <ZTimelineItem
             :position="0"
             :isLast="false"
             unstyled
@@ -315,8 +315,8 @@ if (typeof window !== 'undefined') {
           >
             <div class="timeline-title">创建项目</div>
             <div class="timeline-date">2023-01-01</div>
-          </TimelineItem>
-          <TimelineItem
+          </ZTimelineItem>
+          <ZTimelineItem
             :position="1"
             :isLast="false"
             unstyled
@@ -335,8 +335,8 @@ if (typeof window !== 'undefined') {
           >
             <div class="timeline-title">开发阶段</div>
             <div class="timeline-date">2023-02-15</div>
-          </TimelineItem>
-          <TimelineItem
+          </ZTimelineItem>
+          <ZTimelineItem
             :position="2"
             :isLast="true"
             unstyled
@@ -352,8 +352,8 @@ if (typeof window !== 'undefined') {
           >
             <div class="timeline-title">测试阶段</div>
             <div class="timeline-date">2023-03-20</div>
-          </TimelineItem>
-        </Timeline>
+          </ZTimelineItem>
+        </ZTimeline>
       </div>
     </section>
 
@@ -361,24 +361,24 @@ if (typeof window !== 'undefined') {
     <section class="example-section">
       <h2 class="example-title">水平方向</h2>
       <div class="example-container">
-        <Timeline orientation="horizontal">
-          <TimelineItem :position="0" :isLast="false">
+        <ZTimeline orientation="horizontal">
+          <ZTimelineItem :position="0" :isLast="false">
             <div class="timeline-title">创建项目</div>
             <div class="timeline-date">2023-01-01</div>
-          </TimelineItem>
-          <TimelineItem :position="1" :isLast="false">
+          </ZTimelineItem>
+          <ZTimelineItem :position="1" :isLast="false">
             <div class="timeline-title">开发阶段</div>
             <div class="timeline-date">2023-02-15</div>
-          </TimelineItem>
-          <TimelineItem :position="2" :isLast="false">
+          </ZTimelineItem>
+          <ZTimelineItem :position="2" :isLast="false">
             <div class="timeline-title">测试阶段</div>
             <div class="timeline-date">2023-03-20</div>
-          </TimelineItem>
-          <TimelineItem :position="3" :isLast="true">
+          </ZTimelineItem>
+          <ZTimelineItem :position="3" :isLast="true">
             <div class="timeline-title">发布阶段</div>
             <div class="timeline-date">2023-04-10</div>
-          </TimelineItem>
-        </Timeline>
+          </ZTimelineItem>
+        </ZTimeline>
       </div>
     </section>
   </div>

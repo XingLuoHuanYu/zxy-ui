@@ -5,7 +5,7 @@ import { segmentedContainer, segmentedOption } from './index.variants'
 import type { SegmentedProps } from './type'
 
 defineOptions({
-  name: 'Segmented',
+  name: 'ZSegmented',
 })
 
 const props = withDefaults(defineProps<SegmentedProps<T>>(), {

@@ -2,19 +2,11 @@
 import { computed, watch, onBeforeUnmount, ref, useSlots } from 'vue'
 import type { Slots } from 'vue'
 import { useDrawer } from './composables/useDrawer'
-import {
-  drawerOverlay,
-  drawerContainer,
-  drawerHeader,
-  drawerTitle,
-  drawerCloseButton,
-  drawerBody,
-  drawerFooter,
-} from './index.variants'
+import { drawerOverlay, drawerContainer, drawerHeader, drawerTitle, drawerCloseButton, drawerBody, drawerFooter } from './index.variants'
 import type { DrawerProps } from './type'
 
 defineOptions({
-  name: 'Drawer',
+  name: 'ZDrawer',
 })
 
 const props = withDefaults(defineProps<DrawerProps>(), {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Skeleton, SkeletonText, SkeletonAvatar, Button } from '@zxy-ui/vue'
+import { ZSkeleton, ZSkeletonText, ZSkeletonAvatar, ZButton } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 
 const loading = ref(true)
@@ -14,25 +14,25 @@ const toggleLoading = () => {
   <div class="space-y-6">
     <!-- 控制加载状态 -->
     <div class="mb-4">
-      <Button @click="toggleLoading">
+      <ZButton @click="toggleLoading">
         {{ loading ? '显示内容' : '显示骨架屏' }}
-      </Button>
+      </ZButton>
     </div>
 
     <!-- 卡片骨架屏 -->
     <div>
       <h3 class="text-sm font-medium mb-2">卡片骨架屏</h3>
-      <Skeleton :loading="loading" class="rounded-lg overflow-hidden">
+      <ZSkeleton :loading="loading" class="rounded-lg overflow-hidden">
         <template #skeleton>
           <div class="p-4 bg-white dark:bg-gray-800">
             <div class="flex gap-4">
-              <SkeletonAvatar size="lg" />
+              <ZSkeletonAvatar size="lg" />
               <div class="flex-1">
-                <SkeletonText :lines="2" />
+                <ZSkeletonText :lines="2" />
               </div>
             </div>
             <div class="mt-4">
-              <SkeletonText :lines="3" />
+              <ZSkeletonText :lines="3" />
             </div>
           </div>
         </template>
@@ -56,13 +56,13 @@ const toggleLoading = () => {
             </p>
           </div>
         </div>
-      </Skeleton>
+      </ZSkeleton>
     </div>
 
     <!-- 列表骨架屏 -->
     <div>
       <h3 class="text-sm font-medium mb-2">列表骨架屏</h3>
-      <Skeleton :loading="loading" class="rounded-lg overflow-hidden">
+      <ZSkeleton :loading="loading" class="rounded-lg overflow-hidden">
         <template #skeleton>
           <div class="p-4 bg-white dark:bg-gray-800">
             <div
@@ -71,12 +71,12 @@ const toggleLoading = () => {
               class="flex items-center gap-3 py-3"
               :class="{ 'border-t dark:border-gray-700': i > 1 }"
             >
-              <SkeletonAvatar size="sm" />
+              <ZSkeletonAvatar size="sm" />
               <div class="flex-1">
-                <SkeletonText :lines="1" />
+                <ZSkeletonText :lines="1" />
               </div>
               <div class="w-16">
-                <Skeleton width="100%" height="24px" :rounded="true" />
+                <ZSkeleton width="100%" height="24px" :rounded="true" />
               </div>
             </div>
           </div>
@@ -99,31 +99,31 @@ const toggleLoading = () => {
               <p>{{ item }}</p>
             </div>
             <div class="w-16">
-              <Button size="xs" variant="outline" fullWidth>查看</Button>
+              <ZButton size="xs" variant="outline" fullWidth>查看</ZButton>
             </div>
           </div>
         </div>
-      </Skeleton>
+      </ZSkeleton>
     </div>
 
     <!-- 文章骨架屏 -->
     <div>
       <h3 class="text-sm font-medium mb-2">文章骨架屏</h3>
-      <Skeleton :loading="loading" class="rounded-lg overflow-hidden">
+      <ZSkeleton :loading="loading" class="rounded-lg overflow-hidden">
         <template #skeleton>
           <div class="p-4 bg-white dark:bg-gray-800">
-            <Skeleton width="60%" height="32px" class="mb-4" :rounded="true" />
+            <ZSkeleton width="60%" height="32px" class="mb-4" :rounded="true" />
             <div class="flex items-center gap-3 mb-6">
-              <SkeletonAvatar size="sm" />
-              <SkeletonText :lines="1" :widths="120" />
+              <ZSkeletonAvatar size="sm" />
+              <ZSkeletonText :lines="1" :widths="120" />
             </div>
-            <Skeleton
+            <ZSkeleton
               width="100%"
               height="200px"
               class="mb-4"
               :rounded="true"
             />
-            <SkeletonText :lines="6" />
+            <ZSkeletonText :lines="6" />
           </div>
         </template>
 
@@ -153,7 +153,7 @@ const toggleLoading = () => {
             ZxyUI提供了三种骨架屏组件：Skeleton、SkeletonText和SkeletonAvatar，可以根据不同的场景进行组合使用。
           </p>
         </div>
-      </Skeleton>
+      </ZSkeleton>
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Runhorselight, Table } from '@zxy-ui/vue'
+import { ZRunhorselight, ZTable } from '@zxy-ui/vue'
 import { computed, ref } from 'vue'
 
 interface TableColumn {
@@ -106,7 +106,7 @@ const handleSuffixClick = (payload: any) => {
   <div class="space-y-8">
     <section class="space-y-3">
       <h3 class="text-lg font-medium">基础用法</h3>
-      <Table
+      <ZTable
         :columns="columns"
         :searchable="true"
         :exportable="true"
@@ -117,18 +117,18 @@ const handleSuffixClick = (payload: any) => {
 
     <section class="space-y-3">
       <h3 class="text-lg font-medium">斑马纹 + 边框 + 紧凑模式</h3>
-      <Table :columns="columns" :data="rows" stripe border dense />
+      <ZTable :columns="columns" :data="rows" stripe border dense />
     </section>
 
     <section class="space-y-3">
       <h3 class="text-lg font-medium">自定义单元格</h3>
-      <Table :columns="columns" :data="rows" border>
+      <ZTable :columns="columns" :data="rows" border>
         <template #status="{ row }">
           <span :class="statusClass(row.status)">
             {{ statusLabel(row.status) }}
           </span>
         </template>
-      </Table>
+      </ZTable>
       <p class="text-sm text-gray-500 dark:text-gray-400">
         当前共 {{ count }} 条数据
       </p>
@@ -136,7 +136,7 @@ const handleSuffixClick = (payload: any) => {
 
     <section class="space-y-3">
       <h3 class="text-lg font-medium">Runhorselight 跑马灯示例</h3>
-      <Runhorselight
+      <ZRunhorselight
         :items="runhorselightItems"
         :prefix="runhorselightPrefix"
         :suffix="runhorselightSuffix"
@@ -174,7 +174,7 @@ const handleSuffixClick = (payload: any) => {
 
     <section class="space-y-3">
       <h3 class="text-lg font-medium">Runhorselight 插槽用法</h3>
-      <Runhorselight
+      <ZRunhorselight
         direction="right"
         duration="20"
         :prefix="slotPrefix"
@@ -185,7 +185,7 @@ const handleSuffixClick = (payload: any) => {
         <div class="rounded-full bg-white/80 px-4 py-2 shadow-sm backdrop-blur">
           插槽内容会自动复制铺满滚动区
         </div>
-      </Runhorselight>
+      </ZRunhorselight>
     </section>
   </div>
 </template>

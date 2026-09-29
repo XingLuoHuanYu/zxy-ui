@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Modal } from '@zxy-ui/vue'
+import { ZModal } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 // 基础用法
@@ -31,9 +31,9 @@ const showNoOverlayCloseModal = ref(false)
         打开基础模态框
       </button>
 
-      <Modal v-model="showBasicModal" @close="console.log('基础模态框关闭了')">
+      <ZModal v-model="showBasicModal" @close="console.log('基础模态框关闭了')">
         <p class="text-gray-600">这是一个基础模态框，没有标题和底部。</p>
-      </Modal>
+      </ZModal>
     </div>
 
     <!-- 带标题 -->
@@ -46,13 +46,13 @@ const showNoOverlayCloseModal = ref(false)
         打开带标题模态框
       </button>
 
-      <Modal
+      <ZModal
         v-model="showTitleModal"
         title="这是标题"
         @close="console.log('带标题模态框关闭了')"
       >
         <p class="text-gray-600">这是一个带标题的模态框。</p>
-      </Modal>
+      </ZModal>
     </div>
 
     <!-- 不同尺寸 -->
@@ -73,13 +73,13 @@ const showNoOverlayCloseModal = ref(false)
         </button>
       </div>
 
-      <Modal v-model="showSmallModal" title="小尺寸模态框" size="sm">
+      <ZModal v-model="showSmallModal" title="小尺寸模态框" size="sm">
         <p class="text-gray-600">这是一个小尺寸的模态框。</p>
-      </Modal>
+      </ZModal>
 
-      <Modal v-model="showLargeModal" title="大尺寸模态框" size="2xl">
+      <ZModal v-model="showLargeModal" title="大尺寸模态框" size="2xl">
         <p class="text-gray-600">这是一个大尺寸的模态框。</p>
-      </Modal>
+      </ZModal>
     </div>
 
     <!-- 自定义头部和底部 -->
@@ -92,7 +92,7 @@ const showNoOverlayCloseModal = ref(false)
         打开自定义模态框
       </button>
 
-      <Modal v-model="showCustomModal">
+      <ZModal v-model="showCustomModal">
         <template #header>
           <div class="flex items-center">
             <div class="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
@@ -118,7 +118,7 @@ const showNoOverlayCloseModal = ref(false)
             </button>
           </div>
         </template>
-      </Modal>
+      </ZModal>
     </div>
 
     <!-- 禁用点击遮罩层关闭 -->
@@ -131,7 +131,7 @@ const showNoOverlayCloseModal = ref(false)
         打开模态框
       </button>
 
-      <Modal
+      <ZModal
         v-model="showNoOverlayCloseModal"
         title="禁用点击遮罩层关闭"
         :closeOnOverlayClick="false"
@@ -147,7 +147,7 @@ const showNoOverlayCloseModal = ref(false)
             关闭
           </button>
         </div>
-      </Modal>
+      </ZModal>
     </div>
   </div>
 </template>

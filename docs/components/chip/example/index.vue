@@ -5,12 +5,12 @@
       <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
         <h3 class="text-lg font-medium mb-4 border-b pb-2">基础用法</h3>
         <div class="flex flex-wrap gap-2">
-          <Chip>默认芯片</Chip>
-          <Chip color="primary">主色芯片</Chip>
-          <Chip color="secondary">次要色芯片</Chip>
-          <Chip color="success">成功芯片</Chip>
-          <Chip color="warning">警告芯片</Chip>
-          <Chip color="danger">危险芯片</Chip>
+          <ZChip>默认芯片</ZChip>
+          <ZChip color="primary">主色芯片</ZChip>
+          <ZChip color="secondary">次要色芯片</ZChip>
+          <ZChip color="success">成功芯片</ZChip>
+          <ZChip color="warning">警告芯片</ZChip>
+          <ZChip color="danger">危险芯片</ZChip>
         </div>
       </div>
 
@@ -18,9 +18,9 @@
       <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
         <h3 class="text-lg font-medium mb-4 border-b pb-2">禁用状态</h3>
         <div class="flex flex-wrap gap-2">
-          <Chip disabled>禁用芯片</Chip>
-          <Chip color="primary" disabled>禁用主色</Chip>
-          <Chip color="danger" disabled>禁用危险</Chip>
+          <ZChip disabled>禁用芯片</ZChip>
+          <ZChip color="primary" disabled>禁用主色</ZChip>
+          <ZChip color="danger" disabled>禁用危险</ZChip>
         </div>
       </div>
 
@@ -28,9 +28,9 @@
       <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
         <h3 class="text-lg font-medium mb-4 border-b pb-2">尺寸</h3>
         <div class="flex items-center flex-wrap gap-3">
-          <Chip size="sm" color="primary">小号</Chip>
-          <Chip size="md" color="primary">中号</Chip>
-          <Chip size="lg" color="primary">大号</Chip>
+          <ZChip size="sm" color="primary">小号</ZChip>
+          <ZChip size="md" color="primary">中号</ZChip>
+          <ZChip size="lg" color="primary">大号</ZChip>
         </div>
       </div>
 
@@ -38,11 +38,11 @@
       <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
         <h3 class="text-lg font-medium mb-4 border-b pb-2">圆角</h3>
         <div class="flex flex-wrap gap-3">
-          <Chip radius="none" color="primary">无圆角</Chip>
-          <Chip radius="sm" color="primary">小圆角</Chip>
-          <Chip radius="md" color="primary">中圆角</Chip>
-          <Chip radius="lg" color="primary">大圆角</Chip>
-          <Chip radius="full" color="primary">全圆角</Chip>
+          <ZChip radius="none" color="primary">无圆角</ZChip>
+          <ZChip radius="sm" color="primary">小圆角</ZChip>
+          <ZChip radius="md" color="primary">中圆角</ZChip>
+          <ZChip radius="lg" color="primary">大圆角</ZChip>
+          <ZChip radius="full" color="primary">全圆角</ZChip>
         </div>
       </div>
 
@@ -50,12 +50,12 @@
       <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
         <h3 class="text-lg font-medium mb-4 border-b pb-2">颜色</h3>
         <div class="flex flex-wrap gap-2">
-          <Chip color="default">默认</Chip>
-          <Chip color="primary">主色</Chip>
-          <Chip color="secondary">次要色</Chip>
-          <Chip color="success">成功</Chip>
-          <Chip color="warning">警告</Chip>
-          <Chip color="danger">危险</Chip>
+          <ZChip color="default">默认</ZChip>
+          <ZChip color="primary">主色</ZChip>
+          <ZChip color="secondary">次要色</ZChip>
+          <ZChip color="success">成功</ZChip>
+          <ZChip color="warning">警告</ZChip>
+          <ZChip color="danger">危险</ZChip>
         </div>
       </div>
 
@@ -63,14 +63,14 @@
       <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
         <h3 class="text-lg font-medium mb-4 border-b pb-2">自定义内容</h3>
         <div class="flex flex-wrap gap-3">
-          <Chip color="primary">
+          <ZChip color="primary">
             <template #startContent>
               <span class="text-primary-600">🔥</span>
             </template>
             热门话题
-          </Chip>
+          </ZChip>
 
-          <Chip color="success">
+          <ZChip color="success">
             <template #startContent>
               <svg
                 class="w-3.5 h-3.5 text-success-600"
@@ -86,9 +86,9 @@
               </svg>
             </template>
             已完成
-          </Chip>
+          </ZChip>
 
-          <Chip color="warning">
+          <ZChip color="warning">
             需注意
             <template #endContent>
               <svg
@@ -104,7 +104,7 @@
                 />
               </svg>
             </template>
-          </Chip>
+          </ZChip>
         </div>
       </div>
 
@@ -112,7 +112,7 @@
       <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
         <h3 class="text-lg font-medium mb-4 border-b pb-2">带头像</h3>
         <div class="flex flex-wrap gap-3">
-          <Chip color="primary">
+          <ZChip color="primary">
             <template #avatar>
               <div
                 class="flex items-center justify-center w-5 h-5 rounded-full bg-primary-500 text-white text-xs font-medium"
@@ -121,9 +121,9 @@
               </div>
             </template>
             用户
-          </Chip>
+          </ZChip>
 
-          <Chip color="success">
+          <ZChip color="success">
             <template #avatar>
               <div
                 class="flex items-center justify-center w-5 h-5 rounded-full bg-success-500 text-white text-xs font-medium"
@@ -132,9 +132,9 @@
               </div>
             </template>
             管理员
-          </Chip>
+          </ZChip>
 
-          <Chip color="secondary">
+          <ZChip color="secondary">
             <template #avatar>
               <div
                 class="flex items-center justify-center w-5 h-5 rounded-full bg-purple-500 text-white text-xs font-medium overflow-hidden"
@@ -154,7 +154,7 @@
               </div>
             </template>
             访客
-          </Chip>
+          </ZChip>
         </div>
       </div>
 
@@ -162,9 +162,9 @@
       <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
         <h3 class="text-lg font-medium mb-4 border-b pb-2">关闭按钮</h3>
         <div class="flex flex-wrap gap-3">
-          <Chip closable @close="handleClose">可关闭芯片</Chip>
-          <Chip closable color="primary" @close="handleClose">主色</Chip>
-          <Chip closable color="danger" @close="handleClose">危险</Chip>
+          <ZChip closable @close="handleClose">可关闭芯片</ZChip>
+          <ZChip closable color="primary" @close="handleClose">主色</ZChip>
+          <ZChip closable color="danger" @close="handleClose">危险</ZChip>
         </div>
       </div>
 
@@ -172,9 +172,9 @@
       <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
         <h3 class="text-lg font-medium mb-4 border-b pb-2">可选择</h3>
         <div class="flex flex-wrap gap-3">
-          <Chip v-model="selected1" selectable color="primary">选项1</Chip>
-          <Chip v-model="selected2" selectable color="secondary">选项2</Chip>
-          <Chip v-model="selected3" selectable color="success">选项3</Chip>
+          <ZChip v-model="selected1" selectable color="primary">选项1</ZChip>
+          <ZChip v-model="selected2" selectable color="secondary">选项2</ZChip>
+          <ZChip v-model="selected3" selectable color="success">选项3</ZChip>
         </div>
         <div class="mt-3 text-sm text-gray-500">
           已选择:
@@ -194,14 +194,14 @@
       <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
         <h3 class="text-lg font-medium mb-4 border-b pb-2">芯片列表</h3>
         <div class="flex flex-wrap gap-2">
-          <Chip
+          <ZChip
             v-for="(tag, index) in tags"
             :key="index"
             closable
             @close="removeTag(index)"
           >
             {{ tag }}
-          </Chip>
+          </ZChip>
           <button
             @click="addTag"
             class="inline-flex items-center border border-dashed border-gray-300 rounded-full px-3 py-1 text-sm hover:bg-gray-50 transition-colors"
@@ -222,78 +222,78 @@
         <div>
           <p class="text-sm text-gray-500 mb-2 font-medium">solid 变体</p>
           <div class="flex flex-wrap gap-2">
-            <Chip variant="solid" color="default">默认</Chip>
-            <Chip variant="solid" color="primary">主色</Chip>
-            <Chip variant="solid" color="secondary">次要色</Chip>
-            <Chip variant="solid" color="success">成功</Chip>
-            <Chip variant="solid" color="warning">警告</Chip>
-            <Chip variant="solid" color="danger">危险</Chip>
+            <ZChip variant="solid" color="default">默认</ZChip>
+            <ZChip variant="solid" color="primary">主色</ZChip>
+            <ZChip variant="solid" color="secondary">次要色</ZChip>
+            <ZChip variant="solid" color="success">成功</ZChip>
+            <ZChip variant="solid" color="warning">警告</ZChip>
+            <ZChip variant="solid" color="danger">危险</ZChip>
           </div>
         </div>
         <div>
           <p class="text-sm text-gray-500 mb-2 font-medium">bordered 变体</p>
           <div class="flex flex-wrap gap-2">
-            <Chip variant="bordered" color="default">默认</Chip>
-            <Chip variant="bordered" color="primary">主色</Chip>
-            <Chip variant="bordered" color="secondary">次要色</Chip>
-            <Chip variant="bordered" color="success">成功</Chip>
-            <Chip variant="bordered" color="warning">警告</Chip>
-            <Chip variant="bordered" color="danger">危险</Chip>
+            <ZChip variant="bordered" color="default">默认</ZChip>
+            <ZChip variant="bordered" color="primary">主色</ZChip>
+            <ZChip variant="bordered" color="secondary">次要色</ZChip>
+            <ZChip variant="bordered" color="success">成功</ZChip>
+            <ZChip variant="bordered" color="warning">警告</ZChip>
+            <ZChip variant="bordered" color="danger">危险</ZChip>
           </div>
         </div>
         <div>
           <p class="text-sm text-gray-500 mb-2 font-medium">light 变体</p>
           <div class="flex flex-wrap gap-2">
-            <Chip variant="light" color="default">默认</Chip>
-            <Chip variant="light" color="primary">主色</Chip>
-            <Chip variant="light" color="secondary">次要色</Chip>
-            <Chip variant="light" color="success">成功</Chip>
-            <Chip variant="light" color="warning">警告</Chip>
-            <Chip variant="light" color="danger">危险</Chip>
+            <ZChip variant="light" color="default">默认</ZChip>
+            <ZChip variant="light" color="primary">主色</ZChip>
+            <ZChip variant="light" color="secondary">次要色</ZChip>
+            <ZChip variant="light" color="success">成功</ZChip>
+            <ZChip variant="light" color="warning">警告</ZChip>
+            <ZChip variant="light" color="danger">危险</ZChip>
           </div>
         </div>
         <div>
           <p class="text-sm text-gray-500 mb-2 font-medium">flat 变体</p>
           <div class="flex flex-wrap gap-2">
-            <Chip variant="flat" color="default">默认</Chip>
-            <Chip variant="flat" color="primary">主色</Chip>
-            <Chip variant="flat" color="secondary">次要色</Chip>
-            <Chip variant="flat" color="success">成功</Chip>
-            <Chip variant="flat" color="warning">警告</Chip>
-            <Chip variant="flat" color="danger">危险</Chip>
+            <ZChip variant="flat" color="default">默认</ZChip>
+            <ZChip variant="flat" color="primary">主色</ZChip>
+            <ZChip variant="flat" color="secondary">次要色</ZChip>
+            <ZChip variant="flat" color="success">成功</ZChip>
+            <ZChip variant="flat" color="warning">警告</ZChip>
+            <ZChip variant="flat" color="danger">危险</ZChip>
           </div>
         </div>
         <div>
           <p class="text-sm text-gray-500 mb-2 font-medium">faded 变体</p>
           <div class="flex flex-wrap gap-2">
-            <Chip variant="faded" color="default">默认</Chip>
-            <Chip variant="faded" color="primary">主色</Chip>
-            <Chip variant="faded" color="secondary">次要色</Chip>
-            <Chip variant="faded" color="success">成功</Chip>
-            <Chip variant="faded" color="warning">警告</Chip>
-            <Chip variant="faded" color="danger">危险</Chip>
+            <ZChip variant="faded" color="default">默认</ZChip>
+            <ZChip variant="faded" color="primary">主色</ZChip>
+            <ZChip variant="faded" color="secondary">次要色</ZChip>
+            <ZChip variant="faded" color="success">成功</ZChip>
+            <ZChip variant="faded" color="warning">警告</ZChip>
+            <ZChip variant="faded" color="danger">危险</ZChip>
           </div>
         </div>
         <div>
           <p class="text-sm text-gray-500 mb-2 font-medium">shadow 变体</p>
           <div class="flex flex-wrap gap-2">
-            <Chip variant="shadow" color="default">默认</Chip>
-            <Chip variant="shadow" color="primary">主色</Chip>
-            <Chip variant="shadow" color="secondary">次要色</Chip>
-            <Chip variant="shadow" color="success">成功</Chip>
-            <Chip variant="shadow" color="warning">警告</Chip>
-            <Chip variant="shadow" color="danger">危险</Chip>
+            <ZChip variant="shadow" color="default">默认</ZChip>
+            <ZChip variant="shadow" color="primary">主色</ZChip>
+            <ZChip variant="shadow" color="secondary">次要色</ZChip>
+            <ZChip variant="shadow" color="success">成功</ZChip>
+            <ZChip variant="shadow" color="warning">警告</ZChip>
+            <ZChip variant="shadow" color="danger">危险</ZChip>
           </div>
         </div>
         <div>
           <p class="text-sm text-gray-500 mb-2 font-medium">dot 变体</p>
           <div class="flex flex-wrap gap-2">
-            <Chip variant="dot" color="default">默认</Chip>
-            <Chip variant="dot" color="primary">主色</Chip>
-            <Chip variant="dot" color="secondary">次要色</Chip>
-            <Chip variant="dot" color="success">成功</Chip>
-            <Chip variant="dot" color="warning">警告</Chip>
-            <Chip variant="dot" color="danger">危险</Chip>
+            <ZChip variant="dot" color="default">默认</ZChip>
+            <ZChip variant="dot" color="primary">主色</ZChip>
+            <ZChip variant="dot" color="secondary">次要色</ZChip>
+            <ZChip variant="dot" color="success">成功</ZChip>
+            <ZChip variant="dot" color="warning">警告</ZChip>
+            <ZChip variant="dot" color="danger">危险</ZChip>
           </div>
         </div>
       </div>
@@ -303,7 +303,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Chip } from '@zxy-ui/vue'
+import { ZChip } from '@zxy-ui/vue'
 
 const selected1 = ref(false)
 const selected2 = ref(true)

@@ -39,7 +39,7 @@ import type { TabsProps } from './type'
 import { TabsEmits } from './type'
 
 defineOptions({
-  name: 'Tabs',
+  name: 'ZTabs',
 })
 
 const props = withDefaults(defineProps<TabsProps>(), {
@@ -75,9 +75,9 @@ const tabItems = computed(() => {
       // 检查是否是TabItem组件
       return (
         vnode.type &&
-        ((vnode.type as any).name === 'TabItem' ||
+        ((vnode.type as any).name === 'ZTabItem' ||
           (typeof vnode.type === 'object' &&
-            (vnode.type as any).__name === 'TabItem'))
+            (vnode.type as any).__name === 'ZTabItem'))
       )
     })
     .forEach((vnode: VNode) => {

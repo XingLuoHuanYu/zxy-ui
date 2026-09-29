@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Checkbox } from '@zxy-ui/vue'
+import { ZCheckbox } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import CheckboxDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Checkbox> = {
+const meta: Meta<typeof ZCheckbox> = {
   title: '组件/Checkbox 复选框',
-  component: Checkbox,
+  component: ZCheckbox,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -70,7 +70,7 @@ const meta: Meta<typeof Checkbox> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Checkbox>
+type Story = StoryObj<typeof ZCheckbox>
 
 // 基础示例
 export const Basic: Story = {
@@ -146,7 +146,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { CheckboxDemo },
+    components: {CheckboxDemo},
     template: '<CheckboxDemo />',
   }),
 }

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import { Checkbox, CheckboxGroup } from '../index'
+import { ZCheckbox as Checkbox, ZCheckboxGroup as CheckboxGroup } from '../index'
 
 describe('Checkbox', () => {
   it('should render correctly', () => {

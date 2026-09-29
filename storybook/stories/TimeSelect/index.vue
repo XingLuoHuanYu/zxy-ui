@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { TimeSelect } from '@zxy-ui/vue'
+import { ZTimeSelect } from '@zxy-ui/vue'
 
 // 基础用法
 const selectedTime = ref('12:30')
@@ -32,7 +32,7 @@ const placeholderTime = ref('')
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
       <div class="max-w-sm">
-        <TimeSelect v-model="selectedTime" />
+        <ZTimeSelect v-model="selectedTime" />
       </div>
       <div class="mt-2">当前选择的时间: {{ selectedTime || '未选择' }}</div>
     </section>
@@ -41,7 +41,7 @@ const placeholderTime = ref('')
     <section>
       <h2 class="text-xl font-bold mb-4">自定义时间范围和步长</h2>
       <div class="max-w-sm">
-        <TimeSelect
+        <ZTimeSelect
           v-model="customRangeTime"
           start="09:00"
           end="18:00"
@@ -58,7 +58,7 @@ const placeholderTime = ref('')
     <section>
       <h2 class="text-xl font-bold mb-4">12小时制</h2>
       <div class="max-w-sm">
-        <TimeSelect v-model="time12h" format="12h" />
+        <ZTimeSelect v-model="time12h" format="12h" />
       </div>
       <div class="mt-2">当前选择的时间: {{ time12h || '未选择' }}</div>
     </section>
@@ -67,7 +67,7 @@ const placeholderTime = ref('')
     <section>
       <h2 class="text-xl font-bold mb-4">自定义选项</h2>
       <div class="max-w-sm">
-        <TimeSelect v-model="customOptionsTime" :options="customOptions" />
+        <ZTimeSelect v-model="customOptionsTime" :options="customOptions" />
       </div>
       <div class="mt-2">
         <div>当前选择的时间: {{ customOptionsTime || '未选择' }}</div>
@@ -81,13 +81,13 @@ const placeholderTime = ref('')
       <div class="flex flex-wrap gap-8">
         <div>
           <div class="max-w-sm">
-            <TimeSelect v-model="disabledTime" disabled />
+            <ZTimeSelect v-model="disabledTime" disabled />
           </div>
           <div class="mt-2">禁用状态</div>
         </div>
         <div>
           <div class="max-w-sm">
-            <TimeSelect v-model="readonlyTime" readonly />
+            <ZTimeSelect v-model="readonlyTime" readonly />
           </div>
           <div class="mt-2">只读状态</div>
         </div>
@@ -98,7 +98,7 @@ const placeholderTime = ref('')
     <section>
       <h2 class="text-xl font-bold mb-4">不可清空</h2>
       <div class="max-w-sm">
-        <TimeSelect v-model="nonClearableTime" :clearable="false" />
+        <ZTimeSelect v-model="nonClearableTime" :clearable="false" />
       </div>
       <div class="mt-2">
         <div>当前选择的时间: {{ nonClearableTime || '未选择' }}</div>
@@ -109,7 +109,7 @@ const placeholderTime = ref('')
     <section>
       <h2 class="text-xl font-bold mb-4">自定义占位文本</h2>
       <div class="max-w-sm">
-        <TimeSelect v-model="placeholderTime" placeholder="请选择预约时间" />
+        <ZTimeSelect v-model="placeholderTime" placeholder="请选择预约时间" />
       </div>
       <div class="mt-2">
         <div>当前选择的时间: {{ placeholderTime || '未选择' }}</div>

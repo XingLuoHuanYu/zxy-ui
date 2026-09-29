@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Kbd } from '@zxy-ui/vue'
+import { ZKbd } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import KbdDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Kbd> = {
+const meta: Meta<typeof ZKbd> = {
   title: '组件/Kbd 键盘按键',
-  component: Kbd,
+  component: ZKbd,
   tags: ['autodocs'],
   argTypes: {
     size: {
@@ -47,7 +47,7 @@ const meta: Meta<typeof Kbd> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Kbd>
+type Story = StoryObj<typeof ZKbd>
 
 // 基础示例
 export const Basic: Story = {
@@ -55,11 +55,11 @@ export const Basic: Story = {
     default: 'Ctrl',
   },
   render: (args) => ({
-    components: { Kbd },
+    components: {ZKbd},
     setup() {
       return { args }
     },
-    template: `<Kbd v-bind="args">Ctrl</Kbd>`,
+    template: `<ZKbd v-bind="args">Ctrl</ZKbd>`,
   }),
 }
 
@@ -69,25 +69,25 @@ export const Sizes: Story = {
     size: 'lg',
   },
   render: (args) => ({
-    components: { Kbd },
+    components: {ZKbd},
     setup() {
       return { args }
     },
-    template: `<Kbd v-bind="args">Shift</Kbd>`,
+    template: `<ZKbd v-bind="args">Shift</ZKbd>`,
   }),
 }
 
 // 组合键
 export const Combination: Story = {
   render: () => ({
-    components: { Kbd },
+    components: {ZKbd},
     template: `
       <div class="flex items-center gap-2">
-        <Kbd>Ctrl</Kbd>
+        <ZKbd>Ctrl</ZKbd>
         <span>+</span>
-        <Kbd>Shift</Kbd>
+        <ZKbd>Shift</ZKbd>
         <span>+</span>
-        <Kbd>R</Kbd>
+        <ZKbd>R</ZKbd>
       </div>
     `,
   }),
@@ -101,11 +101,11 @@ export const CustomStyle: Story = {
     },
   },
   render: (args) => ({
-    components: { Kbd },
+    components: {ZKbd},
     setup() {
       return { args }
     },
-    template: `<Kbd v-bind="args">Alt</Kbd>`,
+    template: `<ZKbd v-bind="args">Alt</ZKbd>`,
   }),
 }
 
@@ -118,18 +118,18 @@ export const Unstyled: Story = {
     },
   },
   render: (args) => ({
-    components: { Kbd },
+    components: {ZKbd},
     setup() {
       return { args }
     },
-    template: `<Kbd v-bind="args">Tab</Kbd>`,
+    template: `<ZKbd v-bind="args">Tab</ZKbd>`,
   }),
 }
 
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { KbdDemo },
+    components: {KbdDemo},
     template: '<KbdDemo />',
   }),
 }

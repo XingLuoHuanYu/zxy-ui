@@ -1,12 +1,5 @@
 import type { DefaultTheme } from 'vitepress'
-import {
-  componentsMetadata,
-  categoryLabels,
-  categoryOrder,
-  sortComponentsByAlphabet,
-  componentToSidebarItem,
-  type ComponentMetadata,
-} from '../components'
+import { componentsMetadata, categoryLabels, categoryOrder, sortComponentsByAlphabet, componentToSidebarItem, type ComponentMetadata,  } from '../components'
 
 /**
  * 生成组件侧边栏配置

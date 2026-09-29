@@ -1,2 +1,2 @@
 export * from './src/type'
-export { default as Table } from './src/Table.vue'
+export { default as ZTable } from './src/Table.vue'

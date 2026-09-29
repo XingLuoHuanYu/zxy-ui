@@ -38,7 +38,7 @@ import type { TimelineItemProps } from './type'
 import { TimelineItemEmits } from './type'
 
 defineOptions({
-  name: 'TimelineItem',
+  name: 'ZTimelineItem',
 })
 
 const props = withDefaults(defineProps<TimelineItemProps>(), {

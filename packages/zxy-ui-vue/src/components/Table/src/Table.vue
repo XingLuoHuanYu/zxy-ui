@@ -127,7 +127,7 @@
 </template>
 
 <script setup lang="ts">
-defineOptions({ name: 'VsTable' })
+defineOptions({ name: 'ZTable' })
 import { computed, ref, watch } from 'vue'
 import { tableVariants } from './index.variants'
 import type { TableColumn, TableProps } from './type'

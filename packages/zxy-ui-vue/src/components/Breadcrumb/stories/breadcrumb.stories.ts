@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Breadcrumb, BreadcrumbItem } from '../index'
+import { ZBreadcrumb, ZBreadcrumbItem } from '../index'
 
 const meta = {
   title: 'Navigation/Breadcrumb',
-  component: Breadcrumb,
+  component: ZBreadcrumb,
   tags: ['autodocs'],
   argTypes: {
     separator: {
@@ -21,23 +21,23 @@ const meta = {
       defaultValue: false,
     },
   },
-} satisfies Meta<typeof Breadcrumb>
+} satisfies Meta<typeof ZBreadcrumb>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   render: (args) => ({
-    components: { Breadcrumb, BreadcrumbItem },
+    components: {ZBreadcrumb, ZBreadcrumbItem},
     setup() {
       return { args }
     },
     template: `
-      <Breadcrumb v-bind="args">
-        <BreadcrumbItem href="/">首页</BreadcrumbItem>
-        <BreadcrumbItem href="/components">组件</BreadcrumbItem>
-        <BreadcrumbItem>面包屑</BreadcrumbItem>
-      </Breadcrumb>
+      <ZBreadcrumb v-bind="args">
+        <ZBreadcrumbItem href="/">首页</ZBreadcrumbItem>
+        <ZBreadcrumbItem href="/components">组件</ZBreadcrumbItem>
+        <ZBreadcrumbItem>面包屑</ZBreadcrumbItem>
+      </ZBreadcrumb>
     `,
   }),
   args: {},
@@ -45,16 +45,16 @@ export const Default: Story = {
 
 export const CustomSeparator: Story = {
   render: (args) => ({
-    components: { Breadcrumb, BreadcrumbItem },
+    components: {ZBreadcrumb, ZBreadcrumbItem},
     setup() {
       return { args }
     },
     template: `
-      <Breadcrumb v-bind="args">
-        <BreadcrumbItem href="/">首页</BreadcrumbItem>
-        <BreadcrumbItem href="/components">组件</BreadcrumbItem>
-        <BreadcrumbItem>面包屑</BreadcrumbItem>
-      </Breadcrumb>
+      <ZBreadcrumb v-bind="args">
+        <ZBreadcrumbItem href="/">首页</ZBreadcrumbItem>
+        <ZBreadcrumbItem href="/components">组件</ZBreadcrumbItem>
+        <ZBreadcrumbItem>面包屑</ZBreadcrumbItem>
+      </ZBreadcrumb>
     `,
   }),
   args: {
@@ -64,16 +64,16 @@ export const CustomSeparator: Story = {
 
 export const Disabled: Story = {
   render: (args) => ({
-    components: { Breadcrumb, BreadcrumbItem },
+    components: {ZBreadcrumb, ZBreadcrumbItem},
     setup() {
       return { args }
     },
     template: `
-      <Breadcrumb v-bind="args">
-        <BreadcrumbItem href="/">首页</BreadcrumbItem>
-        <BreadcrumbItem disabled href="/components">组件</BreadcrumbItem>
-        <BreadcrumbItem>面包屑</BreadcrumbItem>
-      </Breadcrumb>
+      <ZBreadcrumb v-bind="args">
+        <ZBreadcrumbItem href="/">首页</ZBreadcrumbItem>
+        <ZBreadcrumbItem disabled href="/components">组件</ZBreadcrumbItem>
+        <ZBreadcrumbItem>面包屑</ZBreadcrumbItem>
+      </ZBreadcrumb>
     `,
   }),
   args: {},
@@ -81,16 +81,16 @@ export const Disabled: Story = {
 
 export const Active: Story = {
   render: (args) => ({
-    components: { Breadcrumb, BreadcrumbItem },
+    components: {ZBreadcrumb, ZBreadcrumbItem},
     setup() {
       return { args }
     },
     template: `
-      <Breadcrumb v-bind="args">
-        <BreadcrumbItem href="/">首页</BreadcrumbItem>
-        <BreadcrumbItem href="/components">组件</BreadcrumbItem>
-        <BreadcrumbItem active>面包屑</BreadcrumbItem>
-      </Breadcrumb>
+      <ZBreadcrumb v-bind="args">
+        <ZBreadcrumbItem href="/">首页</ZBreadcrumbItem>
+        <ZBreadcrumbItem href="/components">组件</ZBreadcrumbItem>
+        <ZBreadcrumbItem active>面包屑</ZBreadcrumbItem>
+      </ZBreadcrumb>
     `,
   }),
   args: {},

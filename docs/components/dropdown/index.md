@@ -2,12 +2,12 @@
 
 Dropdown 是一个可以显示临时弹出菜单的组件，用户可以从中选择一个选项。适用于菜单、操作集合等场景。
 
-<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-dropdown-%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95--basic"/>
+<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-dropdown-%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95--basic"/>
 
 ## 引入
 
 ```typescript
-import { Dropdown, DropdownItem } from '@zxy-ui/vue'
+import { ZDropdown, ZDropdownItem } from '@zxy-ui/vue'
 ```
 
 ## 使用
@@ -122,14 +122,14 @@ type DropdownPT = {
 
 ```vue
 <template>
-	<Dropdown>
+	<ZDropdown>
 		<template #trigger>
 			<button>下拉菜单</button>
 		</template>
-		<DropdownItem value="item1" label="选项一" />
-		<DropdownItem value="item2" label="选项二" icon="📝" />
-		<DropdownItem divider />
-		<DropdownItem value="item3" disabled label="禁用选项" />
-	</Dropdown>
+		<ZDropdownItem value="item1" label="选项一" />
+		<ZDropdownItem value="item2" label="选项二" icon="📝" />
+		<ZDropdownItem divider />
+		<ZDropdownItem value="item3" disabled label="禁用选项" />
+	</ZDropdown>
 </template>
 ```

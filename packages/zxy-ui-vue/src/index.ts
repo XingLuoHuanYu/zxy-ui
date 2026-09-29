@@ -1,51 +1,51 @@
 import type { Component } from 'vue'
-import { InputOtp } from './components/InputOtp'
-import { Modal } from './components/Modal'
-import { Avatar } from './components/Avatar'
-import { Badge } from './components/Badge'
-import { Switch } from './components/Switch'
-import { Drawer } from './components/Drawer'
-import { Segmented } from './components/Segmented'
-import { Slider } from './components/Slider'
-import { Popover } from './components/Popover'
-import { Tooltip } from './components/Tooltip'
-import { Chip } from './components/Chip'
-import { Alert } from './components/Alert'
-import { Kbd } from './components/Kbd'
-import { Button } from './components/Button'
-import { Card } from './components/Card'
-import { Divider } from './components/Divider'
-import { Textarea } from './components/Textarea'
-import { Checkbox, CheckboxGroup } from './components/Checkbox'
-import { Input } from './components/Input'
-import { Select } from './components/Select'
-import { Rate } from './components/Rate'
-import { Calendar } from './components/Calendar'
-import { TimePicker } from './components/TimePicker'
-import { DatePicker } from './components/DatePicker'
-import { DateTimePicker } from './components/DateTimePicker'
-import { TimeSelect } from './components/TimeSelect'
-import { Skeleton, SkeletonText, SkeletonAvatar } from './components/Skeleton'
-import { Tabs, TabItem } from './components/Tabs'
-import { Panel } from './components/Panel'
-import { Paginator } from './components/Paginator'
-import { Progress } from './components/Progress'
-import { Breadcrumb, BreadcrumbItem } from './components/Breadcrumb'
-import { Splitter, SplitterPanel } from './components/Splitter'
-import { RangeCalendar } from './components/RangeCalendar'
-import { Accordion, AccordionItem } from './components/Accordion'
-import { InputTag } from './components/InputTag'
-import { Dropdown, DropdownItem, DropdownDivider } from './components/Dropdown'
-import { Swap } from './components/Swap'
-import { Image } from './components/Image'
-import { Link } from './components/Link'
-import { Carousel } from './components/Carousel'
-import { Runhorselight } from './components/Runhorselight'
-import { Timeline, TimelineItem } from './components/Timeline'
-import { Toast, ToastContainer } from './components/Toast'
-import { Steps, StepItem } from './components/Steps'
-import { Radio, RadioGroup } from './components/Radio'
-import { Table } from './components/Table'
+import { ZInputOtp } from './components/InputOtp'
+import { ZModal } from './components/Modal'
+import { ZAvatar } from './components/Avatar'
+import { ZBadge } from './components/Badge'
+import { ZSwitch } from './components/Switch'
+import { ZDrawer } from './components/Drawer'
+import { ZSegmented } from './components/Segmented'
+import { ZSlider } from './components/Slider'
+import { ZPopover } from './components/Popover'
+import { ZTooltip } from './components/Tooltip'
+import { ZChip } from './components/Chip'
+import { ZAlert } from './components/Alert'
+import { ZKbd } from './components/Kbd'
+import { ZButton } from './components/Button'
+import { ZCard } from './components/Card'
+import { ZDivider } from './components/Divider'
+import { ZTextarea } from './components/Textarea'
+import { ZCheckbox, ZCheckboxGroup } from './components/Checkbox'
+import { ZInput } from './components/Input'
+import { ZSelect } from './components/Select'
+import { ZRate } from './components/Rate'
+import { ZCalendar } from './components/Calendar'
+import { ZTimePicker } from './components/TimePicker'
+import { ZDatePicker } from './components/DatePicker'
+import { ZDateTimePicker } from './components/DateTimePicker'
+import { ZTimeSelect } from './components/TimeSelect'
+import { ZSkeleton, ZSkeletonText, ZSkeletonAvatar } from './components/Skeleton'
+import { ZTabs, ZTabItem } from './components/Tabs'
+import { ZPanel } from './components/Panel'
+import { ZPaginator } from './components/Paginator'
+import { ZProgress } from './components/Progress'
+import { ZBreadcrumb, ZBreadcrumbItem } from './components/Breadcrumb'
+import { ZSplitter, ZSplitterPanel } from './components/Splitter'
+import { ZRangeCalendar } from './components/RangeCalendar'
+import { ZAccordion, ZAccordionItem } from './components/Accordion'
+import { ZInputTag } from './components/InputTag'
+import { ZDropdown, ZDropdownItem, ZDropdownDivider } from './components/Dropdown'
+import { ZSwap } from './components/Swap'
+import { ZImage } from './components/Image'
+import { ZLink } from './components/Link'
+import { ZCarousel } from './components/Carousel'
+import { ZRunhorselight } from './components/Runhorselight'
+import { ZTimeline, ZTimelineItem } from './components/Timeline'
+import { Toast, ZToastContainer } from './components/Toast'
+import { ZSteps, ZStepItem } from './components/Steps'
+import { ZRadio, ZRadioGroup } from './components/Radio'
+import { ZTable } from './components/Table'
 // 引入样式
 import './style/index.css'
 
@@ -53,65 +53,65 @@ import './style/index.css'
 // 采用 `Z` 前缀的 PascalCase 注册名（如 ZButton），
 // Vue 会自动将其解析为 kebab-case 标签（<z-button>）。
 const components: Record<string, Component> = {
-  ZInputOtp: InputOtp,
-  ZModal: Modal,
-  ZAvatar: Avatar,
-  ZBadge: Badge,
-  ZSwitch: Switch,
-  ZDrawer: Drawer,
-  ZSegmented: Segmented,
-  ZSlider: Slider,
-  ZPopover: Popover,
-  ZTooltip: Tooltip,
-  ZChip: Chip,
-  ZAlert: Alert,
-  ZKbd: Kbd,
-  ZButton: Button,
-  ZCard: Card,
-  ZDivider: Divider,
-  ZTextarea: Textarea,
-  ZSelect: Select,
-  ZCheckbox: Checkbox,
-  ZCheckboxGroup: CheckboxGroup,
-  ZInput: Input,
-  ZRate: Rate,
-  ZCalendar: Calendar,
-  ZTimePicker: TimePicker,
-  ZDatePicker: DatePicker,
-  ZDateTimePicker: DateTimePicker,
-  ZTimeSelect: TimeSelect,
-  ZSkeleton: Skeleton,
-  ZSkeletonText: SkeletonText,
-  ZSkeletonAvatar: SkeletonAvatar,
-  ZTabs: Tabs,
-  ZTabItem: TabItem,
-  ZPanel: Panel,
-  ZPaginator: Paginator,
-  ZProgress: Progress,
-  ZBreadcrumb: Breadcrumb,
-  ZBreadcrumbItem: BreadcrumbItem,
-  ZSplitter: Splitter,
-  ZSplitterPanel: SplitterPanel,
-  ZRangeCalendar: RangeCalendar,
-  ZAccordion: Accordion,
-  ZAccordionItem: AccordionItem,
-  ZInputTag: InputTag,
-  ZDropdown: Dropdown,
-  ZDropdownItem: DropdownItem,
-  ZDropdownDivider: DropdownDivider,
-  ZSwap: Swap,
-  ZImage: Image,
-  ZLink: Link,
-  ZCarousel: Carousel,
-  ZRunhorselight: Runhorselight,
-  ZTimeline: Timeline,
-  ZTimelineItem: TimelineItem,
-  ZToastContainer: ToastContainer,
-  ZSteps: Steps,
-  ZStepItem: StepItem,
-  ZRadio: Radio,
-  ZRadioGroup: RadioGroup,
-  ZTable: Table,
+  ZInputOtp: ZInputOtp,
+  ZModal: ZModal,
+  ZAvatar: ZAvatar,
+  ZBadge: ZBadge,
+  ZSwitch: ZSwitch,
+  ZDrawer: ZDrawer,
+  ZSegmented: ZSegmented,
+  ZSlider: ZSlider,
+  ZPopover: ZPopover,
+  ZTooltip: ZTooltip,
+  ZChip: ZChip,
+  ZAlert: ZAlert,
+  ZKbd: ZKbd,
+  ZButton: ZButton,
+  ZCard: ZCard,
+  ZDivider: ZDivider,
+  ZTextarea: ZTextarea,
+  ZSelect: ZSelect,
+  ZCheckbox: ZCheckbox,
+  ZCheckboxGroup: ZCheckboxGroup,
+  ZInput: ZInput,
+  ZRate: ZRate,
+  ZCalendar: ZCalendar,
+  ZTimePicker: ZTimePicker,
+  ZDatePicker: ZDatePicker,
+  ZDateTimePicker: ZDateTimePicker,
+  ZTimeSelect: ZTimeSelect,
+  ZSkeleton: ZSkeleton,
+  ZSkeletonText: ZSkeletonText,
+  ZSkeletonAvatar: ZSkeletonAvatar,
+  ZTabs: ZTabs,
+  ZTabItem: ZTabItem,
+  ZPanel: ZPanel,
+  ZPaginator: ZPaginator,
+  ZProgress: ZProgress,
+  ZBreadcrumb: ZBreadcrumb,
+  ZBreadcrumbItem: ZBreadcrumbItem,
+  ZSplitter: ZSplitter,
+  ZSplitterPanel: ZSplitterPanel,
+  ZRangeCalendar: ZRangeCalendar,
+  ZAccordion: ZAccordion,
+  ZAccordionItem: ZAccordionItem,
+  ZInputTag: ZInputTag,
+  ZDropdown: ZDropdown,
+  ZDropdownItem: ZDropdownItem,
+  ZDropdownDivider: ZDropdownDivider,
+  ZSwap: ZSwap,
+  ZImage: ZImage,
+  ZLink: ZLink,
+  ZCarousel: ZCarousel,
+  ZRunhorselight: ZRunhorselight,
+  ZTimeline: ZTimeline,
+  ZTimelineItem: ZTimelineItem,
+  ZToastContainer: ZToastContainer,
+  ZSteps: ZSteps,
+  ZStepItem: ZStepItem,
+  ZRadio: ZRadio,
+  ZRadioGroup: ZRadioGroup,
+  ZTable: ZTable,
 }
 
 const ZxyUI = {
@@ -125,64 +125,64 @@ const ZxyUI = {
 export { ZxyUI }
 
 export {
-  InputOtp,
-  Modal,
-  Avatar,
-  Badge,
-  Switch,
-  Drawer,
-  Segmented,
-  Slider,
-  Popover,
-  Tooltip,
-  Chip,
-  Alert,
-  Kbd,
-  Button,
-  Card,
-  Divider,
-  Textarea,
-  Select,
-  Checkbox,
-  CheckboxGroup,
-  Input,
-  Rate,
-  Calendar,
-  TimePicker,
-  DatePicker,
-  DateTimePicker,
-  TimeSelect,
-  Skeleton,
-  SkeletonText,
-  SkeletonAvatar,
-  Tabs,
-  TabItem,
-  Panel,
-  Paginator,
-  Progress,
-  Breadcrumb,
-  BreadcrumbItem,
-  Splitter,
-  SplitterPanel,
-  RangeCalendar,
-  Accordion,
-  AccordionItem,
-  InputTag,
-  Dropdown,
-  DropdownItem,
-  DropdownDivider,
-  Swap,
-  Image,
-  Link,
-  Carousel,
-  Runhorselight,
-  Timeline,
-  TimelineItem,
+  ZInputOtp,
+  ZModal,
+  ZAvatar,
+  ZBadge,
+  ZSwitch,
+  ZDrawer,
+  ZSegmented,
+  ZSlider,
+  ZPopover,
+  ZTooltip,
+  ZChip,
+  ZAlert,
+  ZKbd,
+  ZButton,
+  ZCard,
+  ZDivider,
+  ZTextarea,
+  ZSelect,
+  ZCheckbox,
+  ZCheckboxGroup,
+  ZInput,
+  ZRate,
+  ZCalendar,
+  ZTimePicker,
+  ZDatePicker,
+  ZDateTimePicker,
+  ZTimeSelect,
+  ZSkeleton,
+  ZSkeletonText,
+  ZSkeletonAvatar,
+  ZTabs,
+  ZTabItem,
+  ZPanel,
+  ZPaginator,
+  ZProgress,
+  ZBreadcrumb,
+  ZBreadcrumbItem,
+  ZSplitter,
+  ZSplitterPanel,
+  ZRangeCalendar,
+  ZAccordion,
+  ZAccordionItem,
+  ZInputTag,
+  ZDropdown,
+  ZDropdownItem,
+  ZDropdownDivider,
+  ZSwap,
+  ZImage,
+  ZLink,
+  ZCarousel,
+  ZRunhorselight,
+  ZTimeline,
+  ZTimelineItem,
   Toast,
-  ToastContainer,
-  Steps,
-  StepItem,
-  Radio,
-  RadioGroup,
-  Table,
+  ZToastContainer,
+  ZSteps,
+  ZStepItem,
+  ZRadio,
+  ZRadioGroup,
+  ZTable,
 }

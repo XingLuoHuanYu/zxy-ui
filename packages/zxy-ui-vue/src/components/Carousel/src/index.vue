@@ -106,20 +106,12 @@
 </template>
 
 <script setup lang="ts">
-import {
-  computed,
-  ref,
-  watch,
-  onMounted,
-  onUnmounted,
-  useSlots,
-  nextTick,
-} from 'vue'
+import { computed, ref, watch, onMounted, onUnmounted, useSlots, nextTick } from 'vue'
 import { carouselStyle } from './index.variants'
 import type { CarouselProps } from './type'
 import { CarouselEmits } from './type'
 
-defineOptions({ name: 'Carousel' })
+defineOptions({ name: 'ZCarousel' })
 
 const props = withDefaults(defineProps<CarouselProps>(), {
   variant: 'default',

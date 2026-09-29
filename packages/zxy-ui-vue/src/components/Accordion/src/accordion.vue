@@ -11,7 +11,7 @@ import type { AccordionProps } from './type'
 import { AccordionEmits } from './type'
 
 defineOptions({
-  name: 'Accordion',
+  name: 'ZAccordion',
 })
 
 const props = withDefaults(defineProps<AccordionProps>(), {

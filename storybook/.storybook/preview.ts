@@ -31,7 +31,7 @@ const preview: Preview = {
   // 添加全局装饰器
   decorators: [
     (story) => ({
-      components: { story },
+      components: {story},
       template: '<div class="zxy-ui-theme min-h-screen p-4"><story /></div>',
     }),
   ],

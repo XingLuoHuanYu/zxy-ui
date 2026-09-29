@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Link } from '@zxy-ui/vue'
+import { ZLink } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import LinkDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Link> = {
+const meta: Meta<typeof ZLink> = {
   title: '组件/Link 链接',
-  component: Link,
+  component: ZLink,
   tags: ['autodocs'],
   argTypes: {
     href: {
@@ -94,7 +94,7 @@ const meta: Meta<typeof Link> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Link>
+type Story = StoryObj<typeof ZLink>
 
 // 基础示例
 export const Basic: Story = {
@@ -175,7 +175,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { LinkDemo },
+    components: {LinkDemo},
     template: '<LinkDemo />',
   }),
 }

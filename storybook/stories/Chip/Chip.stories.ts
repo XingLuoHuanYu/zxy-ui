@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Chip } from '@zxy-ui/vue'
+import { ZChip } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import ChipDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Chip> = {
+const meta: Meta<typeof ZChip> = {
   title: '组件/Chip 标签',
-  component: Chip,
+  component: ZChip,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -128,7 +128,7 @@ const meta: Meta<typeof Chip> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Chip>
+type Story = StoryObj<typeof ZChip>
 
 // 基础示例
 export const Basic: Story = {
@@ -136,11 +136,11 @@ export const Basic: Story = {
     default: 'Basic Chip',
   },
   render: (args) => ({
-    components: { Chip },
+    components: {ZChip},
     setup() {
       return { args }
     },
-    template: `<Chip v-bind="args">基础标签</Chip>`,
+    template: `<ZChip v-bind="args">基础标签</ZChip>`,
   }),
 }
 
@@ -150,11 +150,11 @@ export const Variants: Story = {
     variant: 'bordered',
   },
   render: (args) => ({
-    components: { Chip },
+    components: {ZChip},
     setup() {
       return { args }
     },
-    template: `<Chip v-bind="args">带边框标签</Chip>`,
+    template: `<ZChip v-bind="args">带边框标签</ZChip>`,
   }),
 }
 
@@ -164,11 +164,11 @@ export const Colors: Story = {
     color: 'primary',
   },
   render: (args) => ({
-    components: { Chip },
+    components: {ZChip},
     setup() {
       return { args }
     },
-    template: `<Chip v-bind="args">主色标签</Chip>`,
+    template: `<ZChip v-bind="args">主色标签</ZChip>`,
   }),
 }
 
@@ -178,11 +178,11 @@ export const Sizes: Story = {
     size: 'lg',
   },
   render: (args) => ({
-    components: { Chip },
+    components: {ZChip},
     setup() {
       return { args }
     },
-    template: `<Chip v-bind="args">大尺寸标签</Chip>`,
+    template: `<ZChip v-bind="args">大尺寸标签</ZChip>`,
   }),
 }
 
@@ -192,11 +192,11 @@ export const Radius: Story = {
     radius: 'full',
   },
   render: (args) => ({
-    components: { Chip },
+    components: {ZChip},
     setup() {
       return { args }
     },
-    template: `<Chip v-bind="args">全圆角标签</Chip>`,
+    template: `<ZChip v-bind="args">全圆角标签</ZChip>`,
   }),
 }
 
@@ -206,11 +206,11 @@ export const Selectable: Story = {
     selectable: true,
   },
   render: (args) => ({
-    components: { Chip },
+    components: {ZChip},
     setup() {
       return { args }
     },
-    template: `<Chip v-bind="args">可选择标签</Chip>`,
+    template: `<ZChip v-bind="args">可选择标签</ZChip>`,
   }),
 }
 
@@ -220,11 +220,11 @@ export const Closable: Story = {
     closable: true,
   },
   render: (args) => ({
-    components: { Chip },
+    components: {ZChip},
     setup() {
       return { args }
     },
-    template: `<Chip v-bind="args">可关闭标签</Chip>`,
+    template: `<ZChip v-bind="args">可关闭标签</ZChip>`,
   }),
 }
 
@@ -234,11 +234,11 @@ export const Disabled: Story = {
     disabled: true,
   },
   render: (args) => ({
-    components: { Chip },
+    components: {ZChip},
     setup() {
       return { args }
     },
-    template: `<Chip v-bind="args">禁用标签</Chip>`,
+    template: `<ZChip v-bind="args">禁用标签</ZChip>`,
   }),
 }
 
@@ -250,11 +250,11 @@ export const CustomStyle: Story = {
     },
   },
   render: (args) => ({
-    components: { Chip },
+    components: {ZChip},
     setup() {
       return { args }
     },
-    template: `<Chip v-bind="args">自定义样式标签</Chip>`,
+    template: `<ZChip v-bind="args">自定义样式标签</ZChip>`,
   }),
 }
 
@@ -268,18 +268,18 @@ export const Unstyled: Story = {
     },
   },
   render: (args) => ({
-    components: { Chip },
+    components: {ZChip},
     setup() {
       return { args }
     },
-    template: `<Chip v-bind="args">无样式模式标签</Chip>`,
+    template: `<ZChip v-bind="args">无样式模式标签</ZChip>`,
   }),
 }
 
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { ChipDemo },
+    components: {ChipDemo},
     template: '<ChipDemo />',
   }),
 }

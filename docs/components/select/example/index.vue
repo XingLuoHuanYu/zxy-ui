@@ -3,7 +3,7 @@
     <!-- 基础用法 -->
     <section>
       <h2 class="mb-4 text-lg font-bold">基础用法</h2>
-      <Select
+      <ZSelect
         v-model="selectedValue"
         placeholder="请选择一个选项"
         :options="basicOptions"
@@ -16,7 +16,7 @@
     <!-- 带标签和默认值 -->
     <section>
       <h2 class="mb-4 text-lg font-bold">带标签和默认值</h2>
-      <Select
+      <ZSelect
         v-model="selectedValue2"
         :options="basicOptions"
         :showLabel="true"
@@ -31,21 +31,21 @@
     <section>
       <h2 class="mb-4 text-lg font-bold">尺寸变体</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Select
+        <ZSelect
           size="small"
           :showLabel="true"
           label="小尺寸 (small)"
           placeholder="选择选项"
           :options="basicOptions"
         />
-        <Select
+        <ZSelect
           size="default"
           :showLabel="true"
           label="默认尺寸 (default)"
           placeholder="选择选项"
           :options="basicOptions"
         />
-        <Select
+        <ZSelect
           size="large"
           :showLabel="true"
           label="大尺寸 (large)"
@@ -59,21 +59,21 @@
     <section>
       <h2 class="mb-4 text-lg font-bold">状态变体</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Select
+        <ZSelect
           status="success"
           :showLabel="true"
           label="成功状态 (success)"
           placeholder="选择选项"
           :options="basicOptions"
         />
-        <Select
+        <ZSelect
           status="warning"
           :showLabel="true"
           label="警告状态 (warning)"
           placeholder="选择选项"
           :options="basicOptions"
         />
-        <Select
+        <ZSelect
           status="error"
           :showLabel="true"
           label="错误状态 (error)"
@@ -88,14 +88,14 @@
     <section>
       <h2 class="mb-4 text-lg font-bold">交互状态</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Select
+        <ZSelect
           disabled
           :showLabel="true"
           label="禁用状态 (disabled)"
           placeholder="无法选择"
           :options="basicOptions"
         />
-        <Select
+        <ZSelect
           readonly
           :showLabel="true"
           label="只读状态 (readonly)"
@@ -103,14 +103,14 @@
           modelValue="option1"
           :options="basicOptions"
         />
-        <Select
+        <ZSelect
           :showLabel="true"
           label="必填状态"
           placeholder="必须选择"
           required
           :options="basicOptions"
         />
-        <Select
+        <ZSelect
           :showLabel="true"
           label="帮助文本"
           placeholder="选择选项"
@@ -123,7 +123,7 @@
     <!-- 禁用选项 -->
     <section>
       <h2 class="mb-4 text-lg font-bold">禁用选项</h2>
-      <Select
+      <ZSelect
         :showLabel="true"
         label="部分选项禁用"
         placeholder="选择选项"
@@ -134,7 +134,7 @@
     <!-- 多选模式 -->
     <section>
       <h2 class="mb-4 text-lg font-bold">多选模式</h2>
-      <Select
+      <ZSelect
         multiple
         :showLabel="true"
         label="多选选择器"
@@ -154,7 +154,7 @@
     <!-- 可搜索选择器 -->
     <section>
       <h2 class="mb-4 text-lg font-bold">可搜索选择器</h2>
-      <Select
+      <ZSelect
         filterable
         :showLabel="true"
         label="可搜索选择器"
@@ -170,7 +170,7 @@
     <!-- 可清除选择 -->
     <section>
       <h2 class="mb-4 text-lg font-bold">可清除选择</h2>
-      <Select
+      <ZSelect
         clearable
         :showLabel="true"
         label="可清除选择器"
@@ -186,7 +186,7 @@
     <!-- 分组选项 -->
     <section>
       <h2 class="mb-4 text-lg font-bold">分组选项</h2>
-      <Select
+      <ZSelect
         :showLabel="true"
         label="分组选择"
         placeholder="选择一个选项"
@@ -202,7 +202,7 @@
 </template>
 
 <script setup>
-import { Select } from '@zxy-ui/vue'
+import { ZSelect } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 // 基础示例

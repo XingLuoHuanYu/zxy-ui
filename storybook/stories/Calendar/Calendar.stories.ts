@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Calendar } from '@zxy-ui/vue'
+import { ZCalendar } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import CalendarDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Calendar> = {
+const meta: Meta<typeof ZCalendar> = {
   title: '组件/Calendar 日历',
-  component: Calendar,
+  component: ZCalendar,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -83,7 +83,7 @@ const meta: Meta<typeof Calendar> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Calendar>
+type Story = StoryObj<typeof ZCalendar>
 
 // 基础示例
 export const Basic: Story = {
@@ -144,7 +144,7 @@ export const CustomStyle: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { CalendarDemo },
+    components: {CalendarDemo},
     template: '<CalendarDemo />',
   }),
 }

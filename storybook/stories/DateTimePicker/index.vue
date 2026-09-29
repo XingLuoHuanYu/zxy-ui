@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { DateTimePicker } from '@zxy-ui/vue'
+import { ZDateTimePicker } from '@zxy-ui/vue'
 
 // 基础用法
 const selectedDateTime = ref(new Date())
@@ -45,7 +45,7 @@ const localeDateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
       <div class="max-w-sm">
-        <DateTimePicker v-model="selectedDateTime" />
+        <ZDateTimePicker v-model="selectedDateTime" />
       </div>
       <div class="mt-2">
         当前选择的日期时间:
@@ -57,7 +57,7 @@ const localeDateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">日期范围限制</h2>
       <div class="max-w-sm">
-        <DateTimePicker
+        <ZDateTimePicker
           v-model="rangeDateTime"
           :min="minDateTime"
           :max="maxDateTime"
@@ -79,7 +79,7 @@ const localeDateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">12小时制</h2>
       <div class="max-w-sm">
-        <DateTimePicker v-model="time12hDateTime" timeFormat="12h" />
+        <ZDateTimePicker v-model="time12hDateTime" timeFormat="12h" />
       </div>
       <div class="mt-2">
         <div>
@@ -93,7 +93,7 @@ const localeDateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">显示秒选择器</h2>
       <div class="max-w-sm">
-        <DateTimePicker v-model="secondsDateTime" :showSeconds="true" />
+        <ZDateTimePicker v-model="secondsDateTime" :showSeconds="true" />
       </div>
       <div class="mt-2">
         <div>
@@ -107,7 +107,7 @@ const localeDateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">自定义步长</h2>
       <div class="max-w-sm">
-        <DateTimePicker
+        <ZDateTimePicker
           v-model="stepsDateTime"
           :hourStep="2"
           :minuteStep="15"
@@ -130,13 +130,13 @@ const localeDateTime = ref(new Date())
       <div class="flex flex-wrap gap-8">
         <div>
           <div class="max-w-sm">
-            <DateTimePicker v-model="disabledDateTime" disabled />
+            <ZDateTimePicker v-model="disabledDateTime" disabled />
           </div>
           <div class="mt-2">禁用状态</div>
         </div>
         <div>
           <div class="max-w-sm">
-            <DateTimePicker v-model="readonlyDateTime" readonly />
+            <ZDateTimePicker v-model="readonlyDateTime" readonly />
           </div>
           <div class="mt-2">只读状态</div>
         </div>
@@ -147,7 +147,7 @@ const localeDateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">不可清空</h2>
       <div class="max-w-sm">
-        <DateTimePicker v-model="nonClearableDateTime" :clearable="false" />
+        <ZDateTimePicker v-model="nonClearableDateTime" :clearable="false" />
       </div>
       <div class="mt-2">
         <div>
@@ -165,7 +165,7 @@ const localeDateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">本地化</h2>
       <div class="max-w-sm">
-        <DateTimePicker v-model="localeDateTime" locale="zh-CN" />
+        <ZDateTimePicker v-model="localeDateTime" locale="zh-CN" />
       </div>
       <div class="mt-2">
         <div>

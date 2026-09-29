@@ -151,21 +151,12 @@
 
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import {
-  paginatorStyle,
-  paginatorListStyle,
-  paginatorItemStyle,
-  paginatorButtonStyle,
-  paginatorEllipsisStyle,
-  paginatorJumperStyle,
-  paginatorJumperInputStyle,
-  paginatorJumperButtonStyle,
-} from './index.variants'
+import { paginatorStyle, paginatorListStyle, paginatorItemStyle, paginatorButtonStyle, paginatorEllipsisStyle, paginatorJumperStyle, paginatorJumperInputStyle, paginatorJumperButtonStyle } from './index.variants'
 import type { PaginatorProps } from './type'
 import { PaginatorEmits } from './type'
 
 defineOptions({
-  name: 'Paginator',
+  name: 'ZPaginator',
 })
 
 const props = withDefaults(defineProps<PaginatorProps>(), {

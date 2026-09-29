@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { InputOtp } from '@zxy-ui/vue'
+import { ZInputOtp } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import InputOtpDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof InputOtp> = {
+const meta: Meta<typeof ZInputOtp> = {
   title: '组件/InputOtp 验证码输入框',
-  component: InputOtp,
+  component: ZInputOtp,
   tags: ['autodocs'],
   argTypes: {
     length: {
@@ -55,7 +55,7 @@ const meta: Meta<typeof InputOtp> = {
 }
 
 export default meta
-type Story = StoryObj<typeof InputOtp>
+type Story = StoryObj<typeof ZInputOtp>
 
 // 基础示例
 export const Basic: Story = {
@@ -127,7 +127,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { InputOtpDemo },
+    components: {InputOtpDemo},
     template: '<InputOtpDemo />',
   }),
 }

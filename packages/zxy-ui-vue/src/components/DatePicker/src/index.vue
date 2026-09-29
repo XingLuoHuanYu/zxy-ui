@@ -35,7 +35,7 @@
     </div>
 
     <div v-if="isOpen" ref="dropdownRef" :class="classes.dropdown">
-      <Calendar
+      <ZCalendar
         :modelValue="modelValue"
         :min="min"
         :max="max"
@@ -53,16 +53,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useDatePicker } from './composables/useDatePicker'
-import {
-  datePickerStyle,
-  datePickerInputWrapperStyle,
-  datePickerInputStyle,
-  datePickerClearButtonStyle,
-  datePickerDropdownStyle,
-} from './index.variants'
+import { datePickerStyle, datePickerInputWrapperStyle, datePickerInputStyle, datePickerClearButtonStyle, datePickerDropdownStyle } from './index.variants'
 import type { DatePickerProps } from './type'
 import { DatePickerEmits } from './type'
-import { Calendar } from '../../Calendar'
+import { ZCalendar } from '../../Calendar'
 
 const emit = defineEmits(DatePickerEmits)
 const props = withDefaults(defineProps<DatePickerProps>(), {

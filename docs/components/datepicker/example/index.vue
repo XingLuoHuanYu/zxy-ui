@@ -4,7 +4,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">基础用法</h3>
       <div class="max-w-sm">
-        <DatePicker v-model="selectedDate" />
+        <ZDatePicker v-model="selectedDate" />
       </div>
       <div class="mt-2">
         当前选择的日期:
@@ -16,7 +16,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">日期范围限制</h3>
       <div class="max-w-sm">
-        <DatePicker v-model="rangeDate" :min="minDate" :max="maxDate" />
+        <ZDatePicker v-model="rangeDate" :min="minDate" :max="maxDate" />
       </div>
       <div class="mt-2">
         <div>
@@ -34,7 +34,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">自定义格式</h3>
       <div class="max-w-sm">
-        <DatePicker
+        <ZDatePicker
           v-model="formatDate"
           format="yyyy年MM月dd日"
           placeholder="请选择日期"
@@ -54,13 +54,13 @@
       <div class="flex flex-wrap gap-8">
         <div>
           <div class="max-w-sm">
-            <DatePicker v-model="disabledDate" disabled />
+            <ZDatePicker v-model="disabledDate" disabled />
           </div>
           <div class="mt-2">禁用状态</div>
         </div>
         <div>
           <div class="max-w-sm">
-            <DatePicker v-model="readonlyDate" readonly />
+            <ZDatePicker v-model="readonlyDate" readonly />
           </div>
           <div class="mt-2">只读状态</div>
         </div>
@@ -71,7 +71,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">不可清空</h3>
       <div class="max-w-sm">
-        <DatePicker v-model="nonClearableDate" :clearable="false" />
+        <ZDatePicker v-model="nonClearableDate" :clearable="false" />
       </div>
       <div class="mt-2">
         <div>
@@ -87,7 +87,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">本地化</h3>
       <div class="max-w-sm">
-        <DatePicker v-model="localeDate" locale="zh-CN" />
+        <ZDatePicker v-model="localeDate" locale="zh-CN" />
       </div>
       <div class="mt-2">
         <div>
@@ -102,7 +102,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { DatePicker } from '@zxy-ui/vue'
+import { ZDatePicker } from '@zxy-ui/vue'
 
 // 基础用法
 const selectedDate = ref(new Date())

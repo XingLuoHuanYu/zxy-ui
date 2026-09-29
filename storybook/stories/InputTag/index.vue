@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { InputTag } from '@zxy-ui/vue'
+import { ZInputTag } from '@zxy-ui/vue'
 
 const tagValue1 = ref(['标签一', '标签二', '标签三'])
 const tagValue2 = ref([])
@@ -14,27 +14,27 @@ const tagValue6 = ref([])
   <div class="space-y-8 p-4">
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
-      <InputTag v-model="tagValue1" placeholder="请输入标签内容按回车确认" />
+      <ZInputTag v-model="tagValue1" placeholder="请输入标签内容按回车确认" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">空值状态</h2>
-      <InputTag v-model="tagValue2" placeholder="请添加标签" />
+      <ZInputTag v-model="tagValue2" placeholder="请添加标签" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
-      <InputTag v-model="tagValue1" placeholder="禁用状态" disabled />
+      <ZInputTag v-model="tagValue1" placeholder="禁用状态" disabled />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">只读状态</h2>
-      <InputTag v-model="tagValue3" readonly />
+      <ZInputTag v-model="tagValue3" readonly />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">不可关闭</h2>
-      <InputTag
+      <ZInputTag
         v-model="tagValue1"
         :closable="false"
         placeholder="不可关闭标签"
@@ -46,7 +46,7 @@ const tagValue6 = ref([])
       <div class="space-y-4">
         <div>
           <p class="mb-2">小尺寸</p>
-          <InputTag
+          <ZInputTag
             v-model="tagValue2"
             size="small"
             placeholder="小尺寸标签输入"
@@ -54,7 +54,7 @@ const tagValue6 = ref([])
         </div>
         <div>
           <p class="mb-2">默认尺寸</p>
-          <InputTag
+          <ZInputTag
             v-model="tagValue2"
             size="default"
             placeholder="默认尺寸标签输入"
@@ -62,7 +62,7 @@ const tagValue6 = ref([])
         </div>
         <div>
           <p class="mb-2">大尺寸</p>
-          <InputTag
+          <ZInputTag
             v-model="tagValue2"
             size="large"
             placeholder="大尺寸标签输入"
@@ -76,22 +76,22 @@ const tagValue6 = ref([])
       <div class="space-y-4">
         <div>
           <p class="mb-2">前缀文本</p>
-          <InputTag v-model="tagValue2" placeholder="前缀示例">
+          <ZInputTag v-model="tagValue2" placeholder="前缀示例">
             <template #prefix>标签:</template>
-          </InputTag>
+          </ZInputTag>
         </div>
         <div>
           <p class="mb-2">后缀文本</p>
-          <InputTag v-model="tagValue2" placeholder="后缀示例">
+          <ZInputTag v-model="tagValue2" placeholder="后缀示例">
             <template #suffix>+</template>
-          </InputTag>
+          </ZInputTag>
         </div>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">最大标签数</h2>
-      <InputTag
+      <ZInputTag
         v-model="tagValue4"
         :maxCount="5"
         showCount
@@ -104,11 +104,11 @@ const tagValue6 = ref([])
       <div class="space-y-4">
         <div>
           <p class="mb-2">错误状态</p>
-          <InputTag v-model="tagValue2" status="error" placeholder="错误状态" />
+          <ZInputTag v-model="tagValue2" status="error" placeholder="错误状态" />
         </div>
         <div>
           <p class="mb-2">警告状态</p>
-          <InputTag
+          <ZInputTag
             v-model="tagValue2"
             status="warning"
             placeholder="警告状态"
@@ -116,7 +116,7 @@ const tagValue6 = ref([])
         </div>
         <div>
           <p class="mb-2">成功状态</p>
-          <InputTag
+          <ZInputTag
             v-model="tagValue2"
             status="success"
             placeholder="成功状态"
@@ -127,7 +127,7 @@ const tagValue6 = ref([])
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
-      <InputTag
+      <ZInputTag
         v-model="tagValue5"
         placeholder="自定义样式"
         :pt="{
@@ -142,7 +142,7 @@ const tagValue6 = ref([])
 
     <section>
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
-      <InputTag
+      <ZInputTag
         v-model="tagValue6"
         placeholder="无样式模式"
         unstyled

@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Popover } from '@zxy-ui/vue'
+import { ZPopover } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import PopoverDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Popover> = {
+const meta: Meta<typeof ZPopover> = {
   title: '组件/Popover 弹出框',
-  component: Popover,
+  component: ZPopover,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -109,7 +109,7 @@ const meta: Meta<typeof Popover> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Popover>
+type Story = StoryObj<typeof ZPopover>
 
 // 基础示例
 export const Basic: Story = {
@@ -190,7 +190,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { PopoverDemo },
+    components: {PopoverDemo},
     template: '<PopoverDemo />',
   }),
 }

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Dropdown, Button, DropdownItem } from '@zxy-ui/vue'
+import { ZDropdown, ZButton, ZDropdownItem } from '@zxy-ui/vue'
 
 const selectedValue = ref(null)
 
@@ -43,11 +43,11 @@ const handleSelect = (value) => {
   <div class="space-y-8 p-4">
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
-      <Dropdown :options="defaultOptions" @select="handleSelect">
+      <ZDropdown :options="defaultOptions" @select="handleSelect">
         <template #trigger>
-          <Button>点击显示下拉菜单</Button>
+          <ZButton>点击显示下拉菜单</ZButton>
         </template>
-      </Dropdown>
+      </ZDropdown>
       <div class="mt-2" v-if="selectedValue">当前选择: {{ selectedValue }}</div>
     </section>
 
@@ -56,43 +56,43 @@ const handleSelect = (value) => {
       <div class="space-y-4">
         <div>
           <p class="mb-2">点击触发 (默认)</p>
-          <Dropdown :options="defaultOptions" trigger="click">
+          <ZDropdown :options="defaultOptions" trigger="click">
             <template #trigger>
-              <Button>点击触发</Button>
+              <ZButton>点击触发</ZButton>
             </template>
-          </Dropdown>
+          </ZDropdown>
         </div>
         <div>
           <p class="mb-2">悬停触发</p>
-          <Dropdown :options="defaultOptions" trigger="hover">
+          <ZDropdown :options="defaultOptions" trigger="hover">
             <template #trigger>
-              <Button>悬停触发</Button>
+              <ZButton>悬停触发</ZButton>
             </template>
-          </Dropdown>
+          </ZDropdown>
         </div>
         <div>
           <p class="mb-2">聚焦触发</p>
-          <Dropdown :options="defaultOptions" trigger="focus">
+          <ZDropdown :options="defaultOptions" trigger="focus">
             <template #trigger>
-              <Button>聚焦触发</Button>
+              <ZButton>聚焦触发</ZButton>
             </template>
-          </Dropdown>
+          </ZDropdown>
         </div>
         <div>
           <p class="mb-2">手动控制</p>
           <div class="flex items-center gap-4">
-            <Dropdown
+            <ZDropdown
               :options="defaultOptions"
               trigger="manual"
               v-model:visible="visibleDropdown"
             >
               <template #trigger>
-                <Button>下拉菜单</Button>
+                <ZButton>下拉菜单</ZButton>
               </template>
-            </Dropdown>
-            <Button @click="visibleDropdown = !visibleDropdown">
+            </ZDropdown>
+            <ZButton @click="visibleDropdown = !visibleDropdown">
               {{ visibleDropdown ? '关闭' : '打开' }}菜单
-            </Button>
+            </ZButton>
           </div>
         </div>
       </div>
@@ -102,105 +102,105 @@ const handleSelect = (value) => {
       <h2 class="text-xl font-bold mb-4">不同位置</h2>
       <div class="grid grid-cols-3 gap-4">
         <div>
-          <Dropdown :options="defaultOptions" placement="top">
+          <ZDropdown :options="defaultOptions" placement="top">
             <template #trigger>
-              <Button>顶部</Button>
+              <ZButton>顶部</ZButton>
             </template>
-          </Dropdown>
+          </ZDropdown>
         </div>
         <div>
-          <Dropdown :options="defaultOptions" placement="top-start">
+          <ZDropdown :options="defaultOptions" placement="top-start">
             <template #trigger>
-              <Button>顶部左对齐</Button>
+              <ZButton>顶部左对齐</ZButton>
             </template>
-          </Dropdown>
+          </ZDropdown>
         </div>
         <div>
-          <Dropdown :options="defaultOptions" placement="top-end">
+          <ZDropdown :options="defaultOptions" placement="top-end">
             <template #trigger>
-              <Button>顶部右对齐</Button>
+              <ZButton>顶部右对齐</ZButton>
             </template>
-          </Dropdown>
+          </ZDropdown>
         </div>
         <div>
-          <Dropdown :options="defaultOptions" placement="bottom">
+          <ZDropdown :options="defaultOptions" placement="bottom">
             <template #trigger>
-              <Button>底部</Button>
+              <ZButton>底部</ZButton>
             </template>
-          </Dropdown>
+          </ZDropdown>
         </div>
         <div>
-          <Dropdown :options="defaultOptions" placement="bottom-start">
+          <ZDropdown :options="defaultOptions" placement="bottom-start">
             <template #trigger>
-              <Button>底部左对齐</Button>
+              <ZButton>底部左对齐</ZButton>
             </template>
-          </Dropdown>
+          </ZDropdown>
         </div>
         <div>
-          <Dropdown :options="defaultOptions" placement="bottom-end">
+          <ZDropdown :options="defaultOptions" placement="bottom-end">
             <template #trigger>
-              <Button>底部右对齐</Button>
+              <ZButton>底部右对齐</ZButton>
             </template>
-          </Dropdown>
+          </ZDropdown>
         </div>
         <div>
-          <Dropdown :options="defaultOptions" placement="left">
+          <ZDropdown :options="defaultOptions" placement="left">
             <template #trigger>
-              <Button>左侧</Button>
+              <ZButton>左侧</ZButton>
             </template>
-          </Dropdown>
+          </ZDropdown>
         </div>
         <div>
-          <Dropdown :options="defaultOptions" placement="right">
+          <ZDropdown :options="defaultOptions" placement="right">
             <template #trigger>
-              <Button>右侧</Button>
+              <ZButton>右侧</ZButton>
             </template>
-          </Dropdown>
+          </ZDropdown>
         </div>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
-      <Dropdown :options="defaultOptions" disabled>
+      <ZDropdown :options="defaultOptions" disabled>
         <template #trigger>
-          <Button>禁用的下拉菜单</Button>
+          <ZButton>禁用的下拉菜单</ZButton>
         </template>
-      </Dropdown>
+      </ZDropdown>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">带图标的选项</h2>
-      <Dropdown :options="iconOptions">
+      <ZDropdown :options="iconOptions">
         <template #trigger>
-          <Button>操作</Button>
+          <ZButton>操作</ZButton>
         </template>
-      </Dropdown>
+      </ZDropdown>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">带分割线的选项</h2>
-      <Dropdown :options="actionOptions">
+      <ZDropdown :options="actionOptions">
         <template #trigger>
-          <Button>更多操作</Button>
+          <ZButton>更多操作</ZButton>
         </template>
-      </Dropdown>
+      </ZDropdown>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">显示箭头</h2>
-      <Dropdown :options="defaultOptions" arrow>
+      <ZDropdown :options="defaultOptions" arrow>
         <template #trigger>
-          <Button>带箭头的下拉菜单</Button>
+          <ZButton>带箭头的下拉菜单</ZButton>
         </template>
-      </Dropdown>
+      </ZDropdown>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义内容</h2>
-      <Dropdown>
+      <ZDropdown>
         <template #trigger>
-          <Button>自定义内容</Button>
+          <ZButton>自定义内容</ZButton>
         </template>
         <div class="p-4 w-64">
           <h3 class="text-lg font-medium mb-2">自定义下拉内容</h3>
@@ -208,15 +208,15 @@ const handleSelect = (value) => {
             可以插入任意内容，如表单、图片等
           </p>
           <div class="flex justify-end">
-            <Button size="small">确认</Button>
+            <ZButton size="small">确认</ZButton>
           </div>
         </div>
-      </Dropdown>
+      </ZDropdown>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
-      <Dropdown
+      <ZDropdown
         :options="defaultOptions"
         :pt="{
           content: 'bg-purple-50 border border-purple-200 shadow-lg',
@@ -226,14 +226,14 @@ const handleSelect = (value) => {
         }"
       >
         <template #trigger>
-          <Button>自定义样式</Button>
+          <ZButton>自定义样式</ZButton>
         </template>
-      </Dropdown>
+      </ZDropdown>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
-      <Dropdown
+      <ZDropdown
         :options="iconOptions"
         unstyled
         :pt="{
@@ -256,23 +256,23 @@ const handleSelect = (value) => {
             <span>▼</span>
           </div>
         </template>
-      </Dropdown>
+      </ZDropdown>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">使用DropdownItem子组件</h2>
-      <Dropdown>
+      <ZDropdown>
         <template #trigger>
-          <Button>使用DropdownItem</Button>
+          <ZButton>使用DropdownItem</ZButton>
         </template>
-        <DropdownItem value="item1" label="使用DropdownItem" />
-        <DropdownItem value="item2" label="自定义图标" icon="🌟" />
-        <DropdownItem divider />
-        <DropdownItem value="item3" icon="📝">
+        <ZDropdownItem value="item1" label="使用DropdownItem" />
+        <ZDropdownItem value="item2" label="自定义图标" icon="🌟" />
+        <ZDropdownItem divider />
+        <ZDropdownItem value="item3" icon="📝">
           <span class="text-green-600">自定义内容</span>
-        </DropdownItem>
-        <DropdownItem value="item4" disabled label="禁用选项" />
-      </Dropdown>
+        </ZDropdownItem>
+        <ZDropdownItem value="item4" disabled label="禁用选项" />
+      </ZDropdown>
     </section>
   </div>
 </template>

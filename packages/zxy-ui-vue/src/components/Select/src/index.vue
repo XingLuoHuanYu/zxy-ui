@@ -290,7 +290,7 @@ import type { SelectProps } from './type'
 import { selectStyle } from './index.variants'
 
 defineOptions({
-  name: 'VersaSelect',
+  name: 'ZSelect',
 })
 
 const props = withDefaults(defineProps<SelectProps>(), {

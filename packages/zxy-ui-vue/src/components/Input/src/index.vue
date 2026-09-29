@@ -66,7 +66,7 @@ import { useInput } from './composables/useInput'
 import type { InputProps } from './type'
 
 defineOptions({
-  name: 'VersaInput',
+  name: 'ZInput',
 })
 
 const props = withDefaults(defineProps<InputProps>(), {

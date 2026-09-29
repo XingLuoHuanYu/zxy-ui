@@ -13,7 +13,7 @@ import type { BreadcrumbProps } from './type'
 import { useBreadcrumb } from './use-breadcrumb'
 
 defineOptions({
-  name: 'VBreadcrumb',
+  name: 'ZBreadcrumb',
 })
 
 const props = withDefaults(defineProps<BreadcrumbProps>(), {

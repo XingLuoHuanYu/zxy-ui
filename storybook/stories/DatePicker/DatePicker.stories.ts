@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { DatePicker } from '@zxy-ui/vue'
+import { ZDatePicker } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import DatePickerDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof DatePicker> = {
+const meta: Meta<typeof ZDatePicker> = {
   title: '组件/DatePicker 日期选择器',
-  component: DatePicker,
+  component: ZDatePicker,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -106,7 +106,7 @@ const meta: Meta<typeof DatePicker> = {
 }
 
 export default meta
-type Story = StoryObj<typeof DatePicker>
+type Story = StoryObj<typeof ZDatePicker>
 
 // 基础示例
 export const Basic: Story = {
@@ -175,7 +175,7 @@ export const Localization: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { DatePickerDemo },
+    components: {DatePickerDemo},
     template: '<DatePickerDemo />',
   }),
 }

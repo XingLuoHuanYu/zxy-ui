@@ -4,15 +4,15 @@
     <section>
       <h3 class="text-lg font-medium mb-4">变体样式</h3>
       <div class="flex flex-wrap gap-4">
-        <Button>默认按钮</Button>
-        <Button variant="secondary">次要按钮</Button>
-        <Button variant="success">成功按钮</Button>
-        <Button variant="warning">警告按钮</Button>
-        <Button variant="info">信息按钮</Button>
-        <Button variant="danger">危险按钮</Button>
-        <Button variant="outline">描边按钮</Button>
-        <Button variant="ghost">幽灵按钮</Button>
-        <Button variant="link">链接按钮</Button>
+        <ZButton>默认按钮</ZButton>
+        <ZButton variant="secondary">次要按钮</ZButton>
+        <ZButton variant="success">成功按钮</ZButton>
+        <ZButton variant="warning">警告按钮</ZButton>
+        <ZButton variant="info">信息按钮</ZButton>
+        <ZButton variant="danger">危险按钮</ZButton>
+        <ZButton variant="outline">描边按钮</ZButton>
+        <ZButton variant="ghost">幽灵按钮</ZButton>
+        <ZButton variant="link">链接按钮</ZButton>
       </div>
     </section>
 
@@ -20,10 +20,10 @@
     <section>
       <h3 class="text-lg font-medium mb-4">尺寸</h3>
       <div class="flex items-center flex-wrap gap-4">
-        <Button size="xs">超小按钮</Button>
-        <Button size="sm">小按钮</Button>
-        <Button size="md">中按钮</Button>
-        <Button size="lg">大按钮</Button>
+        <ZButton size="xs">超小按钮</ZButton>
+        <ZButton size="sm">小按钮</ZButton>
+        <ZButton size="md">中按钮</ZButton>
+        <ZButton size="lg">大按钮</ZButton>
       </div>
     </section>
 
@@ -31,10 +31,10 @@
     <section>
       <h3 class="text-lg font-medium mb-4">状态</h3>
       <div class="flex flex-wrap gap-4">
-        <Button disabled>禁用按钮</Button>
-        <Button loading>加载中</Button>
-        <Button variant="outline" disabled>禁用描边</Button>
-        <Button variant="outline" loading>加载中</Button>
+        <ZButton disabled>禁用按钮</ZButton>
+        <ZButton loading>加载中</ZButton>
+        <ZButton variant="outline" disabled>禁用描边</ZButton>
+        <ZButton variant="outline" loading>加载中</ZButton>
       </div>
     </section>
 
@@ -42,9 +42,9 @@
     <section>
       <h3 class="text-lg font-medium mb-4">圆角</h3>
       <div class="flex flex-wrap gap-4">
-        <Button rounded>圆角按钮</Button>
-        <Button size="xs" rounded>超小圆角</Button>
-        <Button size="lg" rounded>大圆角</Button>
+        <ZButton rounded>圆角按钮</ZButton>
+        <ZButton size="xs" rounded>超小圆角</ZButton>
+        <ZButton size="lg" rounded>大圆角</ZButton>
       </div>
     </section>
 
@@ -52,8 +52,8 @@
     <section>
       <h3 class="text-lg font-medium mb-4">全宽</h3>
       <div class="space-y-2">
-        <Button fullWidth>全宽按钮</Button>
-        <Button variant="outline" fullWidth>全宽描边按钮</Button>
+        <ZButton fullWidth>全宽按钮</ZButton>
+        <ZButton variant="outline" fullWidth>全宽描边按钮</ZButton>
       </div>
     </section>
 
@@ -62,13 +62,13 @@
       <h3 class="text-lg font-medium mb-4">组合使用</h3>
       <div class="space-y-2">
         <div class="flex flex-wrap gap-4">
-          <Button variant="primary" size="sm" rounded>圆角小按钮</Button>
-          <Button variant="danger" loading>危险加载</Button>
-          <Button variant="outline" disabled rounded>禁用圆角描边</Button>
+          <ZButton variant="primary" size="sm" rounded>圆角小按钮</ZButton>
+          <ZButton variant="danger" loading>危险加载</ZButton>
+          <ZButton variant="outline" disabled rounded>禁用圆角描边</ZButton>
         </div>
-        <Button variant="secondary" fullWidth size="lg">
+        <ZButton variant="secondary" fullWidth size="lg">
           大号全宽次要按钮
-        </Button>
+        </ZButton>
       </div>
     </section>
 
@@ -92,5 +92,5 @@
 </template>
 
 <script setup lang="ts">
-import { Button } from '@zxy-ui/vue'
+import { ZButton } from '@zxy-ui/vue'
 </script>

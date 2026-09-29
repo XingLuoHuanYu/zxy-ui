@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Alert } from '@zxy-ui/vue'
+import { ZAlert } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import AlertDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Alert> = {
+const meta: Meta<typeof ZAlert> = {
   title: '组件/Alert 警告提示',
-  component: Alert,
+  component: ZAlert,
   tags: ['autodocs'],
   argTypes: {
     variant: {
@@ -102,7 +102,7 @@ const meta: Meta<typeof Alert> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Alert>
+type Story = StoryObj<typeof ZAlert>
 
 // 基础示例
 export const Basic: Story = {
@@ -190,7 +190,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { AlertDemo },
+    components: {AlertDemo},
     template: '<AlertDemo />',
   }),
 }

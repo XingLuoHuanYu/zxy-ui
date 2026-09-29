@@ -2,12 +2,12 @@
 
 手风琴组件是一种可折叠的内容面板，用于在有限的空间内组织和展示大量信息，提高用户体验和界面整洁度。
 
-<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-accordion-%E6%89%8B%E9%A3%8E%E7%90%B4--basic"/>
+<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-accordion-%E6%89%8B%E9%A3%8E%E7%90%B4--basic"/>
 
 ## 引入
 
 ```typescript
-import { Accordion, AccordionItem } from '@zxy-ui/vue'
+import { ZAccordion, ZAccordionItem } from '@zxy-ui/vue'
 ```
 
 ## 使用
@@ -20,17 +20,17 @@ import { Accordion, AccordionItem } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Accordion>
-		<AccordionItem value="item-1" header="第一项">
+	<ZAccordion>
+		<ZAccordionItem value="item-1" header="第一项">
 			<p>这是第一项的内容区域。这里可以放置任何内容。</p>
-		</AccordionItem>
-		<AccordionItem value="item-2" header="第二项">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-2" header="第二项">
 			<p>这是第二项的内容区域。这里可以放置任何内容。</p>
-		</AccordionItem>
-		<AccordionItem value="item-3" header="第三项">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-3" header="第三项">
 			<p>这是第三项的内容区域。这里可以放置任何内容。</p>
-		</AccordionItem>
-	</Accordion>
+		</ZAccordionItem>
+	</ZAccordion>
 </template>
 ```
 
@@ -41,34 +41,34 @@ import { Accordion, AccordionItem } from '@zxy-ui/vue'
 ```vue
 <template>
 	<!-- 默认样式 -->
-	<Accordion variant="default">
-		<AccordionItem value="item-1" header="默认样式">
+	<ZAccordion variant="default">
+		<ZAccordionItem value="item-1" header="默认样式">
 			<p>这是默认样式的手风琴项目。</p>
-		</AccordionItem>
-		<AccordionItem value="item-2" header="第二项">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-2" header="第二项">
 			<p>这是第二个项目。</p>
-		</AccordionItem>
-	</Accordion>
+		</ZAccordionItem>
+	</ZAccordion>
 
 	<!-- 带边框样式 -->
-	<Accordion variant="bordered">
-		<AccordionItem value="item-1" header="带边框样式">
+	<ZAccordion variant="bordered">
+		<ZAccordionItem value="item-1" header="带边框样式">
 			<p>这是带边框的手风琴项目。</p>
-		</AccordionItem>
-		<AccordionItem value="item-2" header="第二项">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-2" header="第二项">
 			<p>这是第二个项目。</p>
-		</AccordionItem>
-	</Accordion>
+		</ZAccordionItem>
+	</ZAccordion>
 
 	<!-- 阴影样式 -->
-	<Accordion variant="elevated">
-		<AccordionItem value="item-1" header="阴影样式">
+	<ZAccordion variant="elevated">
+		<ZAccordionItem value="item-1" header="阴影样式">
 			<p>这是带阴影的手风琴项目。</p>
-		</AccordionItem>
-		<AccordionItem value="item-2" header="第二项">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-2" header="第二项">
 			<p>这是第二个项目。</p>
-		</AccordionItem>
-	</Accordion>
+		</ZAccordionItem>
+	</ZAccordion>
 </template>
 ```
 
@@ -78,17 +78,17 @@ import { Accordion, AccordionItem } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Accordion multiple>
-		<AccordionItem value="item-1" header="第一项">
+	<ZAccordion multiple>
+		<ZAccordionItem value="item-1" header="第一项">
 			<p>在多面板模式下，可以同时展开多个面板。</p>
-		</AccordionItem>
-		<AccordionItem value="item-2" header="第二项">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-2" header="第二项">
 			<p>这对于需要同时查看多个内容区域的场景很有用。</p>
-		</AccordionItem>
-		<AccordionItem value="item-3" header="第三项">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-3" header="第三项">
 			<p>用户可以自由组合需要展示的内容。</p>
-		</AccordionItem>
-	</Accordion>
+		</ZAccordionItem>
+	</ZAccordion>
 </template>
 ```
 
@@ -99,30 +99,30 @@ import { Accordion, AccordionItem } from '@zxy-ui/vue'
 ```vue
 <template>
 	<!-- 单面板模式下默认展开 -->
-	<Accordion v-model="singleExpanded">
-		<AccordionItem value="item-1" header="默认关闭项">
+	<ZAccordion v-model="singleExpanded">
+		<ZAccordionItem value="item-1" header="默认关闭项">
 			<p>这个面板默认是关闭的。</p>
-		</AccordionItem>
-		<AccordionItem value="item-2" header="默认展开项">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-2" header="默认展开项">
 			<p>这个面板默认是展开的。</p>
-		</AccordionItem>
-		<AccordionItem value="item-3" header="默认关闭项">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-3" header="默认关闭项">
 			<p>这个面板默认是关闭的。</p>
-		</AccordionItem>
-	</Accordion>
+		</ZAccordionItem>
+	</ZAccordion>
 
 	<!-- 多面板模式下默认展开 -->
-	<Accordion multiple v-model="multiExpanded">
-		<AccordionItem value="item-1" header="默认展开项">
+	<ZAccordion multiple v-model="multiExpanded">
+		<ZAccordionItem value="item-1" header="默认展开项">
 			<p>这个面板默认是展开的。</p>
-		</AccordionItem>
-		<AccordionItem value="item-2" header="默认关闭项">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-2" header="默认关闭项">
 			<p>这个面板默认是关闭的。</p>
-		</AccordionItem>
-		<AccordionItem value="item-3" header="默认展开项">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-3" header="默认展开项">
 			<p>这个面板默认是展开的。</p>
-		</AccordionItem>
-	</Accordion>
+		</ZAccordionItem>
+	</ZAccordion>
 </template>
 
 <script setup>
@@ -140,27 +140,27 @@ const multiExpanded = ref(['item-1', 'item-3'])
 ```vue
 <template>
 	<!-- 全部禁用 -->
-	<Accordion disabled>
-		<AccordionItem value="item-1" header="禁用项目1">
+	<ZAccordion disabled>
+		<ZAccordionItem value="item-1" header="禁用项目1">
 			<p>这个手风琴的所有项目都被禁用，无法点击。</p>
-		</AccordionItem>
-		<AccordionItem value="item-2" header="禁用项目2">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-2" header="禁用项目2">
 			<p>这个项目也被禁用，无法点击。</p>
-		</AccordionItem>
-	</Accordion>
+		</ZAccordionItem>
+	</ZAccordion>
 
 	<!-- 单项禁用 -->
-	<Accordion>
-		<AccordionItem value="item-1" header="正常项目">
+	<ZAccordion>
+		<ZAccordionItem value="item-1" header="正常项目">
 			<p>这是一个可以正常点击的项目。</p>
-		</AccordionItem>
-		<AccordionItem value="item-2" header="禁用项目" disabled>
+		</ZAccordionItem>
+		<ZAccordionItem value="item-2" header="禁用项目" disabled>
 			<p>这个项目被禁用，无法点击。</p>
-		</AccordionItem>
-		<AccordionItem value="item-3" header="正常项目">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-3" header="正常项目">
 			<p>这是一个可以正常点击的项目。</p>
-		</AccordionItem>
-	</Accordion>
+		</ZAccordionItem>
+	</ZAccordion>
 </template>
 ```
 
@@ -170,8 +170,8 @@ const multiExpanded = ref(['item-1', 'item-3'])
 
 ```vue
 <template>
-	<Accordion>
-		<AccordionItem value="item-1">
+	<ZAccordion>
+		<ZAccordionItem value="item-1">
 			<template #header>
 				<div class="flex items-center gap-2">
 					<svg
@@ -195,8 +195,8 @@ const multiExpanded = ref(['item-1', 'item-3'])
 				</div>
 			</template>
 			<p>这是自定义标题的内容。</p>
-		</AccordionItem>
-		<AccordionItem value="item-2" header="自定义图标">
+		</ZAccordionItem>
+		<ZAccordionItem value="item-2" header="自定义图标">
 			<template #icon>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -215,8 +215,8 @@ const multiExpanded = ref(['item-1', 'item-3'])
 				</svg>
 			</template>
 			<p>这是自定义图标的内容。</p>
-		</AccordionItem>
-	</Accordion>
+		</ZAccordionItem>
+	</ZAccordion>
 </template>
 ```
 
@@ -226,8 +226,8 @@ const multiExpanded = ref(['item-1', 'item-3'])
 
 ```vue
 <template>
-	<Accordion unstyled :pt="{ root: 'bg-gray-100 rounded-lg p-4' }">
-		<AccordionItem
+	<ZAccordion unstyled :pt="{ root: 'bg-gray-100 rounded-lg p-4' }">
+		<ZAccordionItem
 			value="item-1"
 			header="自定义样式项目"
 			:pt="{
@@ -243,8 +243,8 @@ const multiExpanded = ref(['item-1', 'item-3'])
 		>
 			<p>这是无样式模式下，通过pt属性自定义的项目。</p>
 			<p class="mt-2 text-gray-500">可以完全控制每个元素的样式。</p>
-		</AccordionItem>
-	</Accordion>
+		</ZAccordionItem>
+	</ZAccordion>
 </template>
 ```
 

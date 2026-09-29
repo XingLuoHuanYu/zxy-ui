@@ -5,7 +5,7 @@ import type { PinInputProps } from './type'
 import { computed } from 'vue'
 
 defineOptions({
-  name: 'PinInput',
+  name: 'ZInputOtp',
 })
 
 const props = withDefaults(defineProps<PinInputProps>(), {

@@ -21,18 +21,13 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import {
-  progressStyle,
-  progressContainerStyle,
-  progressBarStyle,
-  progressTextStyle,
-} from './index.variants'
+import { progressStyle, progressContainerStyle, progressBarStyle, progressTextStyle } from './index.variants'
 import type { ProgressProps } from './type'
 import { ProgressEmits } from './type'
 import { useProgress } from './use-progress'
 
 defineOptions({
-  name: 'VKProgress',
+  name: 'ZProgress',
 })
 
 const props = withDefaults(defineProps<ProgressProps>(), {

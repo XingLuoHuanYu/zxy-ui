@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Drawer } from '@zxy-ui/vue'
+import { ZDrawer } from '@zxy-ui/vue'
 
 const basic = ref(false)
 const leftDrawer = ref(false)
@@ -25,10 +25,10 @@ const unstyledDrawer = ref(false)
         打开基础抽屉
       </button>
 
-      <Drawer v-model="basic" title="基础抽屉">
+      <ZDrawer v-model="basic" title="基础抽屉">
         <p>这是一个基础抽屉的内容。</p>
         <p class="mt-4">您可以在这里放置任何内容。</p>
-      </Drawer>
+      </ZDrawer>
     </section>
 
     <section>
@@ -63,21 +63,21 @@ const unstyledDrawer = ref(false)
         </button>
       </div>
 
-      <Drawer v-model="leftDrawer" title="左侧抽屉" placement="left">
+      <ZDrawer v-model="leftDrawer" title="左侧抽屉" placement="left">
         <p>这是一个左侧抽屉。</p>
-      </Drawer>
+      </ZDrawer>
 
-      <Drawer v-model="rightDrawer" title="右侧抽屉" placement="right">
+      <ZDrawer v-model="rightDrawer" title="右侧抽屉" placement="right">
         <p>这是一个右侧抽屉。</p>
-      </Drawer>
+      </ZDrawer>
 
-      <Drawer v-model="topDrawer" title="顶部抽屉" placement="top">
+      <ZDrawer v-model="topDrawer" title="顶部抽屉" placement="top">
         <p>这是一个顶部抽屉。</p>
-      </Drawer>
+      </ZDrawer>
 
-      <Drawer v-model="bottomDrawer" title="底部抽屉" placement="bottom">
+      <ZDrawer v-model="bottomDrawer" title="底部抽屉" placement="bottom">
         <p>这是一个底部抽屉。</p>
-      </Drawer>
+      </ZDrawer>
     </section>
 
     <section>
@@ -105,17 +105,17 @@ const unstyledDrawer = ref(false)
         </button>
       </div>
 
-      <Drawer v-model="smallDrawer" title="小尺寸抽屉" size="20%">
+      <ZDrawer v-model="smallDrawer" title="小尺寸抽屉" size="20%">
         <p>这是一个小尺寸抽屉。</p>
-      </Drawer>
+      </ZDrawer>
 
-      <Drawer v-model="mediumDrawer" title="中等尺寸抽屉" size="50%">
+      <ZDrawer v-model="mediumDrawer" title="中等尺寸抽屉" size="50%">
         <p>这是一个中等尺寸抽屉。</p>
-      </Drawer>
+      </ZDrawer>
 
-      <Drawer v-model="largeDrawer" title="大尺寸抽屉" size="80%">
+      <ZDrawer v-model="largeDrawer" title="大尺寸抽屉" size="80%">
         <p>这是一个大尺寸抽屉。</p>
-      </Drawer>
+      </ZDrawer>
     </section>
 
     <section>
@@ -127,7 +127,7 @@ const unstyledDrawer = ref(false)
         自定义样式抽屉
       </button>
 
-      <Drawer
+      <ZDrawer
         v-model="customDrawer"
         title="自定义样式抽屉"
         :pt="{
@@ -141,7 +141,7 @@ const unstyledDrawer = ref(false)
       >
         <p>这是一个使用 pt 属性自定义样式的抽屉。</p>
         <p class="mt-4">您可以自定义抽屉的各个部分的样式。</p>
-      </Drawer>
+      </ZDrawer>
     </section>
 
     <section>
@@ -153,7 +153,7 @@ const unstyledDrawer = ref(false)
         无样式模式抽屉
       </button>
 
-      <Drawer
+      <ZDrawer
         v-model="unstyledDrawer"
         title="无样式模式抽屉"
         unstyled
@@ -181,7 +181,7 @@ const unstyledDrawer = ref(false)
             </button>
           </div>
         </template>
-      </Drawer>
+      </ZDrawer>
     </section>
   </div>
 </template>

@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { RangeCalendar } from '@zxy-ui/vue'
+import { ZRangeCalendar } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import RangeCalendarDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof RangeCalendar> = {
+const meta: Meta<typeof ZRangeCalendar> = {
   title: '组件/RangeCalendar 日期范围选择器',
-  component: RangeCalendar,
+  component: ZRangeCalendar,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -86,18 +86,18 @@ const meta: Meta<typeof RangeCalendar> = {
 }
 
 export default meta
-type Story = StoryObj<typeof RangeCalendar>
+type Story = StoryObj<typeof ZRangeCalendar>
 
 // 基础示例
 export const Basic: Story = {
   render: (args) => ({
-    components: { RangeCalendar },
+    components: {ZRangeCalendar},
     setup() {
       return { args }
     },
     template: `
       <div class="w-full max-w-md">
-        <RangeCalendar v-bind="args" />
+        <ZRangeCalendar v-bind="args" />
       </div>
     `,
   }),
@@ -106,7 +106,7 @@ export const Basic: Story = {
 // 默认选中日期
 export const DefaultSelected: Story = {
   render: () => ({
-    components: { RangeCalendar },
+    components: {ZRangeCalendar},
     setup() {
       const today = new Date()
       const nextWeek = new Date()
@@ -118,7 +118,7 @@ export const DefaultSelected: Story = {
     },
     template: `
       <div class="w-full max-w-md">
-        <RangeCalendar :model-value="defaultRange" />
+        <ZRangeCalendar :model-value="defaultRange" />
       </div>
     `,
   }),
@@ -127,7 +127,7 @@ export const DefaultSelected: Story = {
 // 日期范围限制
 export const MinMaxDates: Story = {
   render: () => ({
-    components: { RangeCalendar },
+    components: {ZRangeCalendar},
     setup() {
       const today = new Date()
       const minDate = new Date()
@@ -146,7 +146,7 @@ export const MinMaxDates: Story = {
     },
     template: `
       <div class="w-full max-w-md">
-        <RangeCalendar :min="minDate" :max="maxDate" />
+        <ZRangeCalendar :min="minDate" :max="maxDate" />
       </div>
     `,
   }),
@@ -158,13 +158,13 @@ export const Disabled: Story = {
     disabled: true,
   },
   render: (args) => ({
-    components: { RangeCalendar },
+    components: {ZRangeCalendar},
     setup() {
       return { args }
     },
     template: `
       <div class="w-full max-w-md">
-        <RangeCalendar v-bind="args" />
+        <ZRangeCalendar v-bind="args" />
       </div>
     `,
   }),
@@ -176,7 +176,7 @@ export const Readonly: Story = {
     readonly: true,
   },
   render: (args) => ({
-    components: { RangeCalendar },
+    components: {ZRangeCalendar},
     setup() {
       const today = new Date()
       const nextWeek = new Date()
@@ -189,7 +189,7 @@ export const Readonly: Story = {
     },
     template: `
       <div class="w-full max-w-md">
-        <RangeCalendar v-bind="args" :model-value="defaultRange" />
+        <ZRangeCalendar v-bind="args" :model-value="defaultRange" />
       </div>
     `,
   }),
@@ -201,13 +201,13 @@ export const MondayFirstDay: Story = {
     firstDayOfWeek: 1,
   },
   render: (args) => ({
-    components: { RangeCalendar },
+    components: {ZRangeCalendar},
     setup() {
       return { args }
     },
     template: `
       <div class="w-full max-w-md">
-        <RangeCalendar v-bind="args" />
+        <ZRangeCalendar v-bind="args" />
       </div>
     `,
   }),
@@ -219,13 +219,13 @@ export const Localization: Story = {
     locale: 'zh-CN',
   },
   render: (args) => ({
-    components: { RangeCalendar },
+    components: {ZRangeCalendar},
     setup() {
       return { args }
     },
     template: `
       <div class="w-full max-w-md">
-        <RangeCalendar v-bind="args" />
+        <ZRangeCalendar v-bind="args" />
       </div>
     `,
   }),
@@ -234,10 +234,10 @@ export const Localization: Story = {
 // 自定义样式
 export const CustomStyle: Story = {
   render: () => ({
-    components: { RangeCalendar },
+    components: {ZRangeCalendar},
     template: `
       <div class="w-full max-w-md">
-        <RangeCalendar :pt="{
+        <ZRangeCalendar :pt="{
           root: 'bg-gray-50 p-4 rounded-lg shadow',
           header: 'bg-blue-50 p-2 rounded mb-2',
           title: 'text-blue-700 font-bold',
@@ -257,13 +257,13 @@ export const Unstyled: Story = {
     unstyled: true,
   },
   render: (args) => ({
-    components: { RangeCalendar },
+    components: {ZRangeCalendar},
     setup() {
       return { args }
     },
     template: `
       <div class="w-full max-w-md">
-        <RangeCalendar
+        <ZRangeCalendar
           v-bind="args"
           :pt="{
             root: 'bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl shadow-lg',
@@ -289,7 +289,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { RangeCalendarDemo },
+    components: {RangeCalendarDemo},
     template: '<RangeCalendarDemo />',
   }),
 }

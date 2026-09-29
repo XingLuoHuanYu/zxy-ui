@@ -5,7 +5,7 @@ Table 用于结构化展示多行数据，支持列配置、单元格插槽渲�
 ## 引入
 
 ```typescript
-import { Table } from '@zxy-ui/vue'
+import { ZTable } from '@zxy-ui/vue'
 ```
 
 ## 使用

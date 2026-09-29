@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Calendar } from '@zxy-ui/vue'
+import { ZCalendar } from '@zxy-ui/vue'
 
 // 基础用法
 const selectedDate = ref(new Date())
@@ -39,7 +39,7 @@ const customStyleDate = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
       <div class="max-w-md">
-        <Calendar v-model="selectedDate" />
+        <ZCalendar v-model="selectedDate" />
       </div>
       <div class="mt-2">
         当前选择的日期:
@@ -51,7 +51,7 @@ const customStyleDate = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">日期范围限制</h2>
       <div class="max-w-md">
-        <Calendar v-model="rangeDate" :min="minDate" :max="maxDate" />
+        <ZCalendar v-model="rangeDate" :min="minDate" :max="maxDate" />
       </div>
       <div class="mt-2">
         <div>
@@ -71,13 +71,13 @@ const customStyleDate = ref(new Date())
       <div class="flex flex-wrap gap-8">
         <div>
           <div class="max-w-md">
-            <Calendar v-model="disabledDate" disabled />
+            <ZCalendar v-model="disabledDate" disabled />
           </div>
           <div class="mt-2">禁用状态</div>
         </div>
         <div>
           <div class="max-w-md">
-            <Calendar v-model="readonlyDate" readonly />
+            <ZCalendar v-model="readonlyDate" readonly />
           </div>
           <div class="mt-2">只读状态</div>
         </div>
@@ -88,7 +88,7 @@ const customStyleDate = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">周一为一周的第一天</h2>
       <div class="max-w-md">
-        <Calendar v-model="mondayFirstDate" :firstDayOfWeek="1" />
+        <ZCalendar v-model="mondayFirstDate" :firstDayOfWeek="1" />
       </div>
       <div class="mt-2">
         <div>
@@ -105,7 +105,7 @@ const customStyleDate = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">本地化</h2>
       <div class="max-w-md">
-        <Calendar v-model="localeDate" locale="zh-CN" />
+        <ZCalendar v-model="localeDate" locale="zh-CN" />
       </div>
       <div class="mt-2">
         <div>
@@ -120,7 +120,7 @@ const customStyleDate = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式</h2>
       <div class="max-w-md">
-        <Calendar
+        <ZCalendar
           v-model="customStyleDate"
           :pt="{
             root: 'bg-gray-100 rounded-lg p-4',

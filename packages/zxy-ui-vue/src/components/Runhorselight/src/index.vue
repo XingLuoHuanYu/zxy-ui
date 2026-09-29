@@ -1,13 +1,5 @@
 <script setup lang="ts">
-import {
-  computed,
-  nextTick,
-  onBeforeUnmount,
-  onMounted,
-  ref,
-  useSlots,
-  watch,
-} from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, useSlots, watch } from 'vue'
 import type { CSSProperties } from 'vue'
 import { runhorselightStyle } from './index.variants'
 import { useRunhorselight } from './composables/useRunhorselight'
@@ -18,7 +10,7 @@ import type {
   RunhorselightProps,
 } from './type'
 
-defineOptions({ name: 'Runhorselight' })
+defineOptions({ name: 'ZRunhorselight' })
 
 const props = withDefaults(defineProps<RunhorselightProps>(), {
   items: () => [],

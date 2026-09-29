@@ -49,19 +49,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRate } from './composables/useRate'
-import {
-  rateContainer,
-  rateItem,
-  rateScore,
-  rateStarFull,
-  rateStarVoid,
-  rateHalfStar,
-} from './index.variants'
+import { rateContainer, rateItem, rateScore, rateStarFull, rateStarVoid, rateHalfStar } from './index.variants'
 import type { RateProps } from './type'
 import { RateEmits } from './type'
 
 defineOptions({
-  name: 'Rate',
+  name: 'ZRate',
 })
 
 const props = withDefaults(defineProps<RateProps>(), {

@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Paginator } from '@zxy-ui/vue'
+import { ZPaginator } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import PaginatorDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Paginator> = {
+const meta: Meta<typeof ZPaginator> = {
   title: '组件/Paginator 分页器',
-  component: Paginator,
+  component: ZPaginator,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -112,7 +112,7 @@ const meta: Meta<typeof Paginator> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Paginator>
+type Story = StoryObj<typeof ZPaginator>
 
 // 基础示例
 export const Basic: Story = {
@@ -120,31 +120,31 @@ export const Basic: Story = {
     totalPages: 10,
   },
   render: (args) => ({
-    components: { Paginator },
+    components: {ZPaginator},
     setup() {
       return { args }
     },
-    template: `<Paginator v-bind="args" />`,
+    template: `<ZPaginator v-bind="args" />`,
   }),
 }
 
 // 不同大小
 export const Sizes: Story = {
   render: () => ({
-    components: { Paginator },
+    components: {ZPaginator},
     template: `
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">小尺寸</p>
-          <Paginator :totalPages="10" size="sm" />
+          <ZPaginator :totalPages="10" size="sm" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">中尺寸</p>
-          <Paginator :totalPages="10" size="md" />
+          <ZPaginator :totalPages="10" size="md" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">大尺寸</p>
-          <Paginator :totalPages="10" size="lg" />
+          <ZPaginator :totalPages="10" size="lg" />
         </div>
       </div>
     `,
@@ -154,20 +154,20 @@ export const Sizes: Story = {
 // 不同变体
 export const Variants: Story = {
   render: () => ({
-    components: { Paginator },
+    components: {ZPaginator},
     template: `
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">默认样式</p>
-          <Paginator :totalPages="10" variant="default" />
+          <ZPaginator :totalPages="10" variant="default" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">轮廓样式</p>
-          <Paginator :totalPages="10" variant="outline" />
+          <ZPaginator :totalPages="10" variant="outline" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">文本样式</p>
-          <Paginator :totalPages="10" variant="text" />
+          <ZPaginator :totalPages="10" variant="text" />
         </div>
       </div>
     `,
@@ -177,20 +177,20 @@ export const Variants: Story = {
 // 不同形状
 export const Shapes: Story = {
   render: () => ({
-    components: { Paginator },
+    components: {ZPaginator},
     template: `
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">方形</p>
-          <Paginator :totalPages="10" shape="square" />
+          <ZPaginator :totalPages="10" shape="square" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">圆角</p>
-          <Paginator :totalPages="10" shape="rounded" />
+          <ZPaginator :totalPages="10" shape="rounded" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">圆形</p>
-          <Paginator :totalPages="10" shape="circle" />
+          <ZPaginator :totalPages="10" shape="circle" />
         </div>
       </div>
     `,
@@ -200,20 +200,20 @@ export const Shapes: Story = {
 // 可见页码数量
 export const VisiblePageCount: Story = {
   render: () => ({
-    components: { Paginator },
+    components: {ZPaginator},
     template: `
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">显示3个页码</p>
-          <Paginator :totalPages="20" :visiblePageCount="3" :modelValue="10" />
+          <ZPaginator :totalPages="20" :visiblePageCount="3" :modelValue="10" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">显示5个页码</p>
-          <Paginator :totalPages="20" :visiblePageCount="5" :modelValue="10" />
+          <ZPaginator :totalPages="20" :visiblePageCount="5" :modelValue="10" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">显示7个页码</p>
-          <Paginator :totalPages="20" :visiblePageCount="7" :modelValue="10" />
+          <ZPaginator :totalPages="20" :visiblePageCount="7" :modelValue="10" />
         </div>
       </div>
     `,
@@ -227,11 +227,11 @@ export const WithJumper: Story = {
     showJumper: true,
   },
   render: (args) => ({
-    components: { Paginator },
+    components: {ZPaginator},
     setup() {
       return { args }
     },
-    template: `<Paginator v-bind="args" />`,
+    template: `<ZPaginator v-bind="args" />`,
   }),
 }
 
@@ -242,11 +242,11 @@ export const Disabled: Story = {
     disabled: true,
   },
   render: (args) => ({
-    components: { Paginator },
+    components: {ZPaginator},
     setup() {
       return { args }
     },
-    template: `<Paginator v-bind="args" />`,
+    template: `<ZPaginator v-bind="args" />`,
   }),
 }
 
@@ -256,12 +256,12 @@ export const CustomButtons: Story = {
     totalPages: 10,
   },
   render: (args) => ({
-    components: { Paginator },
+    components: {ZPaginator},
     setup() {
       return { args }
     },
     template: `
-      <Paginator v-bind="args">
+      <ZPaginator v-bind="args">
         <template #first-button>
           <span class="text-xs">首页</span>
         </template>
@@ -274,7 +274,7 @@ export const CustomButtons: Story = {
         <template #last-button>
           <span class="text-xs">尾页</span>
         </template>
-      </Paginator>
+      </ZPaginator>
     `,
   }),
 }
@@ -304,18 +304,18 @@ export const Unstyled: Story = {
     },
   },
   render: (args) => ({
-    components: { Paginator },
+    components: {ZPaginator},
     setup() {
       return { args }
     },
-    template: `<Paginator v-bind="args" />`,
+    template: `<ZPaginator v-bind="args" />`,
   }),
 }
 
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { PaginatorDemo },
+    components: {PaginatorDemo},
     template: '<PaginatorDemo />',
   }),
 }

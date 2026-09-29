@@ -63,15 +63,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useTimeSelect } from './composables/useTimeSelect'
-import {
-  timeSelectStyle,
-  timeSelectInputWrapperStyle,
-  timeSelectInputStyle,
-  timeSelectClearButtonStyle,
-  timeSelectDropdownStyle,
-  timeSelectOptionsListStyle,
-  timeSelectOptionStyle,
-} from './index.variants'
+import { timeSelectStyle, timeSelectInputWrapperStyle, timeSelectInputStyle, timeSelectClearButtonStyle, timeSelectDropdownStyle, timeSelectOptionsListStyle, timeSelectOptionStyle } from './index.variants'
 import type { TimeSelectProps } from './type'
 import { TimeSelectEmits } from './type'
 

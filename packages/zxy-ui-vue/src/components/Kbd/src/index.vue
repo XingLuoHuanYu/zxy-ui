@@ -11,7 +11,7 @@ import type { KbdProps } from './type'
 
 defineOptions({
   // eslint-disable-next-line vue/no-reserved-component-names
-  name: 'Kbd',
+  name: 'ZKbd',
 })
 
 const props = withDefaults(defineProps<KbdProps>(), {

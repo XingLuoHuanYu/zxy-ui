@@ -4,7 +4,7 @@
     <section>
       <h2 class="text-lg font-medium mb-4">基础用法</h2>
       <div class="max-w-md">
-        <Input v-model="inputValue" placeholder="请输入内容" />
+        <ZInput v-model="inputValue" placeholder="请输入内容" />
         <div class="text-sm text-gray-500 mt-2">
           当前输入值: {{ inputValue || '空' }}
         </div>
@@ -15,16 +15,16 @@
     <section>
       <h2 class="text-lg font-medium mb-4">不同类型</h2>
       <div class="grid grid-cols-2 gap-4 max-w-2xl">
-        <Input v-model="inputText" placeholder="文本输入框" type="text" />
-        <Input
+        <ZInput v-model="inputText" placeholder="文本输入框" type="text" />
+        <ZInput
           v-model="inputPassword"
           placeholder="密码输入框"
           type="password"
         />
-        <Input v-model="inputEmail" placeholder="邮箱输入框" type="email" />
-        <Input v-model="inputNumber" placeholder="数字输入框" type="number" />
-        <Input v-model="inputSearch" placeholder="搜索输入框" type="search" />
-        <Input v-model="inputUrl" placeholder="URL输入框" type="url" />
+        <ZInput v-model="inputEmail" placeholder="邮箱输入框" type="email" />
+        <ZInput v-model="inputNumber" placeholder="数字输入框" type="number" />
+        <ZInput v-model="inputSearch" placeholder="搜索输入框" type="search" />
+        <ZInput v-model="inputUrl" placeholder="URL输入框" type="url" />
       </div>
     </section>
 
@@ -32,13 +32,13 @@
     <section>
       <h2 class="text-lg font-medium mb-4">不同尺寸</h2>
       <div class="grid grid-cols-1 gap-4 max-w-md">
-        <Input v-model="inputSize" size="small" placeholder="小型输入框" />
-        <Input
+        <ZInput v-model="inputSize" size="small" placeholder="小型输入框" />
+        <ZInput
           v-model="inputSize"
           size="default"
           placeholder="默认尺寸输入框"
         />
-        <Input v-model="inputSize" size="large" placeholder="大型输入框" />
+        <ZInput v-model="inputSize" size="large" placeholder="大型输入框" />
       </div>
     </section>
 
@@ -46,17 +46,17 @@
     <section>
       <h2 class="text-lg font-medium mb-4">前缀和后缀</h2>
       <div class="grid grid-cols-1 gap-4 max-w-md">
-        <Input
+        <ZInput
           v-model="inputPrefix"
           placeholder="带前缀图标"
           prefixIcon="i-heroicons-user"
         />
-        <Input
+        <ZInput
           v-model="inputSuffix"
           placeholder="带后缀图标"
           suffixIcon="i-heroicons-magnifying-glass"
         />
-        <Input
+        <ZInput
           v-model="inputBoth"
           placeholder="前后缀都有"
           prefixIcon="i-heroicons-envelope"
@@ -69,7 +69,7 @@
     <section>
       <h2 class="text-lg font-medium mb-4">可清空</h2>
       <div class="max-w-md">
-        <Input
+        <ZInput
           v-model="inputClearable"
           placeholder="输入后显示清除按钮"
           clearable
@@ -81,7 +81,7 @@
     <section>
       <h2 class="text-lg font-medium mb-4">字数统计</h2>
       <div class="max-w-md">
-        <Input
+        <ZInput
           v-model="inputCount"
           placeholder="最多输入20个字符"
           maxlength="20"
@@ -94,10 +94,10 @@
     <section>
       <h2 class="text-lg font-medium mb-4">不同状态</h2>
       <div class="grid grid-cols-2 gap-4 max-w-2xl">
-        <Input v-model="inputNormal" placeholder="默认状态" />
-        <Input v-model="inputSuccess" placeholder="成功状态" status="success" />
-        <Input v-model="inputWarning" placeholder="警告状态" status="warning" />
-        <Input v-model="inputError" placeholder="错误状态" status="error" />
+        <ZInput v-model="inputNormal" placeholder="默认状态" />
+        <ZInput v-model="inputSuccess" placeholder="成功状态" status="success" />
+        <ZInput v-model="inputWarning" placeholder="警告状态" status="warning" />
+        <ZInput v-model="inputError" placeholder="错误状态" status="error" />
       </div>
     </section>
 
@@ -105,8 +105,8 @@
     <section>
       <h2 class="text-lg font-medium mb-4">禁用和只读</h2>
       <div class="grid grid-cols-2 gap-4 max-w-2xl">
-        <Input v-model="inputDisabled" placeholder="禁用状态" disabled />
-        <Input v-model="inputReadonly" placeholder="只读状态" readonly />
+        <ZInput v-model="inputDisabled" placeholder="禁用状态" disabled />
+        <ZInput v-model="inputReadonly" placeholder="只读状态" readonly />
       </div>
     </section>
 
@@ -114,7 +114,7 @@
     <section>
       <h2 class="text-lg font-medium mb-4">自动聚焦</h2>
       <div class="max-w-md flex space-x-4">
-        <Input v-model="inputAutofocus" placeholder="自动获取焦点" autofocus />
+        <ZInput v-model="inputAutofocus" placeholder="自动获取焦点" autofocus />
         <button
           class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
           @click="handleResetAutofocus"
@@ -132,13 +132,13 @@
           <label class="block text-sm font-medium text-gray-700 mb-1">
             用户名
           </label>
-          <Input v-model="formUsername" placeholder="请输入用户名" />
+          <ZInput v-model="formUsername" placeholder="请输入用户名" />
         </div>
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-1">
             密码
           </label>
-          <Input
+          <ZInput
             v-model="formPassword"
             type="password"
             placeholder="请输入密码"
@@ -148,7 +148,7 @@
           <label class="block text-sm font-medium text-gray-700 mb-1">
             邮箱
           </label>
-          <Input
+          <ZInput
             v-model="formEmail"
             type="email"
             placeholder="请输入邮箱"
@@ -193,7 +193,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { Input } from '@zxy-ui/vue'
+import { ZInput } from '@zxy-ui/vue'
 // 基础用法
 const inputValue = ref('')
 

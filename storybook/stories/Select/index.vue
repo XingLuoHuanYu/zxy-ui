@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Select } from '@zxy-ui/vue'
+import { ZSelect } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const value1 = ref('')
@@ -28,12 +28,12 @@ const groupOptions = [
   <div class="space-y-8 p-4">
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
-      <Select v-model="value1" :options="defaultOptions" placeholder="请选择" />
+      <ZSelect v-model="value1" :options="defaultOptions" placeholder="请选择" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
-      <Select
+      <ZSelect
         v-model="value1"
         :options="defaultOptions"
         placeholder="请选择"
@@ -43,7 +43,7 @@ const groupOptions = [
 
     <section>
       <h2 class="text-xl font-bold mb-4">只读状态</h2>
-      <Select
+      <ZSelect
         v-model="value2"
         :options="defaultOptions"
         placeholder="请选择"
@@ -53,7 +53,7 @@ const groupOptions = [
 
     <section>
       <h2 class="text-xl font-bold mb-4">多选模式</h2>
-      <Select
+      <ZSelect
         v-model="multipleValue"
         :options="defaultOptions"
         placeholder="请选择"
@@ -66,7 +66,7 @@ const groupOptions = [
       <div class="space-y-4">
         <div>
           <p class="mb-2">小尺寸</p>
-          <Select
+          <ZSelect
             v-model="value1"
             :options="defaultOptions"
             placeholder="请选择"
@@ -75,7 +75,7 @@ const groupOptions = [
         </div>
         <div>
           <p class="mb-2">默认尺寸</p>
-          <Select
+          <ZSelect
             v-model="value1"
             :options="defaultOptions"
             placeholder="请选择"
@@ -84,7 +84,7 @@ const groupOptions = [
         </div>
         <div>
           <p class="mb-2">大尺寸</p>
-          <Select
+          <ZSelect
             v-model="value1"
             :options="defaultOptions"
             placeholder="请选择"
@@ -99,7 +99,7 @@ const groupOptions = [
       <div class="space-y-4">
         <div>
           <p class="mb-2">默认状态</p>
-          <Select
+          <ZSelect
             v-model="value1"
             :options="defaultOptions"
             placeholder="请选择"
@@ -108,7 +108,7 @@ const groupOptions = [
         </div>
         <div>
           <p class="mb-2">成功状态</p>
-          <Select
+          <ZSelect
             v-model="value2"
             :options="defaultOptions"
             placeholder="请选择"
@@ -117,7 +117,7 @@ const groupOptions = [
         </div>
         <div>
           <p class="mb-2">警告状态</p>
-          <Select
+          <ZSelect
             v-model="value1"
             :options="defaultOptions"
             placeholder="请选择"
@@ -127,7 +127,7 @@ const groupOptions = [
         </div>
         <div>
           <p class="mb-2">错误状态</p>
-          <Select
+          <ZSelect
             v-model="value1"
             :options="defaultOptions"
             placeholder="请选择"
@@ -140,7 +140,7 @@ const groupOptions = [
 
     <section>
       <h2 class="text-xl font-bold mb-4">可清除</h2>
-      <Select
+      <ZSelect
         v-model="value2"
         :options="defaultOptions"
         placeholder="请选择"
@@ -150,7 +150,7 @@ const groupOptions = [
 
     <section>
       <h2 class="text-xl font-bold mb-4">可搜索</h2>
-      <Select
+      <ZSelect
         v-model="value1"
         :options="defaultOptions"
         placeholder="请选择"
@@ -160,12 +160,12 @@ const groupOptions = [
 
     <section>
       <h2 class="text-xl font-bold mb-4">分组选项</h2>
-      <Select v-model="value1" :options="groupOptions" placeholder="请选择" />
+      <ZSelect v-model="value1" :options="groupOptions" placeholder="请选择" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">带标签</h2>
-      <Select
+      <ZSelect
         v-model="value1"
         :options="defaultOptions"
         placeholder="请选择"
@@ -177,7 +177,7 @@ const groupOptions = [
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
-      <Select
+      <ZSelect
         v-model="value1"
         :options="defaultOptions"
         placeholder="请选择"
@@ -196,7 +196,7 @@ const groupOptions = [
       <div class="space-y-4">
         <div>
           <p class="mb-2">自定义边框样式</p>
-          <Select
+          <ZSelect
             v-model="value1"
             :options="defaultOptions"
             placeholder="请选择"
@@ -217,7 +217,7 @@ const groupOptions = [
         </div>
         <div>
           <p class="mb-2">圆角样式</p>
-          <Select
+          <ZSelect
             v-model="value1"
             :options="defaultOptions"
             placeholder="请选择"
@@ -238,7 +238,7 @@ const groupOptions = [
         </div>
         <div>
           <p class="mb-2">多选标签样式</p>
-          <Select
+          <ZSelect
             v-model="multipleValue"
             :options="defaultOptions"
             placeholder="请选择"

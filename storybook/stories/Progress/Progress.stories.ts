@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Progress } from '@zxy-ui/vue'
+import { ZProgress } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import ProgressDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Progress> = {
+const meta: Meta<typeof ZProgress> = {
   title: '组件/Progress 进度条',
-  component: Progress,
+  component: ZProgress,
   tags: ['autodocs'],
   argTypes: {
     value: {
@@ -104,7 +104,7 @@ const meta: Meta<typeof Progress> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Progress>
+type Story = StoryObj<typeof ZProgress>
 
 // 基础示例
 export const Basic: Story = {
@@ -112,11 +112,11 @@ export const Basic: Story = {
     value: 40,
   },
   render: (args) => ({
-    components: { Progress },
+    components: {ZProgress},
     setup() {
       return { args }
     },
-    template: `<Progress v-bind="args" />`,
+    template: `<ZProgress v-bind="args" />`,
   }),
 }
 
@@ -127,25 +127,25 @@ export const WithText: Story = {
     showText: true,
   },
   render: (args) => ({
-    components: { Progress },
+    components: {ZProgress},
     setup() {
       return { args }
     },
-    template: `<Progress v-bind="args" />`,
+    template: `<ZProgress v-bind="args" />`,
   }),
 }
 
 // 不同状态示例
 export const Variants: Story = {
   render: () => ({
-    components: { Progress },
+    components: {ZProgress},
     template: `
       <div class="space-y-4">
-        <Progress value="40" variant="default" showText />
-        <Progress value="100" variant="success" showText />
-        <Progress value="70" variant="warning" showText />
-        <Progress value="20" variant="danger" showText />
-        <Progress value="50" variant="info" showText />
+        <ZProgress value="40" variant="default" showText />
+        <ZProgress value="100" variant="success" showText />
+        <ZProgress value="70" variant="warning" showText />
+        <ZProgress value="20" variant="danger" showText />
+        <ZProgress value="50" variant="info" showText />
       </div>
     `,
   }),
@@ -154,11 +154,11 @@ export const Variants: Story = {
 // 条纹和动画示例
 export const StripedAndAnimated: Story = {
   render: () => ({
-    components: { Progress },
+    components: {ZProgress},
     template: `
       <div class="space-y-4">
-        <Progress value="60" striped />
-        <Progress value="60" striped animated />
+        <ZProgress value="60" striped />
+        <ZProgress value="60" striped animated />
       </div>
     `,
   }),
@@ -170,11 +170,11 @@ export const Indeterminate: Story = {
     indeterminate: true,
   },
   render: (args) => ({
-    components: { Progress },
+    components: {ZProgress},
     setup() {
       return { args }
     },
-    template: `<Progress v-bind="args" />`,
+    template: `<ZProgress v-bind="args" />`,
   }),
 }
 
@@ -192,18 +192,18 @@ export const CustomStyling: Story = {
     showText: true,
   },
   render: (args) => ({
-    components: { Progress },
+    components: {ZProgress},
     setup() {
       return { args }
     },
-    template: `<Progress v-bind="args" />`,
+    template: `<ZProgress v-bind="args" />`,
   }),
 }
 
 // 完整示例
 export const FullDemo: Story = {
   render: () => ({
-    components: { ProgressDemo },
+    components: {ProgressDemo},
     template: '<ProgressDemo />',
   }),
 }

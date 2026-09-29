@@ -3,17 +3,17 @@
     <!-- 基础用法 -->
     <section class="example-section">
       <h3 class="example-title">基础用法</h3>
-      <Accordion>
-        <AccordionItem value="item-1" header="第一项">
+      <ZAccordion>
+        <ZAccordionItem value="item-1" header="第一项">
           <p>这是第一项的内容区域。这里可以放置任何内容。</p>
-        </AccordionItem>
-        <AccordionItem value="item-2" header="第二项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-2" header="第二项">
           <p>这是第二项的内容区域。点击标题可以折叠/展开内容。</p>
-        </AccordionItem>
-        <AccordionItem value="item-3" header="第三项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-3" header="第三项">
           <p>这是第三项的内容区域。默认情况下，同一时间只能展开一个面板。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     </section>
 
     <!-- 样式变体 -->
@@ -22,36 +22,36 @@
       <div class="example-row">
         <div class="example-item">
           <h4 class="example-subtitle">默认样式</h4>
-          <Accordion variant="default">
-            <AccordionItem value="item-1" header="默认样式">
+          <ZAccordion variant="default">
+            <ZAccordionItem value="item-1" header="默认样式">
               <p>这是默认样式的手风琴项目。</p>
-            </AccordionItem>
-            <AccordionItem value="item-2" header="第二项">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-2" header="第二项">
               <p>这是第二个项目。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
         <div class="example-item">
           <h4 class="example-subtitle">带边框样式</h4>
-          <Accordion variant="bordered">
-            <AccordionItem value="item-1" header="带边框样式">
+          <ZAccordion variant="bordered">
+            <ZAccordionItem value="item-1" header="带边框样式">
               <p>这是带边框的手风琴项目。</p>
-            </AccordionItem>
-            <AccordionItem value="item-2" header="第二项">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-2" header="第二项">
               <p>这是第二个项目。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
         <div class="example-item">
           <h4 class="example-subtitle">阴影样式</h4>
-          <Accordion variant="elevated">
-            <AccordionItem value="item-1" header="阴影样式">
+          <ZAccordion variant="elevated">
+            <ZAccordionItem value="item-1" header="阴影样式">
               <p>这是带阴影的手风琴项目。</p>
-            </AccordionItem>
-            <AccordionItem value="item-2" header="第二项">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-2" header="第二项">
               <p>这是第二个项目。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
       </div>
     </section>
@@ -62,31 +62,31 @@
       <div class="example-row">
         <div class="example-item">
           <h4 class="example-subtitle">单面板模式（默认）</h4>
-          <Accordion>
-            <AccordionItem value="item-1" header="第一项">
+          <ZAccordion>
+            <ZAccordionItem value="item-1" header="第一项">
               <p>在单面板模式下，同一时间只能展开一个面板。</p>
-            </AccordionItem>
-            <AccordionItem value="item-2" header="第二项">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-2" header="第二项">
               <p>打开此面板会自动关闭其他已打开的面板。</p>
-            </AccordionItem>
-            <AccordionItem value="item-3" header="第三项">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-3" header="第三项">
               <p>这样可以确保界面简洁清晰。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
         <div class="example-item">
           <h4 class="example-subtitle">多面板模式</h4>
-          <Accordion multiple>
-            <AccordionItem value="item-1" header="第一项">
+          <ZAccordion multiple>
+            <ZAccordionItem value="item-1" header="第一项">
               <p>在多面板模式下，可以同时展开多个面板。</p>
-            </AccordionItem>
-            <AccordionItem value="item-2" header="第二项">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-2" header="第二项">
               <p>这对于需要同时查看多个内容区域的场景很有用。</p>
-            </AccordionItem>
-            <AccordionItem value="item-3" header="第三项">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-3" header="第三项">
               <p>用户可以自由组合需要展示的内容。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
       </div>
     </section>
@@ -97,31 +97,31 @@
       <div class="example-row">
         <div class="example-item">
           <h4 class="example-subtitle">单项默认展开</h4>
-          <Accordion v-model="singleExpanded">
-            <AccordionItem value="item-1" header="默认关闭项">
+          <ZAccordion v-model="singleExpanded">
+            <ZAccordionItem value="item-1" header="默认关闭项">
               <p>这个面板默认是关闭的。</p>
-            </AccordionItem>
-            <AccordionItem value="item-2" header="默认展开项">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-2" header="默认展开项">
               <p>这个面板默认是展开的。</p>
-            </AccordionItem>
-            <AccordionItem value="item-3" header="默认关闭项">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-3" header="默认关闭项">
               <p>这个面板默认是关闭的。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
         <div class="example-item">
           <h4 class="example-subtitle">多项默认展开</h4>
-          <Accordion multiple v-model="multiExpanded">
-            <AccordionItem value="item-1" header="默认展开项">
+          <ZAccordion multiple v-model="multiExpanded">
+            <ZAccordionItem value="item-1" header="默认展开项">
               <p>这个面板默认是展开的。</p>
-            </AccordionItem>
-            <AccordionItem value="item-2" header="默认关闭项">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-2" header="默认关闭项">
               <p>这个面板默认是关闭的。</p>
-            </AccordionItem>
-            <AccordionItem value="item-3" header="默认展开项">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-3" header="默认展开项">
               <p>这个面板默认是展开的。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
       </div>
     </section>
@@ -132,28 +132,28 @@
       <div class="example-row">
         <div class="example-item">
           <h4 class="example-subtitle">全部禁用</h4>
-          <Accordion disabled>
-            <AccordionItem value="item-1" header="禁用项目1">
+          <ZAccordion disabled>
+            <ZAccordionItem value="item-1" header="禁用项目1">
               <p>这个手风琴的所有项目都被禁用，无法点击。</p>
-            </AccordionItem>
-            <AccordionItem value="item-2" header="禁用项目2">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-2" header="禁用项目2">
               <p>这个项目也被禁用，无法点击。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
         <div class="example-item">
           <h4 class="example-subtitle">单项禁用</h4>
-          <Accordion>
-            <AccordionItem value="item-1" header="正常项目">
+          <ZAccordion>
+            <ZAccordionItem value="item-1" header="正常项目">
               <p>这是一个可以正常点击的项目。</p>
-            </AccordionItem>
-            <AccordionItem value="item-2" header="禁用项目" disabled>
+            </ZAccordionItem>
+            <ZAccordionItem value="item-2" header="禁用项目" disabled>
               <p>这个项目被禁用，无法点击。</p>
-            </AccordionItem>
-            <AccordionItem value="item-3" header="正常项目">
+            </ZAccordionItem>
+            <ZAccordionItem value="item-3" header="正常项目">
               <p>这是一个可以正常点击的项目。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
       </div>
     </section>
@@ -161,8 +161,8 @@
     <!-- 自定义头部和图标 -->
     <section class="example-section">
       <h3 class="example-title">自定义头部和图标</h3>
-      <Accordion>
-        <AccordionItem value="item-1">
+      <ZAccordion>
+        <ZAccordionItem value="item-1">
           <template #header>
             <div class="flex items-center gap-2">
               <svg
@@ -190,8 +190,8 @@
             <p>这是一个使用了自定义标题的手风琴项目。</p>
             <p class="note">可以添加任何自定义内容。</p>
           </div>
-        </AccordionItem>
-        <AccordionItem value="item-2" header="自定义图标">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-2" header="自定义图标">
           <template #icon>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -213,15 +213,15 @@
           <div class="custom-content">
             <p>这是一个使用了自定义图标的手风琴项目。</p>
           </div>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     </section>
 
     <!-- 无样式模式 -->
     <section class="example-section">
       <h3 class="example-title">无样式模式</h3>
-      <Accordion unstyled :pt="{ root: 'bg-gray-100 rounded-lg p-4' }">
-        <AccordionItem
+      <ZAccordion unstyled :pt="{ root: 'bg-gray-100 rounded-lg p-4' }">
+        <ZAccordionItem
           value="item-1"
           header="自定义样式项目"
           :pt="{
@@ -237,9 +237,9 @@
         >
           <p>这是无样式模式下，通过pt属性自定义的项目。</p>
           <p class="note">可以完全控制每个元素的样式。</p>
-        </AccordionItem>
+        </ZAccordionItem>
 
-        <AccordionItem
+        <ZAccordionItem
           value="item-2"
           header="另一个自定义项目"
           :pt="{
@@ -255,8 +255,8 @@
           }"
         >
           <p>不同风格的自定义项目。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     </section>
   </div>
 </template>

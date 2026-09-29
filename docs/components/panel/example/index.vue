@@ -4,12 +4,12 @@
     <section>
       <h3 class="text-lg font-medium mb-4">基础面板</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Panel title="基础面板">
+        <ZPanel title="基础面板">
           <p>这是一个基础面板的内容区域。</p>
-        </Panel>
-        <Panel title="带边框面板" variant="bordered">
+        </ZPanel>
+        <ZPanel title="带边框面板" variant="bordered">
           <p>这是一个带边框面板的内容区域。</p>
-        </Panel>
+        </ZPanel>
       </div>
     </section>
 
@@ -17,15 +17,15 @@
     <section>
       <h3 class="text-lg font-medium mb-4">面板变体</h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Panel title="默认面板" variant="default">
+        <ZPanel title="默认面板" variant="default">
           <p>这是默认样式的面板。</p>
-        </Panel>
-        <Panel title="带边框面板" variant="bordered">
+        </ZPanel>
+        <ZPanel title="带边框面板" variant="bordered">
           <p>这是带边框的面板。</p>
-        </Panel>
-        <Panel title="阴影面板" variant="elevated">
+        </ZPanel>
+        <ZPanel title="阴影面板" variant="elevated">
           <p>这是带阴影的面板。</p>
-        </Panel>
+        </ZPanel>
       </div>
     </section>
 
@@ -33,14 +33,14 @@
     <section>
       <h3 class="text-lg font-medium mb-4">可折叠面板</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Panel title="可折叠面板" collapsible>
+        <ZPanel title="可折叠面板" collapsible>
           <p>点击面板头部可以折叠/展开此内容。</p>
           <p class="mt-2">这是可折叠面板的更多内容。</p>
-        </Panel>
-        <Panel title="默认折叠面板" collapsible defaultCollapsed>
+        </ZPanel>
+        <ZPanel title="默认折叠面板" collapsible defaultCollapsed>
           <p>这个面板默认是折叠的，点击面板头部可以展开。</p>
           <p class="mt-2">这是默认折叠面板的更多内容。</p>
-        </Panel>
+        </ZPanel>
       </div>
     </section>
 
@@ -50,15 +50,15 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">无内边距</p>
-          <Panel title="无内边距" padding="none" variant="bordered">
+          <ZPanel title="无内边距" padding="none" variant="bordered">
             <p>这是无内边距的面板内容。</p>
-          </Panel>
+          </ZPanel>
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">大内边距</p>
-          <Panel title="大内边距" padding="lg" variant="bordered">
+          <ZPanel title="大内边距" padding="lg" variant="bordered">
             <p>这是大内边距的面板内容。</p>
-          </Panel>
+          </ZPanel>
         </div>
       </div>
     </section>
@@ -66,7 +66,7 @@
     <!-- 自定义标题和图标 -->
     <section>
       <h3 class="text-lg font-medium mb-4">自定义标题和图标</h3>
-      <Panel collapsible>
+      <ZPanel collapsible>
         <template #title>
           <div class="flex items-center gap-2">
             <svg
@@ -92,11 +92,11 @@
           </div>
         </template>
         <p>这个面板使用了自定义标题插槽。</p>
-      </Panel>
+      </ZPanel>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
-import { Panel } from '@zxy-ui/vue'
+import { ZPanel } from '@zxy-ui/vue'
 </script>

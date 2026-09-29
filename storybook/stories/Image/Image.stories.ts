@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Image } from '@zxy-ui/vue'
+import { ZImage } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import ImageDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Image> = {
+const meta: Meta<typeof ZImage> = {
   title: '组件/Image 图片',
-  component: Image,
+  component: ZImage,
   tags: ['autodocs'],
   argTypes: {
     src: {
@@ -142,7 +142,7 @@ const meta: Meta<typeof Image> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Image>
+type Story = StoryObj<typeof ZImage>
 
 // 基础示例
 export const Basic: Story = {
@@ -240,7 +240,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { ImageDemo },
+    components: {ImageDemo},
     template: '<ImageDemo />',
   }),
 }

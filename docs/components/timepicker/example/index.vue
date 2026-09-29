@@ -4,7 +4,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">基础用法</h3>
       <div class="max-w-sm">
-        <TimePicker v-model="selectedTime" />
+        <ZTimePicker v-model="selectedTime" />
       </div>
       <div class="mt-2">当前选择的时间: {{ selectedTime || '未选择' }}</div>
     </section>
@@ -13,7 +13,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">12小时制</h3>
       <div class="max-w-sm">
-        <TimePicker v-model="time12h" format="12h" />
+        <ZTimePicker v-model="time12h" format="12h" />
       </div>
       <div class="mt-2">当前选择的时间: {{ time12h || '未选择' }}</div>
     </section>
@@ -22,7 +22,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">显示秒选择器</h3>
       <div class="max-w-sm">
-        <TimePicker v-model="timeWithSeconds" :showSeconds="true" />
+        <ZTimePicker v-model="timeWithSeconds" :showSeconds="true" />
       </div>
       <div class="mt-2">当前选择的时间: {{ timeWithSeconds || '未选择' }}</div>
     </section>
@@ -31,7 +31,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">自定义步长</h3>
       <div class="max-w-sm">
-        <TimePicker
+        <ZTimePicker
           v-model="timeWithSteps"
           :hourStep="2"
           :minuteStep="15"
@@ -51,13 +51,13 @@
       <div class="flex flex-wrap gap-8">
         <div>
           <div class="max-w-sm">
-            <TimePicker v-model="disabledTime" disabled />
+            <ZTimePicker v-model="disabledTime" disabled />
           </div>
           <div class="mt-2">禁用状态</div>
         </div>
         <div>
           <div class="max-w-sm">
-            <TimePicker v-model="readonlyTime" readonly />
+            <ZTimePicker v-model="readonlyTime" readonly />
           </div>
           <div class="mt-2">只读状态</div>
         </div>
@@ -68,7 +68,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">不可清空</h3>
       <div class="max-w-sm">
-        <TimePicker v-model="nonClearableTime" :clearable="false" />
+        <ZTimePicker v-model="nonClearableTime" :clearable="false" />
       </div>
       <div class="mt-2">
         <div>当前选择的时间: {{ nonClearableTime || '未选择' }}</div>
@@ -79,7 +79,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">使用Date对象</h3>
       <div class="max-w-sm">
-        <TimePicker v-model="dateTime" />
+        <ZTimePicker v-model="dateTime" />
       </div>
       <div class="mt-2">
         <div>
@@ -93,7 +93,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { TimePicker } from '@zxy-ui/vue'
+import { ZTimePicker } from '@zxy-ui/vue'
 
 // 基础用法
 const selectedTime = ref('12:30')

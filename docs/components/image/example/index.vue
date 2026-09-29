@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Image } from '@zxy-ui/vue'
+import { ZImage } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 
 const isZoomed = ref(false)
@@ -17,7 +17,7 @@ const toggleZoom = () => {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <p class="mb-2 text-sm">默认图片：</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -26,7 +26,7 @@ const toggleZoom = () => {
         </div>
         <div>
           <p class="mb-2 text-sm">不同填充模式：</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -43,7 +43,7 @@ const toggleZoom = () => {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <p class="mb-2 text-sm">启用模糊加载：</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -53,7 +53,7 @@ const toggleZoom = () => {
         </div>
         <div>
           <p class="mb-2 text-sm">自定义模糊度：</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -80,7 +80,7 @@ const toggleZoom = () => {
         </div>
 
         <div class="grid grid-cols-1 gap-6">
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -100,7 +100,7 @@ const toggleZoom = () => {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <p class="mb-2 text-sm">默认骨架屏：</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -110,7 +110,7 @@ const toggleZoom = () => {
         </div>
         <div>
           <p class="mb-2 text-sm">自定义骨架屏颜色：</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -128,7 +128,7 @@ const toggleZoom = () => {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div>
           <p class="mb-2 text-sm">无圆角：</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -138,7 +138,7 @@ const toggleZoom = () => {
         </div>
         <div>
           <p class="mb-2 text-sm">中等圆角（默认）：</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -148,7 +148,7 @@ const toggleZoom = () => {
         </div>
         <div>
           <p class="mb-2 text-sm">大圆角：</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -163,7 +163,7 @@ const toggleZoom = () => {
     <section>
       <h2 class="text-lg font-medium mb-4">错误状态</h2>
       <div>
-        <Image
+        <ZImage
           src="invalid-image-url.jpg"
           alt="无效图片"
           width="100%"

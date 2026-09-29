@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { TimePicker } from '@zxy-ui/vue'
+import { ZTimePicker } from '@zxy-ui/vue'
 
 // 基础用法
 const selectedTime = ref('12:30')
@@ -31,7 +31,7 @@ const dateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
       <div class="max-w-sm">
-        <TimePicker v-model="selectedTime" />
+        <ZTimePicker v-model="selectedTime" />
       </div>
       <div class="mt-2">当前选择的时间: {{ selectedTime || '未选择' }}</div>
     </section>
@@ -40,7 +40,7 @@ const dateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">12小时制</h2>
       <div class="max-w-sm">
-        <TimePicker v-model="time12h" format="12h" />
+        <ZTimePicker v-model="time12h" format="12h" />
       </div>
       <div class="mt-2">当前选择的时间: {{ time12h || '未选择' }}</div>
     </section>
@@ -49,7 +49,7 @@ const dateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">显示秒选择器</h2>
       <div class="max-w-sm">
-        <TimePicker v-model="timeWithSeconds" :showSeconds="true" />
+        <ZTimePicker v-model="timeWithSeconds" :showSeconds="true" />
       </div>
       <div class="mt-2">当前选择的时间: {{ timeWithSeconds || '未选择' }}</div>
     </section>
@@ -58,7 +58,7 @@ const dateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">自定义步长</h2>
       <div class="max-w-sm">
-        <TimePicker
+        <ZTimePicker
           v-model="timeWithSteps"
           :hourStep="2"
           :minuteStep="15"
@@ -78,13 +78,13 @@ const dateTime = ref(new Date())
       <div class="flex flex-wrap gap-8">
         <div>
           <div class="max-w-sm">
-            <TimePicker v-model="disabledTime" disabled />
+            <ZTimePicker v-model="disabledTime" disabled />
           </div>
           <div class="mt-2">禁用状态</div>
         </div>
         <div>
           <div class="max-w-sm">
-            <TimePicker v-model="readonlyTime" readonly />
+            <ZTimePicker v-model="readonlyTime" readonly />
           </div>
           <div class="mt-2">只读状态</div>
         </div>
@@ -95,7 +95,7 @@ const dateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">不可清空</h2>
       <div class="max-w-sm">
-        <TimePicker v-model="nonClearableTime" :clearable="false" />
+        <ZTimePicker v-model="nonClearableTime" :clearable="false" />
       </div>
       <div class="mt-2">
         <div>当前选择的时间: {{ nonClearableTime || '未选择' }}</div>
@@ -106,7 +106,7 @@ const dateTime = ref(new Date())
     <section>
       <h2 class="text-xl font-bold mb-4">使用Date对象</h2>
       <div class="max-w-sm">
-        <TimePicker v-model="dateTime" />
+        <ZTimePicker v-model="dateTime" />
       </div>
       <div class="mt-2">
         <div>

@@ -4,7 +4,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">基础轮播</h3>
       <div class="h-64">
-        <Carousel>
+        <ZCarousel>
           <template #item-0>
             <div
               class="w-full h-full bg-blue-500 flex items-center justify-center text-white text-2xl"
@@ -26,7 +26,7 @@
               幻灯片 3
             </div>
           </template>
-        </Carousel>
+        </ZCarousel>
       </div>
     </section>
 
@@ -34,7 +34,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">自动播放</h3>
       <div class="h-64">
-        <Carousel :autoplay="true" :interval="3000">
+        <ZCarousel :autoplay="true" :interval="3000">
           <template #item-0>
             <div
               class="w-full h-full bg-blue-500 flex items-center justify-center text-white text-2xl"
@@ -56,7 +56,7 @@
               幻灯片 3
             </div>
           </template>
-        </Carousel>
+        </ZCarousel>
       </div>
     </section>
 
@@ -66,7 +66,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
           <p class="mb-2 text-sm text-gray-600">小尺寸 (sm)</p>
-          <Carousel size="sm">
+          <ZCarousel size="sm">
             <template #item-0>
               <div
                 class="w-full h-full bg-blue-500 flex items-center justify-center text-white"
@@ -81,11 +81,11 @@
                 幻灯片 2
               </div>
             </template>
-          </Carousel>
+          </ZCarousel>
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-600">中尺寸 (md)</p>
-          <Carousel size="md">
+          <ZCarousel size="md">
             <template #item-0>
               <div
                 class="w-full h-full bg-blue-500 flex items-center justify-center text-white"
@@ -100,11 +100,11 @@
                 幻灯片 2
               </div>
             </template>
-          </Carousel>
+          </ZCarousel>
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-600">大尺寸 (lg)</p>
-          <Carousel size="lg">
+          <ZCarousel size="lg">
             <template #item-0>
               <div
                 class="w-full h-full bg-blue-500 flex items-center justify-center text-white"
@@ -119,7 +119,7 @@
                 幻灯片 2
               </div>
             </template>
-          </Carousel>
+          </ZCarousel>
         </div>
       </div>
     </section>
@@ -130,7 +130,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="h-48">
           <p class="mb-2 text-sm text-gray-600">无导航按钮</p>
-          <Carousel :navigation="false">
+          <ZCarousel :navigation="false">
             <template #item-0>
               <div
                 class="w-full h-full bg-blue-500 flex items-center justify-center text-white text-xl"
@@ -145,11 +145,11 @@
                 幻灯片 2
               </div>
             </template>
-          </Carousel>
+          </ZCarousel>
         </div>
         <div class="h-48">
           <p class="mb-2 text-sm text-gray-600">无指示器</p>
-          <Carousel :indicators="false">
+          <ZCarousel :indicators="false">
             <template #item-0>
               <div
                 class="w-full h-full bg-blue-500 flex items-center justify-center text-white text-xl"
@@ -164,7 +164,7 @@
                 幻灯片 2
               </div>
             </template>
-          </Carousel>
+          </ZCarousel>
         </div>
       </div>
     </section>
@@ -173,7 +173,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">自定义导航图标</h3>
       <div class="h-64">
-        <Carousel>
+        <ZCarousel>
           <template #item-0>
             <div
               class="w-full h-full bg-blue-500 flex items-center justify-center text-white text-2xl"
@@ -229,7 +229,7 @@
               />
             </svg>
           </template>
-        </Carousel>
+        </ZCarousel>
       </div>
     </section>
 
@@ -237,7 +237,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">图片轮播</h3>
       <div class="h-64">
-        <Carousel :autoplay="true" :interval="3000">
+        <ZCarousel :autoplay="true" :interval="3000">
           <template
             v-for="(image, index) in images"
             :key="index"
@@ -251,7 +251,7 @@
               />
             </div>
           </template>
-        </Carousel>
+        </ZCarousel>
       </div>
     </section>
 
@@ -259,7 +259,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">程序控制轮播</h3>
       <div class="h-64 mb-4">
-        <Carousel ref="carouselRef" :navigation="false">
+        <ZCarousel ref="carouselRef" :navigation="false">
           <template #item-0>
             <div
               class="w-full h-full bg-blue-500 flex items-center justify-center text-white text-2xl"
@@ -281,7 +281,7 @@
               幻灯片 3
             </div>
           </template>
-        </Carousel>
+        </ZCarousel>
       </div>
 
       <div class="flex gap-2">
@@ -314,7 +314,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">自定义样式</h3>
       <div class="h-64">
-        <Carousel
+        <ZCarousel
           :pt="{
             root: 'rounded-lg shadow-xl overflow-hidden',
             prevButton: 'bg-black/50 text-white',
@@ -345,7 +345,7 @@
               幻灯片 3
             </div>
           </template>
-        </Carousel>
+        </ZCarousel>
       </div>
     </section>
 
@@ -353,7 +353,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">禁用状态</h3>
       <div class="h-64">
-        <Carousel :disabled="true">
+        <ZCarousel :disabled="true">
           <template #item-0>
             <div
               class="w-full h-full bg-blue-500 flex items-center justify-center text-white text-2xl"
@@ -368,7 +368,7 @@
               幻灯片 2
             </div>
           </template>
-        </Carousel>
+        </ZCarousel>
       </div>
     </section>
   </div>
@@ -376,7 +376,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Carousel } from '@zxy-ui/vue'
+import { ZCarousel } from '@zxy-ui/vue'
 
 // 图片轮播数据
 const images = [

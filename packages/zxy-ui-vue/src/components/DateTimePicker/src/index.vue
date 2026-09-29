@@ -53,7 +53,7 @@
       <div :class="classes.tabContent">
         <!-- 日期选择面板 -->
         <div v-show="activeTab === 'date'">
-          <Calendar
+          <ZCalendar
             :modelValue="currentDateTime"
             :min="min"
             :max="max"
@@ -68,7 +68,7 @@
 
         <!-- 时间选择面板 -->
         <div v-show="activeTab === 'time'">
-          <TimePicker
+          <ZTimePicker
             :modelValue="currentDateTime"
             :disabled="disabled"
             :readonly="readonly"
@@ -94,20 +94,11 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useDateTimePicker } from './composables/useDateTimePicker'
-import {
-  dateTimePickerStyle,
-  dateTimePickerInputWrapperStyle,
-  dateTimePickerInputStyle,
-  dateTimePickerClearButtonStyle,
-  dateTimePickerDropdownStyle,
-  dateTimePickerTabsStyle,
-  dateTimePickerTabStyle,
-  dateTimePickerTabContentStyle,
-} from './index.variants'
+import { dateTimePickerStyle, dateTimePickerInputWrapperStyle, dateTimePickerInputStyle, dateTimePickerClearButtonStyle, dateTimePickerDropdownStyle, dateTimePickerTabsStyle, dateTimePickerTabStyle, dateTimePickerTabContentStyle } from './index.variants'
 import type { DateTimePickerProps } from './type'
 import { DateTimePickerEmits } from './type'
-import { Calendar } from '../../Calendar'
-import { TimePicker } from '../../TimePicker'
+import { ZCalendar } from '../../Calendar'
+import { ZTimePicker } from '../../TimePicker'
 
 const emit = defineEmits(DateTimePickerEmits)
 const props = withDefaults(defineProps<DateTimePickerProps>(), {

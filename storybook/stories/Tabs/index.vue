@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Tabs } from '@zxy-ui/vue'
+import { ZTabs } from '@zxy-ui/vue'
 
 const defaultItems = [
   {
@@ -39,17 +39,17 @@ const itemsWithIcons = [
   <div class="space-y-8 p-4">
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
-      <Tabs :items="defaultItems" />
+      <ZTabs :items="defaultItems" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
-      <Tabs :items="defaultItems" disabled />
+      <ZTabs :items="defaultItems" disabled />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用特定标签</h2>
-      <Tabs
+      <ZTabs
         :items="[
           {
             label: '标签一',
@@ -73,32 +73,32 @@ const itemsWithIcons = [
       <div class="space-y-4">
         <div>
           <p class="mb-2">小尺寸</p>
-          <Tabs :items="defaultItems" size="sm" />
+          <ZTabs :items="defaultItems" size="sm" />
         </div>
         <div>
           <p class="mb-2">中等尺寸</p>
-          <Tabs :items="defaultItems" size="md" />
+          <ZTabs :items="defaultItems" size="md" />
         </div>
         <div>
           <p class="mb-2">大尺寸</p>
-          <Tabs :items="defaultItems" size="lg" />
+          <ZTabs :items="defaultItems" size="lg" />
         </div>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">块级元素</h2>
-      <Tabs :items="defaultItems" block />
+      <ZTabs :items="defaultItems" block />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">带图标</h2>
-      <Tabs :items="itemsWithIcons" />
+      <ZTabs :items="itemsWithIcons" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
-      <Tabs
+      <ZTabs
         :items="defaultItems"
         :pt="{
           trigger:
@@ -113,7 +113,7 @@ const itemsWithIcons = [
       <div class="space-y-8">
         <div>
           <p class="mb-2">卡片式标签页</p>
-          <Tabs
+          <ZTabs
             :items="defaultItems"
             unstyled
             :pt="{
@@ -126,7 +126,7 @@ const itemsWithIcons = [
         </div>
         <div>
           <p class="mb-2">底部边框标签页</p>
-          <Tabs
+          <ZTabs
             :items="defaultItems"
             unstyled
             :pt="{
@@ -139,7 +139,7 @@ const itemsWithIcons = [
         </div>
         <div>
           <p class="mb-2">按钮式标签页</p>
-          <Tabs
+          <ZTabs
             :items="defaultItems"
             unstyled
             :pt="{

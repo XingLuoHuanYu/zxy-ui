@@ -2,12 +2,12 @@
 
 Splitter 组件用于创建可调整大小的分割面板，允许用户通过拖动分隔条来重新分配面板空间，适用于需要灵活布局的界面，如代码编辑器、文件管理器等。
 
-<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-splitter-%E5%88%86%E5%89%B2%E9%9D%A2%E6%9D%BF--basic"/>
+<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-splitter-%E5%88%86%E5%89%B2%E9%9D%A2%E6%9D%BF--basic"/>
 
 ## 引入
 
 ```typescript
-import { Splitter } from '@zxy-ui/vue'
+import { ZSplitter } from '@zxy-ui/vue'
 ```
 
 ## 使用
@@ -20,7 +20,7 @@ import { Splitter } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Splitter>
+	<ZSplitter>
 		<SplitterItem>
 			<div class="h-40 flex items-center justify-center bg-gray-100">
 				面板 1
@@ -31,7 +31,7 @@ import { Splitter } from '@zxy-ui/vue'
 				面板 2
 			</div>
 		</SplitterItem>
-	</Splitter>
+	</ZSplitter>
 </template>
 ```
 
@@ -41,7 +41,7 @@ import { Splitter } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Splitter layout="vertical">
+	<ZSplitter layout="vertical">
 		<template #panel-0>
 			<div class="h-40 flex items-center justify-center bg-gray-100">
 				面板 1
@@ -52,7 +52,7 @@ import { Splitter } from '@zxy-ui/vue'
 				面板 2
 			</div>
 		</template>
-	</Splitter>
+	</ZSplitter>
 </template>
 ```
 
@@ -62,7 +62,7 @@ import { Splitter } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Splitter>
+	<ZSplitter>
 		<template #panel-0>
 			<div class="h-40 flex items-center justify-center bg-gray-100">
 				面板 1
@@ -78,7 +78,7 @@ import { Splitter } from '@zxy-ui/vue'
 				面板 3
 			</div>
 		</template>
-	</Splitter>
+	</ZSplitter>
 </template>
 ```
 
@@ -88,14 +88,14 @@ import { Splitter } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Splitter>
+	<ZSplitter>
 		<template #panel-0>
 			<div class="h-60 flex items-center justify-center bg-gray-100">
 				面板 1
 			</div>
 		</template>
 		<template #panel-1>
-			<Splitter layout="vertical">
+			<ZSplitter layout="vertical">
 				<template #panel-0>
 					<div class="h-30 flex items-center justify-center bg-gray-200">
 						面板 2.1
@@ -106,9 +106,9 @@ import { Splitter } from '@zxy-ui/vue'
 						面板 2.2
 					</div>
 				</template>
-			</Splitter>
+			</ZSplitter>
 		</template>
-	</Splitter>
+	</ZSplitter>
 </template>
 ```
 
@@ -118,7 +118,7 @@ import { Splitter } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Splitter :gutter-size="8">
+	<ZSplitter :gutter-size="8">
 		<template #panel-0>
 			<div class="h-40 flex items-center justify-center bg-gray-100">
 				面板 1
@@ -129,7 +129,7 @@ import { Splitter } from '@zxy-ui/vue'
 				面板 2
 			</div>
 		</template>
-	</Splitter>
+	</ZSplitter>
 </template>
 ```
 
@@ -139,7 +139,7 @@ import { Splitter } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Splitter :initial-sizes="[70, 30]" :min-size="[20, 10]">
+	<ZSplitter :initial-sizes="[70, 30]" :min-size="[20, 10]">
 		<template #panel-0>
 			<div class="h-40 flex items-center justify-center bg-gray-100">
 				面板 1 (初始 70%, 最小 20%)
@@ -150,7 +150,7 @@ import { Splitter } from '@zxy-ui/vue'
 				面板 2 (初始 30%, 最小 10%)
 			</div>
 		</template>
-	</Splitter>
+	</ZSplitter>
 </template>
 ```
 
@@ -160,7 +160,7 @@ import { Splitter } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Splitter
+	<ZSplitter
 		:pt="{
 			root: 'border border-gray-300 rounded-md overflow-hidden',
 			gutter: 'bg-blue-500 hover:bg-blue-600',
@@ -177,7 +177,7 @@ import { Splitter } from '@zxy-ui/vue'
 				面板 2
 			</div>
 		</template>
-	</Splitter>
+	</ZSplitter>
 </template>
 ```
 
@@ -187,7 +187,7 @@ import { Splitter } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Splitter
+	<ZSplitter
 		unstyled
 		:pt="{
 			root: 'flex border border-gray-200 rounded-lg overflow-hidden',
@@ -204,7 +204,7 @@ import { Splitter } from '@zxy-ui/vue'
 				面板 2
 			</div>
 		</template>
-	</Splitter>
+	</ZSplitter>
 </template>
 ```
 

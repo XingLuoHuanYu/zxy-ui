@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Input } from '@zxy-ui/vue'
+import { ZInput } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import InputDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Input> = {
+const meta: Meta<typeof ZInput> = {
   title: '组件/Input 输入框',
-  component: Input,
+  component: ZInput,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -130,7 +130,7 @@ const meta: Meta<typeof Input> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Input>
+type Story = StoryObj<typeof ZInput>
 
 // 基础示例
 export const Basic: Story = {
@@ -233,7 +233,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { InputDemo },
+    components: {InputDemo},
     template: '<InputDemo />',
   }),
 }

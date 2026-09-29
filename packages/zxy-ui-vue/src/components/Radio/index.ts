@@ -1,3 +1,3 @@
 export * from './src/type'
-export { default as Radio } from './src/Radio.vue'
-export { default as RadioGroup } from './src/RadioGroup.vue'
+export { default as ZRadio } from './src/Radio.vue'
+export { default as ZRadioGroup } from './src/RadioGroup.vue'

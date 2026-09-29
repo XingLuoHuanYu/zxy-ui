@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { Card } from '@zxy-ui/vue'
+import { ZCard } from '@zxy-ui/vue'
 </script>
 
 <template>
   <div class="space-y-8 p-4">
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
-      <Card>
+      <ZCard>
         <template #header>
           <h3 class="text-lg font-medium">卡片标题</h3>
         </template>
@@ -18,7 +18,7 @@ import { Card } from '@zxy-ui/vue'
             </button>
           </div>
         </template>
-      </Card>
+      </ZCard>
     </section>
 
     <section>
@@ -26,30 +26,30 @@ import { Card } from '@zxy-ui/vue'
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
           <p class="mb-2">默认</p>
-          <Card variant="default">
+          <ZCard variant="default">
             <template #header>
               <h3 class="text-lg font-medium">默认卡片</h3>
             </template>
             <p>默认卡片样式。</p>
-          </Card>
+          </ZCard>
         </div>
         <div>
           <p class="mb-2">带边框</p>
-          <Card variant="bordered">
+          <ZCard variant="bordered">
             <template #header>
               <h3 class="text-lg font-medium">带边框的卡片</h3>
             </template>
             <p>带有边框的卡片样式。</p>
-          </Card>
+          </ZCard>
         </div>
         <div>
           <p class="mb-2">阴影</p>
-          <Card variant="elevated">
+          <ZCard variant="elevated">
             <template #header>
               <h3 class="text-lg font-medium">阴影卡片</h3>
             </template>
             <p>带有阴影效果的卡片样式。</p>
-          </Card>
+          </ZCard>
         </div>
       </div>
     </section>
@@ -59,27 +59,27 @@ import { Card } from '@zxy-ui/vue'
       <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
         <div>
           <p class="mb-2">无内边距</p>
-          <Card padding="none">
+          <ZCard padding="none">
             <p>无内边距的卡片。</p>
-          </Card>
+          </ZCard>
         </div>
         <div>
           <p class="mb-2">小内边距</p>
-          <Card padding="sm">
+          <ZCard padding="sm">
             <p>小内边距的卡片。</p>
-          </Card>
+          </ZCard>
         </div>
         <div>
           <p class="mb-2">中等内边距</p>
-          <Card padding="md">
+          <ZCard padding="md">
             <p>中等内边距的卡片。</p>
-          </Card>
+          </ZCard>
         </div>
         <div>
           <p class="mb-2">大内边距</p>
-          <Card padding="lg">
+          <ZCard padding="lg">
             <p>大内边距的卡片。</p>
-          </Card>
+          </ZCard>
         </div>
       </div>
     </section>
@@ -89,47 +89,47 @@ import { Card } from '@zxy-ui/vue'
       <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
         <div>
           <p class="mb-2">无圆角</p>
-          <Card radius="none">
+          <ZCard radius="none">
             <p>无圆角的卡片。</p>
-          </Card>
+          </ZCard>
         </div>
         <div>
           <p class="mb-2">小圆角</p>
-          <Card radius="sm">
+          <ZCard radius="sm">
             <p>小圆角的卡片。</p>
-          </Card>
+          </ZCard>
         </div>
         <div>
           <p class="mb-2">中等圆角</p>
-          <Card radius="md">
+          <ZCard radius="md">
             <p>中等圆角的卡片。</p>
-          </Card>
+          </ZCard>
         </div>
         <div>
           <p class="mb-2">大圆角</p>
-          <Card radius="lg">
+          <ZCard radius="lg">
             <p>大圆角的卡片。</p>
-          </Card>
+          </ZCard>
         </div>
         <div>
           <p class="mb-2">全圆角</p>
-          <Card radius="full">
+          <ZCard radius="full">
             <p>全圆角的卡片。</p>
-          </Card>
+          </ZCard>
         </div>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">悬停效果</h2>
-      <Card hover>
+      <ZCard hover>
         <p>鼠标悬停在此卡片上会有效果。</p>
-      </Card>
+      </ZCard>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
-      <Card
+      <ZCard
         :pt="{
           root: 'bg-purple-50 border border-purple-200',
           header: 'border-b border-purple-200 bg-purple-100',
@@ -144,13 +144,13 @@ import { Card } from '@zxy-ui/vue'
         <template #footer>
           <div class="text-right">卡片底部</div>
         </template>
-      </Card>
+      </ZCard>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Card
+        <ZCard
           unstyled
           :pt="{
             root: 'bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg overflow-hidden shadow-lg',
@@ -170,8 +170,8 @@ import { Card } from '@zxy-ui/vue'
               </button>
             </div>
           </template>
-        </Card>
-        <Card
+        </ZCard>
+        <ZCard
           unstyled
           :pt="{
             root: 'border-2 border-dashed border-gray-300 rounded-md overflow-hidden bg-gray-50',
@@ -191,7 +191,7 @@ import { Card } from '@zxy-ui/vue'
               </button>
             </div>
           </template>
-        </Card>
+        </ZCard>
       </div>
     </section>
   </div>

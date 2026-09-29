@@ -2,12 +2,12 @@
 
 Paginator 是一个分页导航组件，用于在大量数据中进行页面切换和导航。它提供了多种样式变体和自定义配置，支持不同的分页场景，如表格数据分页、内容列表分页等。
 
-<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-paginator-%E5%88%86%E9%A1%B5%E5%99%A8--basic"/>
+<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-paginator-%E5%88%86%E9%A1%B5%E5%99%A8--basic"/>
 
 ## 引入
 
 ```typescript
-import { Paginator } from '@zxy-ui/vue'
+import { ZPaginator } from '@zxy-ui/vue'
 ```
 
 ## 使用

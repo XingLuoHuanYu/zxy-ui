@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Checkbox } from '@zxy-ui/vue'
+import { ZCheckbox } from '@zxy-ui/vue'
 
 const checked1 = ref(false)
 const checked2 = ref(true)
@@ -13,45 +13,45 @@ const checked5 = ref(true)
   <div class="space-y-8 p-4">
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
-      <Checkbox v-model="checked1" label="同意服务条款" />
+      <ZCheckbox v-model="checked1" label="同意服务条款" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">选中状态</h2>
-      <Checkbox v-model="checked2" label="已选中状态" />
+      <ZCheckbox v-model="checked2" label="已选中状态" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
       <div class="space-y-2">
-        <Checkbox disabled label="禁用状态（未选中）" />
-        <Checkbox disabled :model-value="true" label="禁用状态（已选中）" />
+        <ZCheckbox disabled label="禁用状态（未选中）" />
+        <ZCheckbox disabled :model-value="true" label="禁用状态（已选中）" />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">不同尺寸</h2>
       <div class="space-y-2">
-        <Checkbox size="small" label="小尺寸" />
-        <Checkbox size="default" label="默认尺寸" />
-        <Checkbox size="large" label="大尺寸" />
+        <ZCheckbox size="small" label="小尺寸" />
+        <ZCheckbox size="default" label="默认尺寸" />
+        <ZCheckbox size="large" label="大尺寸" />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">不同颜色</h2>
       <div class="space-y-2">
-        <Checkbox :model-value="true" color="blue" label="蓝色（默认）" />
-        <Checkbox :model-value="true" color="green" label="绿色" />
-        <Checkbox :model-value="true" color="red" label="红色" />
-        <Checkbox :model-value="true" color="yellow" label="黄色" />
-        <Checkbox :model-value="true" color="purple" label="紫色" />
+        <ZCheckbox :model-value="true" color="blue" label="蓝色（默认）" />
+        <ZCheckbox :model-value="true" color="green" label="绿色" />
+        <ZCheckbox :model-value="true" color="red" label="红色" />
+        <ZCheckbox :model-value="true" color="yellow" label="黄色" />
+        <ZCheckbox :model-value="true" color="purple" label="紫色" />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
-      <Checkbox
+      <ZCheckbox
         v-model="checked3"
         label="自定义样式"
         :pt="{
@@ -66,7 +66,7 @@ const checked5 = ref(true)
     <section>
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
       <div class="space-y-4">
-        <Checkbox
+        <ZCheckbox
           v-model="checked4"
           label="圆形复选框"
           unstyled
@@ -78,7 +78,7 @@ const checked5 = ref(true)
             label: 'ml-2 text-purple-700',
           }"
         />
-        <Checkbox
+        <ZCheckbox
           v-model="checked5"
           label="渐变背景复选框"
           unstyled

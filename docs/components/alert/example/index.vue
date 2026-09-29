@@ -4,18 +4,18 @@
     <section>
       <h3 class="text-lg font-medium mb-3">基础类型</h3>
       <div class="space-y-3">
-        <Alert variant="info" title="信息提示">
+        <ZAlert variant="info" title="信息提示">
           这是一条信息提示，用于展示普通信息。
-        </Alert>
-        <Alert variant="success" title="成功提示">
+        </ZAlert>
+        <ZAlert variant="success" title="成功提示">
           这是一条成功提示，用于展示操作成功的信息。
-        </Alert>
-        <Alert variant="warning" title="警告提示">
+        </ZAlert>
+        <ZAlert variant="warning" title="警告提示">
           这是一条警告提示，用于展示需要注意的信息。
-        </Alert>
-        <Alert variant="error" title="错误提示">
+        </ZAlert>
+        <ZAlert variant="error" title="错误提示">
           这是一条错误提示，用于展示操作失败的信息。
-        </Alert>
+        </ZAlert>
       </div>
     </section>
 
@@ -23,7 +23,7 @@
     <section>
       <h3 class="text-lg font-medium mb-3">可关闭的提示</h3>
       <div class="space-y-3">
-        <Alert
+        <ZAlert
           v-for="alert in closableAlerts"
           :key="alert.id"
           :variant="alert.variant"
@@ -32,7 +32,7 @@
           @close="handleClose(alert.id)"
         >
           {{ alert.content }}
-        </Alert>
+        </ZAlert>
       </div>
       <div class="mt-3" v-if="closableAlerts.length === 0">
         <button
@@ -48,18 +48,18 @@
     <section>
       <h3 class="text-lg font-medium mb-3">不同尺寸</h3>
       <div class="space-y-3">
-        <Alert variant="info" title="超小尺寸 (xs)" size="xs">
+        <ZAlert variant="info" title="超小尺寸 (xs)" size="xs">
           这是一个超小尺寸的提示框，适合紧凑型界面。
-        </Alert>
-        <Alert variant="info" title="小尺寸 (sm)" size="sm">
+        </ZAlert>
+        <ZAlert variant="info" title="小尺寸 (sm)" size="sm">
           这是一个小尺寸的提示框，适合一般界面。
-        </Alert>
-        <Alert variant="info" title="中等尺寸 (md)" size="md">
+        </ZAlert>
+        <ZAlert variant="info" title="中等尺寸 (md)" size="md">
           这是一个中等尺寸的提示框，这是默认尺寸。
-        </Alert>
-        <Alert variant="info" title="大尺寸 (lg)" size="lg">
+        </ZAlert>
+        <ZAlert variant="info" title="大尺寸 (lg)" size="lg">
           这是一个大尺寸的提示框，适合重要信息展示。
-        </Alert>
+        </ZAlert>
       </div>
     </section>
 
@@ -67,10 +67,10 @@
     <section>
       <h3 class="text-lg font-medium mb-3">图标定制</h3>
       <div class="space-y-3">
-        <Alert variant="success" title="无图标提示" :icon="false">
+        <ZAlert variant="success" title="无图标提示" :icon="false">
           这是一个没有图标的提示框，适合简洁风格。
-        </Alert>
-        <Alert variant="info" title="自定义图标">
+        </ZAlert>
+        <ZAlert variant="info" title="自定义图标">
           <template #icon>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@
             </svg>
           </template>
           这是一个带自定义图标的提示框，可以根据需要自定义图标。
-        </Alert>
+        </ZAlert>
       </div>
     </section>
 
@@ -99,24 +99,24 @@
     <section>
       <h3 class="text-lg font-medium mb-3">边框与阴影</h3>
       <div class="space-y-3">
-        <Alert
+        <ZAlert
           variant="warning"
           title="标准边框"
           description="这是默认的边框样式。"
         />
-        <Alert
+        <ZAlert
           variant="warning"
           title="无边框"
           :border="false"
           description="这是没有边框的样式。"
         />
-        <Alert
+        <ZAlert
           variant="warning"
           title="带阴影"
           :shadow="true"
           description="这是带阴影效果的提示框。"
         />
-        <Alert
+        <ZAlert
           variant="warning"
           title="无边框带阴影"
           :border="false"
@@ -130,21 +130,21 @@
     <section>
       <h3 class="text-lg font-medium mb-3">圆角样式</h3>
       <div class="space-y-3">
-        <Alert variant="success" title="无圆角 (none)" rounded="none">
+        <ZAlert variant="success" title="无圆角 (none)" rounded="none">
           这是一个没有圆角的提示框，适合方正风格。
-        </Alert>
-        <Alert variant="success" title="小圆角 (sm)" rounded="sm">
+        </ZAlert>
+        <ZAlert variant="success" title="小圆角 (sm)" rounded="sm">
           这是一个小圆角的提示框。
-        </Alert>
-        <Alert variant="success" title="中等圆角 (md)" rounded="md">
+        </ZAlert>
+        <ZAlert variant="success" title="中等圆角 (md)" rounded="md">
           这是一个中等圆角的提示框，这是默认圆角。
-        </Alert>
-        <Alert variant="success" title="大圆角 (lg)" rounded="lg">
+        </ZAlert>
+        <ZAlert variant="success" title="大圆角 (lg)" rounded="lg">
           这是一个大圆角的提示框。
-        </Alert>
-        <Alert variant="success" title="满圆角 (full)" rounded="full">
+        </ZAlert>
+        <ZAlert variant="success" title="满圆角 (full)" rounded="full">
           这是一个满圆角的提示框，适合圆润风格。
-        </Alert>
+        </ZAlert>
       </div>
     </section>
 
@@ -152,7 +152,7 @@
     <section>
       <h3 class="text-lg font-medium mb-3">组合样式</h3>
       <div class="space-y-3">
-        <Alert
+        <ZAlert
           variant="error"
           title="重要错误提示"
           size="lg"
@@ -161,8 +161,8 @@
           closable
         >
           这是一个重要的错误提示，使用了大尺寸、大圆角和阴影效果，并且可以关闭。
-        </Alert>
-        <Alert
+        </ZAlert>
+        <ZAlert
           variant="info"
           :icon="false"
           :border="false"
@@ -172,14 +172,14 @@
         >
           <div class="font-medium">自定义渐变背景</div>
           这是一个使用自定义类添加渐变背景的提示框，同时移除了图标和边框，添加了阴影和满圆角。
-        </Alert>
+        </ZAlert>
       </div>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
-import { Alert } from '@zxy-ui/vue'
+import { ZAlert } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 // 可关闭的提示数据

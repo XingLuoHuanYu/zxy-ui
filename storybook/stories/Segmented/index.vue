@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Segmented } from '@zxy-ui/vue'
+import { ZSegmented } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const value1 = ref('daily')
@@ -11,12 +11,12 @@ const value3 = ref('list')
   <div class="space-y-8 p-4">
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
-      <Segmented v-model="value1" :options="['daily', 'weekly', 'monthly']" />
+      <ZSegmented v-model="value1" :options="['daily', 'weekly', 'monthly']" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">对象选项</h2>
-      <Segmented
+      <ZSegmented
         v-model="value2"
         :options="[
           { value: 'list', label: '列表' },
@@ -28,7 +28,7 @@ const value3 = ref('list')
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用选项</h2>
-      <Segmented
+      <ZSegmented
         v-model="value3"
         :options="[
           { value: 'list', label: '列表' },
@@ -43,7 +43,7 @@ const value3 = ref('list')
       <div class="space-y-4">
         <div>
           <p class="mb-2">小尺寸</p>
-          <Segmented
+          <ZSegmented
             v-model="value1"
             :options="['daily', 'weekly', 'monthly']"
             size="sm"
@@ -51,7 +51,7 @@ const value3 = ref('list')
         </div>
         <div>
           <p class="mb-2">中等尺寸</p>
-          <Segmented
+          <ZSegmented
             v-model="value1"
             :options="['daily', 'weekly', 'monthly']"
             size="md"
@@ -59,7 +59,7 @@ const value3 = ref('list')
         </div>
         <div>
           <p class="mb-2">大尺寸</p>
-          <Segmented
+          <ZSegmented
             v-model="value1"
             :options="['daily', 'weekly', 'monthly']"
             size="lg"
@@ -70,7 +70,7 @@ const value3 = ref('list')
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
-      <Segmented
+      <ZSegmented
         v-model="value1"
         :options="['daily', 'weekly', 'monthly']"
         disabled
@@ -79,7 +79,7 @@ const value3 = ref('list')
 
     <section>
       <h2 class="text-xl font-bold mb-4">块级元素</h2>
-      <Segmented
+      <ZSegmented
         v-model="value1"
         :options="['daily', 'weekly', 'monthly']"
         block
@@ -88,7 +88,7 @@ const value3 = ref('list')
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
-      <Segmented
+      <ZSegmented
         v-model="value1"
         :options="['daily', 'weekly', 'monthly']"
         :pt="{
@@ -103,7 +103,7 @@ const value3 = ref('list')
       <div class="space-y-4">
         <div>
           <p class="mb-2">圆形样式</p>
-          <Segmented
+          <ZSegmented
             v-model="value1"
             :options="['daily', 'weekly', 'monthly']"
             unstyled
@@ -116,7 +116,7 @@ const value3 = ref('list')
         </div>
         <div>
           <p class="mb-2">底部边框样式</p>
-          <Segmented
+          <ZSegmented
             v-model="value1"
             :options="['daily', 'weekly', 'monthly']"
             unstyled
@@ -129,7 +129,7 @@ const value3 = ref('list')
         </div>
         <div>
           <p class="mb-2">按钮组样式</p>
-          <Segmented
+          <ZSegmented
             v-model="value1"
             :options="['daily', 'weekly', 'monthly']"
             unstyled

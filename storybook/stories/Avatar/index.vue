@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { Avatar } from '@zxy-ui/vue'
+import { ZAvatar } from '@zxy-ui/vue'
 </script>
 
 <template>
   <div class="space-y-8 p-4">
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
-      <Avatar
+      <ZAvatar
         src="https://randomuser.me/api/portraits/men/1.jpg"
         alt="用户头像"
       />
@@ -17,35 +17,35 @@ import { Avatar } from '@zxy-ui/vue'
       <div class="flex items-center gap-4">
         <div>
           <p class="mb-2">超小尺寸</p>
-          <Avatar
+          <ZAvatar
             src="https://randomuser.me/api/portraits/men/2.jpg"
             size="xs"
           />
         </div>
         <div>
           <p class="mb-2">小尺寸</p>
-          <Avatar
+          <ZAvatar
             src="https://randomuser.me/api/portraits/men/2.jpg"
             size="sm"
           />
         </div>
         <div>
           <p class="mb-2">中等尺寸</p>
-          <Avatar
+          <ZAvatar
             src="https://randomuser.me/api/portraits/men/2.jpg"
             size="md"
           />
         </div>
         <div>
           <p class="mb-2">大尺寸</p>
-          <Avatar
+          <ZAvatar
             src="https://randomuser.me/api/portraits/men/2.jpg"
             size="lg"
           />
         </div>
         <div>
           <p class="mb-2">超大尺寸</p>
-          <Avatar
+          <ZAvatar
             src="https://randomuser.me/api/portraits/men/2.jpg"
             size="xl"
           />
@@ -58,14 +58,14 @@ import { Avatar } from '@zxy-ui/vue'
       <div class="flex items-center gap-4">
         <div>
           <p class="mb-2">圆形</p>
-          <Avatar
+          <ZAvatar
             src="https://randomuser.me/api/portraits/women/3.jpg"
             shape="circle"
           />
         </div>
         <div>
           <p class="mb-2">方形</p>
-          <Avatar
+          <ZAvatar
             src="https://randomuser.me/api/portraits/women/3.jpg"
             shape="square"
           />
@@ -78,28 +78,28 @@ import { Avatar } from '@zxy-ui/vue'
       <div class="flex items-center gap-4">
         <div>
           <p class="mb-2">在线</p>
-          <Avatar
+          <ZAvatar
             src="https://randomuser.me/api/portraits/men/4.jpg"
             status="online"
           />
         </div>
         <div>
           <p class="mb-2">离线</p>
-          <Avatar
+          <ZAvatar
             src="https://randomuser.me/api/portraits/men/4.jpg"
             status="offline"
           />
         </div>
         <div>
           <p class="mb-2">离开</p>
-          <Avatar
+          <ZAvatar
             src="https://randomuser.me/api/portraits/men/4.jpg"
             status="away"
           />
         </div>
         <div>
           <p class="mb-2">忙碌</p>
-          <Avatar
+          <ZAvatar
             src="https://randomuser.me/api/portraits/men/4.jpg"
             status="busy"
           />
@@ -110,29 +110,29 @@ import { Avatar } from '@zxy-ui/vue'
     <section>
       <h2 class="text-xl font-bold mb-4">加载失败时的文本</h2>
       <div class="flex items-center gap-4">
-        <Avatar src="invalid-image-url.jpg" fallback="JD" />
-        <Avatar src="invalid-image-url.jpg" fallback="ZS" />
-        <Avatar src="invalid-image-url.jpg" fallback="WW" />
+        <ZAvatar src="invalid-image-url.jpg" fallback="JD" />
+        <ZAvatar src="invalid-image-url.jpg" fallback="ZS" />
+        <ZAvatar src="invalid-image-url.jpg" fallback="WW" />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
       <div class="flex items-center gap-4">
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/women/5.jpg"
           :pt="{
             root: 'border-2 border-purple-500',
             image: 'grayscale',
           }"
         />
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/women/6.jpg"
           :pt="{
             root: 'border-2 border-green-500 shadow-lg',
           }"
         />
-        <Avatar
+        <ZAvatar
           src="invalid-image-url.jpg"
           fallback="PT"
           :pt="{
@@ -145,7 +145,7 @@ import { Avatar } from '@zxy-ui/vue'
     <section>
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
       <div class="flex items-center gap-4">
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/men/6.jpg"
           unstyled
           :pt="{
@@ -153,7 +153,7 @@ import { Avatar } from '@zxy-ui/vue'
             image: 'w-full h-full object-cover',
           }"
         />
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/men/7.jpg"
           unstyled
           :pt="{
@@ -161,7 +161,7 @@ import { Avatar } from '@zxy-ui/vue'
             image: 'w-full h-full object-cover',
           }"
         />
-        <Avatar
+        <ZAvatar
           src="invalid-image-url.jpg"
           fallback="VS"
           unstyled

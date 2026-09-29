@@ -4,7 +4,7 @@ import { skeletonAvatarStyle } from './index.variants'
 import type { SkeletonAvatarProps } from './type'
 
 defineOptions({
-  name: 'SkeletonAvatar',
+  name: 'ZSkeletonAvatar',
 })
 
 const props = withDefaults(defineProps<SkeletonAvatarProps>(), {

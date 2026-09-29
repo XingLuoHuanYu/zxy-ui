@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Switch } from '@zxy-ui/vue'
+import { ZSwitch } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import SwitchDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Switch> = {
+const meta: Meta<typeof ZSwitch> = {
   title: '组件/Switch 开关',
-  component: Switch,
+  component: ZSwitch,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -63,7 +63,7 @@ const meta: Meta<typeof Switch> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Switch>
+type Story = StoryObj<typeof ZSwitch>
 
 // 基础示例
 export const Basic: Story = {
@@ -140,7 +140,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { SwitchDemo },
+    components: {SwitchDemo},
     template: '<SwitchDemo />',
   }),
 }

@@ -77,17 +77,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useCalendar } from './composables/useCalendar'
-import {
-  calendarStyle,
-  calendarHeaderStyle,
-  calendarTitleStyle,
-  calendarNavigationStyle,
-  calendarNavButtonStyle,
-  calendarWeekdaysStyle,
-  calendarWeekdayStyle,
-  calendarDaysStyle,
-  calendarDayStyle,
-} from './index.variants'
+import { calendarStyle, calendarHeaderStyle, calendarTitleStyle, calendarNavigationStyle, calendarNavButtonStyle, calendarWeekdaysStyle, calendarWeekdayStyle, calendarDaysStyle, calendarDayStyle } from './index.variants'
 import type { CalendarProps } from './type'
 import { CalendarEmits } from './type'
 

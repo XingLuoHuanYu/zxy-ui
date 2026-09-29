@@ -3,13 +3,13 @@
     <!-- 基础进度条 -->
     <section>
       <h3 class="text-lg font-medium mb-4">基础进度条</h3>
-      <Progress :value="40" />
+      <ZProgress :value="40" />
     </section>
 
     <!-- 带文本的进度条 -->
     <section>
       <h3 class="text-lg font-medium mb-4">带文本的进度条</h3>
-      <Progress :value="60" showText />
+      <ZProgress :value="60" showText />
     </section>
 
     <!-- 不同大小的进度条 -->
@@ -18,15 +18,15 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">小号进度条</p>
-          <Progress :value="30" size="sm" />
+          <ZProgress :value="30" size="sm" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">中号进度条</p>
-          <Progress :value="50" size="md" />
+          <ZProgress :value="50" size="md" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">大号进度条</p>
-          <Progress :value="70" size="lg" />
+          <ZProgress :value="70" size="lg" />
         </div>
       </div>
     </section>
@@ -37,15 +37,15 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">方形进度条</p>
-          <Progress :value="40" shape="flat" />
+          <ZProgress :value="40" shape="flat" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">圆角进度条</p>
-          <Progress :value="60" shape="rounded" />
+          <ZProgress :value="60" shape="rounded" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">胶囊形进度条</p>
-          <Progress :value="80" shape="pill" />
+          <ZProgress :value="80" shape="pill" />
         </div>
       </div>
     </section>
@@ -56,23 +56,23 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">默认状态</p>
-          <Progress :value="40" variant="default" showText />
+          <ZProgress :value="40" variant="default" showText />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">成功状态</p>
-          <Progress :value="100" variant="success" showText />
+          <ZProgress :value="100" variant="success" showText />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">警告状态</p>
-          <Progress :value="70" variant="warning" showText />
+          <ZProgress :value="70" variant="warning" showText />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">危险状态</p>
-          <Progress :value="20" variant="danger" showText />
+          <ZProgress :value="20" variant="danger" showText />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">信息状态</p>
-          <Progress :value="50" variant="info" showText />
+          <ZProgress :value="50" variant="info" showText />
         </div>
       </div>
     </section>
@@ -80,36 +80,36 @@
     <!-- 条纹进度条 -->
     <section>
       <h3 class="text-lg font-medium mb-4">条纹进度条</h3>
-      <Progress :value="60" striped />
+      <ZProgress :value="60" striped />
     </section>
 
     <!-- 动画进度条 -->
     <section>
       <h3 class="text-lg font-medium mb-4">动画进度条</h3>
-      <Progress :value="60" striped animated />
+      <ZProgress :value="60" striped animated />
     </section>
 
     <!-- 不确定状态进度条 -->
     <section>
       <h3 class="text-lg font-medium mb-4">不确定状态进度条</h3>
-      <Progress indeterminate />
+      <ZProgress indeterminate />
     </section>
 
     <!-- 自定义文本 -->
     <section>
       <h3 class="text-lg font-medium mb-4">自定义文本</h3>
-      <Progress :value="75" showText>
+      <ZProgress :value="75" showText>
         <template #text>
           <span class="font-bold">{{ Math.round(75) }}分 / 100分</span>
         </template>
-      </Progress>
+      </ZProgress>
     </section>
 
     <!-- 动态进度条 -->
     <section>
       <h3 class="text-lg font-medium mb-4">动态进度条</h3>
       <div class="space-y-4">
-        <Progress :value="dynamicValue" showText />
+        <ZProgress :value="dynamicValue" showText />
         <div class="flex items-center gap-4">
           <button
             @click="startProgress"
@@ -131,7 +131,7 @@
     <!-- 无样式模式 -->
     <section>
       <h3 class="text-lg font-medium mb-4">无样式模式</h3>
-      <Progress
+      <ZProgress
         :value="50"
         unstyled
         :pt="{
@@ -148,7 +148,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Progress } from '@zxy-ui/vue'
+import { ZProgress } from '@zxy-ui/vue'
 
 const dynamicValue = ref(0)
 const isProgressing = ref(false)

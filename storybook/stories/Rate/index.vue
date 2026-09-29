@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Rate } from '@zxy-ui/vue'
+import { ZRate } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const value = ref(3)
@@ -10,7 +10,7 @@ const halfValue = ref(3.5)
   <div class="space-y-8 p-4">
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
-      <Rate v-model="value" />
+      <ZRate v-model="value" />
     </section>
 
     <section>
@@ -18,11 +18,11 @@ const halfValue = ref(3.5)
       <div class="space-y-4">
         <div>
           <p class="mb-2">默认最大值：5</p>
-          <Rate v-model="value" />
+          <ZRate v-model="value" />
         </div>
         <div>
           <p class="mb-2">自定义最大值：10</p>
-          <Rate v-model="value" :max="10" />
+          <ZRate v-model="value" :max="10" />
         </div>
       </div>
     </section>
@@ -32,23 +32,23 @@ const halfValue = ref(3.5)
       <div class="space-y-4">
         <div>
           <p class="mb-2">不允许半选（默认）</p>
-          <Rate v-model="value" />
+          <ZRate v-model="value" />
         </div>
         <div>
           <p class="mb-2">允许半选</p>
-          <Rate v-model="halfValue" :allow-half="true" />
+          <ZRate v-model="halfValue" :allow-half="true" />
         </div>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">只读状态</h2>
-      <Rate v-model="value" readonly />
+      <ZRate v-model="value" readonly />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
-      <Rate v-model="value" disabled />
+      <ZRate v-model="value" disabled />
     </section>
 
     <section>
@@ -56,23 +56,23 @@ const halfValue = ref(3.5)
       <div class="space-y-4">
         <div>
           <p class="mb-2">黄色（默认）</p>
-          <Rate v-model="value" color="yellow" />
+          <ZRate v-model="value" color="yellow" />
         </div>
         <div>
           <p class="mb-2">蓝色</p>
-          <Rate v-model="value" color="blue" />
+          <ZRate v-model="value" color="blue" />
         </div>
         <div>
           <p class="mb-2">绿色</p>
-          <Rate v-model="value" color="green" />
+          <ZRate v-model="value" color="green" />
         </div>
         <div>
           <p class="mb-2">红色</p>
-          <Rate v-model="value" color="red" />
+          <ZRate v-model="value" color="red" />
         </div>
         <div>
           <p class="mb-2">紫色</p>
-          <Rate v-model="value" color="purple" />
+          <ZRate v-model="value" color="purple" />
         </div>
       </div>
     </section>
@@ -82,15 +82,15 @@ const halfValue = ref(3.5)
       <div class="space-y-4">
         <div>
           <p class="mb-2">小尺寸</p>
-          <Rate v-model="value" size="small" />
+          <ZRate v-model="value" size="small" />
         </div>
         <div>
           <p class="mb-2">默认尺寸</p>
-          <Rate v-model="value" size="default" />
+          <ZRate v-model="value" size="default" />
         </div>
         <div>
           <p class="mb-2">大尺寸</p>
-          <Rate v-model="value" size="large" />
+          <ZRate v-model="value" size="large" />
         </div>
       </div>
     </section>
@@ -100,31 +100,31 @@ const halfValue = ref(3.5)
       <div class="space-y-4">
         <div>
           <p class="mb-2">默认星形</p>
-          <Rate v-model="value" />
+          <ZRate v-model="value" />
         </div>
         <div>
           <p class="mb-2">自定义字符：心形</p>
-          <Rate v-model="value" character="♥" />
+          <ZRate v-model="value" character="♥" />
         </div>
         <div>
           <p class="mb-2">自定义字符：A</p>
-          <Rate v-model="value" character="A" />
+          <ZRate v-model="value" character="A" />
         </div>
         <div>
           <p class="mb-2">自定义字符：表情</p>
-          <Rate v-model="value" character="😊" />
+          <ZRate v-model="value" character="😊" />
         </div>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">显示分数</h2>
-      <Rate v-model="value" :show-score="true" />
+      <ZRate v-model="value" :show-score="true" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
-      <Rate
+      <ZRate
         v-model="value"
         :show-score="true"
         :pt="{
@@ -142,7 +142,7 @@ const halfValue = ref(3.5)
       <div class="space-y-4">
         <div>
           <p class="mb-2">渐变色星星</p>
-          <Rate
+          <ZRate
             v-model="value"
             :show-score="true"
             unstyled
@@ -157,7 +157,7 @@ const halfValue = ref(3.5)
         </div>
         <div>
           <p class="mb-2">自定义心形图标</p>
-          <Rate
+          <ZRate
             v-model="value"
             character="♥"
             :show-score="true"
@@ -173,7 +173,7 @@ const halfValue = ref(3.5)
         </div>
         <div>
           <p class="mb-2">方块评分</p>
-          <Rate
+          <ZRate
             v-model="value"
             character="■"
             :show-score="true"

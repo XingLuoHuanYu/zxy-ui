@@ -38,7 +38,7 @@ import { checkboxStyle } from './index.variants'
 import type { CheckboxProps, CheckboxGroupContext } from './type'
 
 defineOptions({
-  name: 'Checkbox',
+  name: 'ZCheckbox',
 })
 
 const props = withDefaults(defineProps<CheckboxProps>(), {

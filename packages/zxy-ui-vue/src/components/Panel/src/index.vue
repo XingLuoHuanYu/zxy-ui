@@ -33,18 +33,12 @@
 
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import {
-  panelStyle,
-  panelHeaderStyle,
-  panelTitleStyle,
-  panelContentStyle,
-  panelIconStyle,
-} from './index.variants'
+import { panelStyle, panelHeaderStyle, panelTitleStyle, panelContentStyle, panelIconStyle } from './index.variants'
 import type { PanelProps } from './type'
 import { PanelEmits } from './type'
 
 defineOptions({
-  name: 'Panel',
+  name: 'ZPanel',
 })
 
 const props = withDefaults(defineProps<PanelProps>(), {

@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Button } from '@zxy-ui/vue'
+import { ZButton } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import ButtonDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Button> = {
+const meta: Meta<typeof ZButton> = {
   title: '组件/Button 按钮',
-  component: Button,
+  component: ZButton,
   tags: ['autodocs'],
   argTypes: {
     variant: {
@@ -89,7 +89,7 @@ const meta: Meta<typeof Button> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Button>
+type Story = StoryObj<typeof ZButton>
 
 // 基础示例
 export const Basic: Story = {
@@ -215,7 +215,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { ButtonDemo },
+    components: {ButtonDemo},
     template: '<ButtonDemo />',
   }),
 }

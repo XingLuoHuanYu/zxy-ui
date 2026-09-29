@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Skeleton, SkeletonText, SkeletonAvatar } from '@zxy-ui/vue'
+import { ZSkeleton, ZSkeletonText, ZSkeletonAvatar } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import SkeletonDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Skeleton> = {
+const meta: Meta<typeof ZSkeleton> = {
   title: '组件/Skeleton 骨架屏',
-  component: Skeleton,
+  component: ZSkeleton,
   tags: ['autodocs'],
   argTypes: {
     animation: {
@@ -68,7 +68,7 @@ const meta: Meta<typeof Skeleton> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Skeleton>
+type Story = StoryObj<typeof ZSkeleton>
 
 // 基础示例
 export const Basic: Story = {
@@ -124,13 +124,13 @@ export const CustomSize: Story = {
 }
 
 // 文本骨架屏
-export const SkeletonTextExample: StoryObj<typeof SkeletonText> = {
+export const SkeletonTextExample: StoryObj<typeof ZSkeletonText> = {
   render: (args) => ({
-    components: { SkeletonText },
+    components: {ZSkeletonText},
     setup() {
       return { args }
     },
-    template: '<SkeletonText v-bind="args" />',
+    template: '<ZSkeletonText v-bind="args" />',
   }),
   args: {
     lines: 3,
@@ -142,13 +142,13 @@ export const SkeletonTextExample: StoryObj<typeof SkeletonText> = {
 }
 
 // 头像骨架屏
-export const SkeletonAvatarExample: StoryObj<typeof SkeletonAvatar> = {
+export const SkeletonAvatarExample: StoryObj<typeof ZSkeletonAvatar> = {
   render: (args) => ({
-    components: { SkeletonAvatar },
+    components: {ZSkeletonAvatar},
     setup() {
       return { args }
     },
-    template: '<SkeletonAvatar v-bind="args" />',
+    template: '<ZSkeletonAvatar v-bind="args" />',
   }),
   args: {
     size: 'md',
@@ -160,14 +160,14 @@ export const SkeletonAvatarExample: StoryObj<typeof SkeletonAvatar> = {
 // 头像尺寸展示
 export const SkeletonAvatarSizes: Story = {
   render: () => ({
-    components: { SkeletonAvatar },
+    components: {ZSkeletonAvatar},
     template: `
       <div class="flex items-center gap-4">
-        <SkeletonAvatar size="xs" />
-        <SkeletonAvatar size="sm" />
-        <SkeletonAvatar size="md" />
-        <SkeletonAvatar size="lg" />
-        <SkeletonAvatar size="xl" />
+        <ZSkeletonAvatar size="xs" />
+        <ZSkeletonAvatar size="sm" />
+        <ZSkeletonAvatar size="md" />
+        <ZSkeletonAvatar size="lg" />
+        <ZSkeletonAvatar size="xl" />
       </div>
     `,
   }),
@@ -176,13 +176,13 @@ export const SkeletonAvatarSizes: Story = {
 // 组合使用示例
 export const CombinedExample: Story = {
   render: () => ({
-    components: { Skeleton, SkeletonText, SkeletonAvatar },
+    components: {ZSkeleton, ZSkeletonText, ZSkeletonAvatar},
     template: `
       <div class="flex gap-4">
-        <SkeletonAvatar size="lg" />
+        <ZSkeletonAvatar size="lg" />
         <div class="flex-1">
-          <Skeleton width="40%" height="20px" rounded class="mb-2" />
-          <SkeletonText :lines="3" :widths="['100%', '90%', '80%']" rounded />
+          <ZSkeleton width="40%" height="20px" rounded class="mb-2" />
+          <ZSkeletonText :lines="3" :widths="['100%', '90%', '80%']" rounded />
         </div>
       </div>
     `,
@@ -192,15 +192,15 @@ export const CombinedExample: Story = {
 // 卡片骨架屏示例
 export const CardSkeleton: Story = {
   render: () => ({
-    components: { Skeleton, SkeletonText },
+    components: {ZSkeleton, ZSkeletonText},
     template: `
       <div class="border rounded-lg p-4 max-w-md">
-        <Skeleton width="100%" height="200px" rounded class="mb-4" />
-        <Skeleton width="60%" height="24px" rounded class="mb-2" />
-        <SkeletonText :lines="4" rounded />
+        <ZSkeleton width="100%" height="200px" rounded class="mb-4" />
+        <ZSkeleton width="60%" height="24px" rounded class="mb-2" />
+        <ZSkeletonText :lines="4" rounded />
         <div class="flex justify-between mt-4">
-          <Skeleton width="100px" height="36px" rounded />
-          <Skeleton width="100px" height="36px" rounded />
+          <ZSkeleton width="100px" height="36px" rounded />
+          <ZSkeleton width="100px" height="36px" rounded />
         </div>
       </div>
     `,
@@ -210,7 +210,7 @@ export const CardSkeleton: Story = {
 // 加载状态切换
 export const LoadingToggle: Story = {
   render: () => ({
-    components: { Skeleton, SkeletonText },
+    components: {ZSkeleton, ZSkeletonText},
     template: `
       <div>
         <button 
@@ -219,9 +219,9 @@ export const LoadingToggle: Story = {
         >
           切换加载状态
         </button>
-        <Skeleton :loading="loading" width="100%" height="100px" rounded>
+        <ZSkeleton :loading="loading" width="100%" height="100px" rounded>
           <div class="bg-green-100 p-4 rounded">内容已加载完成！</div>
-        </Skeleton>
+        </ZSkeleton>
       </div>
     `,
     data() {
@@ -235,7 +235,7 @@ export const LoadingToggle: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { SkeletonDemo },
+    components: {SkeletonDemo},
     template: '<SkeletonDemo />',
   }),
 }

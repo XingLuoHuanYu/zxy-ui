@@ -59,7 +59,7 @@ import type { SwitchProps } from './type'
 
 defineOptions({
   // eslint-disable-next-line vue/no-reserved-component-names
-  name: 'Switch',
+  name: 'ZSwitch',
 })
 
 const props = withDefaults(defineProps<SwitchProps>(), {

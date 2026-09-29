@@ -19,7 +19,7 @@ import Combined from './combined.vue'
 
     <div>
       <h2 class="text-xl font-medium mb-4">头像骨架屏</h2>
-      <Avatar />
+      <ZAvatar />
     </div>
 
     <div>

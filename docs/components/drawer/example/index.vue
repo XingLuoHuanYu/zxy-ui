@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Drawer } from '@zxy-ui/vue'
+import { ZDrawer } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 // 基础用法
@@ -33,9 +33,9 @@ const showCustomDrawer = ref(false)
         打开基础抽屉
       </button>
 
-      <Drawer v-model="showBasicDrawer" @close="console.log('基础抽屉关闭了')">
+      <ZDrawer v-model="showBasicDrawer" @close="console.log('基础抽屉关闭了')">
         <p class="text-gray-600">这是一个基础抽屉，默认从右侧滑出。</p>
-      </Drawer>
+      </ZDrawer>
     </div>
 
     <!-- 不同位置 -->
@@ -68,21 +68,21 @@ const showCustomDrawer = ref(false)
         </button>
       </div>
 
-      <Drawer v-model="showLeftDrawer" placement="left" title="左侧抽屉">
+      <ZDrawer v-model="showLeftDrawer" placement="left" title="左侧抽屉">
         <p class="text-gray-600">这是一个从左侧滑出的抽屉。</p>
-      </Drawer>
+      </ZDrawer>
 
-      <Drawer v-model="showRightDrawer" placement="right" title="右侧抽屉">
+      <ZDrawer v-model="showRightDrawer" placement="right" title="右侧抽屉">
         <p class="text-gray-600">这是一个从右侧滑出的抽屉。</p>
-      </Drawer>
+      </ZDrawer>
 
-      <Drawer v-model="showTopDrawer" placement="top" title="顶部抽屉">
+      <ZDrawer v-model="showTopDrawer" placement="top" title="顶部抽屉">
         <p class="text-gray-600">这是一个从顶部滑出的抽屉。</p>
-      </Drawer>
+      </ZDrawer>
 
-      <Drawer v-model="showBottomDrawer" placement="bottom" title="底部抽屉">
+      <ZDrawer v-model="showBottomDrawer" placement="bottom" title="底部抽屉">
         <p class="text-gray-600">这是一个从底部滑出的抽屉。</p>
-      </Drawer>
+      </ZDrawer>
     </div>
 
     <!-- 带标题 -->
@@ -95,9 +95,9 @@ const showCustomDrawer = ref(false)
         打开带标题抽屉
       </button>
 
-      <Drawer v-model="showTitleDrawer" title="这是标题">
+      <ZDrawer v-model="showTitleDrawer" title="这是标题">
         <p class="text-gray-600">这是一个带标题的抽屉。</p>
-      </Drawer>
+      </ZDrawer>
     </div>
 
     <!-- 自定义尺寸 -->
@@ -110,9 +110,9 @@ const showCustomDrawer = ref(false)
         打开宽抽屉
       </button>
 
-      <Drawer v-model="showCustomSizeDrawer" title="宽抽屉" size="500px">
+      <ZDrawer v-model="showCustomSizeDrawer" title="宽抽屉" size="500px">
         <p class="text-gray-600">这是一个宽度为 500px 的抽屉。</p>
-      </Drawer>
+      </ZDrawer>
     </div>
 
     <!-- 自定义头部和底部 -->
@@ -125,7 +125,7 @@ const showCustomDrawer = ref(false)
         打开自定义抽屉
       </button>
 
-      <Drawer v-model="showCustomDrawer">
+      <ZDrawer v-model="showCustomDrawer">
         <template #header>
           <div class="flex items-center">
             <div class="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
@@ -151,7 +151,7 @@ const showCustomDrawer = ref(false)
             </button>
           </div>
         </template>
-      </Drawer>
+      </ZDrawer>
     </div>
   </div>
 </template>

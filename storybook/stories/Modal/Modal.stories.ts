@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Modal, Button } from '@zxy-ui/vue'
+import { ZModal, ZButton } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 
 // 定义组件元数据
-const meta: Meta<typeof Modal> = {
+const meta: Meta<typeof ZModal> = {
   title: '组件/Modal 模态框',
-  component: Modal,
+  component: ZModal,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -76,21 +76,21 @@ const meta: Meta<typeof Modal> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Modal>
+type Story = StoryObj<typeof ZModal>
 
 // 基础示例
 export const Basic: Story = {
   render: (args) => ({
-    components: { Modal, Button },
+    components: {ZModal, ZButton},
     setup() {
       return { args }
     },
     template: `
       <div>
-        <Button @click="args.modelValue = true">打开模态框</Button>
-        <Modal v-bind="args" v-model="args.modelValue">
+        <ZButton @click="args.modelValue = true">打开模态框</ZButton>
+        <ZModal v-bind="args" v-model="args.modelValue">
           这是一个基础的模态框内容
-        </Modal>
+        </ZModal>
       </div>
     `,
   }),
@@ -103,16 +103,16 @@ export const Basic: Story = {
 // 不同尺寸
 export const Sizes: Story = {
   render: (args) => ({
-    components: { Modal, Button },
+    components: {ZModal, ZButton},
     setup() {
       return { args }
     },
     template: `
       <div>
-        <Button @click="args.modelValue = true">打开模态框</Button>
-        <Modal v-bind="args" v-model="args.modelValue">
+        <ZButton @click="args.modelValue = true">打开模态框</ZButton>
+        <ZModal v-bind="args" v-model="args.modelValue">
           这是一个自定义尺寸的模态框内容
-        </Modal>
+        </ZModal>
       </div>
     `,
   }),
@@ -126,16 +126,16 @@ export const Sizes: Story = {
 // 自定义样式
 export const CustomStyle: Story = {
   render: (args) => ({
-    components: { Modal, Button },
+    components: {ZModal, ZButton},
     setup() {
       return { args }
     },
     template: `
       <div>
-        <Button @click="args.modelValue = true">打开模态框</Button>
-        <Modal v-bind="args" v-model="args.modelValue">
+        <ZButton @click="args.modelValue = true">打开模态框</ZButton>
+        <ZModal v-bind="args" v-model="args.modelValue">
           这是一个使用pt属性自定义样式的模态框内容
-        </Modal>
+        </ZModal>
       </div>
     `,
   }),
@@ -158,16 +158,16 @@ export const CustomStyle: Story = {
 // 无样式模式
 export const Unstyled: Story = {
   render: (args) => ({
-    components: { Modal, Button },
+    components: {ZModal, ZButton},
     setup() {
       return { args }
     },
     template: `
       <div>
-        <Button @click="args.modelValue = true">打开模态框</Button>
-        <Modal v-bind="args" v-model="args.modelValue">
+        <ZButton @click="args.modelValue = true">打开模态框</ZButton>
+        <ZModal v-bind="args" v-model="args.modelValue">
           这是一个使用unstyled属性移除所有默认样式的模态框内容
-        </Modal>
+        </ZModal>
       </div>
     `,
   }),

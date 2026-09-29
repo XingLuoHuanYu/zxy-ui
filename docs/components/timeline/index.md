@@ -2,12 +2,12 @@
 
 时间轴组件用于垂直展示时间流或事件流信息，帮助用户了解事件发生的时间顺序和进展过程。
 
-<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-timeline-%E6%97%B6%E9%97%B4%E8%BD%B4--basic"/>
+<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-timeline-%E6%97%B6%E9%97%B4%E8%BD%B4--basic"/>
 
 ## 引入
 
 ```typescript
-import { Timeline, TimelineItem } from '@zxy-ui/vue'
+import { ZTimeline, ZTimelineItem } from '@zxy-ui/vue'
 ```
 
 ## 使用
@@ -20,23 +20,23 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Timeline>
-		<TimelineItem :position="0" :isLast="false">
+	<ZTimeline>
+		<ZTimelineItem :position="0" :isLast="false">
 			<div class="font-medium">创建项目</div>
 			<div class="text-sm text-gray-500">2023-01-01</div>
 			<div>项目初始化完成</div>
-		</TimelineItem>
-		<TimelineItem :position="1" :isLast="false">
+		</ZTimelineItem>
+		<ZTimelineItem :position="1" :isLast="false">
 			<div class="font-medium">开发阶段</div>
 			<div class="text-sm text-gray-500">2023-02-15</div>
 			<div>完成核心功能开发</div>
-		</TimelineItem>
-		<TimelineItem :position="2" :isLast="true">
+		</ZTimelineItem>
+		<ZTimelineItem :position="2" :isLast="true">
 			<div class="font-medium">测试阶段</div>
 			<div class="text-sm text-gray-500">2023-03-20</div>
 			<div>完成所有测试用例</div>
-		</TimelineItem>
-	</Timeline>
+		</ZTimelineItem>
+	</ZTimeline>
 </template>
 ```
 
@@ -47,56 +47,56 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 ```vue
 <template>
 	<!-- 左侧对齐 -->
-	<Timeline align="left">
-		<TimelineItem :position="0" :isLast="false">
+	<ZTimeline align="left">
+		<ZTimelineItem :position="0" :isLast="false">
 			<div class="font-medium">创建项目</div>
 			<div class="text-sm text-gray-500">2023-01-01</div>
-		</TimelineItem>
-		<TimelineItem :position="1" :isLast="false">
+		</ZTimelineItem>
+		<ZTimelineItem :position="1" :isLast="false">
 			<div class="font-medium">开发阶段</div>
 			<div class="text-sm text-gray-500">2023-02-15</div>
-		</TimelineItem>
-		<TimelineItem :position="2" :isLast="true">
+		</ZTimelineItem>
+		<ZTimelineItem :position="2" :isLast="true">
 			<div class="font-medium">测试阶段</div>
 			<div class="text-sm text-gray-500">2023-03-20</div>
-		</TimelineItem>
-	</Timeline>
+		</ZTimelineItem>
+	</ZTimeline>
 
 	<!-- 右侧对齐 -->
-	<Timeline align="right">
-		<TimelineItem :position="0" :isLast="false">
+	<ZTimeline align="right">
+		<ZTimelineItem :position="0" :isLast="false">
 			<div class="font-medium">创建项目</div>
 			<div class="text-sm text-gray-500">2023-01-01</div>
-		</TimelineItem>
-		<TimelineItem :position="1" :isLast="false">
+		</ZTimelineItem>
+		<ZTimelineItem :position="1" :isLast="false">
 			<div class="font-medium">开发阶段</div>
 			<div class="text-sm text-gray-500">2023-02-15</div>
-		</TimelineItem>
-		<TimelineItem :position="2" :isLast="true">
+		</ZTimelineItem>
+		<ZTimelineItem :position="2" :isLast="true">
 			<div class="font-medium">测试阶段</div>
 			<div class="text-sm text-gray-500">2023-03-20</div>
-		</TimelineItem>
-	</Timeline>
+		</ZTimelineItem>
+	</ZTimeline>
 
 	<!-- 交替对齐 -->
-	<Timeline align="alternate">
-		<TimelineItem :position="0" :isLast="false">
+	<ZTimeline align="alternate">
+		<ZTimelineItem :position="0" :isLast="false">
 			<div class="font-medium">创建项目</div>
 			<div class="text-sm text-gray-500">2023-01-01</div>
-		</TimelineItem>
-		<TimelineItem :position="1" :isLast="false">
+		</ZTimelineItem>
+		<ZTimelineItem :position="1" :isLast="false">
 			<div class="font-medium">开发阶段</div>
 			<div class="text-sm text-gray-500">2023-02-15</div>
-		</TimelineItem>
-		<TimelineItem :position="2" :isLast="false">
+		</ZTimelineItem>
+		<ZTimelineItem :position="2" :isLast="false">
 			<div class="font-medium">测试阶段</div>
 			<div class="text-sm text-gray-500">2023-03-20</div>
-		</TimelineItem>
-		<TimelineItem :position="3" :isLast="true">
+		</ZTimelineItem>
+		<ZTimelineItem :position="3" :isLast="true">
 			<div class="font-medium">发布阶段</div>
 			<div class="text-sm text-gray-500">2023-04-10</div>
-		</TimelineItem>
-	</Timeline>
+		</ZTimelineItem>
+	</ZTimeline>
 </template>
 ```
 
@@ -106,8 +106,8 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Timeline>
-		<TimelineItem :position="0" :isLast="false" dot-color="#10b981">
+	<ZTimeline>
+		<ZTimelineItem :position="0" :isLast="false" dot-color="#10b981">
 			<template #dot>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -127,8 +127,8 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 			</template>
 			<div class="font-medium">任务完成</div>
 			<div class="text-sm text-gray-500">2023-01-01</div>
-		</TimelineItem>
-		<TimelineItem
+		</ZTimelineItem>
+		<ZTimelineItem
 			:position="1"
 			:isLast="false"
 			dot-color="#f59e0b"
@@ -154,8 +154,8 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 			</template>
 			<div class="font-medium">进行中</div>
 			<div class="text-sm text-gray-500">2023-02-15</div>
-		</TimelineItem>
-		<TimelineItem
+		</ZTimelineItem>
+		<ZTimelineItem
 			:position="2"
 			:isLast="true"
 			dot-color="#ef4444"
@@ -181,8 +181,8 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 			</template>
 			<div class="font-medium">已取消</div>
 			<div class="text-sm text-gray-500">2023-03-20</div>
-		</TimelineItem>
-	</Timeline>
+		</ZTimelineItem>
+	</ZTimeline>
 </template>
 ```
 
@@ -192,29 +192,29 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Timeline align="alternate">
-		<TimelineItem :position="0" :isLast="false">
+	<ZTimeline align="alternate">
+		<ZTimelineItem :position="0" :isLast="false">
 			<template #opposite>
 				<div class="font-bold text-blue-500">阶段 1</div>
 			</template>
 			<div class="font-medium">创建项目</div>
 			<div class="text-sm text-gray-500">2023-01-01</div>
-		</TimelineItem>
-		<TimelineItem :position="1" :isLast="false">
+		</ZTimelineItem>
+		<ZTimelineItem :position="1" :isLast="false">
 			<template #opposite>
 				<div class="font-bold text-green-500">阶段 2</div>
 			</template>
 			<div class="font-medium">开发阶段</div>
 			<div class="text-sm text-gray-500">2023-02-15</div>
-		</TimelineItem>
-		<TimelineItem :position="2" :isLast="true">
+		</ZTimelineItem>
+		<ZTimelineItem :position="2" :isLast="true">
 			<template #opposite>
 				<div class="font-bold text-amber-500">阶段 3</div>
 			</template>
 			<div class="font-medium">测试阶段</div>
 			<div class="text-sm text-gray-500">2023-03-20</div>
-		</TimelineItem>
-	</Timeline>
+		</ZTimelineItem>
+	</ZTimeline>
 </template>
 ```
 
@@ -224,32 +224,32 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Timeline :pt="{ root: 'border-l-2 border-blue-500 pl-6 ml-6' }">
-		<TimelineItem
+	<ZTimeline :pt="{ root: 'border-l-2 border-blue-500 pl-6 ml-6' }">
+		<ZTimelineItem
 			:position="0"
 			:isLast="false"
 			:pt="{ dot: 'bg-blue-500 border-white', connector: 'bg-blue-500' }"
 		>
 			<div class="font-medium">创建项目</div>
 			<div class="text-sm text-gray-500">2023-01-01</div>
-		</TimelineItem>
-		<TimelineItem
+		</ZTimelineItem>
+		<ZTimelineItem
 			:position="1"
 			:isLast="false"
 			:pt="{ dot: 'bg-green-500 border-white', connector: 'bg-green-500' }"
 		>
 			<div class="font-medium">开发阶段</div>
 			<div class="text-sm text-gray-500">2023-02-15</div>
-		</TimelineItem>
-		<TimelineItem
+		</ZTimelineItem>
+		<ZTimelineItem
 			:position="2"
 			:isLast="true"
 			:pt="{ dot: 'bg-amber-500 border-white', connector: 'bg-amber-500' }"
 		>
 			<div class="font-medium">测试阶段</div>
 			<div class="text-sm text-gray-500">2023-03-20</div>
-		</TimelineItem>
-	</Timeline>
+		</ZTimelineItem>
+	</ZTimeline>
 </template>
 ```
 
@@ -259,13 +259,13 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Timeline
+	<ZTimeline
 		unstyled
 		:pt="{
 			root: 'relative border-l-2 border-gray-300 ml-4 pl-8 dark:border-gray-700',
 		}"
 	>
-		<TimelineItem
+		<ZTimelineItem
 			:position="0"
 			:isLast="false"
 			unstyled
@@ -280,8 +280,8 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 		>
 			<div class="font-medium">创建项目</div>
 			<div class="text-sm text-gray-500 dark:text-gray-400">2023-01-01</div>
-		</TimelineItem>
-		<TimelineItem
+		</ZTimelineItem>
+		<ZTimelineItem
 			:position="1"
 			:isLast="false"
 			unstyled
@@ -296,8 +296,8 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 		>
 			<div class="font-medium">开发阶段</div>
 			<div class="text-sm text-gray-500 dark:text-gray-400">2023-02-15</div>
-		</TimelineItem>
-		<TimelineItem
+		</ZTimelineItem>
+		<ZTimelineItem
 			:position="2"
 			:isLast="true"
 			unstyled
@@ -310,8 +310,8 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 		>
 			<div class="font-medium">测试阶段</div>
 			<div class="text-sm text-gray-500 dark:text-gray-400">2023-03-20</div>
-		</TimelineItem>
-	</Timeline>
+		</ZTimelineItem>
+	</ZTimeline>
 </template>
 ```
 
@@ -321,24 +321,24 @@ import { Timeline, TimelineItem } from '@zxy-ui/vue'
 
 ```vue
 <template>
-	<Timeline orientation="horizontal">
-		<TimelineItem :position="0" :isLast="false">
+	<ZTimeline orientation="horizontal">
+		<ZTimelineItem :position="0" :isLast="false">
 			<div class="font-medium">创建项目</div>
 			<div class="text-sm text-gray-500">2023-01-01</div>
-		</TimelineItem>
-		<TimelineItem :position="1" :isLast="false">
+		</ZTimelineItem>
+		<ZTimelineItem :position="1" :isLast="false">
 			<div class="font-medium">开发阶段</div>
 			<div class="text-sm text-gray-500">2023-02-15</div>
-		</TimelineItem>
-		<TimelineItem :position="2" :isLast="false">
+		</ZTimelineItem>
+		<ZTimelineItem :position="2" :isLast="false">
 			<div class="font-medium">测试阶段</div>
 			<div class="text-sm text-gray-500">2023-03-20</div>
-		</TimelineItem>
-		<TimelineItem :position="3" :isLast="true">
+		</ZTimelineItem>
+		<ZTimelineItem :position="3" :isLast="true">
 			<div class="font-medium">发布阶段</div>
 			<div class="text-sm text-gray-500">2023-04-10</div>
-		</TimelineItem>
-	</Timeline>
+		</ZTimelineItem>
+	</ZTimeline>
 </template>
 ```
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Modal, Button } from '@zxy-ui/vue'
+import { ZModal, ZButton } from '@zxy-ui/vue'
 
 const basicModalOpen = ref(false)
 const sizeModalOpen = ref(false)
@@ -13,44 +13,44 @@ const footerModalOpen = ref(false)
   <div class="space-y-8 p-4">
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
-      <Button @click="basicModalOpen = true">打开基础模态框</Button>
-      <Modal v-model="basicModalOpen" title="基础模态框">
+      <ZButton @click="basicModalOpen = true">打开基础模态框</ZButton>
+      <ZModal v-model="basicModalOpen" title="基础模态框">
         <p>这是一个基础的模态框内容</p>
         <p class="mt-4">模态框支持按ESC键或点击遮罩层关闭</p>
-      </Modal>
+      </ZModal>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">不同尺寸</h2>
-      <Button @click="sizeModalOpen = true">打开大尺寸模态框</Button>
-      <Modal v-model="sizeModalOpen" title="大尺寸模态框" size="2xl">
+      <ZButton @click="sizeModalOpen = true">打开大尺寸模态框</ZButton>
+      <ZModal v-model="sizeModalOpen" title="大尺寸模态框" size="2xl">
         <p>这是一个大尺寸的模态框内容</p>
         <p class="mt-4">
           模态框支持多种尺寸：sm, md, lg, xl, 2xl, 3xl, 4xl, 5xl, full
         </p>
-      </Modal>
+      </ZModal>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义底部</h2>
-      <Button @click="footerModalOpen = true">打开带底部的模态框</Button>
-      <Modal v-model="footerModalOpen" title="带底部的模态框">
+      <ZButton @click="footerModalOpen = true">打开带底部的模态框</ZButton>
+      <ZModal v-model="footerModalOpen" title="带底部的模态框">
         <p>这是一个带底部按钮的模态框内容</p>
         <template #footer>
           <div class="flex justify-end gap-2">
-            <Button variant="outline" @click="footerModalOpen = false">
+            <ZButton variant="outline" @click="footerModalOpen = false">
               取消
-            </Button>
-            <Button @click="footerModalOpen = false">确认</Button>
+            </ZButton>
+            <ZButton @click="footerModalOpen = false">确认</ZButton>
           </div>
         </template>
-      </Modal>
+      </ZModal>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
-      <Button @click="customStyleModalOpen = true">打开自定义样式模态框</Button>
-      <Modal
+      <ZButton @click="customStyleModalOpen = true">打开自定义样式模态框</ZButton>
+      <ZModal
         v-model="customStyleModalOpen"
         title="自定义样式"
         :pt="{
@@ -68,19 +68,19 @@ const footerModalOpen = ref(false)
         <p class="mt-4">可以自定义遮罩层、内容区、标题、底部等样式</p>
         <template #footer>
           <div class="flex justify-end gap-2">
-            <Button variant="outline" @click="customStyleModalOpen = false">
+            <ZButton variant="outline" @click="customStyleModalOpen = false">
               取消
-            </Button>
-            <Button @click="customStyleModalOpen = false">确认</Button>
+            </ZButton>
+            <ZButton @click="customStyleModalOpen = false">确认</ZButton>
           </div>
         </template>
-      </Modal>
+      </ZModal>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
-      <Button @click="unstyledModalOpen = true">打开无样式模态框</Button>
-      <Modal
+      <ZButton @click="unstyledModalOpen = true">打开无样式模态框</ZButton>
+      <ZModal
         v-model="unstyledModalOpen"
         title="无样式模式"
         unstyled
@@ -104,13 +104,13 @@ const footerModalOpen = ref(false)
         <p class="mt-4">使用unstyled属性可以完全自定义模态框的样式</p>
         <template #footer>
           <div class="flex justify-end gap-2">
-            <Button variant="outline" @click="unstyledModalOpen = false">
+            <ZButton variant="outline" @click="unstyledModalOpen = false">
               取消
-            </Button>
-            <Button @click="unstyledModalOpen = false">确认</Button>
+            </ZButton>
+            <ZButton @click="unstyledModalOpen = false">确认</ZButton>
           </div>
         </template>
-      </Modal>
+      </ZModal>
     </section>
   </div>
 </template>

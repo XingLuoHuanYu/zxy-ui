@@ -2,7 +2,7 @@
   <div class="space-y-8">
     <section>
       <h2 class="text-xl font-bold mb-4">基础分页器</h2>
-      <Paginator :totalPages="10" />
+      <ZPaginator :totalPages="10" />
     </section>
 
     <section>
@@ -10,15 +10,15 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">小尺寸</p>
-          <Paginator :totalPages="10" size="sm" />
+          <ZPaginator :totalPages="10" size="sm" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">中尺寸</p>
-          <Paginator :totalPages="10" size="md" />
+          <ZPaginator :totalPages="10" size="md" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">大尺寸</p>
-          <Paginator :totalPages="10" size="lg" />
+          <ZPaginator :totalPages="10" size="lg" />
         </div>
       </div>
     </section>
@@ -28,15 +28,15 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">默认样式</p>
-          <Paginator :totalPages="10" variant="default" />
+          <ZPaginator :totalPages="10" variant="default" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">轮廓样式</p>
-          <Paginator :totalPages="10" variant="outline" />
+          <ZPaginator :totalPages="10" variant="outline" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">文本样式</p>
-          <Paginator :totalPages="10" variant="text" />
+          <ZPaginator :totalPages="10" variant="text" />
         </div>
       </div>
     </section>
@@ -46,15 +46,15 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">方形</p>
-          <Paginator :totalPages="10" shape="square" />
+          <ZPaginator :totalPages="10" shape="square" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">圆角</p>
-          <Paginator :totalPages="10" shape="rounded" />
+          <ZPaginator :totalPages="10" shape="rounded" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">圆形</p>
-          <Paginator :totalPages="10" shape="circle" />
+          <ZPaginator :totalPages="10" shape="circle" />
         </div>
       </div>
     </section>
@@ -64,32 +64,32 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-500">显示3个页码</p>
-          <Paginator :totalPages="20" :visiblePageCount="3" :modelValue="10" />
+          <ZPaginator :totalPages="20" :visiblePageCount="3" :modelValue="10" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">显示5个页码</p>
-          <Paginator :totalPages="20" :visiblePageCount="5" :modelValue="10" />
+          <ZPaginator :totalPages="20" :visiblePageCount="5" :modelValue="10" />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-500">显示7个页码</p>
-          <Paginator :totalPages="20" :visiblePageCount="7" :modelValue="10" />
+          <ZPaginator :totalPages="20" :visiblePageCount="7" :modelValue="10" />
         </div>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">带页码跳转</h2>
-      <Paginator :totalPages="100" showJumper />
+      <ZPaginator :totalPages="100" showJumper />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
-      <Paginator :totalPages="10" disabled />
+      <ZPaginator :totalPages="10" disabled />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义按钮</h2>
-      <Paginator :totalPages="10">
+      <ZPaginator :totalPages="10">
         <template #first-button>
           <span class="text-xs">首页</span>
         </template>
@@ -102,12 +102,12 @@
         <template #last-button>
           <span class="text-xs">尾页</span>
         </template>
-      </Paginator>
+      </ZPaginator>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
-      <Paginator
+      <ZPaginator
         :totalPages="10"
         unstyled
         :pt="{
@@ -157,7 +157,7 @@
           </tbody>
         </table>
         <div class="p-4 border-t">
-          <Paginator :totalPages="10" />
+          <ZPaginator :totalPages="10" />
         </div>
       </div>
     </section>
@@ -166,7 +166,7 @@
       <h2 class="text-xl font-bold mb-4">受控分页器</h2>
       <div class="space-y-4">
         <p>当前页码: {{ currentPage }}</p>
-        <Paginator :totalPages="10" v-model="currentPage" />
+        <ZPaginator :totalPages="10" v-model="currentPage" />
         <div class="flex gap-2">
           <button
             @click="currentPage = Math.max(1, currentPage - 1)"
@@ -188,7 +188,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Paginator } from '@zxy-ui/vue'
+import { ZPaginator } from '@zxy-ui/vue'
 
 const currentPage = ref(1)
 </script>

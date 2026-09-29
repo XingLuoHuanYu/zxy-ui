@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Avatar } from '@zxy-ui/vue'
+import { ZAvatar } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 
 const imageError = ref(false)
@@ -15,16 +15,16 @@ const toggleError = () => {
     <section>
       <h2 class="text-lg font-medium mb-4">基础用法</h2>
       <div class="flex gap-6 items-center">
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/men/1.jpg"
           alt="用户头像"
         />
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/women/1.jpg"
           alt="用户头像"
         />
-        <Avatar alt="张三" />
-        <Avatar />
+        <ZAvatar alt="张三" />
+        <ZAvatar />
       </div>
     </section>
 
@@ -32,27 +32,27 @@ const toggleError = () => {
     <section>
       <h2 class="text-lg font-medium mb-4">不同大小</h2>
       <div class="flex gap-6 items-end">
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/men/2.jpg"
           alt="用户头像"
           size="xs"
         />
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/men/3.jpg"
           alt="用户头像"
           size="sm"
         />
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/men/4.jpg"
           alt="用户头像"
           size="md"
         />
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/men/5.jpg"
           alt="用户头像"
           size="lg"
         />
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/men/6.jpg"
           alt="用户头像"
           size="xl"
@@ -64,12 +64,12 @@ const toggleError = () => {
     <section>
       <h2 class="text-lg font-medium mb-4">不同形状</h2>
       <div class="flex gap-6 items-center">
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/men/7.jpg"
           alt="用户头像"
           shape="circle"
         />
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/men/8.jpg"
           alt="用户头像"
           shape="square"
@@ -81,22 +81,22 @@ const toggleError = () => {
     <section>
       <h2 class="text-lg font-medium mb-4">状态指示器</h2>
       <div class="flex gap-6 items-center">
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/women/2.jpg"
           alt="用户头像"
           status="online"
         />
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/women/3.jpg"
           alt="用户头像"
           status="offline"
         />
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/women/4.jpg"
           alt="用户头像"
           status="away"
         />
-        <Avatar
+        <ZAvatar
           src="https://randomuser.me/api/portraits/women/5.jpg"
           alt="用户头像"
           status="busy"
@@ -121,7 +121,7 @@ const toggleError = () => {
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div>
             <p class="mb-2 text-sm">图片加载失败时显示文字缩写：</p>
-            <Avatar
+            <ZAvatar
               :src="
                 imageError
                   ? 'invalid-url.jpg'
@@ -133,7 +133,7 @@ const toggleError = () => {
 
           <div>
             <p class="mb-2 text-sm">图片加载失败时显示备用图片：</p>
-            <Avatar
+            <ZAvatar
               :src="
                 imageError
                   ? 'invalid-url.jpg'
@@ -146,7 +146,7 @@ const toggleError = () => {
 
           <div>
             <p class="mb-2 text-sm">图片加载失败时显示默认图标：</p>
-            <Avatar
+            <ZAvatar
               :src="
                 imageError
                   ? 'invalid-url.jpg'

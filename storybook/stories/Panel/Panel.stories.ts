@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Panel } from '@zxy-ui/vue'
+import { ZPanel } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import PanelDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Panel> = {
+const meta: Meta<typeof ZPanel> = {
   title: '组件/Panel 面板',
-  component: Panel,
+  component: ZPanel,
   tags: ['autodocs'],
   argTypes: {
     title: {
@@ -87,7 +87,7 @@ const meta: Meta<typeof Panel> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Panel>
+type Story = StoryObj<typeof ZPanel>
 
 // 基础示例
 export const Basic: Story = {
@@ -95,14 +95,14 @@ export const Basic: Story = {
     title: '基础面板',
   },
   render: (args) => ({
-    components: { Panel },
+    components: {ZPanel},
     setup() {
       return { args }
     },
     template: `
-      <Panel v-bind="args">
+      <ZPanel v-bind="args">
         <p>这是一个基础面板的内容区域。</p>
-      </Panel>
+      </ZPanel>
     `,
   }),
 }
@@ -114,14 +114,14 @@ export const Bordered: Story = {
     variant: 'bordered',
   },
   render: (args) => ({
-    components: { Panel },
+    components: {ZPanel},
     setup() {
       return { args }
     },
     template: `
-      <Panel v-bind="args">
+      <ZPanel v-bind="args">
         <p>这是一个带边框面板的内容区域。</p>
-      </Panel>
+      </ZPanel>
     `,
   }),
 }
@@ -133,14 +133,14 @@ export const Elevated: Story = {
     variant: 'elevated',
   },
   render: (args) => ({
-    components: { Panel },
+    components: {ZPanel},
     setup() {
       return { args }
     },
     template: `
-      <Panel v-bind="args">
+      <ZPanel v-bind="args">
         <p>这是一个带阴影面板的内容区域。</p>
-      </Panel>
+      </ZPanel>
     `,
   }),
 }
@@ -148,21 +148,21 @@ export const Elevated: Story = {
 // 不同内边距
 export const PaddingSizes: Story = {
   render: () => ({
-    components: { Panel },
+    components: {ZPanel},
     template: `
       <div class="space-y-4">
-        <Panel title="无内边距" padding="none">
+        <ZPanel title="无内边距" padding="none">
           <p>这是无内边距的面板内容。</p>
-        </Panel>
-        <Panel title="小内边距" padding="sm">
+        </ZPanel>
+        <ZPanel title="小内边距" padding="sm">
           <p>这是小内边距的面板内容。</p>
-        </Panel>
-        <Panel title="中内边距" padding="md">
+        </ZPanel>
+        <ZPanel title="中内边距" padding="md">
           <p>这是中内边距的面板内容。</p>
-        </Panel>
-        <Panel title="大内边距" padding="lg">
+        </ZPanel>
+        <ZPanel title="大内边距" padding="lg">
           <p>这是大内边距的面板内容。</p>
-        </Panel>
+        </ZPanel>
       </div>
     `,
   }),
@@ -171,24 +171,24 @@ export const PaddingSizes: Story = {
 // 不同圆角
 export const RadiusSizes: Story = {
   render: () => ({
-    components: { Panel },
+    components: {ZPanel},
     template: `
       <div class="space-y-4">
-        <Panel title="无圆角" radius="none" variant="bordered">
+        <ZPanel title="无圆角" radius="none" variant="bordered">
           <p>这是无圆角的面板内容。</p>
-        </Panel>
-        <Panel title="小圆角" radius="sm" variant="bordered">
+        </ZPanel>
+        <ZPanel title="小圆角" radius="sm" variant="bordered">
           <p>这是小圆角的面板内容。</p>
-        </Panel>
-        <Panel title="中圆角" radius="md" variant="bordered">
+        </ZPanel>
+        <ZPanel title="中圆角" radius="md" variant="bordered">
           <p>这是中圆角的面板内容。</p>
-        </Panel>
-        <Panel title="大圆角" radius="lg" variant="bordered">
+        </ZPanel>
+        <ZPanel title="大圆角" radius="lg" variant="bordered">
           <p>这是大圆角的面板内容。</p>
-        </Panel>
-        <Panel title="全圆角" radius="full" variant="bordered">
+        </ZPanel>
+        <ZPanel title="全圆角" radius="full" variant="bordered">
           <p>这是全圆角的面板内容。</p>
-        </Panel>
+        </ZPanel>
       </div>
     `,
   }),
@@ -201,14 +201,14 @@ export const Collapsible: Story = {
     collapsible: true,
   },
   render: (args) => ({
-    components: { Panel },
+    components: {ZPanel},
     setup() {
       return { args }
     },
     template: `
-      <Panel v-bind="args">
+      <ZPanel v-bind="args">
         <p>点击面板头部可以折叠/展开此内容。</p>
-      </Panel>
+      </ZPanel>
     `,
   }),
 }
@@ -221,14 +221,14 @@ export const DefaultCollapsed: Story = {
     defaultCollapsed: true,
   },
   render: (args) => ({
-    components: { Panel },
+    components: {ZPanel},
     setup() {
       return { args }
     },
     template: `
-      <Panel v-bind="args">
+      <ZPanel v-bind="args">
         <p>这个面板默认是折叠的，点击面板头部可以展开。</p>
-      </Panel>
+      </ZPanel>
     `,
   }),
 }
@@ -239,12 +239,12 @@ export const CustomTitle: Story = {
     collapsible: true,
   },
   render: (args) => ({
-    components: { Panel },
+    components: {ZPanel},
     setup() {
       return { args }
     },
     template: `
-      <Panel v-bind="args">
+      <ZPanel v-bind="args">
         <template #title>
           <div class="flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -258,7 +258,7 @@ export const CustomTitle: Story = {
           </div>
         </template>
         <p>这个面板使用了自定义标题插槽。</p>
-      </Panel>
+      </ZPanel>
     `,
   }),
 }
@@ -270,12 +270,12 @@ export const CustomIcon: Story = {
     collapsible: true,
   },
   render: (args) => ({
-    components: { Panel },
+    components: {ZPanel},
     setup() {
       return { args }
     },
     template: `
-      <Panel v-bind="args">
+      <ZPanel v-bind="args">
         <template #icon>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"></circle>
@@ -284,7 +284,7 @@ export const CustomIcon: Story = {
           </svg>
         </template>
         <p>这个面板使用了自定义折叠图标。</p>
-      </Panel>
+      </ZPanel>
     `,
   }),
 }
@@ -304,14 +304,14 @@ export const Unstyled: Story = {
     collapsible: true,
   },
   render: (args) => ({
-    components: { Panel },
+    components: {ZPanel},
     setup() {
       return { args }
     },
     template: `
-      <Panel v-bind="args">
+      <ZPanel v-bind="args">
         <p>这是一个使用无样式模式的面板，通过pt属性自定义样式。</p>
-      </Panel>
+      </ZPanel>
     `,
   }),
 }
@@ -319,7 +319,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { PanelDemo },
+    components: {PanelDemo},
     template: '<PanelDemo />',
   }),
 }

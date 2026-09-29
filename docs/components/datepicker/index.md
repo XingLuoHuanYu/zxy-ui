@@ -2,12 +2,12 @@
 
 DatePicker 日期选择器用于让用户通过可视化界面选择日期，提供下拉式日历选择，支持日期范围限制和格式化显示。
 
-<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-datepicker-%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8--basic"/>
+<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-datepicker-%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9%E5%99%A8--basic"/>
 
 ## 引入
 
 ```typescript
-import { DatePicker } from '@zxy-ui/vue'
+import { ZDatePicker } from '@zxy-ui/vue'
 ```
 
 ## 使用

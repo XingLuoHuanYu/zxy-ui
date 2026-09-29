@@ -1,3 +1,3 @@
 export * from './src/type'
-export { default as Steps } from './src/Steps.vue'
-export { default as StepItem } from './src/StepItem.vue'
+export { default as ZSteps } from './src/Steps.vue'
+export { default as ZStepItem } from './src/StepItem.vue'

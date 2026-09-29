@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Segmented } from '@zxy-ui/vue'
+import { ZSegmented } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import SegmentedDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Segmented> = {
+const meta: Meta<typeof ZSegmented> = {
   title: '组件/Segmented 分段控制器',
-  component: Segmented,
+  component: ZSegmented,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -71,7 +71,7 @@ const meta: Meta<typeof Segmented> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Segmented>
+type Story = StoryObj<typeof ZSegmented>
 
 // 基础示例
 export const Basic: Story = {
@@ -161,7 +161,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { SegmentedDemo },
+    components: {SegmentedDemo},
     template: '<SegmentedDemo />',
   }),
 }

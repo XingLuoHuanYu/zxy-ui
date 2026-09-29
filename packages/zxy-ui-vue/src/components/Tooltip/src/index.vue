@@ -1,15 +1,11 @@
 <script setup lang="ts">
 import { computed, watch, onMounted, onUnmounted, ref, nextTick } from 'vue'
 import { useTooltip } from './composables/useTooltip'
-import {
-  tooltipContent,
-  tooltipArrow,
-  tooltipContainer,
-} from './index.variants'
+import { tooltipContent, tooltipArrow, tooltipContainer } from './index.variants'
 import type { TooltipProps } from './type'
 
 defineOptions({
-  name: 'Tooltip',
+  name: 'ZTooltip',
 })
 
 const props = withDefaults(defineProps<TooltipProps>(), {

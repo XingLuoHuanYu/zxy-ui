@@ -2,12 +2,12 @@
 
 InputTag 是一个用于输入和展示多个标签的组件，常用于关键词、标签、邮箱等需要多值输入的场景。
 
-<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-inputtag-%E6%A0%87%E7%AD%BE%E8%BE%93%E5%85%A5%E6%A1%86--basic"/>
+<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-inputtag-%E6%A0%87%E7%AD%BE%E8%BE%93%E5%85%A5%E6%A1%86--basic"/>
 
 ## 引入
 
 ```typescript
-import { InputTag } from '@zxy-ui/vue'
+import { ZInputTag } from '@zxy-ui/vue'
 ```
 
 ## 使用

@@ -40,20 +40,12 @@
 
 <script setup lang="ts">
 import { computed, inject, onMounted, ref, watch } from 'vue'
-import {
-  accordionItemStyle,
-  accordionItemHeaderStyle,
-  accordionItemTriggerStyle,
-  accordionItemTitleStyle,
-  accordionItemIconStyle,
-  accordionItemContentStyle,
-  accordionItemContentInnerStyle,
-} from './index.variants'
+import { accordionItemStyle, accordionItemHeaderStyle, accordionItemTriggerStyle, accordionItemTitleStyle, accordionItemIconStyle, accordionItemContentStyle, accordionItemContentInnerStyle } from './index.variants'
 import type { AccordionItemProps } from './type'
 import { AccordionItemEmits } from './type'
 
 defineOptions({
-  name: 'AccordionItem',
+  name: 'ZAccordionItem',
 })
 
 const props = withDefaults(defineProps<AccordionItemProps>(), {

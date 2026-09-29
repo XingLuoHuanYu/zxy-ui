@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { TimePicker } from '@zxy-ui/vue'
+import { ZTimePicker } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import TimePickerDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof TimePicker> = {
+const meta: Meta<typeof ZTimePicker> = {
   title: '组件/TimePicker 时间选择器',
-  component: TimePicker,
+  component: ZTimePicker,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -109,7 +109,7 @@ const meta: Meta<typeof TimePicker> = {
 }
 
 export default meta
-type Story = StoryObj<typeof TimePicker>
+type Story = StoryObj<typeof ZTimePicker>
 
 // 基础示例
 export const Basic: Story = {
@@ -172,7 +172,7 @@ export const NonClearable: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { TimePickerDemo },
+    components: {TimePickerDemo},
     template: '<TimePickerDemo />',
   }),
 }

@@ -3,7 +3,7 @@
     <!-- 基础文本跑马灯 -->
     <section>
       <h3 class="text-lg font-medium mb-4">基础文本跑马灯</h3>
-      <Runhorselight
+      <ZRunhorselight
         :items="['欢迎使用 ZxyUI 组件库', '这是一个功能强大的 Vue 3 组件库', '支持 TypeScript 和 Tailwind CSS']"
         :height="'4rem'"
       />
@@ -12,7 +12,7 @@
     <!-- 图片跑马灯 -->
     <section>
       <h3 class="text-lg font-medium mb-4">图片跑马灯</h3>
-      <Runhorselight
+      <ZRunhorselight
         :items="logoItems"
         :height="'6rem'"
         :gap="'2rem'"
@@ -24,7 +24,7 @@
     <!-- 卡片跑马灯 -->
     <section>
       <h3 class="text-lg font-medium mb-4">卡片跑马灯</h3>
-      <Runhorselight
+      <ZRunhorselight
         :items="cardItems"
         :height="'12rem'"
         :gap="'1.5rem'"
@@ -40,14 +40,14 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-600">向左滚动 (默认)</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="['向左滚动的内容 1', '向左滚动的内容 2', '向左滚动的内容 3']"
             direction="left"
           />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-600">向右滚动</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="['向右滚动的内容 1', '向右滚动的内容 2', '向右滚动的内容 3']"
             direction="right"
           />
@@ -61,21 +61,21 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-600">快速滚动 (10秒)</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="['快速滚动的内容 1', '快速滚动的内容 2', '快速滚动的内容 3']"
             :duration="10"
           />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-600">中速滚动 (20秒，默认)</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="['中速滚动的内容 1', '中速滚动的内容 2', '中速滚动的内容 3']"
             :duration="20"
           />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-600">慢速滚动 (40秒)</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="['慢速滚动的内容 1', '慢速滚动的内容 2', '慢速滚动的内容 3']"
             :duration="40"
           />
@@ -86,7 +86,7 @@
     <!-- 带前缀和后缀 -->
     <section>
       <h3 class="text-lg font-medium mb-4">带前缀和后缀</h3>
-      <Runhorselight
+      <ZRunhorselight
         :items="['新闻 1：重要通知', '新闻 2：系统更新', '新闻 3：新功能发布']"
         :prefix="{ type: 'text', content: '📢 最新消息：', textColor: '#ef4444' }"
         :suffix="{ type: 'text', content: '更多 »', textColor: '#3b82f6' }"
@@ -102,14 +102,14 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-600">启用悬停暂停 (默认)</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="['悬停时暂停滚动 1', '悬停时暂停滚动 2', '悬停时暂停滚动 3']"
             :pause-on-hover="true"
           />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-600">禁用悬停暂停</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="['不暂停滚动 1', '不暂停滚动 2', '不暂停滚动 3']"
             :pause-on-hover="false"
           />
@@ -123,7 +123,7 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-600">自定义背景色和文本色</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="['自定义样式内容 1', '自定义样式内容 2', '自定义样式内容 3']"
             :height="'3.5rem'"
             background-color="#1e293b"
@@ -133,7 +133,7 @@
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-600">通过 PT 传递自定义样式</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="['PT 样式内容 1', 'PT 样式内容 2', 'PT 样式内容 3']"
             :height="'3.5rem'"
             :pt="{
@@ -149,7 +149,7 @@
     <!-- 混合内容类型 -->
     <section>
       <h3 class="text-lg font-medium mb-4">混合内容类型</h3>
-      <Runhorselight
+      <ZRunhorselight
         :items="mixedItems"
         :height="'6rem'"
         :gap="'1.5rem'"
@@ -164,14 +164,14 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-600">启用无缝循环 (默认)</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="['无缝循环内容 1', '无缝循环内容 2', '无缝循环内容 3']"
             :loop="true"
           />
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-600">禁用无缝循环</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="['不循环内容 1', '不循环内容 2', '不循环内容 3']"
             :loop="false"
           />
@@ -182,7 +182,7 @@
     <!-- 自定义插槽 -->
     <section>
       <h3 class="text-lg font-medium mb-4">自定义插槽</h3>
-      <Runhorselight
+      <ZRunhorselight
         :items="[]"
         :height="'5rem'"
         :gap="'2rem'"
@@ -205,7 +205,7 @@
             <span>自定义内容 4</span>
           </div>
         </template>
-      </Runhorselight>
+      </ZRunhorselight>
     </section>
 
     <!-- 自动填充 -->
@@ -214,7 +214,7 @@
       <div class="space-y-4">
         <div>
           <p class="mb-2 text-sm text-gray-600">启用自动填充</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="logoItems.slice(0, 2)"
             :height="'6rem'"
             :gap="'2rem'"
@@ -224,7 +224,7 @@
         </div>
         <div>
           <p class="mb-2 text-sm text-gray-600">禁用自动填充</p>
-          <Runhorselight
+          <ZRunhorselight
             :items="logoItems.slice(0, 2)"
             :height="'6rem'"
             :gap="'2rem'"
@@ -238,7 +238,7 @@
 </template>
 
 <script setup lang="ts">
-import { Runhorselight } from '@zxy-ui/vue'
+import { ZRunhorselight } from '@zxy-ui/vue'
 import type { RunhorselightAffixClickPayload } from '@zxy-ui/vue'
 
 // 图片跑马灯数据

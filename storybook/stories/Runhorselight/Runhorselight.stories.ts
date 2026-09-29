@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Runhorselight } from '@zxy-ui/vue'
+import { ZRunhorselight } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import RunhorselightDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Runhorselight> = {
+const meta: Meta<typeof ZRunhorselight> = {
   title: '组件/Runhorselight 跑马灯',
-  component: Runhorselight,
+  component: ZRunhorselight,
   tags: ['autodocs'],
   argTypes: {
     items: {
@@ -134,7 +134,7 @@ const meta: Meta<typeof Runhorselight> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Runhorselight>
+type Story = StoryObj<typeof ZRunhorselight>
 
 // 示例数据
 const sampleTexts = [
@@ -388,7 +388,7 @@ export const MixedContent: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { RunhorselightDemo },
+    components: {RunhorselightDemo},
     template: '<RunhorselightDemo />',
   }),
 }

@@ -4,7 +4,7 @@ import { skeletonTextStyle, skeletonTextLineStyle } from './index.variants'
 import type { SkeletonTextProps } from './type'
 
 defineOptions({
-  name: 'SkeletonText',
+  name: 'ZSkeletonText',
 })
 
 const props = withDefaults(defineProps<SkeletonTextProps>(), {

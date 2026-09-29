@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 // 暂时不管导入错误，后面再解决
-import { Popover } from '@zxy-ui/vue'
+import { ZPopover } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 
 // 基础用法示例
@@ -30,7 +30,7 @@ const isDisabledOpen = ref(false)
     <section>
       <h2 class="text-lg font-medium mb-4">基础用法</h2>
       <div class="flex items-center space-x-4">
-        <Popover v-model="isBasicOpen">
+        <ZPopover v-model="isBasicOpen">
           <template #trigger>
             <div
               class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"
@@ -39,7 +39,7 @@ const isDisabledOpen = ref(false)
             </div>
           </template>
           这是一个基础的弹出框内容
-        </Popover>
+        </ZPopover>
       </div>
     </section>
 
@@ -48,7 +48,7 @@ const isDisabledOpen = ref(false)
       <h2 class="text-lg font-medium mb-4">不同位置</h2>
       <div class="flex justify-center items-center space-x-8 mb-6">
         <!-- 顶部 -->
-        <Popover placement="top">
+        <ZPopover placement="top">
           <template #trigger>
             <div
               class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"
@@ -57,10 +57,10 @@ const isDisabledOpen = ref(false)
             </div>
           </template>
           弹出位置: 顶部 (top)
-        </Popover>
+        </ZPopover>
 
         <!-- 右侧 -->
-        <Popover placement="right">
+        <ZPopover placement="right">
           <template #trigger>
             <div
               class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"
@@ -69,10 +69,10 @@ const isDisabledOpen = ref(false)
             </div>
           </template>
           弹出位置: 右侧 (right)
-        </Popover>
+        </ZPopover>
 
         <!-- 底部 -->
-        <Popover placement="bottom">
+        <ZPopover placement="bottom">
           <template #trigger>
             <div
               class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"
@@ -81,10 +81,10 @@ const isDisabledOpen = ref(false)
             </div>
           </template>
           弹出位置: 底部 (bottom)
-        </Popover>
+        </ZPopover>
 
         <!-- 左侧 -->
-        <Popover placement="left">
+        <ZPopover placement="left">
           <template #trigger>
             <div
               class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"
@@ -93,7 +93,7 @@ const isDisabledOpen = ref(false)
             </div>
           </template>
           弹出位置: 左侧 (left)
-        </Popover>
+        </ZPopover>
       </div>
     </section>
 
@@ -101,7 +101,7 @@ const isDisabledOpen = ref(false)
     <section>
       <h2 class="text-lg font-medium mb-4">不同触发方式</h2>
       <div class="flex items-center space-x-4">
-        <Popover trigger="click">
+        <ZPopover trigger="click">
           <template #trigger>
             <div
               class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"
@@ -110,9 +110,9 @@ const isDisabledOpen = ref(false)
             </div>
           </template>
           点击触发的弹出框
-        </Popover>
+        </ZPopover>
 
-        <Popover trigger="hover">
+        <ZPopover trigger="hover">
           <template #trigger>
             <div
               class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"
@@ -121,9 +121,9 @@ const isDisabledOpen = ref(false)
             </div>
           </template>
           悬停触发的弹出框
-        </Popover>
+        </ZPopover>
 
-        <Popover v-model="isManualOpen" trigger="manual">
+        <ZPopover v-model="isManualOpen" trigger="manual">
           <template #trigger>
             <div
               class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"
@@ -133,7 +133,7 @@ const isDisabledOpen = ref(false)
             </div>
           </template>
           手动控制的弹出框
-        </Popover>
+        </ZPopover>
       </div>
     </section>
 
@@ -141,7 +141,7 @@ const isDisabledOpen = ref(false)
     <section>
       <h2 class="text-lg font-medium mb-4">带标题</h2>
       <div class="flex items-center space-x-4">
-        <Popover v-model="isWithTitleOpen" title="弹出框标题">
+        <ZPopover v-model="isWithTitleOpen" title="弹出框标题">
           <template #trigger>
             <div
               class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"
@@ -150,7 +150,7 @@ const isDisabledOpen = ref(false)
             </div>
           </template>
           这是带有标题的弹出框内容
-        </Popover>
+        </ZPopover>
       </div>
     </section>
 
@@ -158,7 +158,7 @@ const isDisabledOpen = ref(false)
     <section>
       <h2 class="text-lg font-medium mb-4">自定义宽度</h2>
       <div class="flex items-center space-x-4">
-        <Popover v-model="isCustomWidthOpen" :width="300">
+        <ZPopover v-model="isCustomWidthOpen" :width="300">
           <template #trigger>
             <div
               class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"
@@ -167,7 +167,7 @@ const isDisabledOpen = ref(false)
             </div>
           </template>
           这是一个宽度为300px的弹出框，可以显示更多的内容。你可以根据需要自定义弹出框的宽度，以适应不同的内容展示需求。
-        </Popover>
+        </ZPopover>
       </div>
     </section>
 
@@ -175,7 +175,7 @@ const isDisabledOpen = ref(false)
     <section>
       <h2 class="text-lg font-medium mb-4">禁用状态</h2>
       <div class="flex items-center space-x-4">
-        <Popover v-model="isDisabledOpen" disabled>
+        <ZPopover v-model="isDisabledOpen" disabled>
           <template #trigger>
             <div
               class="px-4 py-2 bg-gray-400 text-white rounded cursor-not-allowed"
@@ -184,7 +184,7 @@ const isDisabledOpen = ref(false)
             </div>
           </template>
           这个弹出框被禁用了，无法显示
-        </Popover>
+        </ZPopover>
       </div>
     </section>
   </div>

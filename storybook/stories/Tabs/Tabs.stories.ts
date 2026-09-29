@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Tabs } from '@zxy-ui/vue'
+import { ZTabs } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import TabsDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Tabs> = {
+const meta: Meta<typeof ZTabs> = {
   title: '组件/Tabs 标签页',
-  component: Tabs,
+  component: ZTabs,
   tags: ['autodocs'],
   argTypes: {
     items: {
@@ -69,7 +69,7 @@ const meta: Meta<typeof Tabs> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Tabs>
+type Story = StoryObj<typeof ZTabs>
 
 const defaultItems = [
   {
@@ -190,7 +190,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { TabsDemo },
+    components: {TabsDemo},
     template: '<TabsDemo />',
   }),
 }

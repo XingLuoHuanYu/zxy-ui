@@ -6,7 +6,7 @@ Tabs（标签页）组件是一种常见的界面模式，用于在有限空间�
 
 ```typescript
 // 引入组件
-import { Tab, TabItem } from '@zxy-ui/vue'
+import { Tab, ZTabItem } from '@zxy-ui/vue'
 ```
 
 ## 基础用法

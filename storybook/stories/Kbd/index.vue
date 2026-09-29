@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Kbd } from '@zxy-ui/vue'
+import { ZKbd } from '@zxy-ui/vue'
 </script>
 
 <template>
@@ -7,12 +7,12 @@ import { Kbd } from '@zxy-ui/vue'
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
       <div class="flex flex-wrap gap-4">
-        <Kbd>Ctrl</Kbd>
-        <Kbd>Alt</Kbd>
-        <Kbd>Shift</Kbd>
-        <Kbd>Enter</Kbd>
-        <Kbd>Tab</Kbd>
-        <Kbd>Esc</Kbd>
+        <ZKbd>Ctrl</ZKbd>
+        <ZKbd>Alt</ZKbd>
+        <ZKbd>Shift</ZKbd>
+        <ZKbd>Enter</ZKbd>
+        <ZKbd>Tab</ZKbd>
+        <ZKbd>Esc</ZKbd>
       </div>
     </section>
 
@@ -21,19 +21,19 @@ import { Kbd } from '@zxy-ui/vue'
       <div class="flex flex-wrap items-center gap-4">
         <div>
           <p class="mb-2">超小尺寸</p>
-          <Kbd size="xs">Ctrl</Kbd>
+          <ZKbd size="xs">Ctrl</ZKbd>
         </div>
         <div>
           <p class="mb-2">小尺寸</p>
-          <Kbd size="sm">Ctrl</Kbd>
+          <ZKbd size="sm">Ctrl</ZKbd>
         </div>
         <div>
           <p class="mb-2">中等尺寸</p>
-          <Kbd size="md">Ctrl</Kbd>
+          <ZKbd size="md">Ctrl</ZKbd>
         </div>
         <div>
           <p class="mb-2">大尺寸</p>
-          <Kbd size="lg">Ctrl</Kbd>
+          <ZKbd size="lg">Ctrl</ZKbd>
         </div>
       </div>
     </section>
@@ -42,21 +42,21 @@ import { Kbd } from '@zxy-ui/vue'
       <h2 class="text-xl font-bold mb-4">组合键</h2>
       <div class="flex flex-wrap gap-8">
         <div class="flex items-center gap-2">
-          <Kbd>Ctrl</Kbd>
+          <ZKbd>Ctrl</ZKbd>
           <span>+</span>
-          <Kbd>C</Kbd>
+          <ZKbd>C</ZKbd>
         </div>
         <div class="flex items-center gap-2">
-          <Kbd>Ctrl</Kbd>
+          <ZKbd>Ctrl</ZKbd>
           <span>+</span>
-          <Kbd>Shift</Kbd>
+          <ZKbd>Shift</ZKbd>
           <span>+</span>
-          <Kbd>R</Kbd>
+          <ZKbd>R</ZKbd>
         </div>
         <div class="flex items-center gap-2">
-          <Kbd>Alt</Kbd>
+          <ZKbd>Alt</ZKbd>
           <span>+</span>
-          <Kbd>Tab</Kbd>
+          <ZKbd>Tab</ZKbd>
         </div>
       </div>
     </section>
@@ -64,57 +64,57 @@ import { Kbd } from '@zxy-ui/vue'
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
       <div class="flex flex-wrap gap-4">
-        <Kbd
+        <ZKbd
           :pt="{
             root: 'bg-purple-100 text-purple-700 border-purple-300 shadow-purple-200',
           }"
         >
           Alt
-        </Kbd>
-        <Kbd
+        </ZKbd>
+        <ZKbd
           :pt="{
             root: 'bg-green-100 text-green-700 border-green-300 shadow-green-200',
           }"
         >
           Shift
-        </Kbd>
-        <Kbd
+        </ZKbd>
+        <ZKbd
           :pt="{
             root: 'bg-blue-100 text-blue-700 border-blue-300 shadow-blue-200',
           }"
         >
           Enter
-        </Kbd>
+        </ZKbd>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
       <div class="flex flex-wrap gap-4">
-        <Kbd
+        <ZKbd
           unstyled
           :pt="{
             root: 'bg-gradient-to-r from-blue-500 to-purple-500 text-white px-2 py-1 rounded-md text-sm font-mono shadow-md',
           }"
         >
           Tab
-        </Kbd>
-        <Kbd
+        </ZKbd>
+        <ZKbd
           unstyled
           :pt="{
             root: 'bg-gray-800 text-white px-3 py-1 rounded-lg text-sm font-mono shadow-lg border border-gray-700',
           }"
         >
           Esc
-        </Kbd>
-        <Kbd
+        </ZKbd>
+        <ZKbd
           unstyled
           :pt="{
             root: 'bg-white text-gray-800 px-2 py-1 rounded-md text-sm font-mono shadow-md border-2 border-gray-300',
           }"
         >
           Space
-        </Kbd>
+        </ZKbd>
       </div>
     </section>
 
@@ -123,39 +123,39 @@ import { Kbd } from '@zxy-ui/vue'
       <div class="space-y-4">
         <p>
           按下
-          <Kbd>Ctrl</Kbd>
+          <ZKbd>Ctrl</ZKbd>
           <span>+</span>
-          <Kbd>S</Kbd>
+          <ZKbd>S</ZKbd>
           保存文件
         </p>
         <p>
           按下
-          <Kbd>Ctrl</Kbd>
+          <ZKbd>Ctrl</ZKbd>
           <span>+</span>
-          <Kbd>Shift</Kbd>
+          <ZKbd>Shift</ZKbd>
           <span>+</span>
-          <Kbd>P</Kbd>
+          <ZKbd>P</ZKbd>
           打开命令面板
         </p>
         <p>
           按下
-          <Kbd
+          <ZKbd
             unstyled
             :pt="{
               root: 'bg-gradient-to-r from-blue-500 to-purple-500 text-white px-2 py-1 rounded-md text-sm font-mono shadow-md',
             }"
           >
             Alt
-          </Kbd>
+          </ZKbd>
           <span>+</span>
-          <Kbd
+          <ZKbd
             unstyled
             :pt="{
               root: 'bg-gradient-to-r from-blue-500 to-purple-500 text-white px-2 py-1 rounded-md text-sm font-mono shadow-md',
             }"
           >
             F4
-          </Kbd>
+          </ZKbd>
           关闭窗口
         </p>
       </div>

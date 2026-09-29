@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Kbd } from '@zxy-ui/vue'
+import { ZKbd } from '@zxy-ui/vue'
 </script>
 
 <template>
@@ -8,9 +8,9 @@ import { Kbd } from '@zxy-ui/vue'
     <section>
       <h2 class="text-lg font-medium mb-4">基本用法</h2>
       <div class="flex items-center gap-2">
-        <Kbd>Ctrl</Kbd>
+        <ZKbd>Ctrl</ZKbd>
         <span>+</span>
-        <Kbd>C</Kbd>
+        <ZKbd>C</ZKbd>
       </div>
     </section>
 
@@ -18,10 +18,10 @@ import { Kbd } from '@zxy-ui/vue'
     <section>
       <h2 class="text-lg font-medium mb-4">不同尺寸</h2>
       <div class="flex items-center gap-4">
-        <Kbd size="xs">A</Kbd>
-        <Kbd size="sm">B</Kbd>
-        <Kbd size="md">C</Kbd>
-        <Kbd size="lg">D</Kbd>
+        <ZKbd size="xs">A</ZKbd>
+        <ZKbd size="sm">B</ZKbd>
+        <ZKbd size="md">C</ZKbd>
+        <ZKbd size="lg">D</ZKbd>
       </div>
     </section>
 
@@ -30,19 +30,19 @@ import { Kbd } from '@zxy-ui/vue'
       <h2 class="text-lg font-medium mb-4">常用组合</h2>
       <div class="flex flex-col gap-4">
         <div class="flex items-center gap-2">
-          <Kbd>Ctrl</Kbd>
+          <ZKbd>Ctrl</ZKbd>
           <span>+</span>
-          <Kbd>Shift</Kbd>
+          <ZKbd>Shift</ZKbd>
           <span>+</span>
-          <Kbd>F</Kbd>
+          <ZKbd>F</ZKbd>
         </div>
         <div class="flex items-center gap-2">
-          <Kbd size="sm">Alt</Kbd>
+          <ZKbd size="sm">Alt</ZKbd>
           <span>+</span>
-          <Kbd size="sm">Tab</Kbd>
+          <ZKbd size="sm">Tab</ZKbd>
         </div>
         <div class="flex items-center gap-2">
-          <Kbd>Esc</Kbd>
+          <ZKbd>Esc</ZKbd>
           <span class="text-sm text-gray-500">退出</span>
         </div>
       </div>

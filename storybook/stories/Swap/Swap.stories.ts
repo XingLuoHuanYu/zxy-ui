@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Swap } from '@zxy-ui/vue'
+import { ZSwap } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import SwapDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Swap> = {
+const meta: Meta<typeof ZSwap> = {
   title: '组件/Swap 状态切换',
-  component: Swap,
+  component: ZSwap,
   tags: ['autodocs'],
   argTypes: {
     active: {
@@ -98,24 +98,24 @@ const meta: Meta<typeof Swap> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Swap>
+type Story = StoryObj<typeof ZSwap>
 
 // 基础示例
 export const Basic: Story = {
   render: (args) => ({
-    components: { Swap },
+    components: {ZSwap},
     setup() {
       return { args }
     },
     template: `
-      <Swap v-bind="args">
+      <ZSwap v-bind="args">
         <template #on>
           <div class="bg-blue-500 text-white rounded p-2">开启状态</div>
         </template>
         <template #off>
           <div class="bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-200 rounded p-2">关闭状态</div>
         </template>
-      </Swap>
+      </ZSwap>
     `,
   }),
   args: {
@@ -126,19 +126,19 @@ export const Basic: Story = {
 // 淡入淡出效果
 export const Fade: Story = {
   render: (args) => ({
-    components: { Swap },
+    components: {ZSwap},
     setup() {
       return { args }
     },
     template: `
-      <Swap v-bind="args">
+      <ZSwap v-bind="args">
         <template #on>
           <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center">✓</div>
         </template>
         <template #off>
           <div class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center">✗</div>
         </template>
-      </Swap>
+      </ZSwap>
     `,
   }),
   args: {
@@ -150,19 +150,19 @@ export const Fade: Story = {
 // 翻转效果
 export const Flip: Story = {
   render: (args) => ({
-    components: { Swap },
+    components: {ZSwap},
     setup() {
       return { args }
     },
     template: `
-      <Swap v-bind="args">
+      <ZSwap v-bind="args">
         <template #on>
           <div class="bg-yellow-500 text-white rounded w-8 h-8 flex items-center justify-center">A</div>
         </template>
         <template #off>
           <div class="bg-orange-500 text-white rounded w-8 h-8 flex items-center justify-center">B</div>
         </template>
-      </Swap>
+      </ZSwap>
     `,
   }),
   args: {
@@ -174,19 +174,19 @@ export const Flip: Story = {
 // 旋转效果
 export const Rotate: Story = {
   render: (args) => ({
-    components: { Swap },
+    components: {ZSwap},
     setup() {
       return { args }
     },
     template: `
-      <Swap v-bind="args">
+      <ZSwap v-bind="args">
         <template #on>
           <div class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center">+</div>
         </template>
         <template #off>
           <div class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center">-</div>
         </template>
-      </Swap>
+      </ZSwap>
     `,
   }),
   args: {
@@ -198,19 +198,19 @@ export const Rotate: Story = {
 // 滑动效果
 export const Slide: Story = {
   render: (args) => ({
-    components: { Swap },
+    components: {ZSwap},
     setup() {
       return { args }
     },
     template: `
-      <Swap v-bind="args">
+      <ZSwap v-bind="args">
         <template #on>
           <div class="bg-blue-500 text-white rounded p-2">向上</div>
         </template>
         <template #off>
           <div class="bg-cyan-500 text-white rounded p-2">向下</div>
         </template>
-      </Swap>
+      </ZSwap>
     `,
   }),
   args: {
@@ -222,7 +222,7 @@ export const Slide: Story = {
 // 尺寸展示
 export const Sizes: Story = {
   render: (args) => ({
-    components: { Swap },
+    components: {ZSwap},
     setup() {
       return { args }
     },
@@ -230,38 +230,38 @@ export const Sizes: Story = {
       <div class="flex items-end gap-4">
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500">小尺寸</span>
-          <Swap v-bind="args" size="sm">
+          <ZSwap v-bind="args" size="sm">
             <template #on>
               <div class="bg-rose-500 text-white rounded w-6 h-6 flex items-center justify-center">S</div>
             </template>
             <template #off>
               <div class="bg-pink-500 text-white rounded w-6 h-6 flex items-center justify-center">S</div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
         
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500">中尺寸</span>
-          <Swap v-bind="args" size="md">
+          <ZSwap v-bind="args" size="md">
             <template #on>
               <div class="bg-rose-500 text-white rounded w-8 h-8 flex items-center justify-center">M</div>
             </template>
             <template #off>
               <div class="bg-pink-500 text-white rounded w-8 h-8 flex items-center justify-center">M</div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
         
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500">大尺寸</span>
-          <Swap v-bind="args" size="lg">
+          <ZSwap v-bind="args" size="lg">
             <template #on>
               <div class="bg-rose-500 text-white rounded w-10 h-10 flex items-center justify-center">L</div>
             </template>
             <template #off>
               <div class="bg-pink-500 text-white rounded w-10 h-10 flex items-center justify-center">L</div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
       </div>
     `,
@@ -275,7 +275,7 @@ export const Sizes: Story = {
 // 触发方式
 export const Triggers: Story = {
   render: (args) => ({
-    components: { Swap },
+    components: {ZSwap},
     setup() {
       return { args }
     },
@@ -283,38 +283,38 @@ export const Triggers: Story = {
       <div class="flex gap-4">
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500">点击触发</span>
-          <Swap v-bind="args" trigger="click">
+          <ZSwap v-bind="args" trigger="click">
             <template #on>
               <div class="bg-blue-500 text-white rounded p-2">点击状态</div>
             </template>
             <template #off>
               <div class="bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-200 rounded p-2">点击切换</div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
         
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500">悬停触发</span>
-          <Swap v-bind="args" trigger="hover">
+          <ZSwap v-bind="args" trigger="hover">
             <template #on>
               <div class="bg-teal-500 text-white rounded p-2">悬停状态</div>
             </template>
             <template #off>
               <div class="bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-200 rounded p-2">悬停切换</div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
         
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500">聚焦触发</span>
-          <Swap v-bind="args" trigger="focus">
+          <ZSwap v-bind="args" trigger="focus">
             <template #on>
               <div class="bg-amber-500 text-white rounded p-2">聚焦状态</div>
             </template>
             <template #off>
               <div class="bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-200 rounded p-2">点击聚焦</div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
       </div>
     `,
@@ -327,19 +327,19 @@ export const Triggers: Story = {
 // 禁用状态
 export const Disabled: Story = {
   render: (args) => ({
-    components: { Swap },
+    components: {ZSwap},
     setup() {
       return { args }
     },
     template: `
-      <Swap v-bind="args">
+      <ZSwap v-bind="args">
         <template #on>
           <div class="bg-blue-500 text-white rounded p-2">开启状态</div>
         </template>
         <template #off>
           <div class="bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-200 rounded p-2">禁用状态</div>
         </template>
-      </Swap>
+      </ZSwap>
     `,
   }),
   args: {
@@ -350,19 +350,19 @@ export const Disabled: Story = {
 // 自定义样式
 export const CustomStyle: Story = {
   render: (args) => ({
-    components: { Swap },
+    components: {ZSwap},
     setup() {
       return { args }
     },
     template: `
-      <Swap v-bind="args">
+      <ZSwap v-bind="args">
         <template #on>
           <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-3 rounded-full">🌙</div>
         </template>
         <template #off>
           <div class="bg-gradient-to-r from-orange-400 to-yellow-300 text-white p-3 rounded-full">☀️</div>
         </template>
-      </Swap>
+      </ZSwap>
     `,
   }),
   args: {
@@ -377,7 +377,7 @@ export const CustomStyle: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { SwapDemo },
+    components: {SwapDemo},
     template: '<SwapDemo />',
   }),
 }

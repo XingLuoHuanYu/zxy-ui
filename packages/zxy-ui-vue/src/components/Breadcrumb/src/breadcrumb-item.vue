@@ -26,17 +26,13 @@
 
 <script setup lang="ts">
 import { computed, ref, onMounted } from 'vue'
-import {
-  breadcrumbItemStyle,
-  breadcrumbSeparatorStyle,
-  breadcrumbItemLinkStyle,
-} from './index.variants'
+import { breadcrumbItemStyle, breadcrumbSeparatorStyle, breadcrumbItemLinkStyle } from './index.variants'
 import type { BreadcrumbItemProps } from './type'
 import { BreadcrumbEmits } from './type'
 import { useBreadcrumbItem } from './use-breadcrumb'
 
 defineOptions({
-  name: 'VBreadcrumbItem',
+  name: 'ZBreadcrumbItem',
 })
 
 const emit = defineEmits(BreadcrumbEmits)

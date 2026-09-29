@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Drawer } from '@zxy-ui/vue'
+import { ZDrawer } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import DrawerDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Drawer> = {
+const meta: Meta<typeof ZDrawer> = {
   title: '组件/Drawer 抽屉',
-  component: Drawer,
+  component: ZDrawer,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -109,12 +109,12 @@ const meta: Meta<typeof Drawer> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Drawer>
+type Story = StoryObj<typeof ZDrawer>
 
 // 基础示例
 export const Basic: Story = {
   render: () => ({
-    components: { Drawer },
+    components: {ZDrawer},
     template: `
       <div>
         <button 
@@ -124,9 +124,9 @@ export const Basic: Story = {
           打开抽屉
         </button>
         
-        <Drawer v-model="open" title="基础抽屉">
+        <ZDrawer v-model="open" title="基础抽屉">
           <p>这是一个基础抽屉的内容。</p>
-        </Drawer>
+        </ZDrawer>
       </div>
     `,
     data() {
@@ -140,7 +140,7 @@ export const Basic: Story = {
 // 不同位置
 export const Placement: Story = {
   render: () => ({
-    components: { Drawer },
+    components: {ZDrawer},
     template: `
       <div class="flex flex-wrap gap-2">
         <button 
@@ -171,21 +171,21 @@ export const Placement: Story = {
           底部抽屉
         </button>
         
-        <Drawer v-model="openLeft" title="左侧抽屉" placement="left">
+        <ZDrawer v-model="openLeft" title="左侧抽屉" placement="left">
           <p>这是一个左侧抽屉。</p>
-        </Drawer>
+        </ZDrawer>
         
-        <Drawer v-model="openRight" title="右侧抽屉" placement="right">
+        <ZDrawer v-model="openRight" title="右侧抽屉" placement="right">
           <p>这是一个右侧抽屉。</p>
-        </Drawer>
+        </ZDrawer>
         
-        <Drawer v-model="openTop" title="顶部抽屉" placement="top">
+        <ZDrawer v-model="openTop" title="顶部抽屉" placement="top">
           <p>这是一个顶部抽屉。</p>
-        </Drawer>
+        </ZDrawer>
         
-        <Drawer v-model="openBottom" title="底部抽屉" placement="bottom">
+        <ZDrawer v-model="openBottom" title="底部抽屉" placement="bottom">
           <p>这是一个底部抽屉。</p>
-        </Drawer>
+        </ZDrawer>
       </div>
     `,
     data() {
@@ -202,7 +202,7 @@ export const Placement: Story = {
 // 不同尺寸
 export const Size: Story = {
   render: () => ({
-    components: { Drawer },
+    components: {ZDrawer},
     template: `
       <div class="flex flex-wrap gap-2">
         <button 
@@ -226,17 +226,17 @@ export const Size: Story = {
           大尺寸抽屉
         </button>
         
-        <Drawer v-model="openSmall" title="小尺寸抽屉" size="20%">
+        <ZDrawer v-model="openSmall" title="小尺寸抽屉" size="20%">
           <p>这是一个小尺寸抽屉。</p>
-        </Drawer>
+        </ZDrawer>
         
-        <Drawer v-model="openMedium" title="中等尺寸抽屉" size="50%">
+        <ZDrawer v-model="openMedium" title="中等尺寸抽屉" size="50%">
           <p>这是一个中等尺寸抽屉。</p>
-        </Drawer>
+        </ZDrawer>
         
-        <Drawer v-model="openLarge" title="大尺寸抽屉" size="80%">
+        <ZDrawer v-model="openLarge" title="大尺寸抽屉" size="80%">
           <p>这是一个大尺寸抽屉。</p>
-        </Drawer>
+        </ZDrawer>
       </div>
     `,
     data() {
@@ -252,7 +252,7 @@ export const Size: Story = {
 // 自定义样式
 export const CustomStyle: Story = {
   render: () => ({
-    components: { Drawer },
+    components: {ZDrawer},
     template: `
       <div>
         <button 
@@ -262,7 +262,7 @@ export const CustomStyle: Story = {
           自定义样式抽屉
         </button>
         
-        <Drawer 
+        <ZDrawer 
           v-model="open" 
           title="自定义样式抽屉"
           :pt="{
@@ -275,7 +275,7 @@ export const CustomStyle: Story = {
           }"
         >
           <p>这是一个使用 pt 属性自定义样式的抽屉。</p>
-        </Drawer>
+        </ZDrawer>
       </div>
     `,
     data() {
@@ -289,7 +289,7 @@ export const CustomStyle: Story = {
 // 无样式模式
 export const Unstyled: Story = {
   render: () => ({
-    components: { Drawer },
+    components: {ZDrawer},
     template: `
       <div>
         <button 
@@ -299,7 +299,7 @@ export const Unstyled: Story = {
           无样式模式抽屉
         </button>
         
-        <Drawer 
+        <ZDrawer 
           v-model="open" 
           title="无样式模式抽屉"
           unstyled
@@ -313,7 +313,7 @@ export const Unstyled: Story = {
           }"
         >
           <p>这是一个使用 unstyled 属性和 pt 属性创建的完全自定义抽屉。</p>
-        </Drawer>
+        </ZDrawer>
       </div>
     `,
     data() {
@@ -327,7 +327,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { DrawerDemo },
+    components: {DrawerDemo},
     template: '<DrawerDemo />',
   }),
 }

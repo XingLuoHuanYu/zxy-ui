@@ -10,7 +10,7 @@ import type { Ref } from 'vue'
 import type { TabItemProps } from './type'
 
 defineOptions({
-  name: 'TabItem',
+  name: 'ZTabItem',
 })
 
 const props = withDefaults(defineProps<TabItemProps>(), {

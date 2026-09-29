@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RangeCalendar } from '@zxy-ui/vue'
+import { ZRangeCalendar } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const today = new Date()
@@ -14,21 +14,21 @@ const dateRange = ref<[Date | null, Date | null]>([today, nextWeek])
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
       <div class="w-full max-w-md">
-        <RangeCalendar />
+        <ZRangeCalendar />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">默认选中日期</h2>
       <div class="w-full max-w-md">
-        <RangeCalendar v-model="dateRange" />
+        <ZRangeCalendar v-model="dateRange" />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">日期范围限制</h2>
       <div class="w-full max-w-md">
-        <RangeCalendar
+        <ZRangeCalendar
           :min="today"
           :max="
             new Date(today.getFullYear(), today.getMonth() + 1, today.getDate())
@@ -40,35 +40,35 @@ const dateRange = ref<[Date | null, Date | null]>([today, nextWeek])
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
       <div class="w-full max-w-md">
-        <RangeCalendar disabled />
+        <ZRangeCalendar disabled />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">只读状态</h2>
       <div class="w-full max-w-md">
-        <RangeCalendar readonly :model-value="dateRange" />
+        <ZRangeCalendar readonly :model-value="dateRange" />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">周一作为一周的第一天</h2>
       <div class="w-full max-w-md">
-        <RangeCalendar :first-day-of-week="1" />
+        <ZRangeCalendar :first-day-of-week="1" />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">本地化设置</h2>
       <div class="w-full max-w-md">
-        <RangeCalendar locale="zh-CN" />
+        <ZRangeCalendar locale="zh-CN" />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式</h2>
       <div class="w-full max-w-md">
-        <RangeCalendar
+        <ZRangeCalendar
           :pt="{
             root: 'bg-gray-50 p-4 rounded-lg shadow',
             header: 'bg-blue-50 p-2 rounded mb-2',
@@ -85,7 +85,7 @@ const dateRange = ref<[Date | null, Date | null]>([today, nextWeek])
     <section>
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
       <div class="w-full max-w-md">
-        <RangeCalendar
+        <ZRangeCalendar
           unstyled
           :pt="{
             root: 'bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl shadow-lg',

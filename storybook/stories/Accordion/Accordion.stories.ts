@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Accordion, AccordionItem } from '@zxy-ui/vue'
+import { ZAccordion, ZAccordionItem } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import AccordionDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Accordion> = {
+const meta: Meta<typeof ZAccordion> = {
   title: '组件/Accordion 手风琴',
-  component: Accordion,
+  component: ZAccordion,
   tags: ['autodocs'],
   argTypes: {
     multiple: {
@@ -86,28 +86,28 @@ const meta: Meta<typeof Accordion> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Accordion>
+type Story = StoryObj<typeof ZAccordion>
 
 // 基础示例
 export const Basic: Story = {
   args: {},
   render: (args) => ({
-    components: { Accordion, AccordionItem },
+    components: {ZAccordion, ZAccordionItem},
     setup() {
       return { args }
     },
     template: `
-      <Accordion v-bind="args">
-        <AccordionItem value="item-1" header="第一项">
+      <ZAccordion v-bind="args">
+        <ZAccordionItem value="item-1" header="第一项">
           <p>这是第一项的内容区域。这里可以放置任何内容。</p>
-        </AccordionItem>
-        <AccordionItem value="item-2" header="第二项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-2" header="第二项">
           <p>这是第二项的内容区域。这里可以放置任何内容。</p>
-        </AccordionItem>
-        <AccordionItem value="item-3" header="第三项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-3" header="第三项">
           <p>这是第三项的内容区域。这里可以放置任何内容。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     `,
   }),
 }
@@ -118,22 +118,22 @@ export const Bordered: Story = {
     variant: 'bordered',
   },
   render: (args) => ({
-    components: { Accordion, AccordionItem },
+    components: {ZAccordion, ZAccordionItem},
     setup() {
       return { args }
     },
     template: `
-      <Accordion v-bind="args">
-        <AccordionItem value="item-1" header="第一项">
+      <ZAccordion v-bind="args">
+        <ZAccordionItem value="item-1" header="第一项">
           <p>这是第一项的内容区域。</p>
-        </AccordionItem>
-        <AccordionItem value="item-2" header="第二项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-2" header="第二项">
           <p>这是第二项的内容区域。</p>
-        </AccordionItem>
-        <AccordionItem value="item-3" header="第三项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-3" header="第三项">
           <p>这是第三项的内容区域。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     `,
   }),
 }
@@ -144,22 +144,22 @@ export const Elevated: Story = {
     variant: 'elevated',
   },
   render: (args) => ({
-    components: { Accordion, AccordionItem },
+    components: {ZAccordion, ZAccordionItem},
     setup() {
       return { args }
     },
     template: `
-      <Accordion v-bind="args">
-        <AccordionItem value="item-1" header="第一项">
+      <ZAccordion v-bind="args">
+        <ZAccordionItem value="item-1" header="第一项">
           <p>这是第一项的内容区域。</p>
-        </AccordionItem>
-        <AccordionItem value="item-2" header="第二项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-2" header="第二项">
           <p>这是第二项的内容区域。</p>
-        </AccordionItem>
-        <AccordionItem value="item-3" header="第三项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-3" header="第三项">
           <p>这是第三项的内容区域。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     `,
   }),
 }
@@ -170,22 +170,22 @@ export const Multiple: Story = {
     multiple: true,
   },
   render: (args) => ({
-    components: { Accordion, AccordionItem },
+    components: {ZAccordion, ZAccordionItem},
     setup() {
       return { args }
     },
     template: `
-      <Accordion v-bind="args">
-        <AccordionItem value="item-1" header="第一项">
+      <ZAccordion v-bind="args">
+        <ZAccordionItem value="item-1" header="第一项">
           <p>这是第一项的内容区域，可以与其他项同时展开。</p>
-        </AccordionItem>
-        <AccordionItem value="item-2" header="第二项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-2" header="第二项">
           <p>这是第二项的内容区域，可以与其他项同时展开。</p>
-        </AccordionItem>
-        <AccordionItem value="item-3" header="第三项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-3" header="第三项">
           <p>这是第三项的内容区域，可以与其他项同时展开。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     `,
   }),
 }
@@ -196,22 +196,22 @@ export const DefaultValue: Story = {
     modelValue: 'item-2',
   },
   render: (args) => ({
-    components: { Accordion, AccordionItem },
+    components: {ZAccordion, ZAccordionItem},
     setup() {
       return { args }
     },
     template: `
-      <Accordion v-bind="args">
-        <AccordionItem value="item-1" header="第一项">
+      <ZAccordion v-bind="args">
+        <ZAccordionItem value="item-1" header="第一项">
           <p>这是第一项的内容区域。</p>
-        </AccordionItem>
-        <AccordionItem value="item-2" header="第二项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-2" header="第二项">
           <p>这是第二项的内容区域，默认展开。</p>
-        </AccordionItem>
-        <AccordionItem value="item-3" header="第三项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-3" header="第三项">
           <p>这是第三项的内容区域。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     `,
   }),
 }
@@ -223,22 +223,22 @@ export const MultipleDefaultValue: Story = {
     modelValue: ['item-1', 'item-3'],
   },
   render: (args) => ({
-    components: { Accordion, AccordionItem },
+    components: {ZAccordion, ZAccordionItem},
     setup() {
       return { args }
     },
     template: `
-      <Accordion v-bind="args">
-        <AccordionItem value="item-1" header="第一项">
+      <ZAccordion v-bind="args">
+        <ZAccordionItem value="item-1" header="第一项">
           <p>这是第一项的内容区域，默认展开。</p>
-        </AccordionItem>
-        <AccordionItem value="item-2" header="第二项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-2" header="第二项">
           <p>这是第二项的内容区域。</p>
-        </AccordionItem>
-        <AccordionItem value="item-3" header="第三项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-3" header="第三项">
           <p>这是第三项的内容区域，默认展开。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     `,
   }),
 }
@@ -246,34 +246,34 @@ export const MultipleDefaultValue: Story = {
 // 不同圆角
 export const RadiusSizes: Story = {
   render: () => ({
-    components: { Accordion, AccordionItem },
+    components: {ZAccordion, ZAccordionItem},
     template: `
       <div class="space-y-8">
         <div>
           <h3 class="mb-2 text-sm text-gray-500">无圆角</h3>
-          <Accordion radius="none" variant="bordered">
-            <AccordionItem value="item-1" header="示例项">
+          <ZAccordion radius="none" variant="bordered">
+            <ZAccordionItem value="item-1" header="示例项">
               <p>无圆角的手风琴内容。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
         
         <div>
           <h3 class="mb-2 text-sm text-gray-500">中圆角</h3>
-          <Accordion radius="md" variant="bordered">
-            <AccordionItem value="item-1" header="示例项">
+          <ZAccordion radius="md" variant="bordered">
+            <ZAccordionItem value="item-1" header="示例项">
               <p>中圆角的手风琴内容。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
         
         <div>
           <h3 class="mb-2 text-sm text-gray-500">大圆角</h3>
-          <Accordion radius="full" variant="bordered">
-            <AccordionItem value="item-1" header="示例项">
+          <ZAccordion radius="full" variant="bordered">
+            <ZAccordionItem value="item-1" header="示例项">
               <p>大圆角的手风琴内容。</p>
-            </AccordionItem>
-          </Accordion>
+            </ZAccordionItem>
+          </ZAccordion>
         </div>
       </div>
     `,
@@ -286,19 +286,19 @@ export const Disabled: Story = {
     disabled: true,
   },
   render: (args) => ({
-    components: { Accordion, AccordionItem },
+    components: {ZAccordion, ZAccordionItem},
     setup() {
       return { args }
     },
     template: `
-      <Accordion v-bind="args">
-        <AccordionItem value="item-1" header="禁用项1">
+      <ZAccordion v-bind="args">
+        <ZAccordionItem value="item-1" header="禁用项1">
           <p>这个项目被禁用，无法点击。</p>
-        </AccordionItem>
-        <AccordionItem value="item-2" header="禁用项2">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-2" header="禁用项2">
           <p>这个项目被禁用，无法点击。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     `,
   }),
 }
@@ -306,19 +306,19 @@ export const Disabled: Story = {
 // 单项禁用
 export const ItemDisabled: Story = {
   render: () => ({
-    components: { Accordion, AccordionItem },
+    components: {ZAccordion, ZAccordionItem},
     template: `
-      <Accordion>
-        <AccordionItem value="item-1" header="正常项">
+      <ZAccordion>
+        <ZAccordionItem value="item-1" header="正常项">
           <p>这是一个可以正常点击的项目。</p>
-        </AccordionItem>
-        <AccordionItem value="item-2" header="禁用项" disabled>
+        </ZAccordionItem>
+        <ZAccordionItem value="item-2" header="禁用项" disabled>
           <p>这个项目被禁用，无法点击。</p>
-        </AccordionItem>
-        <AccordionItem value="item-3" header="正常项">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-3" header="正常项">
           <p>这是一个可以正常点击的项目。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     `,
   }),
 }
@@ -326,10 +326,10 @@ export const ItemDisabled: Story = {
 // 自定义标题和图标
 export const CustomHeaderAndIcon: Story = {
   render: () => ({
-    components: { Accordion, AccordionItem },
+    components: {ZAccordion, ZAccordionItem},
     template: `
-      <Accordion>
-        <AccordionItem value="item-1">
+      <ZAccordion>
+        <ZAccordionItem value="item-1">
           <template #header>
             <div class="flex items-center gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -344,8 +344,8 @@ export const CustomHeaderAndIcon: Story = {
             </div>
           </template>
           <p>这是自定义标题的内容。</p>
-        </AccordionItem>
-        <AccordionItem value="item-2" header="自定义图标">
+        </ZAccordionItem>
+        <ZAccordionItem value="item-2" header="自定义图标">
           <template #icon>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
@@ -354,8 +354,8 @@ export const CustomHeaderAndIcon: Story = {
             </svg>
           </template>
           <p>这是自定义图标的内容。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     `,
   }),
 }
@@ -366,13 +366,13 @@ export const Unstyled: Story = {
     unstyled: true,
   },
   render: (args) => ({
-    components: { Accordion, AccordionItem },
+    components: {ZAccordion, ZAccordionItem},
     setup() {
       return { args }
     },
     template: `
-      <Accordion v-bind="args" :pt="{ root: 'bg-gray-100 rounded-lg' }">
-        <AccordionItem 
+      <ZAccordion v-bind="args" :pt="{ root: 'bg-gray-100 rounded-lg' }">
+        <ZAccordionItem 
           value="item-1" 
           header="无样式项" 
           :pt="{
@@ -386,8 +386,8 @@ export const Unstyled: Story = {
           }"
         >
           <p>这是无样式模式下，通过pt属性自定义的项目。</p>
-        </AccordionItem>
-      </Accordion>
+        </ZAccordionItem>
+      </ZAccordion>
     `,
   }),
 }
@@ -395,7 +395,7 @@ export const Unstyled: Story = {
 // 综合演示
 export const Demo: Story = {
   render: () => ({
-    components: { AccordionDemo },
+    components: {AccordionDemo},
     template: '<AccordionDemo />',
   }),
 }

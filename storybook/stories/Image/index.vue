@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Image } from '@zxy-ui/vue'
+import { ZImage } from '@zxy-ui/vue'
 </script>
 
 <template>
@@ -7,7 +7,7 @@ import { Image } from '@zxy-ui/vue'
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Image
+        <ZImage
           src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
           alt="风景图片"
           width="100%"
@@ -21,7 +21,7 @@ import { Image } from '@zxy-ui/vue'
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
           <p class="mb-2">fill</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -31,7 +31,7 @@ import { Image } from '@zxy-ui/vue'
         </div>
         <div>
           <p class="mb-2">contain</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -41,7 +41,7 @@ import { Image } from '@zxy-ui/vue'
         </div>
         <div>
           <p class="mb-2">cover (默认)</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -57,7 +57,7 @@ import { Image } from '@zxy-ui/vue'
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <p class="mb-2">默认模糊度 (10px)</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -67,7 +67,7 @@ import { Image } from '@zxy-ui/vue'
         </div>
         <div>
           <p class="mb-2">高模糊度 (20px)</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -83,7 +83,7 @@ import { Image } from '@zxy-ui/vue'
       <h2 class="text-xl font-bold mb-4">缩放功能</h2>
       <div class="grid grid-cols-1 gap-4">
         <p class="mb-2">点击图片可缩放</p>
-        <Image
+        <ZImage
           src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
           alt="风景图片"
           width="100%"
@@ -99,7 +99,7 @@ import { Image } from '@zxy-ui/vue'
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <p class="mb-2">默认骨架屏</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -109,7 +109,7 @@ import { Image } from '@zxy-ui/vue'
         </div>
         <div>
           <p class="mb-2">自定义骨架屏颜色</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -126,7 +126,7 @@ import { Image } from '@zxy-ui/vue'
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
           <p class="mb-2">无圆角 (none)</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -136,7 +136,7 @@ import { Image } from '@zxy-ui/vue'
         </div>
         <div>
           <p class="mb-2">中等圆角 (md, 默认)</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -146,7 +146,7 @@ import { Image } from '@zxy-ui/vue'
         </div>
         <div>
           <p class="mb-2">大圆角 (xl)</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -160,7 +160,7 @@ import { Image } from '@zxy-ui/vue'
     <section>
       <h2 class="text-xl font-bold mb-4">错误状态</h2>
       <div class="grid grid-cols-1 gap-4">
-        <Image
+        <ZImage
           src="invalid-image-url.jpg"
           alt="无效图片"
           width="100%"
@@ -174,7 +174,7 @@ import { Image } from '@zxy-ui/vue'
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <p class="mb-2">自定义边框和阴影</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -186,7 +186,7 @@ import { Image } from '@zxy-ui/vue'
         </div>
         <div>
           <p class="mb-2">灰度效果</p>
-          <Image
+          <ZImage
             src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
             alt="风景图片"
             width="100%"
@@ -202,7 +202,7 @@ import { Image } from '@zxy-ui/vue'
     <section>
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
       <div class="grid grid-cols-1 gap-4">
-        <Image
+        <ZImage
           src="https://images.unsplash.com/photo-1682687982501-1e58ab814714"
           alt="风景图片"
           unstyled

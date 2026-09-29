@@ -1,20 +1,11 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useSlider } from './composables/useSlider'
-import {
-  sliderContainer,
-  sliderTrack,
-  sliderFill,
-  sliderThumb,
-  sliderTooltip,
-  sliderMarks,
-  sliderMark,
-  sliderMarkLabel,
-} from './index.variants'
+import { sliderContainer, sliderTrack, sliderFill, sliderThumb, sliderTooltip, sliderMarks, sliderMark, sliderMarkLabel } from './index.variants'
 import type { SliderProps } from './type'
 
 defineOptions({
-  name: 'Slider',
+  name: 'ZSlider',
 })
 
 const props = withDefaults(defineProps<SliderProps>(), {

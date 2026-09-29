@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Textarea } from '@zxy-ui/vue'
+import { ZTextarea } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 
 // 定义组件元数据
-const meta: Meta<typeof Textarea> = {
+const meta: Meta<typeof ZTextarea> = {
   title: '组件/Textarea 文本域',
-  component: Textarea,
+  component: ZTextarea,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -124,7 +124,7 @@ const meta: Meta<typeof Textarea> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Textarea>
+type Story = StoryObj<typeof ZTextarea>
 
 // 基础示例
 export const Basic: Story = {
@@ -138,20 +138,20 @@ export const Basic: Story = {
 // 不同尺寸
 export const Sizes: Story = {
   render: () => ({
-    components: { Textarea },
+    components: {ZTextarea},
     template: `
       <div class="space-y-4">
         <div>
           <p class="mb-2">小尺寸</p>
-          <Textarea placeholder="小尺寸文本域" size="sm" />
+          <ZTextarea placeholder="小尺寸文本域" size="sm" />
         </div>
         <div>
           <p class="mb-2">中等尺寸</p>
-          <Textarea placeholder="中等尺寸文本域" size="md" />
+          <ZTextarea placeholder="中等尺寸文本域" size="md" />
         </div>
         <div>
           <p class="mb-2">大尺寸</p>
-          <Textarea placeholder="大尺寸文本域" size="lg" />
+          <ZTextarea placeholder="大尺寸文本域" size="lg" />
         </div>
       </div>
     `,
@@ -161,20 +161,20 @@ export const Sizes: Story = {
 // 不同状态
 export const Status: Story = {
   render: () => ({
-    components: { Textarea },
+    components: {ZTextarea},
     template: `
       <div class="space-y-4">
         <div>
           <p class="mb-2">错误状态</p>
-          <Textarea placeholder="错误状态" status="error" />
+          <ZTextarea placeholder="错误状态" status="error" />
         </div>
         <div>
           <p class="mb-2">警告状态</p>
-          <Textarea placeholder="警告状态" status="warning" />
+          <ZTextarea placeholder="警告状态" status="warning" />
         </div>
         <div>
           <p class="mb-2">成功状态</p>
-          <Textarea placeholder="成功状态" status="success" />
+          <ZTextarea placeholder="成功状态" status="success" />
         </div>
       </div>
     `,
@@ -203,24 +203,24 @@ export const Autosize: Story = {
 // 调整大小
 export const Resize: Story = {
   render: () => ({
-    components: { Textarea },
+    components: {ZTextarea},
     template: `
       <div class="space-y-4">
         <div>
           <p class="mb-2">不可调整大小</p>
-          <Textarea placeholder="不可调整大小" resize="none" />
+          <ZTextarea placeholder="不可调整大小" resize="none" />
         </div>
         <div>
           <p class="mb-2">可以水平调整大小</p>
-          <Textarea placeholder="可以水平调整大小" resize="horizontal" />
+          <ZTextarea placeholder="可以水平调整大小" resize="horizontal" />
         </div>
         <div>
           <p class="mb-2">可以垂直调整大小</p>
-          <Textarea placeholder="可以垂直调整大小" resize="vertical" />
+          <ZTextarea placeholder="可以垂直调整大小" resize="vertical" />
         </div>
         <div>
           <p class="mb-2">可以自由调整大小</p>
-          <Textarea placeholder="可以自由调整大小" resize="both" />
+          <ZTextarea placeholder="可以自由调整大小" resize="both" />
         </div>
       </div>
     `,
@@ -263,12 +263,12 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { Textarea },
+    components: {ZTextarea},
     template: `
       <div class="space-y-8 p-4">
         <section>
           <h2 class="text-xl font-bold mb-4">基础用法</h2>
-          <Textarea placeholder="请输入内容" />
+          <ZTextarea placeholder="请输入内容" />
         </section>
         
         <section>
@@ -276,15 +276,15 @@ export const AllExamples: Story = {
           <div class="space-y-4">
             <div>
               <p class="mb-2">小尺寸</p>
-              <Textarea placeholder="小尺寸文本域" size="sm" />
+              <ZTextarea placeholder="小尺寸文本域" size="sm" />
             </div>
             <div>
               <p class="mb-2">中等尺寸</p>
-              <Textarea placeholder="中等尺寸文本域" size="md" />
+              <ZTextarea placeholder="中等尺寸文本域" size="md" />
             </div>
             <div>
               <p class="mb-2">大尺寸</p>
-              <Textarea placeholder="大尺寸文本域" size="lg" />
+              <ZTextarea placeholder="大尺寸文本域" size="lg" />
             </div>
           </div>
         </section>
@@ -294,15 +294,15 @@ export const AllExamples: Story = {
           <div class="space-y-4">
             <div>
               <p class="mb-2">错误状态</p>
-              <Textarea placeholder="错误状态" status="error" />
+              <ZTextarea placeholder="错误状态" status="error" />
             </div>
             <div>
               <p class="mb-2">警告状态</p>
-              <Textarea placeholder="警告状态" status="warning" />
+              <ZTextarea placeholder="警告状态" status="warning" />
             </div>
             <div>
               <p class="mb-2">成功状态</p>
-              <Textarea placeholder="成功状态" status="success" />
+              <ZTextarea placeholder="成功状态" status="success" />
             </div>
           </div>
         </section>

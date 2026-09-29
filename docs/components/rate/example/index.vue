@@ -20,27 +20,27 @@ const formatTooltip = (value) => {
     <!-- 基础用法 -->
     <div>
       <h2 class="text-lg font-medium mb-2">基础用法</h2>
-      <Rate v-model="basicValue" />
+      <ZRate v-model="basicValue" />
       <div class="mt-2 text-sm text-gray-500">当前评分：{{ basicValue }}</div>
     </div>
 
     <!-- 半星 -->
     <div>
       <h2 class="text-lg font-medium mb-2">半星评分</h2>
-      <Rate v-model="halfValue" :allow-half="true" />
+      <ZRate v-model="halfValue" :allow-half="true" />
       <div class="mt-2 text-sm text-gray-500">当前评分：{{ halfValue }}</div>
     </div>
 
     <!-- 只读状态 -->
     <div>
       <h2 class="text-lg font-medium mb-2">只读状态</h2>
-      <Rate v-model="readonlyValue" :readonly="true" />
+      <ZRate v-model="readonlyValue" :readonly="true" />
     </div>
 
     <!-- 禁用状态 -->
     <div>
       <h2 class="text-lg font-medium mb-2">禁用状态</h2>
-      <Rate v-model="disabledValue" :disabled="true" />
+      <ZRate v-model="disabledValue" :disabled="true" />
     </div>
 
     <!-- 自定义颜色 -->
@@ -49,23 +49,23 @@ const formatTooltip = (value) => {
       <div class="space-y-2">
         <div>
           <span class="inline-block w-20">黄色（默认）:</span>
-          <Rate v-model="colorValue" color="yellow" />
+          <ZRate v-model="colorValue" color="yellow" />
         </div>
         <div>
           <span class="inline-block w-20">蓝色:</span>
-          <Rate v-model="colorValue" color="blue" />
+          <ZRate v-model="colorValue" color="blue" />
         </div>
         <div>
           <span class="inline-block w-20">绿色:</span>
-          <Rate v-model="colorValue" color="green" />
+          <ZRate v-model="colorValue" color="green" />
         </div>
         <div>
           <span class="inline-block w-20">红色:</span>
-          <Rate v-model="colorValue" color="red" />
+          <ZRate v-model="colorValue" color="red" />
         </div>
         <div>
           <span class="inline-block w-20">紫色:</span>
-          <Rate v-model="colorValue" color="purple" />
+          <ZRate v-model="colorValue" color="purple" />
         </div>
       </div>
     </div>
@@ -74,7 +74,7 @@ const formatTooltip = (value) => {
     <div>
       <h2 class="text-lg font-medium mb-2">自定义字符</h2>
       <div class="space-y-2">
-        <Rate v-model="customValue" character="好" />
+        <ZRate v-model="customValue" character="好" />
       </div>
     </div>
 
@@ -84,15 +84,15 @@ const formatTooltip = (value) => {
       <div class="space-y-2">
         <div>
           <span class="inline-block w-20">小:</span>
-          <Rate v-model="colorValue" size="small" />
+          <ZRate v-model="colorValue" size="small" />
         </div>
         <div>
           <span class="inline-block w-20">默认:</span>
-          <Rate v-model="colorValue" size="default" />
+          <ZRate v-model="colorValue" size="default" />
         </div>
         <div>
           <span class="inline-block w-20">大:</span>
-          <Rate v-model="colorValue" size="large" />
+          <ZRate v-model="colorValue" size="large" />
         </div>
       </div>
     </div>
@@ -100,7 +100,7 @@ const formatTooltip = (value) => {
     <!-- 自定义最大值 -->
     <div>
       <h2 class="text-lg font-medium mb-2">自定义最大值</h2>
-      <Rate v-model="maxValue" :max="10" />
+      <ZRate v-model="maxValue" :max="10" />
       <div class="mt-2 text-sm text-gray-500">当前评分：{{ maxValue }}/10</div>
     </div>
 
@@ -110,11 +110,11 @@ const formatTooltip = (value) => {
       <div class="space-y-2">
         <div>
           <span class="inline-block w-32">默认格式:</span>
-          <Rate v-model="scoreValue" :allow-half="true" :show-score="true" />
+          <ZRate v-model="scoreValue" :allow-half="true" :show-score="true" />
         </div>
         <div>
           <span class="inline-block w-32">自定义格式:</span>
-          <Rate
+          <ZRate
             v-model="scoreValue"
             :allow-half="true"
             :show-score="true"

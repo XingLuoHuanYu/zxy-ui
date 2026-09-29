@@ -1,11 +1,4 @@
-import {
-  type SetupContext,
-  ref,
-  reactive,
-  onMounted,
-  onBeforeUnmount,
-  computed,
-} from 'vue'
+import { type SetupContext, ref, reactive, onMounted, onBeforeUnmount, computed } from 'vue'
 import type { SplitterProps, SplitterPanelSize } from './type'
 
 export const useSplitter = (

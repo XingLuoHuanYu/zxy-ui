@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Table } from '@zxy-ui/vue'
+import { ZTable } from '@zxy-ui/vue'
 import { computed, ref } from 'vue'
 
 interface TableColumn {
@@ -49,23 +49,23 @@ const count = computed(() => rows.value.length)
   <div class="space-y-8">
     <section class="space-y-3">
       <h3 class="text-lg font-medium">基础用法</h3>
-      <Table :columns="columns" :data="rows" />
+      <ZTable :columns="columns" :data="rows" />
     </section>
 
     <section class="space-y-3">
       <h3 class="text-lg font-medium">斑马纹 + 边框 + 紧凑模式</h3>
-      <Table :columns="columns" :data="rows" stripe border dense />
+      <ZTable :columns="columns" :data="rows" stripe border dense />
     </section>
 
     <section class="space-y-3">
       <h3 class="text-lg font-medium">自定义单元格</h3>
-      <Table :columns="columns" :data="rows" border>
+      <ZTable :columns="columns" :data="rows" border>
         <template #status="{ row }">
           <span :class="statusClass(row.status)">
             {{ statusLabel(row.status) }}
           </span>
         </template>
-      </Table>
+      </ZTable>
       <p class="text-sm text-gray-500 dark:text-gray-400">
         当前共 {{ count }} 条数据
       </p>
@@ -73,13 +73,13 @@ const count = computed(() => rows.value.length)
 
     <section class="space-y-3">
       <h3 class="text-lg font-medium">空状态插槽</h3>
-      <Table :columns="columns" :data="emptyRows" empty-text="暂无数据">
+      <ZTable :columns="columns" :data="emptyRows" empty-text="暂无数据">
         <template #empty>
           <div class="py-4 text-sm text-gray-500 dark:text-gray-400">
             当前筛选条件下没有结果
           </div>
         </template>
-      </Table>
+      </ZTable>
     </section>
   </div>
 </template>

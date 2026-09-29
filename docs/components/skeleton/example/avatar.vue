@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SkeletonAvatar } from '@zxy-ui/vue'
+import { ZSkeletonAvatar } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 </script>
 
@@ -8,7 +8,7 @@ import '@zxy-ui/vue/style'
     <!-- 基础头像骨架屏 -->
     <div>
       <h3 class="text-sm font-medium mb-2">基础头像骨架屏</h3>
-      <SkeletonAvatar />
+      <ZSkeletonAvatar />
     </div>
 
     <!-- 不同尺寸 -->
@@ -17,23 +17,23 @@ import '@zxy-ui/vue/style'
       <div class="flex items-center gap-4">
         <div>
           <p class="text-xs text-gray-500 mb-1">xs</p>
-          <SkeletonAvatar size="xs" />
+          <ZSkeletonAvatar size="xs" />
         </div>
         <div>
           <p class="text-xs text-gray-500 mb-1">sm</p>
-          <SkeletonAvatar size="sm" />
+          <ZSkeletonAvatar size="sm" />
         </div>
         <div>
           <p class="text-xs text-gray-500 mb-1">md</p>
-          <SkeletonAvatar size="md" />
+          <ZSkeletonAvatar size="md" />
         </div>
         <div>
           <p class="text-xs text-gray-500 mb-1">lg</p>
-          <SkeletonAvatar size="lg" />
+          <ZSkeletonAvatar size="lg" />
         </div>
         <div>
           <p class="text-xs text-gray-500 mb-1">xl</p>
-          <SkeletonAvatar size="xl" />
+          <ZSkeletonAvatar size="xl" />
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@ import '@zxy-ui/vue/style'
     <!-- 方形头像 -->
     <div>
       <h3 class="text-sm font-medium mb-2">方形头像</h3>
-      <SkeletonAvatar :circle="false" />
+      <ZSkeletonAvatar :circle="false" />
     </div>
 
     <!-- 不同动画 -->
@@ -50,15 +50,15 @@ import '@zxy-ui/vue/style'
       <div class="flex items-center gap-4">
         <div>
           <p class="text-xs text-gray-500 mb-1">pulse</p>
-          <SkeletonAvatar animation="pulse" />
+          <ZSkeletonAvatar animation="pulse" />
         </div>
         <div>
           <p class="text-xs text-gray-500 mb-1">wave</p>
-          <SkeletonAvatar animation="wave" />
+          <ZSkeletonAvatar animation="wave" />
         </div>
         <div>
           <p class="text-xs text-gray-500 mb-1">none</p>
-          <SkeletonAvatar animation="none" />
+          <ZSkeletonAvatar animation="none" />
         </div>
       </div>
     </div>

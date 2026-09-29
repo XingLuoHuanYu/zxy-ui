@@ -3,9 +3,9 @@
     <!-- 基础卡片 -->
     <section>
       <h3 class="text-lg font-medium mb-4">基础卡片</h3>
-      <Card>
+      <ZCard>
         <p>这是一个基础卡片，使用默认的样式和设置。</p>
-      </Card>
+      </ZCard>
     </section>
 
     <!-- 全局注册用法（ZxyUI 前缀） -->
@@ -32,18 +32,18 @@
     <section>
       <h3 class="text-lg font-medium mb-4">变体样式</h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Card variant="default">
+        <ZCard variant="default">
           <p class="font-medium">默认卡片</p>
           <p class="text-gray-600">不带边框和阴影</p>
-        </Card>
-        <Card variant="bordered">
+        </ZCard>
+        <ZCard variant="bordered">
           <p class="font-medium">带边框卡片</p>
           <p class="text-gray-600">有边框的卡片</p>
-        </Card>
-        <Card variant="elevated">
+        </ZCard>
+        <ZCard variant="elevated">
           <p class="font-medium">阴影卡片</p>
           <p class="text-gray-600">带阴影效果的卡片</p>
-        </Card>
+        </ZCard>
       </div>
     </section>
 
@@ -51,7 +51,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">内边距设置</h3>
       <div class="flex flex-col gap-4">
-        <Card variant="bordered" padding="none" class="overflow-hidden">
+        <ZCard variant="bordered" padding="none" class="overflow-hidden">
           <img
             src="https://picsum.photos/600/200"
             alt="无内边距卡片"
@@ -61,17 +61,17 @@
             <p class="font-medium">无内边距</p>
             <p class="text-gray-600">内容可以自定义内边距</p>
           </div>
-        </Card>
+        </ZCard>
         <div class="grid grid-cols-3 gap-4">
-          <Card variant="bordered" padding="sm">
+          <ZCard variant="bordered" padding="sm">
             <p class="font-medium">小内边距</p>
-          </Card>
-          <Card variant="bordered" padding="md">
+          </ZCard>
+          <ZCard variant="bordered" padding="md">
             <p class="font-medium">中内边距</p>
-          </Card>
-          <Card variant="bordered" padding="lg">
+          </ZCard>
+          <ZCard variant="bordered" padding="lg">
             <p class="font-medium">大内边距</p>
-          </Card>
+          </ZCard>
         </div>
       </div>
     </section>
@@ -80,21 +80,21 @@
     <section>
       <h3 class="text-lg font-medium mb-4">圆角设置</h3>
       <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-        <Card variant="bordered" radius="none">
+        <ZCard variant="bordered" radius="none">
           <p class="font-medium">无圆角</p>
-        </Card>
-        <Card variant="bordered" radius="sm">
+        </ZCard>
+        <ZCard variant="bordered" radius="sm">
           <p class="font-medium">小圆角</p>
-        </Card>
-        <Card variant="bordered" radius="md">
+        </ZCard>
+        <ZCard variant="bordered" radius="md">
           <p class="font-medium">中圆角</p>
-        </Card>
-        <Card variant="bordered" radius="lg">
+        </ZCard>
+        <ZCard variant="bordered" radius="lg">
           <p class="font-medium">大圆角</p>
-        </Card>
-        <Card variant="bordered" radius="full">
+        </ZCard>
+        <ZCard variant="bordered" radius="full">
           <p class="font-medium">满圆角</p>
-        </Card>
+        </ZCard>
       </div>
     </section>
 
@@ -102,21 +102,21 @@
     <section>
       <h3 class="text-lg font-medium mb-4">悬停效果</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Card variant="bordered" hover>
+        <ZCard variant="bordered" hover>
           <p class="font-medium">悬停效果</p>
           <p class="text-gray-600">鼠标悬停时会有阴影效果</p>
-        </Card>
-        <Card variant="elevated" hover>
+        </ZCard>
+        <ZCard variant="elevated" hover>
           <p class="font-medium">增强阴影</p>
           <p class="text-gray-600">悬停时阴影变大</p>
-        </Card>
+        </ZCard>
       </div>
     </section>
 
     <!-- 插槽使用 -->
     <section>
       <h3 class="text-lg font-medium mb-4">插槽使用</h3>
-      <Card variant="bordered">
+      <ZCard variant="bordered">
         <template #header>
           <div class="flex justify-between items-center">
             <h4 class="text-xl font-bold">卡片标题</h4>
@@ -154,7 +154,7 @@
             </button>
           </div>
         </template>
-      </Card>
+      </ZCard>
     </section>
 
     <!-- 综合示例 -->
@@ -162,7 +162,7 @@
       <h3 class="text-lg font-medium mb-4">综合示例</h3>
       <div class="flex flex-col gap-6">
         <!-- 产品卡片 -->
-        <Card
+        <ZCard
           variant="bordered"
           radius="lg"
           hover
@@ -186,10 +186,10 @@
               </button>
             </div>
           </div>
-        </Card>
+        </ZCard>
 
         <!-- 文章卡片 -->
-        <Card variant="elevated" radius="md" hover>
+        <ZCard variant="elevated" radius="md" hover>
           <template #header>
             <h4 class="font-bold text-lg">文章标题</h4>
             <div class="flex items-center gap-2 mt-1 text-sm text-gray-500">
@@ -244,10 +244,10 @@
               <button class="text-primary-600 text-sm">阅读全文</button>
             </div>
           </template>
-        </Card>
+        </ZCard>
 
         <!-- 统计卡片 -->
-        <Card variant="bordered" radius="md">
+        <ZCard variant="bordered" radius="md">
           <template #header>
             <div class="flex justify-between items-center">
               <h4 class="font-bold">月度统计</h4>
@@ -272,12 +272,12 @@
               查看详情
             </button>
           </template>
-        </Card>
+        </ZCard>
       </div>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
-import { Card } from '@zxy-ui/vue'
+import { ZCard } from '@zxy-ui/vue'
 </script>

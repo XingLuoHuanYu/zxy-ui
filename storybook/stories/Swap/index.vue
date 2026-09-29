@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Swap } from '@zxy-ui/vue'
+import { ZSwap } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const isActive = ref(false)
@@ -10,7 +10,7 @@ const isActive = ref(false)
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
       <div class="flex flex-wrap gap-4">
-        <Swap v-model:active="isActive">
+        <ZSwap v-model:active="isActive">
           <template #on>
             <div class="bg-blue-500 text-white rounded px-3 py-1.5">
               开启状态
@@ -23,7 +23,7 @@ const isActive = ref(false)
               关闭状态
             </div>
           </template>
-        </Swap>
+        </ZSwap>
         <button
           @click="isActive = !isActive"
           class="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 rounded"
@@ -38,7 +38,7 @@ const isActive = ref(false)
       <div class="flex flex-wrap gap-6 items-end">
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500 dark:text-gray-400">淡入淡出</span>
-          <Swap variant="fade" v-model:active="isActive">
+          <ZSwap variant="fade" v-model:active="isActive">
             <template #on>
               <div
                 class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center"
@@ -53,12 +53,12 @@ const isActive = ref(false)
                 ✗
               </div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
 
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500 dark:text-gray-400">翻转</span>
-          <Swap variant="flip" v-model:active="isActive">
+          <ZSwap variant="flip" v-model:active="isActive">
             <template #on>
               <div
                 class="bg-yellow-500 text-white rounded w-8 h-8 flex items-center justify-center"
@@ -73,12 +73,12 @@ const isActive = ref(false)
                 B
               </div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
 
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500 dark:text-gray-400">旋转</span>
-          <Swap variant="rotate" v-model:active="isActive">
+          <ZSwap variant="rotate" v-model:active="isActive">
             <template #on>
               <div
                 class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center"
@@ -93,19 +93,19 @@ const isActive = ref(false)
                 -
               </div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
 
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500 dark:text-gray-400">滑动</span>
-          <Swap variant="slide" v-model:active="isActive">
+          <ZSwap variant="slide" v-model:active="isActive">
             <template #on>
               <div class="bg-blue-500 text-white rounded px-3 py-1.5">向上</div>
             </template>
             <template #off>
               <div class="bg-cyan-500 text-white rounded px-3 py-1.5">向下</div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
       </div>
     </section>
@@ -115,7 +115,7 @@ const isActive = ref(false)
       <div class="flex flex-wrap gap-6 items-end">
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500 dark:text-gray-400">小 (sm)</span>
-          <Swap size="sm" v-model:active="isActive">
+          <ZSwap size="sm" v-model:active="isActive">
             <template #on>
               <div
                 class="bg-rose-500 text-white rounded flex items-center justify-center w-6 h-6"
@@ -130,12 +130,12 @@ const isActive = ref(false)
                 S
               </div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
 
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500 dark:text-gray-400">中 (md)</span>
-          <Swap size="md" v-model:active="isActive">
+          <ZSwap size="md" v-model:active="isActive">
             <template #on>
               <div
                 class="bg-rose-500 text-white rounded flex items-center justify-center w-8 h-8"
@@ -150,12 +150,12 @@ const isActive = ref(false)
                 M
               </div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
 
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500 dark:text-gray-400">大 (lg)</span>
-          <Swap size="lg" v-model:active="isActive">
+          <ZSwap size="lg" v-model:active="isActive">
             <template #on>
               <div
                 class="bg-rose-500 text-white rounded flex items-center justify-center w-10 h-10"
@@ -170,7 +170,7 @@ const isActive = ref(false)
                 L
               </div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
       </div>
     </section>
@@ -182,7 +182,7 @@ const isActive = ref(false)
           <span class="text-sm text-gray-500 dark:text-gray-400">
             点击 (click)
           </span>
-          <Swap trigger="click">
+          <ZSwap trigger="click">
             <template #on>
               <div class="bg-blue-500 text-white rounded px-3 py-1.5">
                 点击状态
@@ -195,14 +195,14 @@ const isActive = ref(false)
                 点击切换
               </div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
 
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500 dark:text-gray-400">
             悬停 (hover)
           </span>
-          <Swap trigger="hover">
+          <ZSwap trigger="hover">
             <template #on>
               <div class="bg-teal-500 text-white rounded px-3 py-1.5">
                 悬停状态
@@ -213,14 +213,14 @@ const isActive = ref(false)
                 悬停切换
               </div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
 
         <div class="flex flex-col items-center gap-2">
           <span class="text-sm text-gray-500 dark:text-gray-400">
             聚焦 (focus)
           </span>
-          <Swap trigger="focus">
+          <ZSwap trigger="focus">
             <template #on>
               <div class="bg-amber-500 text-white rounded px-3 py-1.5">
                 聚焦状态
@@ -231,7 +231,7 @@ const isActive = ref(false)
                 点击聚焦
               </div>
             </template>
-          </Swap>
+          </ZSwap>
         </div>
       </div>
     </section>
@@ -239,7 +239,7 @@ const isActive = ref(false)
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
       <div class="flex flex-wrap gap-4">
-        <Swap disabled>
+        <ZSwap disabled>
           <template #on>
             <div class="bg-blue-500 text-white rounded px-3 py-1.5">
               开启状态
@@ -252,14 +252,14 @@ const isActive = ref(false)
               禁用状态
             </div>
           </template>
-        </Swap>
+        </ZSwap>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
       <div class="flex flex-wrap gap-4">
-        <Swap
+        <ZSwap
           :pt="{
             root: 'shadow-lg hover:shadow-xl transition-all',
             on: 'transform-gpu transition-all',
@@ -280,14 +280,14 @@ const isActive = ref(false)
               ☀️
             </div>
           </template>
-        </Swap>
+        </ZSwap>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
       <div class="flex flex-wrap gap-4">
-        <Swap
+        <ZSwap
           unstyled
           :pt="{
             root: 'relative inline-block',
@@ -309,14 +309,14 @@ const isActive = ref(false)
               🔄
             </div>
           </template>
-        </Swap>
+        </ZSwap>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">应用场景示例：主题切换</h2>
       <div class="flex items-center gap-4">
-        <Swap variant="flip">
+        <ZSwap variant="flip">
           <template #on>
             <div
               class="bg-blue-800 text-white rounded-full w-10 h-10 flex items-center justify-center"
@@ -331,7 +331,7 @@ const isActive = ref(false)
               ☀️
             </div>
           </template>
-        </Swap>
+        </ZSwap>
         <span>切换深色/浅色模式</span>
       </div>
     </section>

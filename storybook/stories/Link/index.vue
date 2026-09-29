@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Link } from '@zxy-ui/vue'
+import { ZLink } from '@zxy-ui/vue'
 </script>
 
 <template>
@@ -7,54 +7,54 @@ import { Link } from '@zxy-ui/vue'
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
       <div class="flex flex-wrap gap-6">
-        <Link href="https://example.com">默认链接</Link>
-        <Link href="https://example.com" variant="primary">主要链接</Link>
-        <Link href="https://example.com" variant="secondary">次要链接</Link>
-        <Link href="https://example.com" variant="success">成功链接</Link>
-        <Link href="https://example.com" variant="danger">危险链接</Link>
-        <Link href="https://example.com" variant="warning">警告链接</Link>
-        <Link href="https://example.com" variant="info">信息链接</Link>
+        <ZLink href="https://example.com">默认链接</ZLink>
+        <ZLink href="https://example.com" variant="primary">主要链接</ZLink>
+        <ZLink href="https://example.com" variant="secondary">次要链接</ZLink>
+        <ZLink href="https://example.com" variant="success">成功链接</ZLink>
+        <ZLink href="https://example.com" variant="danger">危险链接</ZLink>
+        <ZLink href="https://example.com" variant="warning">警告链接</ZLink>
+        <ZLink href="https://example.com" variant="info">信息链接</ZLink>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">不同尺寸</h2>
       <div class="flex items-center gap-6">
-        <Link href="https://example.com" size="sm">小尺寸链接</Link>
-        <Link href="https://example.com" size="md">中等尺寸链接</Link>
-        <Link href="https://example.com" size="lg">大尺寸链接</Link>
+        <ZLink href="https://example.com" size="sm">小尺寸链接</ZLink>
+        <ZLink href="https://example.com" size="md">中等尺寸链接</ZLink>
+        <ZLink href="https://example.com" size="lg">大尺寸链接</ZLink>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">带下划线</h2>
       <div class="flex gap-6">
-        <Link href="https://example.com" underline>默认下划线链接</Link>
-        <Link href="https://example.com" variant="primary" underline>
+        <ZLink href="https://example.com" underline>默认下划线链接</ZLink>
+        <ZLink href="https://example.com" variant="primary" underline>
           主要下划线链接
-        </Link>
+        </ZLink>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">外部链接</h2>
       <div class="flex gap-6">
-        <Link href="https://example.com" external>
+        <ZLink href="https://example.com" external>
           外部链接（自动添加图标）
-        </Link>
-        <Link href="https://example.com" external variant="primary">
+        </ZLink>
+        <ZLink href="https://example.com" external variant="primary">
           外部主要链接
-        </Link>
+        </ZLink>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
       <div class="flex gap-6">
-        <Link href="https://example.com" disabled>禁用链接</Link>
-        <Link href="https://example.com" variant="primary" disabled>
+        <ZLink href="https://example.com" disabled>禁用链接</ZLink>
+        <ZLink href="https://example.com" variant="primary" disabled>
           禁用主要链接
-        </Link>
+        </ZLink>
       </div>
     </section>
 
@@ -62,7 +62,7 @@ import { Link } from '@zxy-ui/vue'
       <h2 class="text-xl font-bold mb-4">带图标</h2>
       <div class="flex flex-col gap-4">
         <div>
-          <Link href="https://example.com" iconPosition="left">
+          <ZLink href="https://example.com" iconPosition="left">
             <template #icon-left>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,10 +79,10 @@ import { Link } from '@zxy-ui/vue'
               </svg>
             </template>
             左侧图标
-          </Link>
+          </ZLink>
         </div>
         <div>
-          <Link
+          <ZLink
             href="https://example.com"
             variant="primary"
             iconPosition="right"
@@ -103,7 +103,7 @@ import { Link } from '@zxy-ui/vue'
                 <path d="M9 18l6-6-6-6" />
               </svg>
             </template>
-          </Link>
+          </ZLink>
         </div>
       </div>
     </section>
@@ -111,15 +111,15 @@ import { Link } from '@zxy-ui/vue'
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式</h2>
       <div class="flex gap-6">
-        <Link
+        <ZLink
           href="https://example.com"
           :pt="{
             root: 'text-purple-500 hover:text-purple-700 font-bold',
           }"
         >
           自定义颜色和字重
-        </Link>
-        <Link
+        </ZLink>
+        <ZLink
           href="https://example.com"
           unstyled
           :pt="{
@@ -127,7 +127,7 @@ import { Link } from '@zxy-ui/vue'
           }"
         >
           完全自定义样式
-        </Link>
+        </ZLink>
       </div>
     </section>
   </div>

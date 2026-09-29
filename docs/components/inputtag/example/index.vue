@@ -4,7 +4,7 @@
     <section>
       <h2 class="text-lg font-medium mb-4">基础用法</h2>
       <div class="max-w-md">
-        <InputTag v-model="tagValue" placeholder="请输入标签后按回车" />
+        <ZInputTag v-model="tagValue" placeholder="请输入标签后按回车" />
         <div class="text-sm text-gray-500 mt-2">
           当前标签值: {{ tagValue.join(', ') || '空' }}
         </div>
@@ -15,7 +15,7 @@
     <section>
       <h2 class="text-lg font-medium mb-4">预设标签</h2>
       <div class="max-w-md">
-        <InputTag v-model="presetTags" placeholder="请输入更多标签" />
+        <ZInputTag v-model="presetTags" placeholder="请输入更多标签" />
       </div>
     </section>
 
@@ -23,17 +23,17 @@
     <section>
       <h2 class="text-lg font-medium mb-4">不同尺寸</h2>
       <div class="grid grid-cols-1 gap-4 max-w-md">
-        <InputTag
+        <ZInputTag
           v-model="sizeTags"
           size="small"
           placeholder="小型标签输入框"
         />
-        <InputTag
+        <ZInputTag
           v-model="sizeTags"
           size="default"
           placeholder="默认尺寸标签输入框"
         />
-        <InputTag
+        <ZInputTag
           v-model="sizeTags"
           size="large"
           placeholder="大型标签输入框"
@@ -45,12 +45,12 @@
     <section>
       <h2 class="text-lg font-medium mb-4">前缀和后缀</h2>
       <div class="grid grid-cols-1 gap-4 max-w-md">
-        <InputTag v-model="prefixTags" placeholder="带前缀">
+        <ZInputTag v-model="prefixTags" placeholder="带前缀">
           <template #prefix>标签:</template>
-        </InputTag>
-        <InputTag v-model="suffixTags" placeholder="带后缀">
+        </ZInputTag>
+        <ZInputTag v-model="suffixTags" placeholder="带后缀">
           <template #suffix>+</template>
-        </InputTag>
+        </ZInputTag>
       </div>
     </section>
 
@@ -58,7 +58,7 @@
     <section>
       <h2 class="text-lg font-medium mb-4">最大数量和计数</h2>
       <div class="max-w-md">
-        <InputTag
+        <ZInputTag
           v-model="maxCountTags"
           :maxCount="5"
           showCount
@@ -71,7 +71,7 @@
     <section>
       <h2 class="text-lg font-medium mb-4">不可关闭标签</h2>
       <div class="max-w-md">
-        <InputTag
+        <ZInputTag
           v-model="fixedTags"
           :closable="false"
           placeholder="标签不可删除"
@@ -83,13 +83,13 @@
     <section>
       <h2 class="text-lg font-medium mb-4">不同状态</h2>
       <div class="grid grid-cols-1 gap-4 max-w-md">
-        <InputTag v-model="statusTags" status="error" placeholder="错误状态" />
-        <InputTag
+        <ZInputTag v-model="statusTags" status="error" placeholder="错误状态" />
+        <ZInputTag
           v-model="statusTags"
           status="warning"
           placeholder="警告状态"
         />
-        <InputTag
+        <ZInputTag
           v-model="statusTags"
           status="success"
           placeholder="成功状态"
@@ -101,8 +101,8 @@
     <section>
       <h2 class="text-lg font-medium mb-4">禁用和只读</h2>
       <div class="grid grid-cols-1 gap-4 max-w-md">
-        <InputTag v-model="disabledTags" disabled placeholder="禁用状态" />
-        <InputTag v-model="readonlyTags" readonly placeholder="只读状态" />
+        <ZInputTag v-model="disabledTags" disabled placeholder="禁用状态" />
+        <ZInputTag v-model="readonlyTags" readonly placeholder="只读状态" />
       </div>
     </section>
 
@@ -110,7 +110,7 @@
     <section>
       <h2 class="text-lg font-medium mb-4">自定义样式 (PT)</h2>
       <div class="max-w-md">
-        <InputTag
+        <ZInputTag
           v-model="customTags"
           placeholder="自定义样式"
           :pt="{
@@ -127,7 +127,7 @@
     <section>
       <h2 class="text-lg font-medium mb-4">无样式模式</h2>
       <div class="max-w-md">
-        <InputTag
+        <ZInputTag
           v-model="unstyledTags"
           placeholder="自定义所有样式"
           unstyled
@@ -164,7 +164,7 @@
             文章标签
             <span class="text-xs text-gray-500">(最多5个)</span>
           </label>
-          <InputTag
+          <ZInputTag
             v-model="article.tags"
             :maxCount="5"
             showCount
@@ -187,7 +187,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { InputTag } from '@zxy-ui/vue'
+import { ZInputTag } from '@zxy-ui/vue'
 
 // 基础用法
 const tagValue = ref<string[]>([])

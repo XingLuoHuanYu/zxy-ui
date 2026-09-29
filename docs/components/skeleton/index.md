@@ -2,13 +2,13 @@
 
 在内容加载过程中显示的占位符组件，提供更好的用户体验。
 
-<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/组件-skeleton-骨架屏--basic"/>
+<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/组件-skeleton-骨架屏--basic"/>
 
 ## 引入
 
 ```typescript
 // 引入组件
-import { Skeleton, SkeletonText, SkeletonAvatar } from '@zxy-ui/vue'
+import { ZSkeleton, ZSkeletonText, ZSkeletonAvatar } from '@zxy-ui/vue'
 ```
 
 ## 基本用法
@@ -84,10 +84,10 @@ ZxyUI提供了三个骨架屏相关组件：
 
 ```vue
 <template>
-	<Skeleton :pt="{ root: 'custom-skeleton-class' }" />
-	<SkeletonText
+	<ZSkeleton :pt="{ root: 'custom-skeleton-class' }" />
+	<ZSkeletonText
 		:pt="{ root: 'custom-text-class', line: 'custom-line-class' }"
 	/>
-	<SkeletonAvatar :pt="{ root: 'custom-avatar-class' }" />
+	<ZSkeletonAvatar :pt="{ root: 'custom-avatar-class' }" />
 </template>
 ```

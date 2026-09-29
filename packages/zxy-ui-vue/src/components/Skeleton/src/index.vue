@@ -4,7 +4,7 @@ import { skeletonStyle } from './index.variants'
 import type { SkeletonProps } from './type'
 
 defineOptions({
-  name: 'Skeleton',
+  name: 'ZSkeleton',
 })
 
 const props = withDefaults(defineProps<SkeletonProps>(), {

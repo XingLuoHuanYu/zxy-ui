@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Segmented } from '@zxy-ui/vue'
+import { ZSegmented } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 
 // 基础用法示例
@@ -57,21 +57,21 @@ const toggleDisabled = () => {
     <!-- 基础用法 -->
     <section>
       <h2 class="text-lg font-medium mb-4">基础用法</h2>
-      <Segmented v-model="basicValue" :options="basicOptions" />
+      <ZSegmented v-model="basicValue" :options="basicOptions" />
       <div class="mt-2 text-sm text-gray-500">当前选中: {{ basicValue }}</div>
     </section>
 
     <!-- 对象选项 -->
     <section>
       <h2 class="text-lg font-medium mb-4">对象选项</h2>
-      <Segmented v-model="objectValue" :options="objectOptions" />
+      <ZSegmented v-model="objectValue" :options="objectOptions" />
       <div class="mt-2 text-sm text-gray-500">当前选中: {{ objectValue }}</div>
     </section>
 
     <!-- 禁用选项 -->
     <section>
       <h2 class="text-lg font-medium mb-4">禁用选项</h2>
-      <Segmented
+      <ZSegmented
         v-model="disabledOptionValue"
         :options="disabledOptionOptions"
       />
@@ -85,15 +85,15 @@ const toggleDisabled = () => {
       <h2 class="text-lg font-medium mb-4">不同大小</h2>
       <div class="space-y-4">
         <div>
-          <Segmented v-model="sizeValue" :options="sizeOptions" size="sm" />
+          <ZSegmented v-model="sizeValue" :options="sizeOptions" size="sm" />
           <span class="ml-2 text-sm text-gray-500">小号 (sm)</span>
         </div>
         <div>
-          <Segmented v-model="sizeValue" :options="sizeOptions" size="md" />
+          <ZSegmented v-model="sizeValue" :options="sizeOptions" size="md" />
           <span class="ml-2 text-sm text-gray-500">中号 (md)</span>
         </div>
         <div>
-          <Segmented v-model="sizeValue" :options="sizeOptions" size="lg" />
+          <ZSegmented v-model="sizeValue" :options="sizeOptions" size="lg" />
           <span class="ml-2 text-sm text-gray-500">大号 (lg)</span>
         </div>
       </div>
@@ -103,7 +103,7 @@ const toggleDisabled = () => {
     <section>
       <h2 class="text-lg font-medium mb-4">禁用状态</h2>
       <div class="space-y-4">
-        <Segmented
+        <ZSegmented
           v-model="disabledValue"
           :options="['1', '2', '3']"
           :disabled="isDisabled"
@@ -122,13 +122,13 @@ const toggleDisabled = () => {
     <!-- 块级显示 -->
     <section>
       <h2 class="text-lg font-medium mb-4">块级显示</h2>
-      <Segmented v-model="blockValue" :options="blockOptions" block />
+      <ZSegmented v-model="blockValue" :options="blockOptions" block />
     </section>
 
     <!-- 数字选项 -->
     <section>
       <h2 class="text-lg font-medium mb-4">数字选项</h2>
-      <Segmented v-model="numberValue" :options="numberOptions" />
+      <ZSegmented v-model="numberValue" :options="numberOptions" />
       <div class="mt-2 text-sm text-gray-500">
         当前选中: {{ numberValue }} (类型: {{ typeof numberValue }})
       </div>

@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { TimeSelect } from '@zxy-ui/vue'
+import { ZTimeSelect } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import TimeSelectDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof TimeSelect> = {
+const meta: Meta<typeof ZTimeSelect> = {
   title: '组件/TimeSelect 时间选择',
-  component: TimeSelect,
+  component: ZTimeSelect,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -108,7 +108,7 @@ const meta: Meta<typeof TimeSelect> = {
 }
 
 export default meta
-type Story = StoryObj<typeof TimeSelect>
+type Story = StoryObj<typeof ZTimeSelect>
 
 // 基础示例
 export const Basic: Story = {
@@ -177,7 +177,7 @@ export const CustomPlaceholder: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { TimeSelectDemo },
+    components: {TimeSelectDemo},
     template: '<TimeSelectDemo />',
   }),
 }

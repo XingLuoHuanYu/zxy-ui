@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { DatePicker } from '@zxy-ui/vue'
+import { ZDatePicker } from '@zxy-ui/vue'
 
 // 基础用法
 const selectedDate = ref(new Date())
@@ -45,7 +45,7 @@ const stringDate = ref('2023-12-25')
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
       <div class="max-w-sm">
-        <DatePicker v-model="selectedDate" />
+        <ZDatePicker v-model="selectedDate" />
       </div>
       <div class="mt-2">
         当前选择的日期:
@@ -57,7 +57,7 @@ const stringDate = ref('2023-12-25')
     <section>
       <h2 class="text-xl font-bold mb-4">日期范围限制</h2>
       <div class="max-w-sm">
-        <DatePicker v-model="rangeDate" :min="minDate" :max="maxDate" />
+        <ZDatePicker v-model="rangeDate" :min="minDate" :max="maxDate" />
       </div>
       <div class="mt-2">
         <div>
@@ -77,13 +77,13 @@ const stringDate = ref('2023-12-25')
       <div class="flex flex-wrap gap-8">
         <div>
           <div class="max-w-sm">
-            <DatePicker v-model="disabledDate" disabled />
+            <ZDatePicker v-model="disabledDate" disabled />
           </div>
           <div class="mt-2">禁用状态</div>
         </div>
         <div>
           <div class="max-w-sm">
-            <DatePicker v-model="readonlyDate" readonly />
+            <ZDatePicker v-model="readonlyDate" readonly />
           </div>
           <div class="mt-2">只读状态</div>
         </div>
@@ -94,7 +94,7 @@ const stringDate = ref('2023-12-25')
     <section>
       <h2 class="text-xl font-bold mb-4">自定义格式</h2>
       <div class="max-w-sm">
-        <DatePicker v-model="formattedDate" format="yyyy年MM月dd日" />
+        <ZDatePicker v-model="formattedDate" format="yyyy年MM月dd日" />
       </div>
       <div class="mt-2">
         <div>
@@ -109,7 +109,7 @@ const stringDate = ref('2023-12-25')
     <section>
       <h2 class="text-xl font-bold mb-4">周一为一周的第一天</h2>
       <div class="max-w-sm">
-        <DatePicker v-model="mondayFirstDate" :firstDayOfWeek="1" />
+        <ZDatePicker v-model="mondayFirstDate" :firstDayOfWeek="1" />
       </div>
       <div class="mt-2">
         <div>
@@ -126,7 +126,7 @@ const stringDate = ref('2023-12-25')
     <section>
       <h2 class="text-xl font-bold mb-4">不可清空</h2>
       <div class="max-w-sm">
-        <DatePicker v-model="nonClearableDate" :clearable="false" />
+        <ZDatePicker v-model="nonClearableDate" :clearable="false" />
       </div>
       <div class="mt-2">
         <div>
@@ -142,7 +142,7 @@ const stringDate = ref('2023-12-25')
     <section>
       <h2 class="text-xl font-bold mb-4">本地化</h2>
       <div class="max-w-sm">
-        <DatePicker v-model="localeDate" locale="zh-CN" />
+        <ZDatePicker v-model="localeDate" locale="zh-CN" />
       </div>
       <div class="mt-2">
         <div>
@@ -157,7 +157,7 @@ const stringDate = ref('2023-12-25')
     <section>
       <h2 class="text-xl font-bold mb-4">使用字符串日期</h2>
       <div class="max-w-sm">
-        <DatePicker v-model="stringDate" />
+        <ZDatePicker v-model="stringDate" />
       </div>
       <div class="mt-2">
         <div>当前选择的日期: {{ stringDate || '未选择' }}</div>

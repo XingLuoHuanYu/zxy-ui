@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Skeleton } from '@zxy-ui/vue'
+import { ZSkeleton } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 </script>
 
@@ -8,25 +8,25 @@ import '@zxy-ui/vue/style'
     <!-- 基础骨架屏 -->
     <div>
       <h3 class="text-sm font-medium mb-2">基础骨架屏</h3>
-      <Skeleton width="100%" height="100px" />
+      <ZSkeleton width="100%" height="100px" />
     </div>
 
     <!-- 带圆角的骨架屏 -->
     <div>
       <h3 class="text-sm font-medium mb-2">带圆角的骨架屏</h3>
-      <Skeleton width="100%" height="100px" :rounded="true" />
+      <ZSkeleton width="100%" height="100px" :rounded="true" />
     </div>
 
     <!-- 不同动画效果 -->
     <div>
       <h3 class="text-sm font-medium mb-2">脉冲动画 (pulse)</h3>
-      <Skeleton width="100%" height="50px" animation="pulse" />
+      <ZSkeleton width="100%" height="50px" animation="pulse" />
 
       <h3 class="text-sm font-medium mt-4 mb-2">波浪动画 (wave)</h3>
-      <Skeleton width="100%" height="50px" animation="wave" />
+      <ZSkeleton width="100%" height="50px" animation="wave" />
 
       <h3 class="text-sm font-medium mt-4 mb-2">无动画 (none)</h3>
-      <Skeleton width="100%" height="50px" animation="none" />
+      <ZSkeleton width="100%" height="50px" animation="none" />
     </div>
   </div>
 </template>

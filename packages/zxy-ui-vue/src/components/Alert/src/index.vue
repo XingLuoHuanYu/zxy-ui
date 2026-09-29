@@ -47,13 +47,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import {
-  alertStyle,
-  alertIconStyle,
-  alertTitleStyle,
-  alertDescriptionStyle,
-  alertCloseButtonStyle,
-} from './index.variants'
+import { alertStyle, alertIconStyle, alertTitleStyle, alertDescriptionStyle, alertCloseButtonStyle } from './index.variants'
 import type { AlertProps } from './type'
 
 const props = withDefaults(defineProps<AlertProps>(), {

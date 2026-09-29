@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Breadcrumb, BreadcrumbItem } from '@zxy-ui/vue'
+import { ZBreadcrumb, ZBreadcrumbItem } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import { h } from 'vue'
 
@@ -36,11 +36,11 @@ const ChevronRightIcon = {
     <section>
       <h2 class="text-lg font-medium mb-4">基础用法</h2>
       <div class="flex gap-6">
-        <Breadcrumb>
-          <BreadcrumbItem href="/">首页</BreadcrumbItem>
-          <BreadcrumbItem href="/components">组件</BreadcrumbItem>
-          <BreadcrumbItem>面包屑</BreadcrumbItem>
-        </Breadcrumb>
+        <ZBreadcrumb>
+          <ZBreadcrumbItem href="/">首页</ZBreadcrumbItem>
+          <ZBreadcrumbItem href="/components">组件</ZBreadcrumbItem>
+          <ZBreadcrumbItem>面包屑</ZBreadcrumbItem>
+        </ZBreadcrumb>
       </div>
     </section>
 
@@ -48,11 +48,11 @@ const ChevronRightIcon = {
     <section>
       <h2 class="text-lg font-medium mb-4">自定义分隔符</h2>
       <div class="flex gap-6">
-        <Breadcrumb separator=">">
-          <BreadcrumbItem href="/">首页</BreadcrumbItem>
-          <BreadcrumbItem href="/components">组件</BreadcrumbItem>
-          <BreadcrumbItem>面包屑</BreadcrumbItem>
-        </Breadcrumb>
+        <ZBreadcrumb separator=">">
+          <ZBreadcrumbItem href="/">首页</ZBreadcrumbItem>
+          <ZBreadcrumbItem href="/components">组件</ZBreadcrumbItem>
+          <ZBreadcrumbItem>面包屑</ZBreadcrumbItem>
+        </ZBreadcrumb>
       </div>
     </section>
 
@@ -60,11 +60,11 @@ const ChevronRightIcon = {
     <section>
       <h2 class="text-lg font-medium mb-4">图标分隔符</h2>
       <div class="flex gap-6">
-        <Breadcrumb :separator-icon="ChevronRightIcon">
-          <BreadcrumbItem href="/">首页</BreadcrumbItem>
-          <BreadcrumbItem href="/components">组件</BreadcrumbItem>
-          <BreadcrumbItem>面包屑</BreadcrumbItem>
-        </Breadcrumb>
+        <ZBreadcrumb :separator-icon="ChevronRightIcon">
+          <ZBreadcrumbItem href="/">首页</ZBreadcrumbItem>
+          <ZBreadcrumbItem href="/components">组件</ZBreadcrumbItem>
+          <ZBreadcrumbItem>面包屑</ZBreadcrumbItem>
+        </ZBreadcrumb>
       </div>
     </section>
 
@@ -72,11 +72,11 @@ const ChevronRightIcon = {
     <section>
       <h2 class="text-lg font-medium mb-4">禁用状态</h2>
       <div class="flex gap-6">
-        <Breadcrumb>
-          <BreadcrumbItem href="/">首页</BreadcrumbItem>
-          <BreadcrumbItem disabled href="/components">组件</BreadcrumbItem>
-          <BreadcrumbItem>面包屑</BreadcrumbItem>
-        </Breadcrumb>
+        <ZBreadcrumb>
+          <ZBreadcrumbItem href="/">首页</ZBreadcrumbItem>
+          <ZBreadcrumbItem disabled href="/components">组件</ZBreadcrumbItem>
+          <ZBreadcrumbItem>面包屑</ZBreadcrumbItem>
+        </ZBreadcrumb>
       </div>
     </section>
 
@@ -84,11 +84,11 @@ const ChevronRightIcon = {
     <section>
       <h2 class="text-lg font-medium mb-4">激活状态</h2>
       <div class="flex gap-6">
-        <Breadcrumb>
-          <BreadcrumbItem href="/">首页</BreadcrumbItem>
-          <BreadcrumbItem href="/components">组件</BreadcrumbItem>
-          <BreadcrumbItem active>面包屑</BreadcrumbItem>
-        </Breadcrumb>
+        <ZBreadcrumb>
+          <ZBreadcrumbItem href="/">首页</ZBreadcrumbItem>
+          <ZBreadcrumbItem href="/components">组件</ZBreadcrumbItem>
+          <ZBreadcrumbItem active>面包屑</ZBreadcrumbItem>
+        </ZBreadcrumb>
       </div>
     </section>
 
@@ -96,13 +96,13 @@ const ChevronRightIcon = {
     <section>
       <h2 class="text-lg font-medium mb-4">自定义样式</h2>
       <div class="flex gap-6">
-        <Breadcrumb :pt="{ root: 'bg-gray-100 p-3 rounded' }">
-          <BreadcrumbItem href="/" :pt="{ root: 'text-blue-500' }">
+        <ZBreadcrumb :pt="{ root: 'bg-gray-100 p-3 rounded' }">
+          <ZBreadcrumbItem href="/" :pt="{ root: 'text-blue-500' }">
             首页
-          </BreadcrumbItem>
-          <BreadcrumbItem href="/components">组件</BreadcrumbItem>
-          <BreadcrumbItem>面包屑</BreadcrumbItem>
-        </Breadcrumb>
+          </ZBreadcrumbItem>
+          <ZBreadcrumbItem href="/components">组件</ZBreadcrumbItem>
+          <ZBreadcrumbItem>面包屑</ZBreadcrumbItem>
+        </ZBreadcrumb>
       </div>
     </section>
 
@@ -110,14 +110,14 @@ const ChevronRightIcon = {
     <section>
       <h2 class="text-lg font-medium mb-4">无样式模式</h2>
       <div class="flex gap-6">
-        <Breadcrumb
+        <ZBreadcrumb
           unstyled
           :pt="{
             root: 'flex p-2 bg-gray-50 rounded',
             list: 'flex items-center',
           }"
         >
-          <BreadcrumbItem
+          <ZBreadcrumbItem
             href="/"
             unstyled
             :pt="{
@@ -126,8 +126,8 @@ const ChevronRightIcon = {
             }"
           >
             首页
-          </BreadcrumbItem>
-          <BreadcrumbItem
+          </ZBreadcrumbItem>
+          <ZBreadcrumbItem
             href="/components"
             unstyled
             :pt="{
@@ -136,14 +136,14 @@ const ChevronRightIcon = {
             }"
           >
             组件
-          </BreadcrumbItem>
-          <BreadcrumbItem
+          </ZBreadcrumbItem>
+          <ZBreadcrumbItem
             unstyled
             :pt="{ root: 'text-gray-800 font-medium', content: 'font-medium' }"
           >
             面包屑
-          </BreadcrumbItem>
-        </Breadcrumb>
+          </ZBreadcrumbItem>
+        </ZBreadcrumb>
       </div>
     </section>
 
@@ -151,21 +151,21 @@ const ChevronRightIcon = {
     <section>
       <h2 class="text-lg font-medium mb-4">自定义分隔符插槽</h2>
       <div class="flex gap-6">
-        <Breadcrumb>
-          <BreadcrumbItem href="/">
+        <ZBreadcrumb>
+          <ZBreadcrumbItem href="/">
             首页
             <template #separator>
               <span class="text-red-500 mx-2">•</span>
             </template>
-          </BreadcrumbItem>
-          <BreadcrumbItem href="/components">
+          </ZBreadcrumbItem>
+          <ZBreadcrumbItem href="/components">
             组件
             <template #separator>
               <span class="text-red-500 mx-2">•</span>
             </template>
-          </BreadcrumbItem>
-          <BreadcrumbItem>面包屑</BreadcrumbItem>
-        </Breadcrumb>
+          </ZBreadcrumbItem>
+          <ZBreadcrumbItem>面包屑</ZBreadcrumbItem>
+        </ZBreadcrumb>
       </div>
     </section>
   </div>

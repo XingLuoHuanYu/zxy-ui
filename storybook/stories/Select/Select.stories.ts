@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Select } from '@zxy-ui/vue'
+import { ZSelect } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import SelectDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Select> = {
+const meta: Meta<typeof ZSelect> = {
   title: '组件/Select 选择器',
-  component: Select,
+  component: ZSelect,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -146,7 +146,7 @@ const meta: Meta<typeof Select> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Select>
+type Story = StoryObj<typeof ZSelect>
 
 const defaultOptions = [
   { value: 'option1', label: '选项一' },
@@ -279,7 +279,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { SelectDemo },
+    components: {SelectDemo},
     template: '<SelectDemo />',
   }),
 }

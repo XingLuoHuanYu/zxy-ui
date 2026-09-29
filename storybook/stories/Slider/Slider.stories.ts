@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Slider } from '@zxy-ui/vue'
+import { ZSlider } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import SliderDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Slider> = {
+const meta: Meta<typeof ZSlider> = {
   title: '组件/Slider 滑块',
-  component: Slider,
+  component: ZSlider,
   tags: ['autodocs'],
   argTypes: {
     modelValue: {
@@ -100,7 +100,7 @@ const meta: Meta<typeof Slider> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Slider>
+type Story = StoryObj<typeof ZSlider>
 
 // 基础示例
 export const Basic: Story = {
@@ -133,11 +133,11 @@ export const Vertical: Story = {
     orientation: 'vertical',
   },
   render: (args) => ({
-    components: { Slider },
+    components: {ZSlider},
     setup() {
       return { args }
     },
-    template: '<div style="height: 200px;"><Slider v-bind="args" /></div>',
+    template: '<div style="height: 200px;"><ZSlider v-bind="args" /></div>',
   }),
 }
 
@@ -218,7 +218,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { SliderDemo },
+    components: {SliderDemo},
     template: '<SliderDemo />',
   }),
 }

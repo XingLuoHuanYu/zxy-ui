@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Switch } from '@zxy-ui/vue'
+import { ZSwitch } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const value1 = ref(false)
@@ -11,25 +11,25 @@ const value2 = ref(true)
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
       <div class="flex items-center gap-4">
-        <Switch v-model="value1" />
+        <ZSwitch v-model="value1" />
         <span>{{ value1 ? '开启' : '关闭' }}</span>
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">选中状态</h2>
-      <Switch v-model="value2" />
+      <ZSwitch v-model="value2" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
       <div class="flex items-center gap-8">
         <div class="flex items-center gap-4">
-          <Switch v-model="value1" disabled />
+          <ZSwitch v-model="value1" disabled />
           <span>未选中禁用</span>
         </div>
         <div class="flex items-center gap-4">
-          <Switch v-model="value2" disabled />
+          <ZSwitch v-model="value2" disabled />
           <span>选中禁用</span>
         </div>
       </div>
@@ -39,15 +39,15 @@ const value2 = ref(true)
       <h2 class="text-xl font-bold mb-4">不同尺寸</h2>
       <div class="flex items-center gap-8">
         <div class="flex items-center gap-4">
-          <Switch v-model="value2" size="small" />
+          <ZSwitch v-model="value2" size="small" />
           <span>小尺寸</span>
         </div>
         <div class="flex items-center gap-4">
-          <Switch v-model="value2" size="default" />
+          <ZSwitch v-model="value2" size="default" />
           <span>默认尺寸</span>
         </div>
         <div class="flex items-center gap-4">
-          <Switch v-model="value2" size="large" />
+          <ZSwitch v-model="value2" size="large" />
           <span>大尺寸</span>
         </div>
       </div>
@@ -57,23 +57,23 @@ const value2 = ref(true)
       <h2 class="text-xl font-bold mb-4">不同颜色</h2>
       <div class="flex flex-wrap items-center gap-8">
         <div class="flex items-center gap-4">
-          <Switch v-model="value2" color="blue" />
+          <ZSwitch v-model="value2" color="blue" />
           <span>蓝色</span>
         </div>
         <div class="flex items-center gap-4">
-          <Switch v-model="value2" color="green" />
+          <ZSwitch v-model="value2" color="green" />
           <span>绿色</span>
         </div>
         <div class="flex items-center gap-4">
-          <Switch v-model="value2" color="red" />
+          <ZSwitch v-model="value2" color="red" />
           <span>红色</span>
         </div>
         <div class="flex items-center gap-4">
-          <Switch v-model="value2" color="yellow" />
+          <ZSwitch v-model="value2" color="yellow" />
           <span>黄色</span>
         </div>
         <div class="flex items-center gap-4">
-          <Switch v-model="value2" color="purple" />
+          <ZSwitch v-model="value2" color="purple" />
           <span>紫色</span>
         </div>
       </div>
@@ -82,7 +82,7 @@ const value2 = ref(true)
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
       <div class="flex items-center gap-4">
-        <Switch
+        <ZSwitch
           v-model="value2"
           :pt="{
             track: 'bg-purple-200',
@@ -97,7 +97,7 @@ const value2 = ref(true)
       <h2 class="text-xl font-bold mb-4">无样式模式</h2>
       <div class="space-y-4">
         <div class="flex items-center gap-4">
-          <Switch
+          <ZSwitch
             v-model="value2"
             unstyled
             :pt="{
@@ -111,7 +111,7 @@ const value2 = ref(true)
           <span>渐变色开关</span>
         </div>
         <div class="flex items-center gap-4">
-          <Switch
+          <ZSwitch
             v-model="value2"
             unstyled
             :pt="{
@@ -125,7 +125,7 @@ const value2 = ref(true)
           <span>大号圆形开关</span>
         </div>
         <div class="flex items-center gap-4">
-          <Switch
+          <ZSwitch
             v-model="value2"
             unstyled
             :pt="{

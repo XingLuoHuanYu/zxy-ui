@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Card } from '@zxy-ui/vue'
+import { ZCard } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import CardDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Card> = {
+const meta: Meta<typeof ZCard> = {
   title: '组件/Card 卡片',
-  component: Card,
+  component: ZCard,
   tags: ['autodocs'],
   argTypes: {
     variant: {
@@ -64,18 +64,18 @@ const meta: Meta<typeof Card> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Card>
+type Story = StoryObj<typeof ZCard>
 
 // 基础示例
 export const Basic: Story = {
   args: {},
   render: (args) => ({
-    components: { Card },
+    components: {ZCard},
     setup() {
       return { args }
     },
     template: `
-      <Card v-bind="args">
+      <ZCard v-bind="args">
         <template #header>
           <h3 class="text-lg font-medium">卡片标题</h3>
         </template>
@@ -85,7 +85,7 @@ export const Basic: Story = {
             <button class="px-4 py-2 bg-blue-500 text-white rounded">确定</button>
           </div>
         </template>
-      </Card>
+      </ZCard>
     `,
   }),
 }
@@ -96,17 +96,17 @@ export const Variants: Story = {
     variant: 'bordered',
   },
   render: (args) => ({
-    components: { Card },
+    components: {ZCard},
     setup() {
       return { args }
     },
     template: `
-      <Card v-bind="args">
+      <ZCard v-bind="args">
         <template #header>
           <h3 class="text-lg font-medium">带边框的卡片</h3>
         </template>
         <p>这是一个带边框的卡片示例。</p>
-      </Card>
+      </ZCard>
     `,
   }),
 }
@@ -117,14 +117,14 @@ export const Padding: Story = {
     padding: 'lg',
   },
   render: (args) => ({
-    components: { Card },
+    components: {ZCard},
     setup() {
       return { args }
     },
     template: `
-      <Card v-bind="args">
+      <ZCard v-bind="args">
         <p>这是一个大内边距的卡片示例。</p>
-      </Card>
+      </ZCard>
     `,
   }),
 }
@@ -135,14 +135,14 @@ export const Radius: Story = {
     radius: 'lg',
   },
   render: (args) => ({
-    components: { Card },
+    components: {ZCard},
     setup() {
       return { args }
     },
     template: `
-      <Card v-bind="args">
+      <ZCard v-bind="args">
         <p>这是一个大圆角的卡片示例。</p>
-      </Card>
+      </ZCard>
     `,
   }),
 }
@@ -153,14 +153,14 @@ export const Hover: Story = {
     hover: true,
   },
   render: (args) => ({
-    components: { Card },
+    components: {ZCard},
     setup() {
       return { args }
     },
     template: `
-      <Card v-bind="args">
+      <ZCard v-bind="args">
         <p>鼠标悬停在此卡片上会有效果。</p>
-      </Card>
+      </ZCard>
     `,
   }),
 }
@@ -176,12 +176,12 @@ export const CustomStyle: Story = {
     },
   },
   render: (args) => ({
-    components: { Card },
+    components: {ZCard},
     setup() {
       return { args }
     },
     template: `
-      <Card v-bind="args">
+      <ZCard v-bind="args">
         <template #header>
           <h3 class="text-lg font-medium">自定义样式卡片</h3>
         </template>
@@ -189,7 +189,7 @@ export const CustomStyle: Story = {
         <template #footer>
           <div class="text-right">卡片底部</div>
         </template>
-      </Card>
+      </ZCard>
     `,
   }),
 }
@@ -206,12 +206,12 @@ export const Unstyled: Story = {
     },
   },
   render: (args) => ({
-    components: { Card },
+    components: {ZCard},
     setup() {
       return { args }
     },
     template: `
-      <Card v-bind="args">
+      <ZCard v-bind="args">
         <template #header>
           <h3 class="text-lg font-medium">渐变背景卡片</h3>
         </template>
@@ -221,7 +221,7 @@ export const Unstyled: Story = {
             <button class="px-4 py-2 bg-white text-purple-500 rounded">确定</button>
           </div>
         </template>
-      </Card>
+      </ZCard>
     `,
   }),
 }
@@ -229,7 +229,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { CardDemo },
+    components: {CardDemo},
     template: '<CardDemo />',
   }),
 }

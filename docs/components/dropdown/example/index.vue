@@ -1,16 +1,16 @@
 <template>
-  <Dropdown>
+  <ZDropdown>
     <template #trigger>
-      <Button>点击打开菜单</Button>
+      <ZButton>点击打开菜单</ZButton>
     </template>
-    <DropdownItem value="option1">选项1</DropdownItem>
-    <DropdownItem value="option2">选项2</DropdownItem>
-    <DropdownDivider />
-    <DropdownItem value="option3" disabled>禁用选项</DropdownItem>
-  </Dropdown>
+    <ZDropdownItem value="option1">选项1</ZDropdownItem>
+    <ZDropdownItem value="option2">选项2</ZDropdownItem>
+    <ZDropdownDivider />
+    <ZDropdownItem value="option3" disabled>禁用选项</ZDropdownItem>
+  </ZDropdown>
 </template>
 
 <script setup lang="ts">
-import { Dropdown, DropdownItem } from '@zxy-ui/vue'
-import { Button } from '@zxy-ui/vue'
+import { ZDropdown, ZDropdownItem } from '@zxy-ui/vue'
+import { ZButton } from '@zxy-ui/vue'
 </script>

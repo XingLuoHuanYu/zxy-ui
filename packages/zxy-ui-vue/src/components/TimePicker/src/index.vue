@@ -120,16 +120,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useTimePicker } from './composables/useTimePicker'
-import {
-  timePickerStyle,
-  timePickerInputWrapperStyle,
-  timePickerInputStyle,
-  timePickerClearButtonStyle,
-  timePickerDropdownStyle,
-  timePickerSelectorStyle,
-  timePickerColumnStyle,
-  timePickerItemStyle,
-} from './index.variants'
+import { timePickerStyle, timePickerInputWrapperStyle, timePickerInputStyle, timePickerClearButtonStyle, timePickerDropdownStyle, timePickerSelectorStyle, timePickerColumnStyle, timePickerItemStyle } from './index.variants'
 import type { TimePickerProps } from './type'
 import { TimePickerEmits } from './type'
 

@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Avatar } from '@zxy-ui/vue'
+import { ZAvatar } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import AvatarDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Avatar> = {
+const meta: Meta<typeof ZAvatar> = {
   title: '组件/Avatar 头像',
-  component: Avatar,
+  component: ZAvatar,
   tags: ['autodocs'],
   argTypes: {
     size: {
@@ -77,7 +77,7 @@ const meta: Meta<typeof Avatar> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Avatar>
+type Story = StoryObj<typeof ZAvatar>
 
 // 基础示例
 export const Basic: Story = {
@@ -145,7 +145,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { AvatarDemo },
+    components: {AvatarDemo},
     template: '<AvatarDemo />',
   }),
 }

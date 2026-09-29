@@ -12,7 +12,7 @@ import type { TimelineProps } from './type'
 import { TimelineEmits } from './type'
 
 defineOptions({
-  name: 'Timeline',
+  name: 'ZTimeline',
 })
 
 const props = withDefaults(defineProps<TimelineProps>(), {

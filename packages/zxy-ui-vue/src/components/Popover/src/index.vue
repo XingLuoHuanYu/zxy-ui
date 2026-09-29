@@ -1,18 +1,12 @@
 <script setup lang="ts">
 import { computed, watch, onMounted, nextTick, ref, onUnmounted } from 'vue'
-import {
-  popoverTrigger,
-  popoverContent,
-  popoverArrow,
-  popoverTitle,
-  popoverBody,
-} from './index.variants'
+import { popoverTrigger, popoverContent, popoverArrow, popoverTitle, popoverBody } from './index.variants'
 import type { PopoverProps } from './type'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { usePopover } from './composables/usePopover'
 
 defineOptions({
-  name: 'Popover',
+  name: 'ZPopover',
 })
 
 const props = withDefaults(defineProps<PopoverProps>(), {

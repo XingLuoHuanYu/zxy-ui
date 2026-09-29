@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Slider } from '@zxy-ui/vue'
+import { ZSlider } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const value1 = ref(50)
@@ -14,14 +14,14 @@ const value6 = ref(50)
   <div class="space-y-8 p-4">
     <section>
       <h2 class="text-xl font-bold mb-4">基础用法</h2>
-      <Slider v-model="value1" />
+      <ZSlider v-model="value1" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">设置最小值和最大值</h2>
       <div>
         <p class="mb-2">范围：0-50，当前值：{{ value2 }}</p>
-        <Slider v-model="value2" :min="0" :max="50" />
+        <ZSlider v-model="value2" :min="0" :max="50" />
       </div>
     </section>
 
@@ -29,30 +29,30 @@ const value6 = ref(50)
       <h2 class="text-xl font-bold mb-4">设置步长</h2>
       <div>
         <p class="mb-2">步长：10，当前值：{{ value3 }}</p>
-        <Slider v-model="value3" :step="10" />
+        <ZSlider v-model="value3" :step="10" />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">垂直方向</h2>
       <div style="height: 200px">
-        <Slider v-model="value4" orientation="vertical" />
+        <ZSlider v-model="value4" orientation="vertical" />
       </div>
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">禁用状态</h2>
-      <Slider v-model="value1" disabled />
+      <ZSlider v-model="value1" disabled />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">显示提示</h2>
-      <Slider v-model="value1" :show-tooltip="true" />
+      <ZSlider v-model="value1" :show-tooltip="true" />
     </section>
 
     <section>
       <h2 class="text-xl font-bold mb-4">显示刻度</h2>
-      <Slider
+      <ZSlider
         v-model="value5"
         :show-marks="true"
         :marks="{
@@ -67,7 +67,7 @@ const value6 = ref(50)
 
     <section>
       <h2 class="text-xl font-bold mb-4">自定义样式 (PT)</h2>
-      <Slider
+      <ZSlider
         v-model="value1"
         :show-tooltip="true"
         :pt="{
@@ -84,7 +84,7 @@ const value6 = ref(50)
       <div class="space-y-8">
         <div>
           <p class="mb-2">渐变样式</p>
-          <Slider
+          <ZSlider
             v-model="value6"
             :show-tooltip="true"
             :show-marks="true"
@@ -112,7 +112,7 @@ const value6 = ref(50)
         </div>
         <div>
           <p class="mb-2">圆角样式</p>
-          <Slider
+          <ZSlider
             v-model="value6"
             :show-tooltip="true"
             unstyled
@@ -129,7 +129,7 @@ const value6 = ref(50)
         </div>
         <div>
           <p class="mb-2">方形样式</p>
-          <Slider
+          <ZSlider
             v-model="value6"
             :show-tooltip="true"
             unstyled

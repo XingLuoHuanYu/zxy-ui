@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Badge } from '@zxy-ui/vue'
+import { ZBadge } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import BadgeDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Badge> = {
+const meta: Meta<typeof ZBadge> = {
   title: '组件/Badge 徽章',
-  component: Badge,
+  component: ZBadge,
   tags: ['autodocs'],
   argTypes: {
     content: {
@@ -86,7 +86,7 @@ const meta: Meta<typeof Badge> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Badge>
+type Story = StoryObj<typeof ZBadge>
 
 // 基础示例
 export const Basic: Story = {
@@ -94,14 +94,14 @@ export const Basic: Story = {
     content: '5',
   },
   render: (args) => ({
-    components: { Badge },
+    components: {ZBadge},
     setup() {
       return { args }
     },
     template: `
-      <Badge v-bind="args">
+      <ZBadge v-bind="args">
         <div class="w-10 h-10 bg-gray-200 rounded-md"></div>
-      </Badge>
+      </ZBadge>
     `,
   }),
 }
@@ -112,14 +112,14 @@ export const Dot: Story = {
     dot: true,
   },
   render: (args) => ({
-    components: { Badge },
+    components: {ZBadge},
     setup() {
       return { args }
     },
     template: `
-      <Badge v-bind="args">
+      <ZBadge v-bind="args">
         <div class="w-10 h-10 bg-gray-200 rounded-md"></div>
-      </Badge>
+      </ZBadge>
     `,
   }),
 }
@@ -131,14 +131,14 @@ export const Positions: Story = {
     position: 'bottom-right',
   },
   render: (args) => ({
-    components: { Badge },
+    components: {ZBadge},
     setup() {
       return { args }
     },
     template: `
-      <Badge v-bind="args">
+      <ZBadge v-bind="args">
         <div class="w-10 h-10 bg-gray-200 rounded-md"></div>
-      </Badge>
+      </ZBadge>
     `,
   }),
 }
@@ -150,14 +150,14 @@ export const Colors: Story = {
     color: 'primary',
   },
   render: (args) => ({
-    components: { Badge },
+    components: {ZBadge},
     setup() {
       return { args }
     },
     template: `
-      <Badge v-bind="args">
+      <ZBadge v-bind="args">
         <div class="w-10 h-10 bg-gray-200 rounded-md"></div>
-      </Badge>
+      </ZBadge>
     `,
   }),
 }
@@ -169,14 +169,14 @@ export const Sizes: Story = {
     size: 'lg',
   },
   render: (args) => ({
-    components: { Badge },
+    components: {ZBadge},
     setup() {
       return { args }
     },
     template: `
-      <Badge v-bind="args">
+      <ZBadge v-bind="args">
         <div class="w-10 h-10 bg-gray-200 rounded-md"></div>
-      </Badge>
+      </ZBadge>
     `,
   }),
 }
@@ -188,14 +188,14 @@ export const Max: Story = {
     max: 99,
   },
   render: (args) => ({
-    components: { Badge },
+    components: {ZBadge},
     setup() {
       return { args }
     },
     template: `
-      <Badge v-bind="args">
+      <ZBadge v-bind="args">
         <div class="w-10 h-10 bg-gray-200 rounded-md"></div>
-      </Badge>
+      </ZBadge>
     `,
   }),
 }
@@ -209,14 +209,14 @@ export const CustomStyle: Story = {
     },
   },
   render: (args) => ({
-    components: { Badge },
+    components: {ZBadge},
     setup() {
       return { args }
     },
     template: `
-      <Badge v-bind="args">
+      <ZBadge v-bind="args">
         <div class="w-10 h-10 bg-gray-200 rounded-md"></div>
-      </Badge>
+      </ZBadge>
     `,
   }),
 }
@@ -232,14 +232,14 @@ export const Unstyled: Story = {
     },
   },
   render: (args) => ({
-    components: { Badge },
+    components: {ZBadge},
     setup() {
       return { args }
     },
     template: `
-      <Badge v-bind="args">
+      <ZBadge v-bind="args">
         <div class="w-10 h-10 bg-gray-200 rounded-md"></div>
-      </Badge>
+      </ZBadge>
     `,
   }),
 }
@@ -247,7 +247,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { BadgeDemo },
+    components: {BadgeDemo},
     template: '<BadgeDemo />',
   }),
 }

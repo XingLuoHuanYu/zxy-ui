@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Divider } from '@zxy-ui/vue'
+import { ZDivider } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import DividerDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Divider> = {
+const meta: Meta<typeof ZDivider> = {
   title: '组件/Divider 分割线',
-  component: Divider,
+  component: ZDivider,
   tags: ['autodocs'],
   argTypes: {
     orientation: {
@@ -87,20 +87,20 @@ const meta: Meta<typeof Divider> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Divider>
+type Story = StoryObj<typeof ZDivider>
 
 // 基础示例
 export const Basic: Story = {
   args: {},
   render: (args) => ({
-    components: { Divider },
+    components: {ZDivider},
     setup() {
       return { args }
     },
     template: `
       <div class="space-y-4">
         <p>上方内容</p>
-        <Divider v-bind="args" />
+        <ZDivider v-bind="args" />
         <p>下方内容</p>
       </div>
     `,
@@ -113,14 +113,14 @@ export const Orientation: Story = {
     orientation: 'vertical',
   },
   render: (args) => ({
-    components: { Divider },
+    components: {ZDivider},
     setup() {
       return { args }
     },
     template: `
       <div class="flex items-center h-20">
         <span>左侧内容</span>
-        <Divider v-bind="args" class="mx-4 h-full" />
+        <ZDivider v-bind="args" class="mx-4 h-full" />
         <span>右侧内容</span>
       </div>
     `,
@@ -133,14 +133,14 @@ export const Variants: Story = {
     variant: 'dashed',
   },
   render: (args) => ({
-    components: { Divider },
+    components: {ZDivider},
     setup() {
       return { args }
     },
     template: `
       <div class="space-y-4">
         <p>上方内容</p>
-        <Divider v-bind="args" />
+        <ZDivider v-bind="args" />
         <p>下方内容</p>
       </div>
     `,
@@ -153,14 +153,14 @@ export const Sizes: Story = {
     size: 'thick',
   },
   render: (args) => ({
-    components: { Divider },
+    components: {ZDivider},
     setup() {
       return { args }
     },
     template: `
       <div class="space-y-4">
         <p>上方内容</p>
-        <Divider v-bind="args" />
+        <ZDivider v-bind="args" />
         <p>下方内容</p>
       </div>
     `,
@@ -173,14 +173,14 @@ export const CustomColor: Story = {
     color: '#8b5cf6',
   },
   render: (args) => ({
-    components: { Divider },
+    components: {ZDivider},
     setup() {
       return { args }
     },
     template: `
       <div class="space-y-4">
         <p>上方内容</p>
-        <Divider v-bind="args" />
+        <ZDivider v-bind="args" />
         <p>下方内容</p>
       </div>
     `,
@@ -193,14 +193,14 @@ export const WithLabel: Story = {
     label: '分割线文本',
   },
   render: (args) => ({
-    components: { Divider },
+    components: {ZDivider},
     setup() {
       return { args }
     },
     template: `
       <div class="space-y-4">
         <p>上方内容</p>
-        <Divider v-bind="args" />
+        <ZDivider v-bind="args" />
         <p>下方内容</p>
       </div>
     `,
@@ -214,14 +214,14 @@ export const LabelPosition: Story = {
     labelPosition: 'start',
   },
   render: (args) => ({
-    components: { Divider },
+    components: {ZDivider},
     setup() {
       return { args }
     },
     template: `
       <div class="space-y-4">
         <p>上方内容</p>
-        <Divider v-bind="args" />
+        <ZDivider v-bind="args" />
         <p>下方内容</p>
       </div>
     `,
@@ -238,14 +238,14 @@ export const CustomStyle: Story = {
     },
   },
   render: (args) => ({
-    components: { Divider },
+    components: {ZDivider},
     setup() {
       return { args }
     },
     template: `
       <div class="space-y-4">
         <p>上方内容</p>
-        <Divider v-bind="args" />
+        <ZDivider v-bind="args" />
         <p>下方内容</p>
       </div>
     `,
@@ -264,14 +264,14 @@ export const Unstyled: Story = {
     },
   },
   render: (args) => ({
-    components: { Divider },
+    components: {ZDivider},
     setup() {
       return { args }
     },
     template: `
       <div class="space-y-4">
         <p>上方内容</p>
-        <Divider v-bind="args" />
+        <ZDivider v-bind="args" />
         <p>下方内容</p>
       </div>
     `,
@@ -281,7 +281,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { DividerDemo },
+    components: {DividerDemo},
     template: '<DividerDemo />',
   }),
 }

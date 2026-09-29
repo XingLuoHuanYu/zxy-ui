@@ -4,7 +4,7 @@
     <section>
       <h2 class="text-lg font-medium mb-4">基础用法</h2>
       <div class="flex items-center space-x-4">
-        <Switch v-model="enabled" />
+        <ZSwitch v-model="enabled" />
         <span class="text-sm">{{ enabled ? '开启' : '关闭' }}</span>
       </div>
     </section>
@@ -14,15 +14,15 @@
       <h2 class="text-lg font-medium mb-4">不同尺寸</h2>
       <div class="flex items-center space-x-8">
         <div class="flex flex-col items-center space-y-2">
-          <Switch v-model="sizeEnabled.small" size="small" />
+          <ZSwitch v-model="sizeEnabled.small" size="small" />
           <span class="text-sm">小型</span>
         </div>
         <div class="flex flex-col items-center space-y-2">
-          <Switch v-model="sizeEnabled.default" />
+          <ZSwitch v-model="sizeEnabled.default" />
           <span class="text-sm">默认</span>
         </div>
         <div class="flex flex-col items-center space-y-2">
-          <Switch v-model="sizeEnabled.large" size="large" />
+          <ZSwitch v-model="sizeEnabled.large" size="large" />
           <span class="text-sm">大型</span>
         </div>
       </div>
@@ -33,23 +33,23 @@
       <h2 class="text-lg font-medium mb-4">不同颜色</h2>
       <div class="grid grid-cols-5 gap-6">
         <div class="flex flex-col items-center space-y-2">
-          <Switch v-model="colorEnabled.blue" color="blue" />
+          <ZSwitch v-model="colorEnabled.blue" color="blue" />
           <span class="text-sm">蓝色</span>
         </div>
         <div class="flex flex-col items-center space-y-2">
-          <Switch v-model="colorEnabled.green" color="green" />
+          <ZSwitch v-model="colorEnabled.green" color="green" />
           <span class="text-sm">绿色</span>
         </div>
         <div class="flex flex-col items-center space-y-2">
-          <Switch v-model="colorEnabled.red" color="red" />
+          <ZSwitch v-model="colorEnabled.red" color="red" />
           <span class="text-sm">红色</span>
         </div>
         <div class="flex flex-col items-center space-y-2">
-          <Switch v-model="colorEnabled.yellow" color="yellow" />
+          <ZSwitch v-model="colorEnabled.yellow" color="yellow" />
           <span class="text-sm">黄色</span>
         </div>
         <div class="flex flex-col items-center space-y-2">
-          <Switch v-model="colorEnabled.purple" color="purple" />
+          <ZSwitch v-model="colorEnabled.purple" color="purple" />
           <span class="text-sm">紫色</span>
         </div>
       </div>
@@ -60,11 +60,11 @@
       <h2 class="text-lg font-medium mb-4">禁用状态</h2>
       <div class="flex items-center space-x-8">
         <div class="flex flex-col items-center space-y-2">
-          <Switch disabled />
+          <ZSwitch disabled />
           <span class="text-sm">禁用关闭</span>
         </div>
         <div class="flex flex-col items-center space-y-2">
-          <Switch :model-value="true" disabled />
+          <ZSwitch :model-value="true" disabled />
           <span class="text-sm">禁用开启</span>
         </div>
       </div>
@@ -83,7 +83,7 @@
           </button>
         </div>
         <div class="flex items-center space-x-4 mt-4">
-          <Switch v-for="(_, i) in 5" :key="i" v-model="animationSwitches[i]" />
+          <ZSwitch v-for="(_, i) in 5" :key="i" v-model="animationSwitches[i]" />
         </div>
       </div>
     </section>
@@ -91,7 +91,7 @@
 </template>
 
 <script setup lang="ts">
-import { Switch } from '@zxy-ui/vue'
+import { ZSwitch } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import { ref, computed } from 'vue'
 

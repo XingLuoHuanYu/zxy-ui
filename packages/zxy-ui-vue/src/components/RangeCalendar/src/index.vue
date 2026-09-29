@@ -106,17 +106,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRangeCalendar } from './composables/useRangeCalendar'
-import {
-  rangeCalendarStyle,
-  rangeCalendarHeaderStyle,
-  rangeCalendarTitleStyle,
-  rangeCalendarNavigationStyle,
-  rangeCalendarNavButtonStyle,
-  rangeCalendarWeekdaysStyle,
-  rangeCalendarWeekdayStyle,
-  rangeCalendarDaysStyle,
-  rangeCalendarDayStyle,
-} from './index.variants'
+import { rangeCalendarStyle, rangeCalendarHeaderStyle, rangeCalendarTitleStyle, rangeCalendarNavigationStyle, rangeCalendarNavButtonStyle, rangeCalendarWeekdaysStyle, rangeCalendarWeekdayStyle, rangeCalendarDaysStyle, rangeCalendarDayStyle } from './index.variants'
 import type { RangeCalendarProps } from './type'
 import { RangeCalendarEmits } from './type'
 

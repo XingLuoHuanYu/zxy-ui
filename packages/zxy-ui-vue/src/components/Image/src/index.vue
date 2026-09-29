@@ -93,11 +93,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import {
-  imageStyle,
-  imageSkeletonStyle,
-  imageOverlayStyle,
-} from './index.variants'
+import { imageStyle, imageSkeletonStyle, imageOverlayStyle } from './index.variants'
 import type { ImageProps } from './type'
 import { ImageEmits } from './type'
 import { useImage } from './use-image'

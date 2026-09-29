@@ -4,10 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { getNav } from './config/nav.ts'
 import { getGuideSidebar, getComponentsSidebar } from './config/Sidebar.ts'
 
-import {
-  groupIconMdPlugin,
-  groupIconVitePlugin,
-} from 'vitepress-plugin-group-icons'
+import { groupIconMdPlugin, groupIconVitePlugin,  } from 'vitepress-plugin-group-icons'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Splitter, SplitterPanel } from '@zxy-ui/vue'
+import { ZSplitter, ZSplitterPanel } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import SplitterDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Splitter> = {
+const meta: Meta<typeof ZSplitter> = {
   title: '组件/Splitter 分割面板',
-  component: Splitter,
+  component: ZSplitter,
   tags: ['autodocs'],
   argTypes: {
     direction: {
@@ -63,35 +63,35 @@ const meta: Meta<typeof Splitter> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Splitter>
+type Story = StoryObj<typeof ZSplitter>
 
 // 水平布局
 export const Horizontal: Story = {
   render: (args) => ({
-    components: { Splitter, SplitterPanel },
+    components: {ZSplitter, ZSplitterPanel},
     setup() {
       return { args }
     },
     template: `
       <div class="h-64 border border-gray-200 rounded">
-        <Splitter v-bind="args">
-          <SplitterPanel>
+        <ZSplitter v-bind="args">
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-50 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">左侧面板</div>
                 <p class="text-gray-500">可拖动中间的分隔条调整面板大小</p>
               </div>
             </div>
-          </SplitterPanel>
-          <SplitterPanel>
+          </ZSplitterPanel>
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-100 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">右侧面板</div>
                 <p class="text-gray-500">基础水平分割面板示例</p>
               </div>
             </div>
-          </SplitterPanel>
-        </Splitter>
+          </ZSplitterPanel>
+        </ZSplitter>
       </div>
     `,
   }),
@@ -103,30 +103,30 @@ export const Vertical: Story = {
     direction: 'vertical',
   },
   render: (args) => ({
-    components: { Splitter, SplitterPanel },
+    components: {ZSplitter, ZSplitterPanel},
     setup() {
       return { args }
     },
     template: `
       <div class="h-64 border border-gray-200 rounded">
-        <Splitter v-bind="args">
-          <SplitterPanel>
+        <ZSplitter v-bind="args">
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-50 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">上部面板</div>
                 <p class="text-gray-500">通过direction="vertical"设置垂直分割</p>
               </div>
             </div>
-          </SplitterPanel>
-          <SplitterPanel>
+          </ZSplitterPanel>
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-100 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">下部面板</div>
                 <p class="text-gray-500">垂直拖动分隔条调整大小</p>
               </div>
             </div>
-          </SplitterPanel>
-        </Splitter>
+          </ZSplitterPanel>
+        </ZSplitter>
       </div>
     `,
   }),
@@ -135,35 +135,35 @@ export const Vertical: Story = {
 // 多面板
 export const MultiPanel: Story = {
   render: (args) => ({
-    components: { Splitter, SplitterPanel },
+    components: {ZSplitter, ZSplitterPanel},
     setup() {
       return { args }
     },
     template: `
       <div class="h-64 border border-gray-200 rounded">
-        <Splitter v-bind="args">
-          <SplitterPanel>
+        <ZSplitter v-bind="args">
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-50 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium">面板 1</div>
               </div>
             </div>
-          </SplitterPanel>
-          <SplitterPanel>
+          </ZSplitterPanel>
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-100 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium">面板 2</div>
               </div>
             </div>
-          </SplitterPanel>
-          <SplitterPanel>
+          </ZSplitterPanel>
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-200 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium">面板 3</div>
               </div>
             </div>
-          </SplitterPanel>
-        </Splitter>
+          </ZSplitterPanel>
+        </ZSplitter>
       </div>
     `,
   }),
@@ -172,41 +172,41 @@ export const MultiPanel: Story = {
 // 嵌套面板
 export const NestedPanels: Story = {
   render: (args) => ({
-    components: { Splitter, SplitterPanel },
+    components: {ZSplitter, ZSplitterPanel},
     setup() {
       return { args }
     },
     template: `
       <div class="h-64 border border-gray-200 rounded">
-        <Splitter v-bind="args">
-          <SplitterPanel :size="'40%'">
+        <ZSplitter v-bind="args">
+          <ZSplitterPanel :size="'40%'">
             <div class="h-full flex items-center justify-center bg-gray-50 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">左侧面板</div>
                 <p class="text-gray-500">占据40%宽度</p>
               </div>
             </div>
-          </SplitterPanel>
-          <SplitterPanel :size="'60%'">
-            <Splitter direction="vertical" class="h-full">
-              <SplitterPanel :size="'60%'">
+          </ZSplitterPanel>
+          <ZSplitterPanel :size="'60%'">
+            <ZSplitter direction="vertical" class="h-full">
+              <ZSplitterPanel :size="'60%'">
                 <div class="h-full flex items-center justify-center bg-gray-100 p-4">
                   <div class="text-center">
                     <div class="text-xl font-medium">右上面板</div>
                     <p class="text-gray-500">嵌套的垂直分割面板</p>
                   </div>
                 </div>
-              </SplitterPanel>
-              <SplitterPanel :size="'40%'">
+              </ZSplitterPanel>
+              <ZSplitterPanel :size="'40%'">
                 <div class="h-full flex items-center justify-center bg-gray-200 p-4">
                   <div class="text-center">
                     <div class="text-xl font-medium">右下面板</div>
                   </div>
                 </div>
-              </SplitterPanel>
-            </Splitter>
-          </SplitterPanel>
-        </Splitter>
+              </ZSplitterPanel>
+            </ZSplitter>
+          </ZSplitterPanel>
+        </ZSplitter>
       </div>
     `,
   }),
@@ -218,30 +218,30 @@ export const CustomGutterSize: Story = {
     gutterSize: 10,
   },
   render: (args) => ({
-    components: { Splitter, SplitterPanel },
+    components: {ZSplitter, ZSplitterPanel},
     setup() {
       return { args }
     },
     template: `
       <div class="h-64 border border-gray-200 rounded">
-        <Splitter v-bind="args">
-          <SplitterPanel>
+        <ZSplitter v-bind="args">
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-50 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">左侧面板</div>
                 <p class="text-gray-500">分隔条大小为10px</p>
               </div>
             </div>
-          </SplitterPanel>
-          <SplitterPanel>
+          </ZSplitterPanel>
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-100 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">右侧面板</div>
                 <p class="text-gray-500">可拖动更宽的分隔条调整大小</p>
               </div>
             </div>
-          </SplitterPanel>
-        </Splitter>
+          </ZSplitterPanel>
+        </ZSplitter>
       </div>
     `,
   }),
@@ -256,30 +256,30 @@ export const CustomPanelConfig: Story = {
     ],
   },
   render: (args) => ({
-    components: { Splitter, SplitterPanel },
+    components: {ZSplitter, ZSplitterPanel},
     setup() {
       return { args }
     },
     template: `
       <div class="h-64 border border-gray-200 rounded">
-        <Splitter v-bind="args">
-          <SplitterPanel>
+        <ZSplitter v-bind="args">
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-50 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">可折叠面板</div>
                 <p class="text-gray-500">配置了最小尺寸20%和最大尺寸40%</p>
               </div>
             </div>
-          </SplitterPanel>
-          <SplitterPanel>
+          </ZSplitterPanel>
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-100 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">主面板</div>
                 <p class="text-gray-500">最小尺寸为60%</p>
               </div>
             </div>
-          </SplitterPanel>
-        </Splitter>
+          </ZSplitterPanel>
+        </ZSplitter>
       </div>
     `,
   }),
@@ -295,30 +295,30 @@ export const CustomStyle: Story = {
     },
   },
   render: (args) => ({
-    components: { Splitter, SplitterPanel },
+    components: {ZSplitter, ZSplitterPanel},
     setup() {
       return { args }
     },
     template: `
       <div class="h-64">
-        <Splitter v-bind="args">
-          <SplitterPanel>
+        <ZSplitter v-bind="args">
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-50 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">自定义样式面板</div>
                 <p class="text-gray-500">通过pt属性自定义组件样式</p>
               </div>
             </div>
-          </SplitterPanel>
-          <SplitterPanel>
+          </ZSplitterPanel>
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-100 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">自定义分割条</div>
                 <p class="text-gray-500">蓝色分割条带有悬停效果</p>
               </div>
             </div>
-          </SplitterPanel>
-        </Splitter>
+          </ZSplitterPanel>
+        </ZSplitter>
       </div>
     `,
   }),
@@ -337,30 +337,30 @@ export const Unstyled: Story = {
     },
   },
   render: (args) => ({
-    components: { Splitter, SplitterPanel },
+    components: {ZSplitter, ZSplitterPanel},
     setup() {
       return { args }
     },
     template: `
       <div class="h-64">
-        <Splitter v-bind="args">
-          <SplitterPanel>
+        <ZSplitter v-bind="args">
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-50 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">无样式模式</div>
                 <p class="text-gray-500">使用unstyled属性移除默认样式</p>
               </div>
             </div>
-          </SplitterPanel>
-          <SplitterPanel>
+          </ZSplitterPanel>
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-100 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2">完全自定义</div>
                 <p class="text-gray-500">通过pt属性定义所有样式</p>
               </div>
             </div>
-          </SplitterPanel>
-        </Splitter>
+          </ZSplitterPanel>
+        </ZSplitter>
       </div>
     `,
   }),
@@ -378,30 +378,30 @@ export const CreativeStyle: Story = {
     },
   },
   render: (args) => ({
-    components: { Splitter, SplitterPanel },
+    components: {ZSplitter, ZSplitterPanel},
     setup() {
       return { args }
     },
     template: `
       <div class="h-64">
-        <Splitter v-bind="args">
-          <SplitterPanel>
+        <ZSplitter v-bind="args">
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gradient-to-br from-purple-50 to-purple-100 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2 text-purple-800">创意面板 1</div>
                 <p class="text-purple-600">渐变背景与渐变分隔条</p>
               </div>
             </div>
-          </SplitterPanel>
-          <SplitterPanel>
+          </ZSplitterPanel>
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gradient-to-br from-pink-50 to-pink-100 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2 text-pink-800">创意面板 2</div>
                 <p class="text-pink-600">美观的自定义样式</p>
               </div>
             </div>
-          </SplitterPanel>
-        </Splitter>
+          </ZSplitterPanel>
+        </ZSplitter>
       </div>
     `,
   }),
@@ -410,30 +410,30 @@ export const CreativeStyle: Story = {
 // 暗黑模式兼容
 export const DarkModeCompatible: Story = {
   render: (args) => ({
-    components: { Splitter, SplitterPanel },
+    components: {ZSplitter, ZSplitterPanel},
     setup() {
       return { args }
     },
     template: `
       <div class="h-64 border border-gray-200 dark:border-gray-700 rounded">
-        <Splitter v-bind="args">
-          <SplitterPanel>
+        <ZSplitter v-bind="args">
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-50 dark:bg-gray-800 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2 dark:text-white">暗黑模式兼容</div>
                 <p class="text-gray-500 dark:text-gray-400">支持暗黑模式的面板</p>
               </div>
             </div>
-          </SplitterPanel>
-          <SplitterPanel>
+          </ZSplitterPanel>
+          <ZSplitterPanel>
             <div class="h-full flex items-center justify-center bg-gray-100 dark:bg-gray-700 p-4">
               <div class="text-center">
                 <div class="text-xl font-medium mb-2 dark:text-white">自动适应</div>
                 <p class="text-gray-500 dark:text-gray-400">根据系统主题自动切换</p>
               </div>
             </div>
-          </SplitterPanel>
-        </Splitter>
+          </ZSplitterPanel>
+        </ZSplitter>
       </div>
     `,
   }),
@@ -442,7 +442,7 @@ export const DarkModeCompatible: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { SplitterDemo },
+    components: {SplitterDemo},
     template: '<SplitterDemo />',
   }),
 }

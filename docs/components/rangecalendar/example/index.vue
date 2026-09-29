@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RangeCalendar } from '@zxy-ui/vue'
+import { ZRangeCalendar } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import { ref } from 'vue'
 
@@ -58,7 +58,7 @@ const formatDateRange = (range: [Date | null, Date | null]): string => {
     <section class="example-section">
       <h2 class="example-title">基础用法</h2>
       <div class="example-container">
-        <RangeCalendar v-model="basicRange" />
+        <ZRangeCalendar v-model="basicRange" />
         <div class="selection-info">
           已选择: {{ formatDateRange(basicRange) }}
         </div>
@@ -69,7 +69,7 @@ const formatDateRange = (range: [Date | null, Date | null]): string => {
     <section class="example-section">
       <h2 class="example-title">默认选中日期</h2>
       <div class="example-container">
-        <RangeCalendar v-model="defaultRange" />
+        <ZRangeCalendar v-model="defaultRange" />
         <div class="selection-info">
           已选择: {{ formatDateRange(defaultRange) }}
         </div>
@@ -80,7 +80,7 @@ const formatDateRange = (range: [Date | null, Date | null]): string => {
     <section class="example-section">
       <h2 class="example-title">日期范围限制</h2>
       <div class="example-container">
-        <RangeCalendar
+        <ZRangeCalendar
           v-model="limitedRange"
           :min-date="new Date(2023, 0, 1)"
           :max-date="new Date(2023, 11, 31)"
@@ -98,7 +98,7 @@ const formatDateRange = (range: [Date | null, Date | null]): string => {
     <section class="example-section">
       <h2 class="example-title">禁用状态</h2>
       <div class="example-container">
-        <RangeCalendar v-model="disabledRange" disabled />
+        <ZRangeCalendar v-model="disabledRange" disabled />
         <div class="selection-info">
           已选择: {{ formatDateRange(disabledRange) }}
         </div>
@@ -109,7 +109,7 @@ const formatDateRange = (range: [Date | null, Date | null]): string => {
     <section class="example-section">
       <h2 class="example-title">只读状态</h2>
       <div class="example-container">
-        <RangeCalendar v-model="readonlyRange" readonly />
+        <ZRangeCalendar v-model="readonlyRange" readonly />
         <div class="selection-info">
           已选择: {{ formatDateRange(readonlyRange) }}
         </div>
@@ -120,7 +120,7 @@ const formatDateRange = (range: [Date | null, Date | null]): string => {
     <section class="example-section">
       <h2 class="example-title">周一作为一周的第一天</h2>
       <div class="example-container">
-        <RangeCalendar v-model="mondayFirstRange" :first-day-of-week="1" />
+        <ZRangeCalendar v-model="mondayFirstRange" :first-day-of-week="1" />
         <div class="selection-info">
           已选择: {{ formatDateRange(mondayFirstRange) }}
         </div>
@@ -131,7 +131,7 @@ const formatDateRange = (range: [Date | null, Date | null]): string => {
     <section class="example-section">
       <h2 class="example-title">本地化设置</h2>
       <div class="example-container">
-        <RangeCalendar v-model="localeRange" locale="zh-CN" />
+        <ZRangeCalendar v-model="localeRange" locale="zh-CN" />
         <div class="selection-info">
           已选择: {{ formatDateRange(localeRange) }}
         </div>
@@ -142,7 +142,7 @@ const formatDateRange = (range: [Date | null, Date | null]): string => {
     <section class="example-section">
       <h2 class="example-title">自定义样式</h2>
       <div class="example-container">
-        <RangeCalendar
+        <ZRangeCalendar
           v-model="customStyleRange"
           :pt="{
             root: 'border border-gray-300 dark:border-gray-600 rounded-md overflow-hidden',
@@ -170,7 +170,7 @@ const formatDateRange = (range: [Date | null, Date | null]): string => {
     <section class="example-section">
       <h2 class="example-title">无样式模式</h2>
       <div class="example-container">
-        <RangeCalendar
+        <ZRangeCalendar
           v-model="unstyledRange"
           unstyled
           :pt="{

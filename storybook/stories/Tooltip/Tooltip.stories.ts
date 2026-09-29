@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Tooltip } from '@zxy-ui/vue'
+import { ZTooltip } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 import TooltipDemo from './index.vue'
 
 // 定义组件元数据
-const meta: Meta<typeof Tooltip> = {
+const meta: Meta<typeof ZTooltip> = {
   title: '组件/Tooltip 文字提示',
-  component: Tooltip,
+  component: ZTooltip,
   tags: ['autodocs'],
   argTypes: {
     content: {
@@ -118,7 +118,7 @@ const meta: Meta<typeof Tooltip> = {
 }
 
 export default meta
-type Story = StoryObj<typeof Tooltip>
+type Story = StoryObj<typeof ZTooltip>
 
 // 基础示例
 export const Basic: Story = {
@@ -193,7 +193,7 @@ export const Unstyled: Story = {
 // 完整示例展示
 export const AllExamples: Story = {
   render: () => ({
-    components: { TooltipDemo },
+    components: {TooltipDemo},
     template: '<TooltipDemo />',
   }),
 }
