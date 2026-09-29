@@ -1,8 +1,8 @@
-# Versakit Changesets 使用指南
+# ZxyUI Changesets 使用指南
 
 ## 简介
 
-Versakit项目使用[Changesets](https://github.com/changesets/changesets)来管理版本和发布流程。Changesets帮助我们自动化版本管理、生成变更日志和协调包之间的依赖关系。
+ZxyUI 项目使用[Changesets](https://github.com/changesets/changesets)来管理版本和发布流程。Changesets帮助我们自动化版本管理、生成变更日志和协调包之间的依赖关系。
 
 ## 基本概念
 

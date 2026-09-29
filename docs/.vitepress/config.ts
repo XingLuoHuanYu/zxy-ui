@@ -20,7 +20,7 @@ export default defineConfig({
       '/components/': getComponentsSidebar(),
     } as any,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/zxy-ui/zxy-ui' },
+      { icon: 'github', link: 'https://github.com/XingLuoHuanYu/zxy-ui' },
       {
         icon: 'npm',
         link: 'https://www.npmjs.com/package/@zxy-ui/vue',

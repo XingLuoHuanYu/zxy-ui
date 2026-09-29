@@ -23,17 +23,17 @@
       "default": "./dist/umd/vue.css"
     }
   },
-  "homepage": "https://zxy-ui.github.io/zxy-ui/",
+  "homepage": "https://XingLuoHuanYu.github.io/zxy-ui/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zxy-ui/zxy-ui"
+    "url": "git+https://github.com/XingLuoHuanYu/zxy-ui.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/zxy-ui/zxy-ui/issues"
+    "url": "https://github.com/XingLuoHuanYu/zxy-ui/issues"
   },
   "keywords": [
     "Vue3",

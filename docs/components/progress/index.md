@@ -2,7 +2,7 @@
 
 Progress 是一个进度条组件，用于展示操作的当前进度、状态和完成程度，帮助用户了解长时间任务的执行情况，常用于文件上传、数据加载、操作处理等场景。
 
-<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-progress-%E8%BF%9B%E5%BA%A6%E6%9D%A1--basic"/>
+<StorybookLink link="https://XingLuoHuanYu.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-progress-%E8%BF%9B%E5%BA%A6%E6%9D%A1--basic"/>
 
 ## 引入
 

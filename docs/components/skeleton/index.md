@@ -2,7 +2,7 @@
 
 在内容加载过程中显示的占位符组件，提供更好的用户体验。
 
-<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/组件-skeleton-骨架屏--basic"/>
+<StorybookLink link="https://XingLuoHuanYu.github.io/zxy-ui/storybook/?path=/story/组件-skeleton-骨架屏--basic"/>
 
 ## 引入
 

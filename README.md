@@ -1,12 +1,12 @@
 <div align="center">
-  <a href="https://zxy-ui.github.io/zxy-ui/">
+  <a href="https://XingLuoHuanYu.github.io/zxy-ui/">
     <img src="./logo.svg" width="160" />
   </a>
   <h1>ZxyUI</h1>
   <p>A modern, highly customizable Vue3 component library</p>
   <p>
-    <a href="https://zxy-ui.github.io/zxy-ui/">Documentation</a> | 
-    <a href="https://zxy-ui.github.io/zxy-ui/storybook/">Storybook</a> | 
+    <a href="https://XingLuoHuanYu.github.io/zxy-ui/">Documentation</a> | 
+    <a href="https://XingLuoHuanYu.github.io/zxy-ui/storybook/">Storybook</a> | 
     <a href="./README.zh-CN.md">中文</a>
   </p>
   <p>
@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/badge/typescript-%5E5.0.0-%233178c6" alt="typescript">
     <img src="https://img.shields.io/badge/tailwindcss-v3.3.0-%2338bdf8" alt="tailwindcss">
     <img src="https://img.shields.io/npm/l/@zxy-ui/vue.svg" alt="license">
-    <img src="https://github.com/zxy-ui/zxy-ui/actions/workflows/test.yml/badge.svg" alt="tests">
+    <img src="https://github.com/XingLuoHuanYu/zxy-ui/actions/workflows/test.yml/badge.svg" alt="tests">
   </p>
 </div>
 
@@ -68,7 +68,7 @@ createApp(App).use(ZxyUI).mount('#app')
 
 ```vue
 <script setup lang="ts">
-import { VButton, VInput } from '@zxy-ui/vue'
+import { ZButton, ZInput } from '@zxy-ui/vue'
 import '@zxy-ui/vue/style'
 </script>
 
@@ -80,13 +80,13 @@ import '@zxy-ui/vue/style'
 
 ## 🔍 Online Documentation
 
-Check out our [online documentation](https://zxy-ui.github.io/zxy-ui/) for more detailed information on component usage, examples, and API references.
+Check out our [online documentation](https://XingLuoHuanYu.github.io/zxy-ui/) for more detailed information on component usage, examples, and API references.
 
 ## 💻 Local Development
 
 ```bash
 # Clone the repository
-git clone https://github.com/zxy-ui/zxy-ui.git
+git clone https://github.com/XingLuoHuanYu/zxy-ui.git
 
 # Install dependencies
 pnpm install
@@ -107,8 +107,8 @@ ZxyUI is licensed under the [MIT License](./LICENSE).
 
 ## 🔗 Related Links
 
-- [GitHub Repository](https://github.com/zxy-ui/zxy-ui)
-- [Issue Feedback](https://github.com/zxy-ui/zxy-ui/issues)
+- [GitHub Repository](https://github.com/XingLuoHuanYu/zxy-ui)
+- [Issue Feedback](https://github.com/XingLuoHuanYu/zxy-ui/issues)
 - [Changelog](./CHANGELOG.md)
 
 ## 🤝 Thanks to the Contributors for Their Efforts

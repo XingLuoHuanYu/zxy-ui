@@ -2,7 +2,7 @@
 
 Link 组件用于创建可点击的文本链接，支持多种样式变体、尺寸和图标位置，可用于导航或触发操作。
 
-<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-link-%E9%93%BE%E6%8E%A5--basic"/>
+<StorybookLink link="https://XingLuoHuanYu.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-link-%E9%93%BE%E6%8E%A5--basic"/>
 
 ## 引入
 

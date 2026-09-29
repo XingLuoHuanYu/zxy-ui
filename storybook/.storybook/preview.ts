@@ -14,7 +14,7 @@ const preview: Preview = {
     docs: {
       theme: {
         brandTitle: 'ZxyUI',
-        brandUrl: 'https://zxy-ui.github.io/zxy-ui/',
+        brandUrl: 'https://XingLuoHuanYu.github.io/zxy-ui/',
       },
     },
     // 设置默认视图模式

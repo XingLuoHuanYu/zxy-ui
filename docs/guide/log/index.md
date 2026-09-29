@@ -211,4 +211,4 @@
 
 - 查看完整的[组件文档](/components)
 - 了解[版本升级指南](/guide/migration)
-- 反馈[问题或建议](https://github.com/versakit/issues)
+- 反馈[问题或建议](https://github.com/XingLuoHuanYu/zxy-ui/issues)

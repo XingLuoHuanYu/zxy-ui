@@ -2,7 +2,7 @@
 
 TimePicker 时间选择器用于让用户选择特定的时间点，支持12小时制和24小时制，可自定义时间步长，提供小时、分钟和秒的精确选择。
 
-<StorybookLink link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-timepicker-%E6%97%B6%E9%97%B4%E9%80%89%E6%8B%A9%E5%99%A8--basic"/>
+<StorybookLink link="https://XingLuoHuanYu.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-timepicker-%E6%97%B6%E9%97%B4%E9%80%89%E6%8B%A9%E5%99%A8--basic"/>
 
 ## 引入
 

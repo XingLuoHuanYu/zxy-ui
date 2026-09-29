@@ -18,7 +18,7 @@ export const getNav = (): DefaultTheme.NavItem[] => {
       items: [
         {
           text: 'Playground',
-          link: 'https://zxy-ui.github.io/zxy-ui/playground/',
+          link: 'https://XingLuoHuanYu.github.io/zxy-ui/playground/',
         },
       ],
     },
