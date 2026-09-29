@@ -8,13 +8,13 @@ export default defineConfig({
   plugins: [tailwindcss(), vue()],
   resolve: {
     alias: {
-      '@versakit/vue/style': path.resolve(
+      '@zxy-ui/vue/style': path.resolve(
         __dirname,
-        '../packages/versakit-vue/src/style/index.css',
+        '../packages/zxy-ui-vue/src/style/index.css',
       ),
-      '@versakit/vue': path.resolve(
+      '@zxy-ui/vue': path.resolve(
         __dirname,
-        '../packages/versakit-vue/src/index.ts',
+        '../packages/zxy-ui-vue/src/index.ts',
       ),
     },
   },

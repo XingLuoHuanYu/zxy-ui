@@ -1,6 +1,6 @@
 # GitHub Actions 工作流说明
 
-本目录包含 Versakit-Vue 项目的 CI/CD 自动化工作流。
+本目录包含 ZxyUI 项目的 CI/CD 自动化工作流。
 
 ## 工作流列表
 

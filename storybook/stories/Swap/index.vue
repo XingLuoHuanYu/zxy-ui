@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Swap } from '@versakit/vue'
+import { Swap } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const isActive = ref(false)

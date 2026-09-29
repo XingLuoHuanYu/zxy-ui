@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Segmented } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Segmented } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 
 // 基础用法示例
 const basicValue = ref('选项1')

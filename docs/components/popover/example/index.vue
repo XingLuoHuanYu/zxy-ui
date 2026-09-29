@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 // 暂时不管导入错误，后面再解决
-import { Popover } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Popover } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 
 // 基础用法示例
 const isBasicOpen = ref(false)

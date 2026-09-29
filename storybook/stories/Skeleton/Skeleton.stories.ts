@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Skeleton, SkeletonText, SkeletonAvatar } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Skeleton, SkeletonText, SkeletonAvatar } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import SkeletonDemo from './index.vue'
 
 // 定义组件元数据

@@ -77,7 +77,7 @@ export type ButtonPT = {
 公共类型应放在共享包中：
 
 ```ts
-// @versakit/shared/src/types.ts
+// @zxy-ui/shared/src/types.ts
 export type Size = 'sm' | 'md' | 'lg' | 'xl'
 export type Variant = 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info'
 export type Status = 'idle' | 'loading' | 'success' | 'error'

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Skeleton, SkeletonText, SkeletonAvatar, Button } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Skeleton, SkeletonText, SkeletonAvatar, Button } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 
 const loading = ref(true)
 
@@ -150,7 +150,7 @@ const toggleLoading = () => {
             通过使用骨架屏，我们可以让用户在等待内容加载的过程中感知到页面的结构，减少用户的焦虑感。
           </p>
           <p>
-            Versakit提供了三种骨架屏组件：Skeleton、SkeletonText和SkeletonAvatar，可以根据不同的场景进行组合使用。
+            ZxyUI提供了三种骨架屏组件：Skeleton、SkeletonText和SkeletonAvatar，可以根据不同的场景进行组合使用。
           </p>
         </div>
       </Skeleton>

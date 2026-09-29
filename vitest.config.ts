@@ -12,12 +12,12 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html', 'lcov'],
-      include: ['packages/versakit-vue/src/**/*.{ts,tsx,vue}'],
+      include: ['packages/zxy-ui-vue/src/**/*.{ts,tsx,vue}'],
       exclude: [
-        'packages/versakit-vue/src/**/*.d.ts',
-        'packages/versakit-vue/src/**/index.ts',
-        'packages/versakit-vue/src/**/*.stories.ts',
-        'packages/versakit-vue/src/**/types.ts',
+        'packages/zxy-ui-vue/src/**/*.d.ts',
+        'packages/zxy-ui-vue/src/**/index.ts',
+        'packages/zxy-ui-vue/src/**/*.stories.ts',
+        'packages/zxy-ui-vue/src/**/types.ts',
       ],
       thresholds: {
         lines: 75,
@@ -30,7 +30,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(
-        new URL('./packages/versakit-vue/src', import.meta.url),
+        new URL('./packages/zxy-ui-vue/src', import.meta.url),
       ),
     },
   },

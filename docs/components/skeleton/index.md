@@ -2,13 +2,13 @@
 
 在内容加载过程中显示的占位符组件，提供更好的用户体验。
 
-<Link link="https://versakit.github.io/Versakit-Vue/storybook/?path=/story/组件-skeleton-骨架屏--basic"/>
+<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/组件-skeleton-骨架屏--basic"/>
 
 ## 引入
 
 ```typescript
 // 引入组件
-import { Skeleton, SkeletonText, SkeletonAvatar } from '@versakit/vue'
+import { Skeleton, SkeletonText, SkeletonAvatar } from '@zxy-ui/vue'
 ```
 
 ## 基本用法
@@ -19,7 +19,7 @@ Skeleton组件可以在数据加载时显示占位符，减少用户等待的焦
 
 ## 组件
 
-Versakit提供了三个骨架屏相关组件：
+ZxyUI提供了三个骨架屏相关组件：
 
 1. `Skeleton` - 基础骨架屏组件
 2. `SkeletonText` - 文本骨架屏组件

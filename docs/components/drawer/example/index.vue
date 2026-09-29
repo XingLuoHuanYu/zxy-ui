@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Drawer } from '@versakit/vue'
+import { Drawer } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 // 基础用法

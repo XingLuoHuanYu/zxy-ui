@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Link } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Link } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 </script>
 
 <template>

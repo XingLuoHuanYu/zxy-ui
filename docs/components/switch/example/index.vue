@@ -91,8 +91,8 @@
 </template>
 
 <script setup lang="ts">
-import { Switch } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Switch } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import { ref, computed } from 'vue'
 
 // 基础用法

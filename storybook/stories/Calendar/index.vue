@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Calendar } from '@versakit/vue'
+import { Calendar } from '@zxy-ui/vue'
 
 // 基础用法
 const selectedDate = ref(new Date())

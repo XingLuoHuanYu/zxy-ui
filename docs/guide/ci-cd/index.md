@@ -1,6 +1,6 @@
 # CI/CD 自动化测试
 
-Versakit-Vue 使用 GitHub Actions 实现持续集成和持续部署（CI/CD），确保代码质量和项目稳定性。
+ZxyUI 使用 GitHub Actions 实现持续集成和持续部署（CI/CD），确保代码质量和项目稳定性。
 
 ## 概述
 
@@ -118,10 +118,10 @@ pnpm test
 
 ```typescript
 // 组件位置
-packages/versakit-vue/src/components/MyComponent/index.vue
+packages/zxy-ui-vue/src/components/MyComponent/index.vue
 
 // 测试位置
-packages/versakit-vue/src/components/MyComponent/__tests__/MyComponent.test.ts
+packages/zxy-ui-vue/src/components/MyComponent/__tests__/MyComponent.test.ts
 ```
 
 ### 3. 测试命名规范
@@ -219,8 +219,8 @@ it('displays initial count of 0', () => {
    ```typescript
    coverage: {
      exclude: [
-       'packages/versakit-vue/src/**/*.d.ts',
-       'packages/versakit-vue/src/**/types.ts',
+       'packages/zxy-ui-vue/src/**/*.d.ts',
+       'packages/zxy-ui-vue/src/**/types.ts',
        // 添加其他排除项
      ]
    }

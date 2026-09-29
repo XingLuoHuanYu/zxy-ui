@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Textarea } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Textarea } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 
 // 定义组件元数据
 const meta: Meta<typeof Textarea> = {

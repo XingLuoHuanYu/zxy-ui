@@ -9,13 +9,13 @@
    - 克隆项目仓库到本地：
 
 ```bash
-git clone -b beta https://github.com/Versakit/Versakit.git
+git clone -b beta https://github.com/ZxyUI/ZxyUI.git
 ```
 
 - 进入项目目录并安装依赖：
 
 ```bash
-cd Versakit
+cd ZxyUI
 pnpm i
 pnpm i -w
 ```
@@ -86,14 +86,14 @@ pnpm test:ui
 ```bash
 ├── docs 文档
 ├── packages
-│   ├── versakit-cli            项目脚手架
-│   ├── versakit-dev            项目集成测试环境
-│   ├── versakit-icons          项目图标库
-│   ├── versakit-shared         项目共享工具包
-│   ├── versakit-theme          主题包
-│   ├── versakit-ui     		  项目组件库
-│   ├── versakit-directives     项目指令库
-│   └── versakit-resolvers      按需引入的组件库
+│   ├── zxy-ui-cli            项目脚手架
+│   ├── zxy-ui-dev            项目集成测试环境
+│   ├── zxy-ui-icons          项目图标库
+│   ├── zxy-ui-shared         项目共享工具包
+│   ├── zxy-ui-theme          主题包
+│   ├── zxy-ui-ui     		  项目组件库
+│   ├── zxy-ui-directives     项目指令库
+│   └── zxy-ui-resolvers      按需引入的组件库
 
 ```
 

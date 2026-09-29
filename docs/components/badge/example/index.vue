@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Badge } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Badge } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 </script>
 
 <template>

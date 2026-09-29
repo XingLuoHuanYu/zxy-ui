@@ -2,12 +2,12 @@
 
 Calendar 日历组件用于展示日期并允许用户进行日期选择，支持月份导航、日期范围限制和多种自定义选项。
 
-<Link link="https://versakit.github.io/Versakit-Vue/storybook/?path=/story/%E7%BB%84%E4%BB%B6-calendar-%E6%97%A5%E5%8E%86--basic"/>
+<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-calendar-%E6%97%A5%E5%8E%86--basic"/>
 
 ## 引入
 
 ```typescript
-import { Calendar } from '@versakit/vue'
+import { Calendar } from '@zxy-ui/vue'
 ```
 
 ## 使用

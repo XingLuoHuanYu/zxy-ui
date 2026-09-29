@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Avatar } from '@versakit/vue'
+import { Avatar } from '@zxy-ui/vue'
 </script>
 
 <template>

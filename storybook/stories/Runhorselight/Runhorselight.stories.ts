@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Runhorselight } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Runhorselight } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import RunhorselightDemo from './index.vue'
 
 // 定义组件元数据
@@ -138,7 +138,7 @@ type Story = StoryObj<typeof Runhorselight>
 
 // 示例数据
 const sampleTexts = [
-  '欢迎使用 Versakit 组件库',
+  '欢迎使用 ZxyUI 组件库',
   '这是一个功能强大的 Vue 3 组件库',
   '支持 TypeScript 和 Tailwind CSS',
   '提供完整的无障碍访问支持',

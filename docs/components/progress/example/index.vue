@@ -148,7 +148,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Progress } from '@versakit/vue'
+import { Progress } from '@zxy-ui/vue'
 
 const dynamicValue = ref(0)
 const isProgressing = ref(false)

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Table } from '@versakit/vue'
+import { Table } from '@zxy-ui/vue'
 import { computed, ref } from 'vue'
 
 interface TableColumn {

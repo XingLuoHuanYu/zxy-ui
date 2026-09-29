@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Tabs } from '@versakit/vue'
+import { Tabs } from '@zxy-ui/vue'
 
 const defaultItems = [
   {

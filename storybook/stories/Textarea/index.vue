@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Textarea } from '@versakit/vue'
+import { Textarea } from '@zxy-ui/vue'
 
 const basicValue = ref('')
 const maxLengthValue = ref('')

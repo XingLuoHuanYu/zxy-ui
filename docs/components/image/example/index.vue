@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Image } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Image } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 
 const isZoomed = ref(false)
 const toggleZoom = () => {

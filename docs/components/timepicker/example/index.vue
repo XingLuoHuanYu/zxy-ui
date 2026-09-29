@@ -93,7 +93,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { TimePicker } from '@versakit/vue'
+import { TimePicker } from '@zxy-ui/vue'
 
 // 基础用法
 const selectedTime = ref('12:30')

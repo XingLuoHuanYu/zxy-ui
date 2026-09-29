@@ -259,5 +259,5 @@
 </template>
 
 <script setup lang="ts">
-import { Card } from '@versakit/vue'
+import { Card } from '@zxy-ui/vue'
 </script>

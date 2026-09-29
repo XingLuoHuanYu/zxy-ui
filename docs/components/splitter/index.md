@@ -2,12 +2,12 @@
 
 Splitter 组件用于创建可调整大小的分割面板，允许用户通过拖动分隔条来重新分配面板空间，适用于需要灵活布局的界面，如代码编辑器、文件管理器等。
 
-<Link link="https://versakit.github.io/Versakit-Vue/storybook/?path=/story/%E7%BB%84%E4%BB%B6-splitter-%E5%88%86%E5%89%B2%E9%9D%A2%E6%9D%BF--basic"/>
+<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-splitter-%E5%88%86%E5%89%B2%E9%9D%A2%E6%9D%BF--basic"/>
 
 ## 引入
 
 ```typescript
-import { Splitter } from '@versakit/vue'
+import { Splitter } from '@zxy-ui/vue'
 ```
 
 ## 使用

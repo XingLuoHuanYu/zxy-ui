@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Splitter, SplitterPanel } from '@versakit/vue'
+import { Splitter, SplitterPanel } from '@zxy-ui/vue'
 </script>
 
 <template>

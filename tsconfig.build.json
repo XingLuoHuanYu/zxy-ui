@@ -1,8 +1,8 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": [
-    "packages/versakit-ui/index.ts",
-    "packages/versakit-ui/components/**/*"
+    "packages/zxy-ui-vue/index.ts",
+    "packages/zxy-ui-vue/components/**/*"
   ],
   "compilerOptions": {
     "baseUrl": ".",

@@ -102,7 +102,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { DatePicker } from '@versakit/vue'
+import { DatePicker } from '@zxy-ui/vue'
 
 // 基础用法
 const selectedDate = ref(new Date())

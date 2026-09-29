@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Switch } from '@versakit/vue'
+import { Switch } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const value1 = ref(false)

@@ -2,12 +2,12 @@
 
 Runhorselight 是一个无限循环滚动的跑马灯组件，支持文本、图片、卡片等多种内容类型。它可以用于展示公告、广告、合作伙伴 Logo、图片轮播等场景，并提供多种自定义选项和流畅的动画效果。
 
-<Link link="https://versakit.github.io/Versakit-Vue/storybook/?path=/story/components-runhorselight--basic"/>
+<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/components-runhorselight--basic"/>
 
 ## 引入
 
 ```typescript
-import { Runhorselight } from '@versakit/vue'
+import { Runhorselight } from '@zxy-ui/vue'
 ```
 
 ## 使用

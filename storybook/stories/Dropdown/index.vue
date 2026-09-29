@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Dropdown, Button, DropdownItem } from '@versakit/vue'
+import { Dropdown, Button, DropdownItem } from '@zxy-ui/vue'
 
 const selectedValue = ref(null)
 

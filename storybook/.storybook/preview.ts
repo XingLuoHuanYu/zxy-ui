@@ -13,8 +13,8 @@ const preview: Preview = {
     // 设置文档主题（可选）
     docs: {
       theme: {
-        brandTitle: 'Versakit UI',
-        brandUrl: 'https://versakit.github.io/Versakit/',
+        brandTitle: 'ZxyUI',
+        brandUrl: 'https://zxy-ui.github.io/zxy-ui/',
       },
     },
     // 设置默认视图模式
@@ -32,7 +32,7 @@ const preview: Preview = {
   decorators: [
     (story) => ({
       components: { story },
-      template: '<div class="versakit-theme min-h-screen p-4"><story /></div>',
+      template: '<div class="zxy-ui-theme min-h-screen p-4"><story /></div>',
     }),
   ],
 }

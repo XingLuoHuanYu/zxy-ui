@@ -300,7 +300,7 @@ console.log(greeting);</pre
 </template>
 
 <script setup lang="ts">
-import { Accordion, AccordionItem } from '@versakit/vue'
+import { Accordion, AccordionItem } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 // 默认展开状态

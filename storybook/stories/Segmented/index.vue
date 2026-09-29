@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Segmented } from '@versakit/vue'
+import { Segmented } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const value1 = ref('daily')

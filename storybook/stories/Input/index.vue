@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Input } from '@versakit/vue'
+import { Input } from '@zxy-ui/vue'
 
 const inputValue = ref('')
 const passwordValue = ref('')

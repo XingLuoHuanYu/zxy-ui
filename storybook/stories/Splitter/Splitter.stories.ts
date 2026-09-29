@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Splitter, SplitterPanel } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Splitter, SplitterPanel } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import SplitterDemo from './index.vue'
 
 // 定义组件元数据

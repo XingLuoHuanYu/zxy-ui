@@ -2,12 +2,12 @@
 
 Panel 是一个可折叠的内容容器组件，用于组织和展示信息，支持多种样式变体和自定义配置。它可以有效地节省页面空间，提高用户体验，常用于分组展示相关内容、FAQ、设置面板等场景。
 
-<Link link="https://versakit.github.io/Versakit-Vue/storybook/?path=/story/%E7%BB%84%E4%BB%B6-panel-%E9%9D%A2%E6%9D%BF--basic"/>
+<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-panel-%E9%9D%A2%E6%9D%BF--basic"/>
 
 ## 引入
 
 ```typescript
-import { Panel } from '@versakit/vue'
+import { Panel } from '@zxy-ui/vue'
 ```
 
 ## 使用

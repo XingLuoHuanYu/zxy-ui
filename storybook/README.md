@@ -1,6 +1,6 @@
-# Versakit UI 组件文档
+# ZxyUI 组件文档
 
-这是使用 Storybook 构建的 Versakit UI 组件文档系统。
+这是使用 Storybook 构建的 ZxyUI 组件文档系统。
 
 ## 开始使用
 
@@ -37,7 +37,7 @@ pnpm build-storybook
 ```typescript
 // MyComponent.stories.ts
 import type { Meta, StoryObj } from '@storybook/vue3'
-import { MyComponent } from '@versakit/composables'
+import { MyComponent } from '@zxy-ui/vue'
 
 const meta: Meta<typeof MyComponent> = {
 	title: 'Components/MyComponent',

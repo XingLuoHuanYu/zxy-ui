@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Slider } from '@versakit/vue'
+import { Slider } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const value1 = ref(50)

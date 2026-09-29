@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Accordion, AccordionItem } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Accordion, AccordionItem } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import AccordionDemo from './index.vue'
 
 // 定义组件元数据

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { InputOtp } from '@versakit/vue'
+import { InputOtp } from '@zxy-ui/vue'
 </script>
 
 <template>

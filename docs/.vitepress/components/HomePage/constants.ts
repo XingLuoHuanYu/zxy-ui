@@ -30,42 +30,42 @@ export const featuredComponents: ComponentItem[] = [
   {
     name: 'Button',
     description: '按钮组件',
-    path: '/Versakit-Vue/components/button/',
+    path: '/zxy-ui/components/button/',
   },
   {
     name: 'Input',
     description: '输入框组件',
-    path: '/Versakit-Vue/components/input/',
+    path: '/zxy-ui/components/input/',
   },
   {
     name: 'Card',
     description: '卡片组件',
-    path: '/Versakit-Vue/components/card/',
+    path: '/zxy-ui/components/card/',
   },
   {
     name: 'Modal',
     description: '模态框组件',
-    path: '/Versakit-Vue/components/modal/',
+    path: '/zxy-ui/components/modal/',
   },
   {
     name: 'Dropdown',
     description: '下拉菜单组件',
-    path: '/Versakit-Vue/components/dropdown/',
+    path: '/zxy-ui/components/dropdown/',
   },
   {
     name: 'Tabs',
     description: '标签页组件',
-    path: '/Versakit-Vue/components/tabs/',
+    path: '/zxy-ui/components/tabs/',
   },
   {
     name: 'Progress',
     description: '进度条组件',
-    path: '/Versakit-Vue/components/progress/',
+    path: '/zxy-ui/components/progress/',
   },
   {
     name: 'Alert',
     description: '警告提示组件',
-    path: '/Versakit-Vue/components/alert/',
+    path: '/zxy-ui/components/alert/',
   },
 ]
 

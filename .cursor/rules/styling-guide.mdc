@@ -7,7 +7,7 @@ alwaysApply: true
 
 ## 样式系统概述
 
-Versakit使用Tailwind CSS和tailwind-variants来构建可定制的组件样式系统，支持以下特性:
+ZxyUI使用Tailwind CSS和tailwind-variants来构建可定制的组件样式系统，支持以下特性:
 
 - 主题定制
 - 暗黑模式

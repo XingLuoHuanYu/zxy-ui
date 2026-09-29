@@ -16,10 +16,9 @@ export const getNav = (): DefaultTheme.NavItem[] => {
     {
       text: '生态',
       items: [
-        { text: 'Pilot', link: 'https://versakit.github.io/Pilot/' },
         {
           text: 'Playground',
-          link: 'https://versakit.github.io/Versakit-Vue/playground/',
+          link: 'https://zxy-ui.github.io/zxy-ui/playground/',
         },
       ],
     },

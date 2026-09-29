@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Tabs, TabItem } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Tabs, TabItem } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import { ref } from 'vue'
 
 // 控制当前激活的标签页

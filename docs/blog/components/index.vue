@@ -7,7 +7,7 @@ const posts = ref([
     description:
       '为什么要做「又一个组件库」？ 前端领域常被戏称为「娱乐圈」——每天都有新框架、新工具涌现。我们曾困惑：这真的是在推动技术进步吗？直到亲身开发组件库后我们才理解：每一次技术探索都是对工程本质的回归...',
     date: '2025-01-29',
-    slug: '/Versakit-Vue/blog/docs/01.html',
+    slug: '/zxy-ui/blog/docs/01.html',
     author: {
       name: 'JustHappy',
       avatar:
@@ -24,7 +24,7 @@ const posts = ref([
       <div class="header-content">
         <h1>最新动态</h1>
         <br />
-        <p>发现 Versakit 的最新动态、技术文章和使用教程</p>
+        <p>发现 ZxyUI 的最新动态、技术文章和使用教程</p>
       </div>
     </div>
 

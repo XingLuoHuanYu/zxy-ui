@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "vue": "^3.5.25",
-    "@versakit/vue": "workspace:*",
-    "@versakit/directives": "workspace:*",
+    "@zxy-ui/vue": "workspace:*",
+    "@zxy-ui/directives": "workspace:*",
     "tailwindcss": "^4.1.8",
     "@tailwindcss/vite": "^4.1.8"
   },

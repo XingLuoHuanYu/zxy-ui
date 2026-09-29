@@ -5,8 +5,8 @@
     "types": ["vite/client"],
     "baseUrl": ".",
     "paths": {
-      "@versakit/vue": ["../packages/versakit-vue/src/index.ts"],
-      "@versakit/vue/*": ["../packages/versakit-vue/src/*"]
+      "@zxy-ui/vue": ["../packages/zxy-ui-vue/src/index.ts"],
+      "@zxy-ui/vue/*": ["../packages/zxy-ui-vue/src/*"]
     },
 
     /* Linting */

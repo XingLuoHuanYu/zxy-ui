@@ -1,5 +1,5 @@
 ---
-'@versakit/directives': major
+'@zxy-ui/directives': major
 ---
 
-init @versakit/directives
+init @zxy-ui/directives

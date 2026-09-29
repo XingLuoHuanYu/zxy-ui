@@ -8,13 +8,13 @@ const { importMap: builtinImportMap } = useVueImportMap({
     'https://cdn.jsdelivr.net/npm/@vue/runtime-dom@3.5.25/dist/runtime-dom.esm-browser.js',
 })
 
-const localVersakitUrl = './versakit-vue-dist/esm/index.esm.js'
-const localVersakitStyle = './versakit-vue-dist/esm/vue.css'
+const localZxyUIUrl = './zxy-ui-vue-dist/esm/index.esm.js'
+const localZxyUIStyle = './zxy-ui-vue-dist/esm/vue.css'
 
 const importMap = ref<ImportMap>({
   imports: {
     ...builtinImportMap.value.imports,
-    '@versakit/vue': localVersakitUrl,
+    '@zxy-ui/vue': localZxyUIUrl,
   },
 })
 
@@ -66,7 +66,7 @@ onMounted(() => {
 
 const previewOptions = {
   headHTML: `
-    <link rel="stylesheet" href="${localVersakitStyle}">
+    <link rel="stylesheet" href="${localZxyUIStyle}">
     <script src="https://cdn.tailwindcss.com"><\/script>
     <script>
       tailwind.config = {
@@ -99,12 +99,12 @@ const store = useStore({
 
 const initialCode = `
 <script setup>
-import { Button } from '@versakit/vue'
+import { Button } from '@zxy-ui/vue'
 <\/script>
 
 <template>
   <div class="p-5">
-    <h1 class="text-2xl font-bold mb-4">Versakit Vue Playground</h1>
+    <h1 class="text-2xl font-bold mb-4">ZxyUI Vue Playground</h1>
     <Button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
       Hello Tailwind
     </Button>
@@ -125,7 +125,7 @@ store.setFiles({
 <template>
   <div class="sandbox-container" :class="{ dark: isDark }">
     <div class="header">
-      <div class="title">Versakit Playground</div>
+      <div class="title">ZxyUI Playground</div>
       <button class="theme-toggle" @click="toggleTheme">
         {{ isDark ? '🌞' : '🌙' }}
       </button>

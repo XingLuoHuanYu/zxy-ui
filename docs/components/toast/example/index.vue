@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Toast } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Toast } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 
 const showSuccess = () => {
   Toast.success('保存成功')

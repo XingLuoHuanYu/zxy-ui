@@ -11,6 +11,6 @@
 </template>
 
 <script setup lang="ts">
-import { Dropdown, DropdownItem } from '@versakit/vue'
-import { Button } from '@versakit/vue'
+import { Dropdown, DropdownItem } from '@zxy-ui/vue'
+import { Button } from '@zxy-ui/vue'
 </script>

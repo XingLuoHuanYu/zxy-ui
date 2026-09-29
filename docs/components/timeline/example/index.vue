@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Timeline, TimelineItem } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Timeline, TimelineItem } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import { ref } from 'vue'
 
 // 检测当前主题模式

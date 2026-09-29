@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Breadcrumb, BreadcrumbItem } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Breadcrumb, BreadcrumbItem } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import { h } from 'vue'
 
 // 自定义图标组件代替第三方包

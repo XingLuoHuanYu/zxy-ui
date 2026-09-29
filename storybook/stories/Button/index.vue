@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Button } from '@versakit/vue'
+import { Button } from '@zxy-ui/vue'
 </script>
 
 <template>

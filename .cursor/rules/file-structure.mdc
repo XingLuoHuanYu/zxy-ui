@@ -7,18 +7,18 @@ alwaysApply: true
 
 ## 项目结构
 
-Versakit 项目采用monorepo结构，主要包含以下包:
+ZxyUI 项目采用monorepo结构，主要包含以下包:
 
 ```
-Versakit-Vue/
+ZxyUI/
 ├── packages/
-│   ├── versakit-vue/      # 主组件库
+│   ├── zxy-ui-vue/      # 主组件库
 │   │   ├── src/
 │   │   │   ├── components/ # 所有组件
 │   │   │   ├── style/     # 全局样式
 │   │   │   └── index.ts   # 入口文件
 │   │   └── package.json
-│   └── versakit-shared/   # 共享工具库
+│   └── zxy-ui-shared/   # 共享工具库
 ├── docs/                  # 文档站点
 └── storybook/             # Storybook示例
 ```
@@ -57,7 +57,7 @@ import { buttonStyle } from './src/index.variants'
 import type { ButtonProps } from './src/type'
 
 // 导入其他组件或工具
-import { withInstall } from '@versakit/shared'
+import { withInstall } from '@zxy-ui/shared'
 ```
 
 ## 导出规范
@@ -66,7 +66,7 @@ import { withInstall } from '@versakit/shared'
 
 ```ts
 // index.ts
-import { withInstall } from '@versakit/shared'
+import { withInstall } from '@zxy-ui/shared'
 import _Button from './src/index.vue'
 
 export const Button = withInstall(_Button)

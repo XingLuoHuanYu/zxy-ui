@@ -303,7 +303,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Chip } from '@versakit/vue'
+import { Chip } from '@zxy-ui/vue'
 
 const selected1 = ref(false)
 const selected2 = ref(true)

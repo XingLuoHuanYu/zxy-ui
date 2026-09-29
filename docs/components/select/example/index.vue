@@ -202,7 +202,7 @@
 </template>
 
 <script setup>
-import { Select } from '@versakit/vue'
+import { Select } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 // 基础示例

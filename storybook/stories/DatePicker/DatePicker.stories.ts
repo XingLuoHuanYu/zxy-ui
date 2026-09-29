@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { DatePicker } from '@versakit/vue'
-import '@versakit/vue/style'
+import { DatePicker } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import DatePickerDemo from './index.vue'
 
 // 定义组件元数据

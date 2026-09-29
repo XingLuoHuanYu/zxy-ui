@@ -187,7 +187,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { InputTag } from '@versakit/vue'
+import { InputTag } from '@zxy-ui/vue'
 
 // 基础用法
 const tagValue = ref<string[]>([])

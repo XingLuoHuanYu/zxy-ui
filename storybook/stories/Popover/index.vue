@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Popover, Button } from '@versakit/vue'
+import { Popover, Button } from '@zxy-ui/vue'
 </script>
 
 <template>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Avatar } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Avatar } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 
 const imageError = ref(false)
 const toggleError = () => {

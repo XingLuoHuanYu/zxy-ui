@@ -1,21 +1,21 @@
 # 快速开始
 
-本节将介绍如何在项目中快速集成和使用 Versakit组件库。
+本节将介绍如何在项目中快速集成和使用 ZxyUI组件库。
 
 ## 完整引入
 
-在应用入口文件中导入 Versakit：
+在应用入口文件中导入 ZxyUI：
 
 ```javascript
 // main.ts
 import { createApp } from 'vue'
 import App from './App.vue'
-import { Versakit } from '@versakit/vue' // 引入组件库
-import '@versakit/ui/style' // 引入样式
+import { ZxyUI } from '@zxy-ui/vue' // 引入组件库
+import '@zxy-ui/vue/style' // 引入样式
 
 const app = createApp(App)
 
-app.use(Versakit)
+app.use(ZxyUI)
 app.mount('#app')
 ```
 
@@ -26,7 +26,7 @@ app.mount('#app')
 首先需要安装自动导入相关插件：
 
 ```shell
-npm install -D unplugin-vue-components unplugin-auto-import @versakit/resolvers
+npm install -D unplugin-vue-components unplugin-auto-import @zxy-ui/resolvers
 ```
 
 ### Vite 配置
@@ -38,15 +38,15 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import { VersakitResolver } from '@versakit/resolvers'
+import { ZxyUIResolver } from '@zxy-ui/resolvers'
 export default defineConfig({
 	plugins: [
 		vue(),
 		AutoImport({
-			resolvers: [VersakitResolver()],
+			resolvers: [ZxyUIResolver()],
 		}),
 		Components({
-			resolvers: [VersakitResolver()],
+			resolvers: [ZxyUIResolver()],
 		}),
 	],
 })

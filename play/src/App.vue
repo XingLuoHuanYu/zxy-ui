@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Runhorselight, Table } from '@versakit/vue'
+import { Runhorselight, Table } from '@zxy-ui/vue'
 import { computed, ref } from 'vue'
 
 interface TableColumn {
@@ -35,7 +35,7 @@ const rows = ref([
 ])
 
 const runhorselightItems = ref([
-  '最新公告：Versakit 组件库已支持跑马灯组件，再次欢迎大家使用。',
+  '最新公告：ZxyUI 组件库已支持跑马灯组件，再次欢迎大家使用。',
   '更多内容请关注我们的文档更新，跑马灯是信息展示的好方式。',
   {
     type: 'image',

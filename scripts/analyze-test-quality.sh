@@ -11,8 +11,8 @@ echo ""
 
 # 1. 统计测试文件数量
 echo "📊 测试文件统计："
-TEST_FILES=$(find packages/versakit-vue/src/components -name "*.test.ts" | wc -l | tr -d ' ')
-COMPONENT_DIRS=$(find packages/versakit-vue/src/components -maxdepth 1 -type d | tail -n +2 | wc -l | tr -d ' ')
+TEST_FILES=$(find packages/zxy-ui-vue/src/components -name "*.test.ts" | wc -l | tr -d ' ')
+COMPONENT_DIRS=$(find packages/zxy-ui-vue/src/components -maxdepth 1 -type d | tail -n +2 | wc -l | tr -d ' ')
 echo "  - 组件目录数: $COMPONENT_DIRS"
 echo "  - 测试文件数: $TEST_FILES"
 echo "  - 测试覆盖率: $(echo "scale=1; $TEST_FILES * 100 / $COMPONENT_DIRS" | bc)%"
@@ -20,14 +20,14 @@ echo ""
 
 # 2. 分析测试用例数量
 echo "📝 测试用例统计："
-TOTAL_TESTS=$(grep -r "it(" packages/versakit-vue/src/components/**/__tests__/*.test.ts 2>/dev/null | wc -l | tr -d ' ')
+TOTAL_TESTS=$(grep -r "it(" packages/zxy-ui-vue/src/components/**/__tests__/*.test.ts 2>/dev/null | wc -l | tr -d ' ')
 echo "  - 总测试用例数: $TOTAL_TESTS"
 echo "  - 平均每个文件: $(echo "scale=1; $TOTAL_TESTS / $TEST_FILES" | bc) 个测试"
 echo ""
 
 # 3. 检查弱断言
 echo "⚠️  弱断言检查："
-WEAK_ASSERTIONS=$(grep -r "expect(wrapper.exists()).toBe(true)" packages/versakit-vue/src/components/**/__tests__/*.test.ts 2>/dev/null | wc -l | tr -d ' ')
+WEAK_ASSERTIONS=$(grep -r "expect(wrapper.exists()).toBe(true)" packages/zxy-ui-vue/src/components/**/__tests__/*.test.ts 2>/dev/null | wc -l | tr -d ' ')
 echo "  - 发现 $WEAK_ASSERTIONS 个 'wrapper.exists()' 断言"
 if [ "$WEAK_ASSERTIONS" -gt 0 ]; then
   echo "  💡 建议: 使用更具体的断言来验证实际行为"
@@ -36,7 +36,7 @@ echo ""
 
 # 4. 检查测试描述质量
 echo "📖 测试描述质量："
-GENERIC_NAMES=$(grep -r "it('test" packages/versakit-vue/src/components/**/__tests__/*.test.ts 2>/dev/null | wc -l | tr -d ' ')
+GENERIC_NAMES=$(grep -r "it('test" packages/zxy-ui-vue/src/components/**/__tests__/*.test.ts 2>/dev/null | wc -l | tr -d ' ')
 if [ "$GENERIC_NAMES" -gt 0 ]; then
   echo "  ⚠️  发现 $GENERIC_NAMES 个通用测试名称 (如 'test 1')"
   echo "  💡 建议: 使用描述性的测试名称"
@@ -47,8 +47,8 @@ echo ""
 
 # 5. 检查是否有 skip 或 only
 echo "🔍 测试执行检查："
-SKIPPED=$(grep -r "it.skip\|describe.skip" packages/versakit-vue/src/components/**/__tests__/*.test.ts 2>/dev/null | wc -l | tr -d ' ')
-ONLY=$(grep -r "it.only\|describe.only" packages/versakit-vue/src/components/**/__tests__/*.test.ts 2>/dev/null | wc -l | tr -d ' ')
+SKIPPED=$(grep -r "it.skip\|describe.skip" packages/zxy-ui-vue/src/components/**/__tests__/*.test.ts 2>/dev/null | wc -l | tr -d ' ')
+ONLY=$(grep -r "it.only\|describe.only" packages/zxy-ui-vue/src/components/**/__tests__/*.test.ts 2>/dev/null | wc -l | tr -d ' ')
 
 if [ "$SKIPPED" -gt 0 ]; then
   echo "  ⚠️  发现 $SKIPPED 个被跳过的测试"

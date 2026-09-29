@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { TimeSelect } from '@versakit/vue'
+import { TimeSelect } from '@zxy-ui/vue'
 
 // 基础用法
 const selectedTime = ref('12:30')

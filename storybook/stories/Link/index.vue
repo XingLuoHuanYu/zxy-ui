@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Link } from '@versakit/vue'
+import { Link } from '@zxy-ui/vue'
 </script>
 
 <template>

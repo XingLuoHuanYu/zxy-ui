@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Link } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Link } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import LinkDemo from './index.vue'
 
 // 定义组件元数据

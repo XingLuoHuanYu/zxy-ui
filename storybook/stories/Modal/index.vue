@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Modal, Button } from '@versakit/vue'
+import { Modal, Button } from '@zxy-ui/vue'
 
 const basicModalOpen = ref(false)
 const sizeModalOpen = ref(false)

@@ -71,9 +71,26 @@
         </Button>
       </div>
     </section>
+
+    <!-- 全局注册用法（ZxyUI 前缀） -->
+    <section>
+      <h3 class="text-lg font-medium mb-4">
+        全局注册用法 <span class="text-sm text-gray-500">（z- 前缀）</span>
+      </h3>
+      <p class="text-sm text-gray-500 mb-4">
+        执行 <code>app.use(ZxyUI)</code> 后，组件已全局注册，
+        无需 import 即可直接使用 <code>&lt;z-button&gt;</code> 标签：
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <z-button>默认按钮</z-button>
+        <z-button variant="success">成功按钮</z-button>
+        <z-button variant="danger">危险按钮</z-button>
+        <z-button variant="outline">描边按钮</z-button>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup lang="ts">
-import { Button } from '@versakit/vue'
+import { Button } from '@zxy-ui/vue'
 </script>

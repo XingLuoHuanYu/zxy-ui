@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Drawer } from '@versakit/vue'
+import { Drawer } from '@zxy-ui/vue'
 
 const basic = ref(false)
 const leftDrawer = ref(false)

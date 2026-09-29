@@ -2,12 +2,12 @@
 
 Dropdown 是一个可以显示临时弹出菜单的组件，用户可以从中选择一个选项。适用于菜单、操作集合等场景。
 
-<Link link="https://versakit.github.io/Versakit-Vue/storybook/?path=/story/%E7%BB%84%E4%BB%B6-dropdown-%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95--basic"/>
+<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-dropdown-%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95--basic"/>
 
 ## 引入
 
 ```typescript
-import { Dropdown, DropdownItem } from '@versakit/vue'
+import { Dropdown, DropdownItem } from '@zxy-ui/vue'
 ```
 
 ## 使用

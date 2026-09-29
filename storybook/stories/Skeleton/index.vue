@@ -191,7 +191,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Skeleton, SkeletonText, SkeletonAvatar } from '@versakit/vue'
+import { Skeleton, SkeletonText, SkeletonAvatar } from '@zxy-ui/vue'
 
 const loading = ref(true)
 </script>

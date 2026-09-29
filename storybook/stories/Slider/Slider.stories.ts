@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
-import { Slider } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Slider } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import SliderDemo from './index.vue'
 
 // 定义组件元数据

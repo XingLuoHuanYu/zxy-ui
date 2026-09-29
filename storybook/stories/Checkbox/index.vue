@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Checkbox } from '@versakit/vue'
+import { Checkbox } from '@zxy-ui/vue'
 
 const checked1 = ref(false)
 const checked2 = ref(true)

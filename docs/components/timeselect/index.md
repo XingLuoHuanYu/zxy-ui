@@ -2,12 +2,12 @@
 
 TimeSelect 时间选择器用于从预定义的时间列表中选择时间，适用于需要限制用户只能选择特定时间点的场景。
 
-<Link link="https://versakit.github.io/Versakit-Vue/storybook/?path=/story/%E7%BB%84%E4%BB%B6-timeselect-%E6%97%B6%E9%97%B4%E9%80%89%E6%8B%A9--basic"/>
+<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-timeselect-%E6%97%B6%E9%97%B4%E9%80%89%E6%8B%A9--basic"/>
 
 ## 引入
 
 ```typescript
-import { TimeSelect } from '@versakit/vue'
+import { TimeSelect } from '@zxy-ui/vue'
 ```
 
 ## 使用

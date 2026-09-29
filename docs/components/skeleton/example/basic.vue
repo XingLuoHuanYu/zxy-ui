@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Skeleton } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Skeleton } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 </script>
 
 <template>

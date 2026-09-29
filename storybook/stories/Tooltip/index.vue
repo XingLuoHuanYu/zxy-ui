@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Tooltip, Button } from '@versakit/vue'
+import { Tooltip, Button } from '@zxy-ui/vue'
 </script>
 
 <template>

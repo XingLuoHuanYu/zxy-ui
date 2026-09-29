@@ -82,7 +82,7 @@
 
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
-import { Checkbox } from '@versakit/vue'
+import { Checkbox } from '@zxy-ui/vue'
 // 基础用法
 const checked1 = ref(true)
 

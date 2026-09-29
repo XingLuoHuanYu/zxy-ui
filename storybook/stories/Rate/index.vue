@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Rate } from '@versakit/vue'
+import { Rate } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const value = ref(3)

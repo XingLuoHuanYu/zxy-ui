@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // 直接从包根目录导入
-import { Tooltip } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Tooltip } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 
 // 示例数据
 const longText =

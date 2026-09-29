@@ -98,5 +98,5 @@
 </template>
 
 <script setup lang="ts">
-import { Panel } from '@versakit/vue'
+import { Panel } from '@zxy-ui/vue'
 </script>

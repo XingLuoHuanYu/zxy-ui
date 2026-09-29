@@ -2,12 +2,12 @@
 
 RangeCalendar 组件用于选择日期范围，提供直观的日历界面，支持选择开始日期和结束日期，适用于预订系统、报表筛选等场景。
 
-<Link link="https://versakit.github.io/Versakit-Vue/storybook/?path=/story/%E7%BB%84%E4%BB%B6-rangecalendar-%E6%97%A5%E6%9C%9F%E8%8C%83%E5%9B%B4%E9%80%89%E6%8B%A9%E5%99%A8--basic"/>
+<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-rangecalendar-%E6%97%A5%E6%9C%9F%E8%8C%83%E5%9B%B4%E9%80%89%E6%8B%A9%E5%99%A8--basic"/>
 
 ## 引入
 
 ```typescript
-import { RangeCalendar } from '@versakit/vue'
+import { RangeCalendar } from '@zxy-ui/vue'
 ```
 
 ## 使用

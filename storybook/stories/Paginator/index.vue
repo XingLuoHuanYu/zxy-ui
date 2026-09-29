@@ -188,7 +188,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Paginator } from '@versakit/vue'
+import { Paginator } from '@zxy-ui/vue'
 
 const currentPage = ref(1)
 </script>

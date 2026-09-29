@@ -2,12 +2,12 @@
 
 手风琴组件是一种可折叠的内容面板，用于在有限的空间内组织和展示大量信息，提高用户体验和界面整洁度。
 
-<Link link="https://versakit.github.io/Versakit-Vue/storybook/?path=/story/%E7%BB%84%E4%BB%B6-accordion-%E6%89%8B%E9%A3%8E%E7%90%B4--basic"/>
+<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/%E7%BB%84%E4%BB%B6-accordion-%E6%89%8B%E9%A3%8E%E7%90%B4--basic"/>
 
 ## 引入
 
 ```typescript
-import { Accordion, AccordionItem } from '@versakit/vue'
+import { Accordion, AccordionItem } from '@zxy-ui/vue'
 ```
 
 ## 使用

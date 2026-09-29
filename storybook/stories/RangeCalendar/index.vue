@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RangeCalendar } from '@versakit/vue'
+import { RangeCalendar } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 const today = new Date()

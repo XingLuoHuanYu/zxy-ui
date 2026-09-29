@@ -2,12 +2,12 @@
 
 面包屑导航用于显示当前页面在网站层级结构中的位置，并提供返回各级的导航能力。
 
-<Link link="https://versakit.github.io/Versakit-Vue/storybook/?path=/story/navigation-breadcrumb--default"/>
+<Link link="https://zxy-ui.github.io/zxy-ui/storybook/?path=/story/navigation-breadcrumb--default"/>
 
 ## 引入
 
 ```typescript
-import { Breadcrumb, BreadcrumbItem } from '@versakit/vue'
+import { Breadcrumb, BreadcrumbItem } from '@zxy-ui/vue'
 ```
 
 ## 使用

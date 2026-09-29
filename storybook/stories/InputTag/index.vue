@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { InputTag } from '@versakit/vue'
+import { InputTag } from '@zxy-ui/vue'
 
 const tagValue1 = ref(['标签一', '标签二', '标签三'])
 const tagValue2 = ref([])

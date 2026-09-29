@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Image } from '@versakit/vue'
+import { Image } from '@zxy-ui/vue'
 </script>
 
 <template>

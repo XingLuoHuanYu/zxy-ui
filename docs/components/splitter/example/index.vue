@@ -211,5 +211,5 @@
 </template>
 
 <script setup>
-import { Splitter, SplitterPanel } from '@versakit/vue'
+import { Splitter, SplitterPanel } from '@zxy-ui/vue'
 </script>

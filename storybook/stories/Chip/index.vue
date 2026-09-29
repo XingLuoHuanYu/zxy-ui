@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, h } from 'vue'
-import { Chip } from '@versakit/vue'
+import { Chip } from '@zxy-ui/vue'
 
 const selected = ref(false)
 </script>

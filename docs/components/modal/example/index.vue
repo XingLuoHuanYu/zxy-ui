@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Modal } from '@versakit/vue'
+import { Modal } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 // 基础用法

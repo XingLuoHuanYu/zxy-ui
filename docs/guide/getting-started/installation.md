@@ -1,19 +1,19 @@
 # 安装
 
-Versakit 提供多种包管理工具的安装方式，选择一种适合你的方式进行安装。
+ZxyUI 提供多种包管理工具的安装方式，选择一种适合你的方式进行安装。
 
 ::: code-group
 
 ```sh [npm]
-npm install @versakit/vue
+npm install @zxy-ui/vue
 ```
 
 ```sh [yarn]
-yarn add @versakit/vue
+yarn add @zxy-ui/vue
 ```
 
 ```sh [pnpm]
-pnpm add @versakit/vue
+pnpm add @zxy-ui/vue
 ```
 
 :::

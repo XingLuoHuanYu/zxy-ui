@@ -376,7 +376,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Carousel } from '@versakit/vue'
+import { Carousel } from '@zxy-ui/vue'
 
 // 图片轮播数据
 const images = [

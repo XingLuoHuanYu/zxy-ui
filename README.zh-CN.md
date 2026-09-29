@@ -1,20 +1,20 @@
 <div align="center">
-  <a href="https://versakit.github.io/Versakit-Vue/">
+  <a href="https://zxy-ui.github.io/zxy-ui/">
     <img src="./logo.svg" width="160" />
   </a>
-  <h1>Versakit</h1>
+  <h1>ZxyUI</h1>
   <p>一个现代化、高度可定制的Vue3组件库</p>
   <p>
-    <a href="https://versakit.github.io/Versakit-Vue/">文档</a> | 
-    <a href="https://versakit.github.io/Versakit-Vue/storybook/">Storybook</a> | 
+    <a href="https://zxy-ui.github.io/zxy-ui/">文档</a> | 
+    <a href="https://zxy-ui.github.io/zxy-ui/storybook/">Storybook</a> | 
     <a href="./README.md">English</a>
   </p>
   <p>
     <img src="https://img.shields.io/badge/vue-v3.2.0%2B-%2342b883" alt="vue">
     <img src="https://img.shields.io/badge/typescript-%5E5.0.0-%233178c6" alt="typescript">
     <img src="https://img.shields.io/badge/tailwindcss-v3.3.0-%2338bdf8" alt="tailwindcss">
-    <img src="https://img.shields.io/npm/l/@versakit/vue.svg" alt="license">
-    <img src="https://github.com/Versakit/Versakit-Vue/actions/workflows/test.yml/badge.svg" alt="tests">
+    <img src="https://img.shields.io/npm/l/@zxy-ui/vue.svg" alt="license">
+    <img src="https://github.com/zxy-ui/zxy-ui/actions/workflows/test.yml/badge.svg" alt="tests">
   </p>
 </div>
 
@@ -22,7 +22,7 @@
 
 ## 📖 介绍
 
-Versakit是一个精心设计的Vue3组件库，旨在提供高度可定制、无头化的组件解决方案。它允许开发者构建用户界面时不受特定视觉风格的限制，同时提供了完全控制组件外观和行为的能力。
+ZxyUI是一个精心设计的Vue3组件库，旨在提供高度可定制、无头化的组件解决方案。它允许开发者构建用户界面时不受特定视觉风格的限制，同时提供了完全控制组件外观和行为的能力。
 
 ## ✨ 特性
 
@@ -41,13 +41,13 @@ Versakit是一个精心设计的Vue3组件库，旨在提供高度可定制、�
 
 ```bash
 # 使用npm
-npm install @versakit/vue
+npm install @zxy-ui/vue
 
 # 使用yarn
-yarn add @versakit/vue
+yarn add @zxy-ui/vue
 
 # 使用pnpm
-pnpm add @versakit/vue
+pnpm add @zxy-ui/vue
 ```
 
 ## 🚀 快速开始
@@ -58,18 +58,18 @@ pnpm add @versakit/vue
 // main.ts
 import { createApp } from 'vue'
 import App from './App.vue'
-import Versakit from '@versakit/vue'
-import '@versakit/vue/style'
+import ZxyUI from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 
-createApp(App).use(Versakit).mount('#app')
+createApp(App).use(ZxyUI).mount('#app')
 ```
 
 ### 按需引入
 
 ```vue
 <script setup lang="ts">
-import { VButton, VInput } from '@versakit/vue'
-import '@versakit/vue/style'
+import { VButton, VInput } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 </script>
 
 <template>
@@ -80,13 +80,13 @@ import '@versakit/vue/style'
 
 ## 🔍 在线文档
 
-查看我们的[在线文档](https://versakit.github.io/Versakit-Vue/)，了解更多关于组件使用的详细信息、示例和API参考。
+查看我们的[在线文档](https://zxy-ui.github.io/zxy-ui/)，了解更多关于组件使用的详细信息、示例和API参考。
 
 ## 💻 本地开发
 
 ```bash
 # 克隆仓库
-git clone https://github.com/Versakit/Versakit-Vue.git
+git clone https://github.com/zxy-ui/zxy-ui.git
 
 # 安装依赖
 pnpm install
@@ -103,13 +103,12 @@ pnpm test
 
 ## 📄 许可证
 
-Versakit 使用 [MIT 许可证](./LICENSE)。
+ZxyUI 使用 [MIT 许可证](./LICENSE)。
 
 ## 🔗 相关链接
 
-- [GitHub仓库](https://github.com/Versakit/Versakit-Vue)
-- [Gitee镜像](https://gitee.com/dragon_water/versakit-ui)
-- [问题反馈](https://github.com/Versakit/Versakit-Vue/issues)
+- [GitHub仓库](https://github.com/zxy-ui/zxy-ui)
+- [问题反馈](https://github.com/zxy-ui/zxy-ui/issues)
 - [更新日志](./CHANGELOG.md)
 
 ## 🤝 感谢贡献者们做出的努力

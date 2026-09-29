@@ -1,10 +1,10 @@
-# Versakit-Vue Agent Instructions
+# ZxyUI Agent Instructions
 
-This document serves as the unified instruction set for AI programming assistants (Cursor, Copilot, Cline, etc.) working on the Versakit-Vue project.
+This document serves as the unified instruction set for AI programming assistants (Cursor, Copilot, Cline, etc.) working on the ZxyUI project.
 
 ## 1. Project Overview
 
-**Versakit-Vue** is a modern UI component library for Vue 3, built with TypeScript, Vite, and Tailwind CSS. It follows a Monorepo structure managed by `pnpm` and `turbo`.
+**ZxyUI** is a modern UI component library for Vue 3, built with TypeScript, Vite, and Tailwind CSS. It follows a Monorepo structure managed by `pnpm` and `turbo`.
 
 ### Tech Stack
 
@@ -22,10 +22,10 @@ This document serves as the unified instruction set for AI programming assistant
 ```text
 /
 ├── packages/
-│   ├── versakit-vue/       # Core UI Library
+│   ├── zxy-ui-vue/       # Core UI Library
 │   │   ├── src/components/ # Component implementations
 │   │   └── dist/           # Build output
-│   └── versakit-shared/    # Shared utilities
+│   └── zxy-ui-shared/    # Shared utilities
 ├── docs/                   # VitePress Documentation
 ├── storybook/              # Component Storybook
 ├── monaco-editor/          # Online Sandbox (Monaco based)
@@ -55,7 +55,7 @@ This document serves as the unified instruction set for AI programming assistant
 
 ### 3.3 Component Structure
 
-Each component in `packages/versakit-vue/src/components/` generally follows this structure:
+Each component in `packages/zxy-ui-vue/src/components/` generally follows this structure:
 
 ```text
 MyComponent/
@@ -79,7 +79,7 @@ MyComponent/
 
 ### Building
 
-- **Build Library**: `pnpm run ui:build` (builds `@versakit/vue`)
+- **Build Library**: `pnpm run ui:build` (builds `@zxy-ui/vue`)
 - **Build Docs**: `pnpm run docs:build`
 - **Build All**: `pnpm run site:build`
 
@@ -95,12 +95,12 @@ MyComponent/
 - **Verification**: After making changes, verify the fix.
   - For UI changes: Suggest checking the Playground or Storybook.
   - For Logic changes: Run related tests.
-- **Monorepo Imports**: When working in `monaco-editor` or `play`, remember they depend on the local build of `@versakit/vue`. Ensure `pnpm run ui:build` has been run if changes aren't reflecting.
+- **Monorepo Imports**: When working in `monaco-editor` or `play`, remember they depend on the local build of `@zxy-ui/vue`. Ensure `pnpm run ui:build` has been run if changes aren't reflecting.
 
 ## 6. Specific Configuration Details
 
-- **Tailwind Config**: Located in `packages/versakit-vue/tailwind.config.js` (if present) or configured via `@tailwindcss/vite` plugin in `vite.config.ts`.
-- **Vite Config**: Each package (`versakit-vue`, `docs`, `monaco-editor`) has its own `vite.config.ts`. Be careful which one you are editing.
+- **Tailwind Config**: Located in `packages/zxy-ui-vue/tailwind.config.js` (if present) or configured via `@tailwindcss/vite` plugin in `vite.config.ts`.
+- **Vite Config**: Each package (`zxy-ui-vue`, `docs`, `monaco-editor`) has its own `vite.config.ts`. Be careful which one you are editing.
 - **GitHub Actions**: Deployments are handled in `.github/workflows/deploy.yml`. The sandbox is deployed to `gh-pages` under `/playground/`.
 
 ---

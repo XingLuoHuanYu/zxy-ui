@@ -1,6 +1,6 @@
 # 更新日志
 
-此页面记录了 Versakit 的版本迭代历史，包括新特性、重要更新和问题修复。
+此页面记录了 ZxyUI 的版本迭代历史，包括新特性、重要更新和问题修复。
 
 ## v0.4.0 Latest 
 
@@ -49,8 +49,8 @@
 
 ### Breaking Changes
 
-- 包名更改：从 `@versakit/ui` 变更为 `@versakit/vue`
-- 样式引入方式变更：使用 `@versakit/vue/style` 替代 `@versakit/ui/dist/ui.css`
+- 包名更改：从 `@versakit/ui` 变更为 `@zxy-ui/vue`
+- 样式引入方式变更：使用 `@zxy-ui/vue/style` 替代 `@versakit/ui/dist/ui.css`
 - 组件 API 优化调整，引入一致的属性命名规范
 - 删除 `GradientText` 渐变文字组件
 - 详见[迁移指南](#)

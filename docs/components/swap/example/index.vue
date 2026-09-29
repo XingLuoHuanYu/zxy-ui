@@ -1,6 +1,6 @@
 <script setup>
-import { Swap } from '@versakit/vue'
-import '@versakit/vue/style'
+import { Swap } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import { ref } from 'vue'
 
 const isActive = ref(false)

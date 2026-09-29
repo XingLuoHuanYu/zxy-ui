@@ -1,5 +1,5 @@
 {
-  "name": "versakit-monorepo",
+  "name": "zxy-ui-monorepo",
   "version": "0.2.2",
   "private": "true",
   "type": "module",
@@ -8,8 +8,8 @@
     "packages/*"
   ],
   "scripts": {
-    "ui:build": "turbo run build --filter=@versakit/vue",
-    "ui:watch": "turbo run build:watch --filter=@versakit/vue",
+    "ui:build": "turbo run build --filter=@zxy-ui/vue",
+    "ui:watch": "turbo run build:watch --filter=@zxy-ui/vue",
     "docs:build": "turbo run build --filter=docs",
     "storybook:build": "turbo run build --filter=storybook",
     "site:build": "turbo run build --filter=docs --filter=storybook",

@@ -477,7 +477,7 @@ it('displays error message when API fails', async () => {
 - [Testing Library 指导原则](https://testing-library.com/docs/guiding-principles/)
 
 ### 示例项目
-- 查看 `packages/versakit-vue/src/components/` 下的测试文件
+- 查看 `packages/zxy-ui-vue/src/components/` 下的测试文件
 - 参考 Button、Input、Alert 等组件的测试
 
 ---

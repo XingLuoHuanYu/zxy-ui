@@ -5,7 +5,7 @@ Toast 是一种轻量级的全局反馈组件，用于展示操作结果或状�
 ## 引入
 
 ```typescript
-import { Toast } from '@versakit/vue'
+import { Toast } from '@zxy-ui/vue'
 ```
 
 ## 使用

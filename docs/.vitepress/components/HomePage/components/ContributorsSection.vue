@@ -6,7 +6,7 @@ import { contributors } from '../constants'
   <section class="contributors">
     <div class="contributors-container">
       <h2 class="section-title">贡献者</h2>
-      <p class="section-subtitle">感谢所有为 Versakit-Vue 做出贡献的开发者们</p>
+      <p class="section-subtitle">感谢所有为 ZxyUI 做出贡献的开发者们</p>
 
       <div class="contributors-grid">
         <a

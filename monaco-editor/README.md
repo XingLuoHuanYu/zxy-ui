@@ -1,12 +1,12 @@
-# Versakit Vue Sandbox
+# ZxyUI Vue Sandbox
 
-This is a sandbox environment for Versakit Vue, built with `@vue/repl` and `monaco-editor`.
+This is a sandbox environment for ZxyUI Vue, built with `@vue/repl` and `monaco-editor`.
 
 ## Setup
 
-1.  Ensure `@versakit/vue` is built:
+1.  Ensure `@zxy-ui/vue` is built:
     ```bash
-    pnpm build --filter @versakit/vue
+    pnpm build --filter @zxy-ui/vue
     ```
 2.  Run the sandbox:
     ```bash
@@ -16,10 +16,10 @@ This is a sandbox environment for Versakit Vue, built with `@vue/repl` and `mona
 ## Features
 
 -   Real-time editing of Vue components.
--   Loads `@versakit/vue` from the local `packages/versakit-vue/dist` directory.
+-   Loads `@zxy-ui/vue` from the local `packages/zxy-ui-vue/dist` directory.
 -   Uses Monaco Editor for code editing.
 
 ## Configuration
 
 The sandbox is configured in `src/App.vue`.
-The import map points `@versakit/vue` to `/versakit-vue-dist/esm/index.esm.js`, which is served by a custom Vite middleware in `vite.config.ts`.
+The import map points `@zxy-ui/vue` to `/zxy-ui-vue-dist/esm/index.esm.js`, which is served by a custom Vite middleware in `vite.config.ts`.

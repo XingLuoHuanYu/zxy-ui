@@ -179,7 +179,7 @@
 </template>
 
 <script setup lang="ts">
-import { Alert } from '@versakit/vue'
+import { Alert } from '@zxy-ui/vue'
 import { ref } from 'vue'
 
 // 可关闭的提示数据

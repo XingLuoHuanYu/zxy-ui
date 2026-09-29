@@ -93,5 +93,5 @@
 </template>
 
 <script setup lang="ts">
-import { Divider } from '@versakit/vue'
+import { Divider } from '@zxy-ui/vue'
 </script>

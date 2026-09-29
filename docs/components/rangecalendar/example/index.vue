@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { RangeCalendar } from '@versakit/vue'
-import '@versakit/vue/style'
+import { RangeCalendar } from '@zxy-ui/vue'
+import '@zxy-ui/vue/style'
 import { ref } from 'vue'
 
 const basicRange = ref<[Date | null, Date | null]>([null, null])

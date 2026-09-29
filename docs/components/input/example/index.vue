@@ -171,14 +171,34 @@
         </div>
       </div>
     </section>
+
+    <!-- 全局注册用法（ZxyUI 前缀） -->
+    <section>
+      <h2 class="text-lg font-medium mb-4">
+        全局注册用法 <span class="text-sm text-gray-500">（z- 前缀）</span>
+      </h2>
+      <p class="text-sm text-gray-500 mb-4">
+        执行 <code>app.use(ZxyUI)</code> 后，无需 import 即可直接使用
+        <code>&lt;z-input&gt;</code> 标签：
+      </p>
+      <div class="max-w-md">
+        <z-input v-model="globalValue" placeholder="使用 z-input 全局组件" />
+        <div class="text-sm text-gray-500 mt-2">
+          当前值: {{ globalValue || '空' }}
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { Input } from '@versakit/vue'
+import { Input } from '@zxy-ui/vue'
 // 基础用法
 const inputValue = ref('')
+
+// 全局注册用法
+const globalValue = ref('')
 
 // 不同类型
 const inputText = ref('')

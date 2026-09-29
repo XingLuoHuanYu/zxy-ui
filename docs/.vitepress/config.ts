@@ -11,9 +11,9 @@ import {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/Versakit-Vue/',
-  title: 'VersaKit',
-  description: 'VersaKit is a UI library for Vue 3',
+  base: '/zxy-ui/',
+  title: 'ZxyUI',
+  description: 'ZxyUI is a UI component library for Vue 3',
   ignoreDeadLinks: true,
   themeConfig: {
     logo: '/logo.svg',
@@ -23,10 +23,10 @@ export default defineConfig({
       '/components/': getComponentsSidebar(),
     } as any,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Versakit/Versakit-Vue' },
+      { icon: 'github', link: 'https://github.com/zxy-ui/zxy-ui' },
       {
         icon: 'npm',
-        link: 'https://www.npmjs.com/package/@versakit/vue',
+        link: 'https://www.npmjs.com/package/@zxy-ui/vue',
       },
     ],
   },

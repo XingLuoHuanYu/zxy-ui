@@ -4,7 +4,7 @@
     <section>
       <h3 class="text-lg font-medium mb-4">基础文本跑马灯</h3>
       <Runhorselight
-        :items="['欢迎使用 Versakit 组件库', '这是一个功能强大的 Vue 3 组件库', '支持 TypeScript 和 Tailwind CSS']"
+        :items="['欢迎使用 ZxyUI 组件库', '这是一个功能强大的 Vue 3 组件库', '支持 TypeScript 和 Tailwind CSS']"
         :height="'4rem'"
       />
     </section>
@@ -253,8 +253,8 @@
 </template>
 
 <script setup lang="ts">
-import { Runhorselight } from '@versakit/vue'
-import type { RunhorselightAffixClickPayload } from '@versakit/vue'
+import { Runhorselight } from '@zxy-ui/vue'
+import type { RunhorselightAffixClickPayload } from '@zxy-ui/vue'
 
 // 图片跑马灯数据
 const logoItems = [

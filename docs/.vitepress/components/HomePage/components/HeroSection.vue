@@ -54,7 +54,7 @@ onUnmounted(() => {
         <span class="hero-badge-text">Headless Design ❤️</span>
       </div>
       <h1 class="hero-title">
-        <span class="hero-title-main">Versakit UI</span>
+        <span class="hero-title-main">ZxyUI</span>
         <span class="hero-title-sub">无头组件库</span>
       </h1>
       <p class="hero-subtitle">完全解耦逻辑与样式，提供 100% 样式控制权</p>
@@ -82,7 +82,7 @@ onUnmounted(() => {
 
       <div class="hero-actions">
         <a
-          href="/Versakit-Vue/guide/getting-started/quickstart"
+          href="/zxy-ui/guide/getting-started/quickstart"
           class="btn-primary"
         >
           开始使用
@@ -99,7 +99,7 @@ onUnmounted(() => {
           </svg>
         </a>
         <a
-          href="/Versakit-Vue/guide/getting-started/introduction"
+          href="/zxy-ui/guide/getting-started/introduction"
           class="btn-secondary"
         >
           查看文档

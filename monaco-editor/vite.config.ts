@@ -10,13 +10,13 @@ export default defineConfig({
     tailwindcss(),
     vue(),
     {
-      name: 'serve-versakit-vue',
+      name: 'serve-zxy-ui-vue',
       configureServer(server) {
-        server.middlewares.use('/versakit-vue-dist', (req, res, next) => {
-          // e.g. request to /versakit-vue-dist/esm/index.esm.js -> req.url is /esm/index.esm.js
+        server.middlewares.use('/zxy-ui-vue-dist', (req, res, next) => {
+          // e.g. request to /zxy-ui-vue-dist/esm/index.esm.js -> req.url is /esm/index.esm.js
           const filePath = path.resolve(
             __dirname,
-            '../packages/versakit-vue/dist' + req.url,
+            '../packages/zxy-ui-vue/dist' + req.url,
           )
 
           if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {

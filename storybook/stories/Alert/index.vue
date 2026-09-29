@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Alert } from '@versakit/vue'
+import { Alert } from '@zxy-ui/vue'
 </script>
 
 <template>

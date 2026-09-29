@@ -10,13 +10,13 @@ Welcome to contribute code to our project! The following guidelines are designed
 - Clone the project repository to your local machine:
 
 ```bash
-git clone -b beta https://github.com/Versakit/Versakit.git
+git clone -b beta https://github.com/ZxyUI/ZxyUI.git
 ```
 
 - Navigate to the project directory and install the dependencies:
 
 ```bash
-cd Versakit
+cd ZxyUI
 pnpm i
 pnpm i -w
 ```
@@ -111,13 +111,13 @@ Before starting large-scale feature development, communicate with team members t
 ```bash
 ├── docs  Documentation
 ├── packages
-│   ├── versakit-cli    Project scaffolding
-│   ├── versakit-dev    Project integration test environment
-│   ├── versakit-icons  Project icon library
-│   ├── versakit-shared Project shared toolkit
-│   ├── versakit-theme  Theme package
-│   ├── versakit-ui     Project component library
-│   └── versakit-resolvers On-demand component library
+│   ├── zxy-ui-cli    Project scaffolding
+│   ├── zxy-ui-dev    Project integration test environment
+│   ├── zxy-ui-icons  Project icon library
+│   ├── zxy-ui-shared Project shared toolkit
+│   ├── zxy-ui-theme  Theme package
+│   ├── zxy-ui-ui     Project component library
+│   └── zxy-ui-resolvers On-demand component library
 ```
 
 Thank you for contributing to this project! Let's work together to build an excellent project.
