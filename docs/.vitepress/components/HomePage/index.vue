@@ -2,7 +2,6 @@
 import HeroSection from './components/HeroSection.vue'
 import FeaturesSection from './components/FeaturesSection.vue'
 import ComponentsSection from './components/ComponentsSection.vue'
-import ContributorsSection from './components/ContributorsSection.vue'
 </script>
 
 <template>
@@ -10,7 +9,6 @@ import ContributorsSection from './components/ContributorsSection.vue'
     <HeroSection />
     <FeaturesSection />
     <ComponentsSection />
-    <ContributorsSection />
   </div>
 </template>
 

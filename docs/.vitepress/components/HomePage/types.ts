@@ -10,9 +10,3 @@ export type ComponentItem = {
   path: string
   category?: string
 }
-
-export type Contributor = {
-  name: string
-  avatar: string
-  github: string
-}
