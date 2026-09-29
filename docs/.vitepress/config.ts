@@ -9,11 +9,16 @@ import { groupIconMdPlugin, groupIconVitePlugin,  } from 'vitepress-plugin-group
 // 部署基路径：
 //   - GitHub Pages 部署在子路径 https://<user>.github.io/zxy-ui/ 下 → base 需为 /zxy-ui/
 //   - Cloudflare Pages 从根路径 https://<project>.pages.dev/ 提供服务 → base 需为 /
-// Cloudflare 构建时会注入 CF_PAGES=1，可据此自动切换。
-// 若需强制指定，可设置环境变量 VITEPRESS_BASE（优先级最高）。
-const base =
-  process.env.VITEPRESS_BASE ??
-  (process.env.CF_PAGES ? '/' : '/zxy-ui/')
+// Cloudflare 会在构建时注入 CF_PAGES=1，据此自动切换；
+// 也可用 VITEPRESS_BASE 显式指定（优先级最高）。
+const isCloudflare = !!process.env.CF_PAGES
+const base = process.env.VITEPRESS_BASE ?? (isCloudflare ? '/' : '/zxy-ui/')
+
+// 构建期日志：便于在部署日志中确认 base 取值
+console.log(
+  `[zxyui] VITEPRESS_BASE=${process.env.VITEPRESS_BASE ?? '(unset)'} ` +
+    `CF_PAGES=${process.env.CF_PAGES ?? '(unset)'} → base="${base}"`
+)
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

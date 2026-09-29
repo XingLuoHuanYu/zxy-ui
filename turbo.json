@@ -5,10 +5,27 @@
     "tsconfig.build.json",
     "tsconfig.node.json"
   ],
+  "globalPassThroughEnv": [
+    "CF_PAGES",
+    "CF_PAGES_URL",
+    "CF_PAGES_BRANCH",
+    "CF_PAGES_COMMIT_SHA",
+    "CI",
+    "VITEPRESS_BASE"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".vitepress/dist/**", "storybook-static/**"],
+      "env": ["CF_PAGES", "CF_PAGES_URL", "CI", "VITEPRESS_BASE"],
+      "passThroughEnv": [
+        "CF_PAGES",
+        "CF_PAGES_URL",
+        "CF_PAGES_BRANCH",
+        "CF_PAGES_COMMIT_SHA",
+        "CI",
+        "VITEPRESS_BASE"
+      ],
       "inputs": [
         "src/**",
         "stories/**",
