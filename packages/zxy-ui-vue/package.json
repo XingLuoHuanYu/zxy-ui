@@ -36,9 +36,14 @@
     "url": "https://github.com/XingLuoHuanYu/zxy-ui/issues"
   },
   "keywords": [
-    "Vue3",
-    "UI",
-    "Components"
+    "vue",
+    "vue3",
+    "component-library",
+    "ui",
+    "tailwindcss",
+    "tailwind",
+    "protable",
+    "zxy-ui"
   ],
   "license": "MIT",
   "files": [
@@ -71,5 +76,6 @@
     "@tailwindcss/vite": "^4.1.8",
     "tailwind-variants": "^1.0.0",
     "tailwindcss": "^4.1.8"
-  }
+  },
+  "description": "A delightful Vue 3 + Tailwind CSS component library. Ships ProTable — a search-driven advanced table with pagination, selection and remote data — plus 40+ ready-to-use components."
 }

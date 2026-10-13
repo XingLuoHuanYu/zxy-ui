@@ -4,9 +4,6 @@
   "description": "Shared utilities for ZxyUI",
   "main": "index.ts",
   "types": "index.ts",
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "echo \"No build step needed for shared package\"",
     "lint": "eslint --ext .ts .",
@@ -15,5 +12,6 @@
   },
   "peerDependencies": {
     "vue": "^3.0.0"
-  }
+  },
+  "private": true
 }
