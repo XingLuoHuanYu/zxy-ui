@@ -12,7 +12,7 @@ export const getNav = (): DefaultTheme.NavItem[] => {
       link: '/components/button/',
       activeMatch: '/components/',
     },
-    { text: '博客', link: '/blog/', activeMatch: '/blog/' },
+    { text: '博客', link: 'https://zhangxingyu.pages.dev/portfolio' },
     {
       text: '生态',
       items: [

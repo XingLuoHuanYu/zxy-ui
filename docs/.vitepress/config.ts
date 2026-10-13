@@ -26,8 +26,9 @@ export default defineConfig({
   title: 'ZxyUI',
   description: 'ZxyUI is a UI component library for Vue 3',
   ignoreDeadLinks: true,
+  head: [['link', { rel: 'icon', type: 'image/png', href: '/zxy-ui/logo.png' }]],
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/logo.png',
     nav: getNav(),
     sidebar: {
       '/guide/': getGuideSidebar(),

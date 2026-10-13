@@ -46,6 +46,7 @@ import { Toast, ZToastContainer } from './components/Toast'
 import { ZSteps, ZStepItem } from './components/Steps'
 import { ZRadio, ZRadioGroup } from './components/Radio'
 import { ZTable } from './components/Table'
+import { ZProTable } from './components/ProTable'
 // 引入样式
 import './style/index.css'
 
@@ -112,6 +113,7 @@ const components: Record<string, Component> = {
   ZRadio: ZRadio,
   ZRadioGroup: ZRadioGroup,
   ZTable: ZTable,
+  ZProTable: ZProTable,
 }
 
 const ZxyUI = {
@@ -185,4 +187,5 @@ export {
   ZRadio,
   ZRadioGroup,
   ZTable,
+  ZProTable,
 }

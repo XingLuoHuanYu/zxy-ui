@@ -158,6 +158,11 @@ export const componentsMetadata: ComponentMetadata[] = [
     category: 'data',
   },
   { text: 'Table 表格', link: '/components/table/', category: 'data' },
+  {
+    text: 'ProTable 高级表格',
+    link: '/components/pro-table/',
+    category: 'data',
+  },
 
   // 导航组件
   {
